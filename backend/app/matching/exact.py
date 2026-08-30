@@ -11,8 +11,10 @@ from collections import defaultdict
 from datetime import timedelta
 
 from ..models import MatchGroup, MatchMethod, NormalizedTxn, Source
+from .fees import recompute_expected_fee
 
 AMOUNT_TOLERANCE_INR = 1.0
+FEE_TOLERANCE_INR = 0.5
 
 
 def _key_utr(t: NormalizedTxn) -> str | None:
@@ -30,6 +32,8 @@ def _within_window(a: NormalizedTxn, b: NormalizedTxn, sla_days: int) -> bool:
 def exact_match(
     txns: list[NormalizedTxn],
     sla_days: int = 2,
+    mdr_percent: float = 2.0,
+    gst_percent: float = 18.0,
 ) -> tuple[list[MatchGroup], list[NormalizedTxn]]:
     """Return (auto-matched groups, leftover unmatched txns)."""
 
@@ -81,6 +85,12 @@ def exact_match(
 
         if bank_idx is None:
             continue  # leave for candidate generation (likely TIMING_GAP / MISSING_PAYOUT)
+
+        # Even with a clean three-way tie, verify the PG fee matches contract.
+        # A silent fee overcharge must surface as an exception, not auto-match.
+        fee_check = recompute_expected_fee(pg, mdr_percent, gst_percent, FEE_TOLERANCE_INR)
+        if not fee_check.within_tolerance:
+            continue
 
         consumed.update({idx, pg_idx, bank_idx})
         groups.append(

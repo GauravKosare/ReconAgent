@@ -73,8 +73,12 @@ def generate_candidates(
         by_source[t.source].append(t)
 
     clusters: list[Cluster] = []
-    # Anchor on ledger rows first, then PG rows with no ledger partner.
-    anchors = by_source[Source.LEDGER] + by_source[Source.PG]
+    # Anchor on ledger rows first, then only PG rows whose UTR is not already
+    # covered by a ledger anchor (avoids two clusters for the same transaction).
+    ledger_utrs = {t.utr for t in by_source[Source.LEDGER] if t.utr}
+    anchors = by_source[Source.LEDGER] + [
+        t for t in by_source[Source.PG] if not t.utr or t.utr not in ledger_utrs
+    ]
 
     for n, anchor in enumerate(anchors):
         pool = [t for s in Source if s is not anchor.source for t in by_source[s]]

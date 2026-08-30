@@ -36,7 +36,13 @@ def run_batch(
     )
     audit(batch_id, "system", "ingest", "batch", batch_id, after={"txn_count": len(txns)})
 
-    matched, leftovers = exact_match(txns, sla_days=sla_days)
+    from ..config import get_settings
+
+    s = get_settings()
+    matched, leftovers = exact_match(
+        txns, sla_days=sla_days,
+        mdr_percent=s.default_mdr_percent, gst_percent=s.default_gst_percent,
+    )
     clusters = generate_candidates(leftovers, sla_days=sla_days)
 
     client = ModelClient()
