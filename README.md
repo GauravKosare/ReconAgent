@@ -80,6 +80,7 @@ reconagent/
 │   │   ├── matching/     # exact match, candidate generation, fee recompute
 │   │   ├── agent/        # ModelClient, adjudicator, tools, exception taxonomy
 │   │   ├── pipeline/     # batch runner + routing policy
+│   │   ├── metrics/      # ground-truth scorer (precision/recall, money, F1)
 │   │   ├── api/          # FastAPI routes
 │   │   ├── audit/        # append-only audit log
 │   │   ├── models/       # Pydantic schemas
@@ -97,7 +98,9 @@ reconagent/
 │   ├── WORKFLOW.md
 │   └── AI_INTEGRATION.md
 ├── scripts/
-│   └── run_batch.py
+│   ├── run_batch.py      # run one reconciliation batch
+│   └── evaluate.py       # metrics-vs-ground-truth harness (multi-seed)
+├── reports/              # generated scorecards
 ├── .env.example
 ├── LICENSE
 └── README.md
@@ -140,7 +143,19 @@ python ../scripts/run_batch.py \
   --ledger ../data/samples/ledger.csv
 ```
 
-### 5. API + dashboard
+### 5. Score it against ground truth
+
+```bash
+python ../scripts/evaluate.py --txns 500 --seeds 1,2,3 --out ../reports
+```
+
+Runs the pipeline on each seeded dataset, scores every run against its
+`ground_truth.json`, and writes an aggregate `reports/metrics_<ts>.{json,md}`
+scorecard (auto-match rate, detection precision/recall, per-code F1, money
+recovered vs injected, runtime — mean ± std across seeds). Works with no LLM key
+(classification + money metrics show `n/a`, the rest are real).
+
+### 6. API + dashboard
 
 ```bash
 uvicorn app.main:app --reload            # from backend/
@@ -148,6 +163,30 @@ cd ../frontend && npm install && npm run dev
 ```
 
 ---
+
+## MongoDB Atlas
+
+A free cluster is already provisioned for this project:
+
+| | |
+| --- | --- |
+| Org | `Gaurav's Org - 2026-08-17` |
+| Project | `ReconAgent` (`6a94860ae9631f2b9ed19da6`) |
+| Cluster | `reconagent` — AWS `US_EAST_1`, M0 free, MongoDB 8.0 |
+| SRV host | `reconagent.be1bein.mongodb.net` |
+| App user | `reconagent_app` (readWrite on `reconagent` db) |
+
+The connection string is in `.env` (git-ignored). Collections and indexes are
+created automatically on first batch run (`app/db.py::ensure_indexes`).
+
+**Network access:** the dev machine's IP is allowlisted. To connect from a new
+location or a deploy host (Vercel / HF Spaces), add its IP in
+**Atlas → Network Access**, or enable *Allow access from anywhere* (`0.0.0.0/0`)
+for the demo.
+
+**Vector Search index** (for semantic narration matching) must be created once
+from the Atlas UI on `normalized_txns.narration_embedding` — see
+[`docs/AI_INTEGRATION.md`](docs/AI_INTEGRATION.md) §5.
 
 ## Configuration
 

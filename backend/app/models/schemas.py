@@ -3,24 +3,24 @@
 from __future__ import annotations
 
 from datetime import datetime
-from enum import Enum
+from enum import StrEnum
 
 from pydantic import BaseModel, Field
 
 
-class Source(str, Enum):
+class Source(StrEnum):
     LEDGER = "ledger"
     PG = "pg"
     BANK = "bank"
 
 
-class MatchMethod(str, Enum):
+class MatchMethod(StrEnum):
     EXACT = "exact"
     AGENT = "agent"
     MANUAL = "manual"
 
 
-class ExceptionCode(str, Enum):
+class ExceptionCode(StrEnum):
     FEE_MISMATCH = "FEE_MISMATCH"
     TIMING_GAP = "TIMING_GAP"
     MISSING_PAYOUT = "MISSING_PAYOUT"
@@ -34,13 +34,13 @@ class ExceptionCode(str, Enum):
     UNEXPLAINED = "UNEXPLAINED"
 
 
-class VerdictType(str, Enum):
+class VerdictType(StrEnum):
     MATCHED = "matched"
     EXCEPTION = "exception"
     UNEXPLAINED = "unexplained"
 
 
-class RouteTarget(str, Enum):
+class RouteTarget(StrEnum):
     AUTO_RESOLVED = "auto_resolved"
     PENDING_APPROVAL = "pending_approval"
 
@@ -98,6 +98,9 @@ class ExceptionRecord(BaseModel):
     batch_id: str
     match_group_id: str | None = None
     cluster_id: str
+    anchor_source: str | None = None
+    anchor_external_id: str | None = None
+    anchor_utr: str | None = None
     code: ExceptionCode
     amount_impact: float
     direction: str

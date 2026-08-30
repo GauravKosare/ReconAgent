@@ -25,6 +25,11 @@ data/samples/*.csv
 data/samples/*.json
 !data/samples/.gitkeep
 
+# Generated evaluation reports (commit one deliberately with `git add -f` if wanted)
+reports/*.md
+reports/*.json
+!reports/.gitkeep
+
 # OS / editor
 .DS_Store
 Thumbs.db

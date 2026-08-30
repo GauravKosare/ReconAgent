@@ -132,6 +132,7 @@ def build(txns: int, seed: int) -> dict:
                 "gross": gross,
                 "expected_net": net,
                 "pg_net": pg_net,
+                "injected_impact_inr": round(net - pg_net, 2),  # money at risk (0 if none)
             }
         )
 

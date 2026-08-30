@@ -16,7 +16,7 @@ from datetime import datetime
 from ..config import get_settings
 from ..matching.candidates import Cluster
 from ..models import ExceptionCode, Verdict, VerdictType
-from .model_client import ModelClient, ModelUnavailable
+from .model_client import ModelClient
 from .taxonomy import TAXONOMY
 from .tools import (
     tool_check_duplicate,
@@ -138,12 +138,15 @@ def adjudicate_cluster(
 
     # Guardrail: cross-check the money figure against the tool report.
     fee_net_delta = abs(tool_report["recompute_expected_fee(anchor)"]["net_delta_short_paid"])
-    if verdict.exception_code is ExceptionCode.FEE_MISMATCH and verdict.amount_impact > 0:
-        if abs(verdict.amount_impact - fee_net_delta) > 1.0:
-            verdict.confidence = min(verdict.confidence, 0.5)
-            verdict.evidence.append(
-                f"guardrail: agent impact {verdict.amount_impact} != tool net_delta {fee_net_delta}"
-            )
+    if (
+        verdict.exception_code is ExceptionCode.FEE_MISMATCH
+        and verdict.amount_impact > 0
+        and abs(verdict.amount_impact - fee_net_delta) > 1.0
+    ):
+        verdict.confidence = min(verdict.confidence, 0.5)
+        verdict.evidence.append(
+            f"guardrail: agent impact {verdict.amount_impact} != tool net_delta {fee_net_delta}"
+        )
 
     meta = {
         "cluster_id": cluster.cluster_id,

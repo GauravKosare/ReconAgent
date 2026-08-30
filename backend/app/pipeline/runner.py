@@ -54,6 +54,11 @@ def run_batch(
     llm_used = False
 
     for cluster in clusters:
+        anchor_ids = dict(
+            anchor_source=cluster.anchor.source.value,
+            anchor_external_id=cluster.anchor.external_id,
+            anchor_utr=cluster.anchor.utr,
+        )
         try:
             verdict, meta = adjudicate_cluster(
                 cluster, same_source_index[cluster.anchor.source], client=client
@@ -66,7 +71,7 @@ def run_batch(
                   after={"reason": str(exc)})
             exceptions.append(
                 ExceptionRecord(
-                    batch_id=batch_id, cluster_id=cluster.cluster_id,
+                    batch_id=batch_id, cluster_id=cluster.cluster_id, **anchor_ids,
                     code="UNEXPLAINED", amount_impact=0.0, direction="neutral",
                     confidence=0.0, rationale="No LLM configured; manual review required.",
                     routed_to=RouteTarget.PENDING_APPROVAL,
@@ -83,6 +88,7 @@ def run_batch(
                 ExceptionRecord(
                     batch_id=batch_id,
                     cluster_id=cluster.cluster_id,
+                    **anchor_ids,
                     code=verdict.exception_code or "UNEXPLAINED",
                     amount_impact=verdict.amount_impact,
                     direction=verdict.direction,

@@ -8,7 +8,6 @@ Strategy: join on the strongest available key (UTR/RRN), then fall back to
 from __future__ import annotations
 
 from collections import defaultdict
-from datetime import timedelta
 
 from ..models import MatchGroup, MatchMethod, NormalizedTxn, Source
 from .fees import recompute_expected_fee

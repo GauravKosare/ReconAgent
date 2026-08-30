@@ -7,6 +7,7 @@ Falls back to stdout when the DB is unreachable so a local dry run still works.
 from __future__ import annotations
 
 import json
+import os
 import sys
 from datetime import datetime
 from typing import Any
@@ -32,6 +33,13 @@ def audit(
         "after": after,
         "created_at": datetime.utcnow(),
     }
+    # Offline / eval mode: skip the DB round-trip entirely.
+    if os.getenv("RECONAGENT_AUDIT_SINK") == "stderr":
+        print("[audit]", json.dumps(entry, default=str), file=sys.stderr)
+        return
+    if os.getenv("RECONAGENT_AUDIT_SINK") == "none":
+        return
+
     try:
         from ..db import get_db
 
