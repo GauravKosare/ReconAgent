@@ -17,7 +17,7 @@ from rapidfuzz import fuzz
 
 from ..models import NormalizedTxn, Source
 
-MAX_CANDIDATES = 3
+MAX_CANDIDATES = 6
 
 
 @dataclass
@@ -89,6 +89,10 @@ def generate_candidates(
             s_date = _date_signal(anchor, cand, sla_days)
             s_text = _text_signal(anchor, cand)
             total = w_amt * s_amt + w_date * s_date + w_text * s_text
+            # An exact UTR/RRN match is the strongest possible signal — it should
+            # never be crowded out of the candidate list by amount/date noise.
+            if anchor.utr and cand.utr and anchor.utr.upper() == cand.utr.upper():
+                total = 1.0 + total
             scored.append(
                 Candidate(txn=cand, score=round(total, 4),
                           signals={"amount": round(s_amt, 3),

@@ -1,0 +1,165 @@
+{
+  "generated_at": "20260831T053644Z",
+  "txns_per_run": 200,
+  "seeds": [
+    3
+  ],
+  "aggregate": {
+    "auto_match_rate": {
+      "mean": 0.905,
+      "std": 0.0,
+      "min": 0.905,
+      "max": 0.905,
+      "n": 1
+    },
+    "runtime_seconds": {
+      "mean": 119.0,
+      "std": 0.0,
+      "min": 119.0,
+      "max": 119.0,
+      "n": 1
+    },
+    "human_queue_fraction": {
+      "mean": 0.075,
+      "std": 0.0,
+      "min": 0.075,
+      "max": 0.075,
+      "n": 1
+    },
+    "detection_precision": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "n": 1
+    },
+    "detection_recall": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "n": 1
+    },
+    "classification_accuracy": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "n": 1
+    },
+    "money_recovery_ratio": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "n": 1
+    },
+    "overall_pass_rate": 1.0
+  },
+  "runs": [
+    {
+      "throughput": {
+        "txns": 199,
+        "auto_match_rate": 0.905,
+        "runtime_seconds": 119.0,
+        "human_queue_fraction": 0.075
+      },
+      "detection": {
+        "injected_defects": 22,
+        "detected": 22,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "classification": {
+        "llm_used": true,
+        "accuracy": 1.0,
+        "per_code": {
+          "DUPLICATE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "FEE_MISMATCH": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 8,
+            "fp": 0,
+            "fn": 0
+          },
+          "MISSING_IN_LEDGER": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "MISSING_PAYOUT": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 3,
+            "fp": 0,
+            "fn": 0
+          },
+          "SHORT_SETTLEMENT": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "TIMING_GAP": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 5,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "confusion": {
+          "FEE_MISMATCH": {
+            "FEE_MISMATCH": 8
+          },
+          "TIMING_GAP": {
+            "TIMING_GAP": 5
+          },
+          "DUPLICATE": {
+            "DUPLICATE": 2
+          },
+          "SHORT_SETTLEMENT": {
+            "SHORT_SETTLEMENT": 2
+          },
+          "MISSING_IN_LEDGER": {
+            "MISSING_IN_LEDGER": 2
+          },
+          "MISSING_PAYOUT": {
+            "MISSING_PAYOUT": 3
+          }
+        }
+      },
+      "money": {
+        "injected_inr": 75.0,
+        "surfaced_inr": 75.0,
+        "recovery_ratio": 1.0
+      },
+      "targets_met": {
+        "auto_match_rate": true,
+        "detection_recall": true,
+        "queue_fraction": true,
+        "runtime_seconds": true,
+        "classification_precision": true,
+        "money_recovery_ratio": true
+      },
+      "overall_pass": true,
+      "seed": 3
+    }
+  ]
+}

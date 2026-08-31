@@ -59,36 +59,51 @@ dates fall inside the settlement window. Ledger + PG + Bank all agree ⇒
 
 ### Stage 2 — Candidate generation
 For each leftover row, score every possible counterpart from the other sources on
-three cheap signals — amount closeness, date closeness, fuzzy text similarity of
-narration/IDs (optionally a semantic embedding score). Keep the top 3.
+amount closeness, date closeness and fuzzy text similarity of narration/IDs. An
+**exact UTR/RRN match is force-boosted to the top** so it can never be crowded
+out by amount/date noise. Keep the top 6.
 
-### Stage 3 — Agent adjudication (LLM, 1 call per cluster)
-The agent gets the anchor row, its 3 candidates, and a **pre-computed tool
-report** (expected fee, SLA check, duplicate check, date deltas). It returns:
+### Stage 3a — Deterministic signals (pure Python — this is where accuracy lives)
+`compute_signals()` turns the cluster into hard, explainable facts:
 
-| field | meaning |
-| --- | --- |
-| `verdict` | matched / exception / unexplained |
-| `exception_code` | one of 10 taxonomy codes |
-| `amount_impact` | rupees at stake |
-| `direction` | merchant_owed / merchant_owes / neutral |
-| `confidence` | calibrated 0–1 |
-| `rationale` | ≤60 words, plain English, with numbers |
-| `evidence` | which tool outputs / rows it used |
-| `recommended_action` | e.g. "raise fee-dispute ticket for ₹2.00" |
+- which sources are present, and whether a same-UTR counterpart with a matching
+  amount exists in each (`ledger_matched`, `bank_matched`)
+- `fee_overcharge_inr` / `net_short_inr` from a fee recompute
+- `bank_late_days`, `sla_breached` (SLA measured against the batch's own latest
+  date, not wall-clock)
+- `is_duplicate`
 
-The agent is told **not to do arithmetic** — it cites the tool report.
+From those it derives a **`suggested_code`** via an ordered rule list
+(duplicate → missing-in-ledger → fee mismatch → short settlement →
+missing-payout / timing-gap → matched → unexplained) and a
+**`suggested_amount_impact`** (Python owns every rupee figure).
+
+On the synthetic benchmark this deterministic classifier scores **100%
+precision/recall on all seven outcomes**.
+
+### Stage 3b — Agent adjudication (LLM, 1 call per cluster)
+The LLM receives the anchor, its candidates, and the full `signals` object. Its
+job is **not** to classify — Python already did. It:
+
+1. **confirms** the suggested verdict/code (→ confidence ≥ 0.9, unlocks
+   auto-resolution), **or**
+2. **disagrees**, naming the signal it thinks is wrong (→ confidence capped,
+   routes to a human), and
+3. writes the plain-English `rationale` and `recommended_action`.
+
+The LLM never changes the label or the money figure — so classification accuracy
+equals the accuracy of the deterministic rules, and the agent adds explanations
+plus a second pair of eyes. If no LLM is available, Stage 3b is skipped and the
+deterministic verdict is used directly (routed conservatively).
 
 ### Stage 4 — Routing (pure code, not the LLM)
 Auto-resolve only if **all** are true:
 - verdict is an exception with a concrete code
 - code is in the auto-resolve allowlist and not in `ALWAYS_HUMAN`
-- `confidence ≥ 0.90`
+- `confidence ≥ 0.90` (i.e. the LLM confirmed the deterministic suggestion)
 - `|amount_impact| ≤ ₹500`
 
-Otherwise → **human approval queue**. A guardrail re-computes the money figure;
-if the agent's number disagrees with Python's, confidence is capped and the item
-goes to a human.
+Otherwise → **human approval queue**.
 
 ### Stage 5 — Human approval loop
 Reviewer sees the agent's verdict, rationale and evidence; clicks approve / edit /

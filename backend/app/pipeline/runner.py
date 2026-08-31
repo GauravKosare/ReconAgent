@@ -8,7 +8,7 @@ import uuid
 from datetime import datetime
 from typing import Any
 
-from ..agent.adjudicator import adjudicate_cluster
+from ..agent.adjudicator import adjudicate_cluster, build_context, deterministic_verdict
 from ..agent.model_client import ModelClient, ModelUnavailable
 from ..audit.log import audit
 from ..ingest import normalize_file
@@ -59,26 +59,17 @@ def run_batch(
             anchor_external_id=cluster.anchor.external_id,
             anchor_utr=cluster.anchor.utr,
         )
+        same_src = same_source_index[cluster.anchor.source]
         try:
-            verdict, meta = adjudicate_cluster(
-                cluster, same_source_index[cluster.anchor.source], client=client
-            )
+            verdict, meta = adjudicate_cluster(cluster, same_src, client=client)
             llm_used = True
             agent_runs.append(meta)
         except ModelUnavailable as exc:
-            # No brain available -> everything unresolved goes to a human.
+            # No LLM -> fall back to the deterministic classifier (still useful).
             audit(batch_id, "system", "llm_unavailable", "cluster", cluster.cluster_id,
                   after={"reason": str(exc)})
-            exceptions.append(
-                ExceptionRecord(
-                    batch_id=batch_id, cluster_id=cluster.cluster_id, **anchor_ids,
-                    code="UNEXPLAINED", amount_impact=0.0, direction="neutral",
-                    confidence=0.0, rationale="No LLM configured; manual review required.",
-                    routed_to=RouteTarget.PENDING_APPROVAL,
-                )
-            )
-            routed_counts[RouteTarget.PENDING_APPROVAL] += 1
-            continue
+            signals, _ = build_context(cluster, same_src)
+            verdict = deterministic_verdict(cluster, signals)
 
         target, reason = route_verdict(verdict)
         routed_counts[target] += 1

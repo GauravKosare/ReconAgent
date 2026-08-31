@@ -6,49 +6,55 @@
 | --- | --- | --- |
 | Parsing / normalising files | code | deterministic, testable |
 | Exact three-way match | code | it's a join, not a judgement |
-| Candidate scoring (amount/date/fuzzy) | code | cheap, explainable |
-| Semantic narration similarity | **embeddings** | bank narration strings are natural language |
-| Deciding which candidate is the real match | **LLM** | fuzzy, context-dependent |
-| Classifying the discrepancy | **LLM** | maps messy reality → taxonomy |
-| Arithmetic / money figures | code (tools) | LLMs must not be trusted with numbers |
+| Candidate scoring (amount/date/fuzzy/UTR) | code | cheap, explainable |
+| **Classifying the discrepancy** (`compute_signals`) | **code** | UTR-linked rules are exact and auditable |
+| Arithmetic / money figures | code | LLMs must not be trusted with numbers |
+| Confirming the classification + writing the rationale | **LLM** | natural-language explanation; a second pair of eyes |
+| Flagging a disagreement for a human | **LLM** | catches cases the rules don't cover |
 | Auto-resolve vs human | code (routing policy) | must be auditable and bounded |
 
-> Principle: **the model is the detective who reads clues and writes the report;
-> it never operates the calculator or the cash register.**
+> Principle: **Python decides the money; the LLM explains it and can raise a
+> hand.** The model never operates the calculator or the cash register.
 
 ## 2. The agent contract
 
-One LLM call per unresolved cluster. Stateless. Input:
+One LLM call per unresolved cluster. Stateless. Input — the anchor, its
+candidates, and the full **deterministic `signals`** object (this is the key
+part: Python has already classified the cluster):
 
 ```json
 {
-  "taxonomy": { "FEE_MISMATCH": "PG fee differs from contracted MDR+GST", ... },
-  "anchor":   { "id": "...", "source": "pg", "gross": 1000, "fee": 25, "net": 971.4, ... },
-  "candidates": [ { "id": "...", "source": "bank", "net": 971.4, ... } ],
-  "tool_report": {
-    "recompute_expected_fee(anchor)": { "expected_fee": 20.0, "net_delta_short_paid": 5.0, ... },
-    "within_settlement_sla(anchor)":  { "age_days": 6, "within_sla": false },
-    "check_duplicate(anchor)":        { "is_duplicate": false },
-    "candidates": [ { "id": "...", "match_score": 0.91, "date_delta_days": {"days": 4} } ]
+  "anchor":   { "id": "pg:12", "source": "pg", "gross": 1000, "fee": 25, "net": 971.4, ... },
+  "candidates": [ { "id": "bank:77", "source": "bank", "net": 971.4, "match_score": 1.83 }, ... ],
+  "signals": {
+    "ledger_matched": true, "bank_matched": true, "bank_late_days": 0,
+    "sla_breached": false, "is_duplicate": false,
+    "fee_overcharge_inr": 5.0, "net_short_inr": 5.0,
+    "suggested_verdict": "exception", "suggested_code": "FEE_MISMATCH",
+    "suggested_amount_impact": 5.0, "reason": "PG fee over contract by 5.0"
   }
 }
 ```
 
-Required output (validated against `models.Verdict`):
+Output (the LLM never sets `amount_impact` — Python keeps
+`signals.suggested_amount_impact`):
 
 ```json
 {
   "verdict": "exception",
-  "match_group": ["pg:12", "bank:home"],
   "exception_code": "FEE_MISMATCH",
-  "amount_impact": 5.00,
-  "direction": "merchant_owed",
-  "confidence": 0.93,
-  "rationale": "Contract MDR 2% => expected fee ₹20.00; PG charged ₹25.00. Net ₹5.00 short vs tool report. Bank credit matches PG net exactly.",
-  "evidence": ["recompute_expected_fee(anchor).net_delta_short_paid=5.0", "candidate bank:home match_score=0.91"],
-  "recommended_action": "Raise fee-dispute ticket for ₹5.00"
+  "confidence": 0.95,
+  "rationale": "Contract MDR 2% => expected fee INR 20.00; PG charged INR 25.00, so net is INR 5.00 short. Bank credit equals the reduced PG net exactly.",
+  "recommended_action": "Raise a fee-dispute ticket for INR 5.00"
 }
 ```
+
+- LLM `verdict` + `exception_code` **equal** the suggestion -> confidence lifted
+  to >= 0.9, the exception is eligible for auto-resolution.
+- LLM **disagrees** -> confidence capped at 0.55, rationale records the
+  disagreement, routing sends it to a human.
+- LLM output unparseable / no LLM configured -> deterministic verdict is used as
+  is, routed conservatively.
 
 ## 3. Provider strategy — free, hosted, no lock-in
 
