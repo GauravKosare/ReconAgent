@@ -11,6 +11,7 @@ GET  /health
 from __future__ import annotations
 
 import json
+import os
 import tempfile
 from pathlib import Path
 from typing import Any
@@ -24,7 +25,12 @@ from ..pipeline.runner import run_batch
 
 router = APIRouter()
 
-_SAMPLES_DIR = Path(__file__).resolve().parents[3] / "data" / "samples" / "realworld"
+_SAMPLES_DIR = Path(
+    os.getenv(
+        "RECONAGENT_SAMPLES_DIR",
+        str(Path(__file__).resolve().parents[3] / "data" / "samples" / "realworld"),
+    )
+)
 _MARKETPLACE_DEDUCTIONS = {"marketplace": (1.0, 5.0)}  # (tds%, reserve%)
 
 

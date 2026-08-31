@@ -2,7 +2,7 @@
 name = "reconagent"
 version = "0.1.0"
 description = "Autonomous three-way reconciliation & settlement-exception agent"
-readme = "../README.md"
+readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "MIT" }
 dependencies = [

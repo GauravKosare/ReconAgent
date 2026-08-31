@@ -1,0 +1,25 @@
+# Render blueprint for the ReconAgent backend.
+# New > Blueprint > point at this repo. Set the secret env vars when prompted
+# (they are marked sync:false so they are never committed).
+services:
+  - type: web
+    name: reconagent-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DB
+        value: reconagent
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: RECONAGENT_CORS_ORIGINS
+        sync: false   # e.g. https://reconagent.vercel.app

@@ -198,6 +198,13 @@ for the demo.
 from the Atlas UI on `normalized_txns.narration_embedding` — see
 [`docs/AI_INTEGRATION.md`](docs/AI_INTEGRATION.md) §5.
 
+## Deploy
+
+Full ₹0 walkthrough in [`docs/DEPLOY.md`](docs/DEPLOY.md): Vercel for the
+dashboard, a repo-root `Dockerfile` on Render (blueprint: [`render.yaml`](render.yaml))
+or a Hugging Face Docker Space for the API, Atlas M0 for the DB. Both services
+auto-deploy on push to `main`.
+
 ## Configuration
 
 See [`.env.example`](.env.example). Key variables:
