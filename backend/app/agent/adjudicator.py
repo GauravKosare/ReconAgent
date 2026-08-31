@@ -14,7 +14,7 @@ Design:
 from __future__ import annotations
 
 import json
-from datetime import datetime, timedelta
+from datetime import UTC, datetime, timedelta
 
 from ..config import get_settings
 from ..matching.candidates import Cluster
@@ -197,7 +197,7 @@ def adjudicate_cluster(
         "latency_ms": result.latency_ms,
         "signals": signals.as_dict(),
         "raw_response": result.content,
-        "created_at": datetime.utcnow(),
+        "created_at": datetime.now(UTC).replace(tzinfo=None),
     }
     return verdict, meta
 

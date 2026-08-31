@@ -1,0 +1,21 @@
+{
+  "profile": "saas",
+  "region": "EU",
+  "currency": "EUR",
+  "merchant": "Lindau Studio GmbH",
+  "payments": 350,
+  "refunds": 8,
+  "settlement_batches": 36,
+  "aggregated_payouts": 35,
+  "cross_border_payments": 62,
+  "injected_defects": 36,
+  "tax_treatment": "exempt",
+  "seed": 23,
+  "files": {
+    "pg": "pg_stripe_balance.csv",
+    "ledger": "ledger_export.csv",
+    "bank": "bank_statement.mt940",
+    "pg_format": "stripe",
+    "bank_format": "mt940"
+  }
+}

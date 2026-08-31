@@ -1,0 +1,21 @@
+{
+  "profile": "marketplace",
+  "region": "EU",
+  "currency": "EUR",
+  "merchant": "Bruck Group B.V.",
+  "payments": 400,
+  "refunds": 26,
+  "settlement_batches": 35,
+  "aggregated_payouts": 34,
+  "cross_border_payments": 49,
+  "injected_defects": 35,
+  "tax_treatment": "exempt",
+  "seed": 11,
+  "files": {
+    "pg": "pg_stripe_balance.csv",
+    "ledger": "ledger_export.csv",
+    "bank": "bank_statement.camt053.xml",
+    "pg_format": "stripe",
+    "bank_format": "camt"
+  }
+}

@@ -149,7 +149,14 @@ python scripts/run_batch.py --realistic --region EU \
 python scripts/evaluate_realworld.py --region US --profile d2c-brand --seeds 1,2,3
 ```
 
-Committed sample datasets: `data/samples/realworld/{IN,US,EU}/`.
+### Committed sample datasets
+
+`data/samples/realworld/` holds **11 datasets** covering every region, four
+merchant profiles, and every statement format (Razorpay recon · Stripe balance ·
+MT940 · CAMT.053 · HDFC / ICICI / Chase-style CSV). See
+[`data/samples/realworld/README.md`](../data/samples/realworld/README.md) for the
+matrix. Regenerate with `python scripts/gen_samples.py`; each is round-tripped
+end-to-end by `backend/tests/test_realworld.py::test_sample_dataset`.
 
 ### Pipeline (`app/pipeline/realistic.py`)
 
@@ -171,13 +178,16 @@ the order id.
 
 ---
 
-## 5. Current results (deterministic, no LLM · d2c-brand · 3 seeds)
+## 5. Current results (deterministic, no LLM)
 
-| Region | Auto-match | Detection recall | Detection precision |
-| --- | --- | --- | --- |
-| **IN** (Razorpay + HDFC, INR) | ~93% | ~95% | ~98% |
-| **US** (Stripe + Chase CSV, USD) | ~95% | ~77% | ~98% |
-| **EU** (Stripe + CAMT.053, EUR) | ~93% | ~85% | ~100% |
+Across the 7 "strong" committed sample datasets (d2c / saas / travel, all three
+regions, every format):
+
+| | range |
+| --- | --- |
+| Auto-match rate | **0.92 – 0.94** |
+| Detection recall | **0.79 – 1.00** |
+| Detection precision | **0.96 – 1.00** |
 
 Per-code F1 is strong for `DUPLICATE`, `MISSING_IN_LEDGER`, `TIMING_GAP`,
 `MISSING_PAYOUT` and mostly for `FEE_MISMATCH` / `SHORT_SETTLEMENT`.

@@ -1,0 +1,21 @@
+{
+  "profile": "saas",
+  "region": "IN",
+  "currency": "INR",
+  "merchant": "Saffron Essentials India",
+  "payments": 350,
+  "refunds": 9,
+  "settlement_batches": 33,
+  "aggregated_payouts": 32,
+  "cross_border_payments": 9,
+  "injected_defects": 35,
+  "tax_treatment": "charged",
+  "seed": 11,
+  "files": {
+    "pg": "pg_settlement_recon.csv",
+    "ledger": "ledger_export.csv",
+    "bank": "bank_statement.mt940",
+    "pg_format": "razorpay",
+    "bank_format": "mt940"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "profile": "travel",
+  "region": "EU",
+  "currency": "EUR",
+  "merchant": "Bruck Group B.V.",
+  "payments": 350,
+  "refunds": 50,
+  "settlement_batches": 34,
+  "aggregated_payouts": 33,
+  "cross_border_payments": 55,
+  "injected_defects": 34,
+  "tax_treatment": "exempt",
+  "seed": 11,
+  "files": {
+    "pg": "pg_stripe_balance.csv",
+    "ledger": "ledger_export.csv",
+    "bank": "bank_statement.camt053.xml",
+    "pg_format": "stripe",
+    "bank_format": "camt"
+  }
+}

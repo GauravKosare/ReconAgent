@@ -1,0 +1,21 @@
+{
+  "profile": "travel",
+  "region": "US",
+  "currency": "USD",
+  "merchant": "Hudson Outfitters Inc.",
+  "payments": 300,
+  "refunds": 54,
+  "settlement_batches": 31,
+  "aggregated_payouts": 30,
+  "cross_border_payments": 40,
+  "injected_defects": 27,
+  "tax_treatment": "none",
+  "seed": 23,
+  "files": {
+    "pg": "pg_stripe_balance.csv",
+    "ledger": "ledger_export.csv",
+    "bank": "bank_statement_us.csv",
+    "pg_format": "stripe",
+    "bank_format": "us_csv"
+  }
+}

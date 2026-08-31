@@ -13,7 +13,7 @@ import contextlib
 import json
 import os
 import sys
-from datetime import datetime
+from datetime import UTC, datetime
 from typing import Any
 
 _buffer: list[dict] | None = None
@@ -50,7 +50,7 @@ def audit(
         "target_id": target_id,
         "before": before,
         "after": after,
-        "created_at": datetime.utcnow(),
+        "created_at": datetime.now(UTC).replace(tzinfo=None),
     }
     sink = os.getenv("RECONAGENT_AUDIT_SINK")
     if sink == "none":

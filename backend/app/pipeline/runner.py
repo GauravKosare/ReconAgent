@@ -7,7 +7,7 @@ from __future__ import annotations
 import os
 import uuid
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime
+from datetime import UTC, datetime
 from typing import Any
 
 from ..agent.adjudicator import adjudicate_cluster, build_context, deterministic_verdict
@@ -52,7 +52,7 @@ def _run_batch(
     sla_days: int,
 ) -> dict[str, Any]:
     batch_id = f"batch_{uuid.uuid4().hex[:10]}"
-    started = datetime.utcnow()
+    started = datetime.now(UTC).replace(tzinfo=None)
 
     txns = (
         normalize_file(ledger_path, Source.LEDGER, batch_id)
@@ -129,8 +129,8 @@ def _run_batch(
     summary = {
         "batch_id": batch_id,
         "started_at": started.isoformat(),
-        "finished_at": datetime.utcnow().isoformat(),
-        "runtime_seconds": round((datetime.utcnow() - started).total_seconds(), 1),
+        "finished_at": datetime.now(UTC).replace(tzinfo=None).isoformat(),
+        "runtime_seconds": round((datetime.now(UTC).replace(tzinfo=None) - started).total_seconds(), 1),
         "rows_ingested": len(txns),
         "auto_matched_groups": len(matched),
         "auto_match_rate": round(len(matched) / total, 3),

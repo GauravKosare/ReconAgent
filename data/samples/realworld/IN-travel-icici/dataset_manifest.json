@@ -1,0 +1,21 @@
+{
+  "profile": "travel",
+  "region": "IN",
+  "currency": "INR",
+  "merchant": "Orchid Retail Pvt Ltd",
+  "payments": 350,
+  "refunds": 43,
+  "settlement_batches": 31,
+  "aggregated_payouts": 30,
+  "cross_border_payments": 8,
+  "injected_defects": 36,
+  "tax_treatment": "charged",
+  "seed": 23,
+  "files": {
+    "pg": "pg_settlement_recon.csv",
+    "ledger": "ledger_export.csv",
+    "bank": "bank_statement_icici.csv",
+    "pg_format": "razorpay",
+    "bank_format": "icici"
+  }
+}

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.02">
+  <BkToCstmrStmt>
+    <GrpHdr><MsgId>RECON-202608311541</MsgId><CreDtTm>2026-08-31T15:41:17.523732</CreDtTm></GrpHdr>
+    <Stmt><Id>STMT-2026-08</Id>
+      <Acct><Id><IBAN>DE00000000000012345678</IBAN></Id><Ccy>USD</Ccy></Acct>
+      <Bal><Tp><CdOrPrtry><Cd>OPBD</Cd></CdOrPrtry></Tp><Amt Ccy="USD">0.00</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-08-01</Dt></Dt></Bal>
+      <Bal><Tp><CdOrPrtry><Cd>CLBD</Cd></CdOrPrtry></Tp><Amt Ccy="USD">13430.84</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-08-31</Dt></Dt></Bal>
+    <Ntry>
+      <Amt Ccy="USD">212.60</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-03</Dt></BookgDt><ValDt><Dt>2026-08-03</Dt></ValDt>
+      <AcctSvcrRef>233546154380589</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>233546154380589</EndToEndId><TxId>233546154380589</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:USBK DESC:PAYOUT SEC:CCD TRACE#:233546154380589</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">66.79</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-03</Dt></BookgDt><ValDt><Dt>2026-08-03</Dt></ValDt>
+      <AcctSvcrRef>614717426009522</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>614717426009522</EndToEndId><TxId>614717426009522</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:CITI DESC:PAYOUT SEC:CCD TRACE#:614717426009522</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">750.78</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-04</Dt></BookgDt><ValDt><Dt>2026-08-04</Dt></ValDt>
+      <AcctSvcrRef>963102394997022</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>963102394997022</EndToEndId><TxId>963102394997022</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:TDBK DESC:PAYOUT SEC:CCD TRACE#:963102394997022</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">68.33</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-05</Dt></BookgDt><ValDt><Dt>2026-08-05</Dt></ValDt>
+      <AcctSvcrRef>246722355763429</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>246722355763429</EndToEndId><TxId>246722355763429</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:TDBK DESC:PAYOUT SEC:CCD TRACE#:246722355763429</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">690.80</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-05</Dt></BookgDt><ValDt><Dt>2026-08-05</Dt></ValDt>
+      <AcctSvcrRef>854086057561813</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>854086057561813</EndToEndId><TxId>854086057561813</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:CITI DESC:PAYOUT SEC:CCD TRACE#:854086057561813</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">283.24</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-06</Dt></BookgDt><ValDt><Dt>2026-08-06</Dt></ValDt>
+      <AcctSvcrRef>731419071563355</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>731419071563355</EndToEndId><TxId>731419071563355</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:CITI DESC:PAYOUT SEC:CCD TRACE#:731419071563355</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">314.79</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-07</Dt></BookgDt><ValDt><Dt>2026-08-07</Dt></ValDt>
+      <AcctSvcrRef>939531381359098</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>939531381359098</EndToEndId><TxId>939531381359098</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:TDBK DESC:PAYOUT SEC:CCD TRACE#:939531381359098</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">110.18</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-10</Dt></BookgDt><ValDt><Dt>2026-08-10</Dt></ValDt>
+      <AcctSvcrRef>527503569332372</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>527503569332372</EndToEndId><TxId>527503569332372</TxId></Refs>
+        <RmtInf><Ustrd>FEDWIRE CREDIT REF 527503569332372 ORIG COPPER &amp; SONS CO.</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">1540.60</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-10</Dt></BookgDt><ValDt><Dt>2026-08-10</Dt></ValDt>
+      <AcctSvcrRef>330214409357216</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>330214409357216</EndToEndId><TxId>330214409357216</TxId></Refs>
+        <RmtInf><Ustrd>FEDWIRE CREDIT REF 330214409357216 ORIG COPPER &amp; SONS CO.</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">544.46</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-11</Dt></BookgDt><ValDt><Dt>2026-08-11</Dt></ValDt>
+      <AcctSvcrRef>853857336233754</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>853857336233754</EndToEndId><TxId>853857336233754</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:TDBK DESC:PAYOUT SEC:CCD TRACE#:853857336233754</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">36.49</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-12</Dt></BookgDt><ValDt><Dt>2026-08-12</Dt></ValDt>
+      <AcctSvcrRef>478119470199397</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>478119470199397</EndToEndId><TxId>478119470199397</TxId></Refs>
+        <RmtInf><Ustrd>FEDWIRE CREDIT REF 478119470199397 ORIG COPPER &amp; SONS CO.</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">427.92</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-12</Dt></BookgDt><ValDt><Dt>2026-08-12</Dt></ValDt>
+      <AcctSvcrRef>710280072335647</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>710280072335647</EndToEndId><TxId>710280072335647</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:CITI DESC:PAYOUT SEC:CCD TRACE#:710280072335647</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">508.42</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-13</Dt></BookgDt><ValDt><Dt>2026-08-13</Dt></ValDt>
+      <AcctSvcrRef>957581012093481</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>957581012093481</EndToEndId><TxId>957581012093481</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:PNCB DESC:PAYOUT SEC:CCD TRACE#:957581012093481</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">20.96</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-13</Dt></BookgDt><ValDt><Dt>2026-08-13</Dt></ValDt>
+      <AcctSvcrRef>133389579215171</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>133389579215171</EndToEndId><TxId>133389579215171</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:CAPI DESC:PAYOUT SEC:CCD TRACE#:133389579215171</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">20.96</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-13</Dt></BookgDt><ValDt><Dt>2026-08-13</Dt></ValDt>
+      <AcctSvcrRef>133389579215171-2</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>133389579215171-2</EndToEndId><TxId>133389579215171</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:CAPI DESC:PAYOUT SEC:CCD TRACE#:133389579215171-2</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">20.95</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-13</Dt></BookgDt><ValDt><Dt>2026-08-13</Dt></ValDt>
+      <AcctSvcrRef>133389579215171-3</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>133389579215171-3</EndToEndId><TxId>133389579215171</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:TDBK DESC:PAYOUT SEC:CCD TRACE#:133389579215171-3</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">77.84</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-13</Dt></BookgDt><ValDt><Dt>2026-08-13</Dt></ValDt>
+      <AcctSvcrRef>165812977421317</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>165812977421317</EndToEndId><TxId>165812977421317</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:CITI DESC:PAYOUT SEC:CCD TRACE#:165812977421317</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">54.73</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-14</Dt></BookgDt><ValDt><Dt>2026-08-14</Dt></ValDt>
+      <AcctSvcrRef>166034641138889</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>166034641138889</EndToEndId><TxId>166034641138889</TxId></Refs>
+        <RmtInf><Ustrd>FEDWIRE CREDIT REF 166034641138889 ORIG COPPER &amp; SONS CO.</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">599.63</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-14</Dt></BookgDt><ValDt><Dt>2026-08-14</Dt></ValDt>
+      <AcctSvcrRef>189576704378251</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>189576704378251</EndToEndId><TxId>189576704378251</TxId></Refs>
+        <RmtInf><Ustrd>FEDWIRE CREDIT REF 189576704378251 ORIG COPPER &amp; SONS CO.</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">1793.61</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-17</Dt></BookgDt><ValDt><Dt>2026-08-17</Dt></ValDt>
+      <AcctSvcrRef>542582085466725</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>542582085466725</EndToEndId><TxId>542582085466725</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:TDBK DESC:PAYOUT SEC:CCD TRACE#:542582085466725</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">44.39</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-17</Dt></BookgDt><ValDt><Dt>2026-08-17</Dt></ValDt>
+      <AcctSvcrRef>764292130981041</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>764292130981041</EndToEndId><TxId>764292130981041</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:TDBK DESC:PAYOUT SEC:CCD TRACE#:764292130981041</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">474.92</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-18</Dt></BookgDt><ValDt><Dt>2026-08-18</Dt></ValDt>
+      <AcctSvcrRef>832946154497528</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>832946154497528</EndToEndId><TxId>832946154497528</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:CHAS DESC:PAYOUT SEC:CCD TRACE#:832946154497528</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">253.85</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-19</Dt></BookgDt><ValDt><Dt>2026-08-19</Dt></ValDt>
+      <AcctSvcrRef>982057267649166</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>982057267649166</EndToEndId><TxId>982057267649166</TxId></Refs>
+        <RmtInf><Ustrd>FEDWIRE CREDIT REF 982057267649166 ORIG COPPER &amp; SONS CO.</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">657.88</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-20</Dt></BookgDt><ValDt><Dt>2026-08-20</Dt></ValDt>
+      <AcctSvcrRef>362763640064051</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>362763640064051</EndToEndId><TxId>362763640064051</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:PNCB DESC:PAYOUT SEC:CCD TRACE#:362763640064051</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">56.96</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-20</Dt></BookgDt><ValDt><Dt>2026-08-20</Dt></ValDt>
+      <AcctSvcrRef>781310116686944</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>781310116686944</EndToEndId><TxId>781310116686944</TxId></Refs>
+        <RmtInf><Ustrd>FEDWIRE CREDIT REF 781310116686944 ORIG COPPER &amp; SONS CO.</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">569.10</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-21</Dt></BookgDt><ValDt><Dt>2026-08-21</Dt></ValDt>
+      <AcctSvcrRef>108634867637006</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>108634867637006</EndToEndId><TxId>108634867637006</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:TDBK DESC:PAYOUT SEC:CCD TRACE#:108634867637006</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">84.19</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-21</Dt></BookgDt><ValDt><Dt>2026-08-21</Dt></ValDt>
+      <AcctSvcrRef>199092867570418</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>199092867570418</EndToEndId><TxId>199092867570418</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:USBK DESC:PAYOUT SEC:CCD TRACE#:199092867570418</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">1441.41</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-24</Dt></BookgDt><ValDt><Dt>2026-08-24</Dt></ValDt>
+      <AcctSvcrRef>896253447263438</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>896253447263438</EndToEndId><TxId>896253447263438</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:PNCB DESC:PAYOUT SEC:CCD TRACE#:896253447263438</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">180.31</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-24</Dt></BookgDt><ValDt><Dt>2026-08-24</Dt></ValDt>
+      <AcctSvcrRef>975123378425497</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>975123378425497</EndToEndId><TxId>975123378425497</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:PNCB DESC:PAYOUT SEC:CCD TRACE#:975123378425497</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">89.98</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-25</Dt></BookgDt><ValDt><Dt>2026-08-25</Dt></ValDt>
+      <AcctSvcrRef>935172591939670</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>935172591939670</EndToEndId><TxId>935172591939670</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:TDBK DESC:PAYOUT SEC:CCD TRACE#:935172591939670</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">353.45</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-25</Dt></BookgDt><ValDt><Dt>2026-08-25</Dt></ValDt>
+      <AcctSvcrRef>264122287265381</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>264122287265381</EndToEndId><TxId>264122287265381</TxId></Refs>
+        <RmtInf><Ustrd>ORIG CO NAME:COPPER &amp; SONS CO. ORIG ID:BOFA DESC:PAYOUT SEC:CCD TRACE#:264122287265381</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">559.57</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-26</Dt></BookgDt><ValDt><Dt>2026-08-26</Dt></ValDt>
+      <AcctSvcrRef>557570296690822</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>557570296690822</EndToEndId><TxId>557570296690822</TxId></Refs>
+        <RmtInf><Ustrd>FEDWIRE CREDIT REF 557570296690822 ORIG COPPER &amp; SONS CO.</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="USD">520.75</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-27</Dt></BookgDt><ValDt><Dt>2026-08-27</Dt></ValDt>
+      <AcctSvcrRef>269149423337627</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>269149423337627</EndToEndId><TxId>269149423337627</TxId></Refs>
+        <RmtInf><Ustrd>FEDWIRE CREDIT REF 269149423337627 ORIG COPPER &amp; SONS CO.</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    </Stmt>
+  </BkToCstmrStmt>
+</Document>

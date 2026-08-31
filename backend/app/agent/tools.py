@@ -7,7 +7,7 @@ result as evidence.
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import UTC, datetime
 from typing import Any
 
 from ..matching.fees import recompute_expected_fee
@@ -42,7 +42,7 @@ def tool_within_settlement_sla(
         return {"within_sla": None}
     # "now" is the most recent date seen in the batch, not wall-clock — the data
     # is a historical export.
-    now = ref_date or datetime.utcnow()
+    now = ref_date or datetime.now(UTC).replace(tzinfo=None)
     age = (now - base).days
     return {"age_days": age, "sla_days": sla_days, "within_sla": age <= sla_days}
 

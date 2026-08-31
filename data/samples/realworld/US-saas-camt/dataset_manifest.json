@@ -1,0 +1,21 @@
+{
+  "profile": "saas",
+  "region": "US",
+  "currency": "USD",
+  "merchant": "Copper & Sons Co.",
+  "payments": 400,
+  "refunds": 5,
+  "settlement_batches": 32,
+  "aggregated_payouts": 31,
+  "cross_border_payments": 58,
+  "injected_defects": 35,
+  "tax_treatment": "none",
+  "seed": 11,
+  "files": {
+    "pg": "pg_stripe_balance.csv",
+    "ledger": "ledger_export.csv",
+    "bank": "bank_statement.camt053.xml",
+    "pg_format": "stripe",
+    "bank_format": "camt"
+  }
+}

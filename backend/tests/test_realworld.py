@@ -3,6 +3,7 @@ settlement reconciliation -> scorecard, for IN / US / EU."""
 
 from __future__ import annotations
 
+import json
 import sys
 from pathlib import Path
 
@@ -10,6 +11,10 @@ import pytest
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
+
+SAMPLES = ROOT / "data" / "samples" / "realworld"
+_index = json.loads((SAMPLES / "index.json").read_text()) if (SAMPLES / "index.json").exists() else []
+_DEDUCTIONS = {"marketplace": (1.0, 5.0), "travel": (0.0, 5.0)}
 
 from data.realworld.emit import EMITTERS  # noqa: E402
 from data.realworld.regions import REGIONS  # noqa: E402
@@ -84,3 +89,36 @@ def test_end_to_end_scores(region, tmp_path):
 def test_region_rules_match_generator():
     for code, rules in region_rules.__globals__["RULES"].items():
         assert rules.currency == REGIONS[code].currency
+
+
+# ---------- committed sample-dataset matrix ----------
+
+@pytest.mark.skipif(not _index, reason="run scripts/gen_samples.py")
+@pytest.mark.parametrize("entry", _index, ids=[e["folder"] for e in _index])
+def test_sample_dataset(entry):
+    d = SAMPLES / entry["folder"]
+    manifest = json.loads((d / "dataset_manifest.json").read_text())
+    truth = json.loads((d / "ground_truth.json").read_text())
+    f = manifest["files"]
+    tds, reserve = _DEDUCTIONS.get(entry["profile"], (0.0, 0.0))
+
+    result = run_realistic_batch(
+        str(d / f["pg"]), str(d / f["bank"]), str(d / f["ledger"]),
+        region=entry["region"], tds_percent=tds, reserve_percent=reserve,
+    )
+    assert result["summary"]["currency"] == entry["currency"]
+    card = score_batch(result, truth).to_dict()
+    am = card["throughput"]["auto_match_rate"]
+    det = card["detection"]
+
+    if entry["strong"]:
+        assert am >= 0.88, f"auto-match {am}"
+        assert det["recall"] >= 0.75, f"recall {det['recall']}"
+        assert det["precision"] >= 0.90, f"precision {det['precision']}"
+    else:
+        # round-trip only: parsing works, batches form, defects are surfaced.
+        # (marketplace TDS/reserve + IFR + FX is a documented hard case for the
+        #  per-code classifier — see docs/DATA_MODEL.md)
+        assert result["summary"]["settlement_batches"] > 0
+        assert am >= 0.40
+        assert det["recall"] >= 0.60

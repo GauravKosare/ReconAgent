@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.02">
+  <BkToCstmrStmt>
+    <GrpHdr><MsgId>RECON-202608311541</MsgId><CreDtTm>2026-08-31T15:41:17.586264</CreDtTm></GrpHdr>
+    <Stmt><Id>STMT-2026-08</Id>
+      <Acct><Id><IBAN>DE00000000000012345678</IBAN></Id><Ccy>EUR</Ccy></Acct>
+      <Bal><Tp><CdOrPrtry><Cd>OPBD</Cd></CdOrPrtry></Tp><Amt Ccy="EUR">0.00</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-08-01</Dt></Dt></Bal>
+      <Bal><Tp><CdOrPrtry><Cd>CLBD</Cd></CdOrPrtry></Tp><Amt Ccy="EUR">4690.06</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-08-31</Dt></Dt></Bal>
+    <Ntry>
+      <Amt Ccy="EUR">224.00</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-03</Dt></BookgDt><ValDt><Dt>2026-08-03</Dt></ValDt>
+      <AcctSvcrRef>E2EO3HFCYN636GTAS37</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EO3HFCYN636GTAS37</EndToEndId><TxId>E2EO3HFCYN636GTAS37</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2EO3HFCYN636GTAS37</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">70.97</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-03</Dt></BookgDt><ValDt><Dt>2026-08-03</Dt></ValDt>
+      <AcctSvcrRef>E2E4JOSIREFDMWUDOTP</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E4JOSIREFDMWUDOTP</EndToEndId><TxId>E2E4JOSIREFDMWUDOTP</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2E4JOSIREFDMWUDOTP</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">205.25</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-04</Dt></BookgDt><ValDt><Dt>2026-08-04</Dt></ValDt>
+      <AcctSvcrRef>E2EAOKY1Q52FXY5ZULR</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EAOKY1Q52FXY5ZULR</EndToEndId><TxId>E2EAOKY1Q52FXY5ZULR</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE DEUT / EREF E2EAOKY1Q52FXY5ZULR</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">24.04</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-04</Dt></BookgDt><ValDt><Dt>2026-08-04</Dt></ValDt>
+      <AcctSvcrRef>E2EYTUIQKOGXMO0B45L</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EYTUIQKOGXMO0B45L</EndToEndId><TxId>E2EYTUIQKOGXMO0B45L</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE SOGE / EREF E2EYTUIQKOGXMO0B45L</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">179.79</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-05</Dt></BookgDt><ValDt><Dt>2026-08-05</Dt></ValDt>
+      <AcctSvcrRef>E2EVTRMC12PJLULUED2</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EVTRMC12PJLULUED2</EndToEndId><TxId>E2EVTRMC12PJLULUED2</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE RABO / EREF E2EVTRMC12PJLULUED2</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">29.26</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-05</Dt></BookgDt><ValDt><Dt>2026-08-05</Dt></ValDt>
+      <AcctSvcrRef>E2E13TWTWGXSLVMIDOE</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E13TWTWGXSLVMIDOE</EndToEndId><TxId>E2E13TWTWGXSLVMIDOE</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE SANT / EREF E2E13TWTWGXSLVMIDOE</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">185.01</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-06</Dt></BookgDt><ValDt><Dt>2026-08-06</Dt></ValDt>
+      <AcctSvcrRef>E2ELC68VTJQ75DZYNW8</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ELC68VTJQ75DZYNW8</EndToEndId><TxId>E2ELC68VTJQ75DZYNW8</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE DEUT / EREF E2ELC68VTJQ75DZYNW8</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">16.78</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-06</Dt></BookgDt><ValDt><Dt>2026-08-06</Dt></ValDt>
+      <AcctSvcrRef>E2EZZ97V3CFL0D8EIQS</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EZZ97V3CFL0D8EIQS</EndToEndId><TxId>E2EZZ97V3CFL0D8EIQS</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2EZZ97V3CFL0D8EIQS</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">47.59</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-07</Dt></BookgDt><ValDt><Dt>2026-08-07</Dt></ValDt>
+      <AcctSvcrRef>E2EEU4O0XRBVY6M9E1C</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EEU4O0XRBVY6M9E1C</EndToEndId><TxId>E2EEU4O0XRBVY6M9E1C</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2EEU4O0XRBVY6M9E1C</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">161.63</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-07</Dt></BookgDt><ValDt><Dt>2026-08-07</Dt></ValDt>
+      <AcctSvcrRef>E2EYSQ5U5VSAFDTH5SB</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EYSQ5U5VSAFDTH5SB</EndToEndId><TxId>E2EYSQ5U5VSAFDTH5SB</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2EYSQ5U5VSAFDTH5SB</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">133.64</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-10</Dt></BookgDt><ValDt><Dt>2026-08-10</Dt></ValDt>
+      <AcctSvcrRef>E2ES0VO7KF59K6QV1HF</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ES0VO7KF59K6QV1HF</EndToEndId><TxId>E2ES0VO7KF59K6QV1HF</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2ES0VO7KF59K6QV1HF</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">579.82</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-10</Dt></BookgDt><ValDt><Dt>2026-08-10</Dt></ValDt>
+      <AcctSvcrRef>E2EI1GAANMXSW3GOOVZ</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EI1GAANMXSW3GOOVZ</EndToEndId><TxId>E2EI1GAANMXSW3GOOVZ</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE SANT / EREF E2EI1GAANMXSW3GOOVZ</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">118.89</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-11</Dt></BookgDt><ValDt><Dt>2026-08-11</Dt></ValDt>
+      <AcctSvcrRef>E2EF26AQWHA0TL9XSHA</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EF26AQWHA0TL9XSHA</EndToEndId><TxId>E2EF26AQWHA0TL9XSHA</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE RABO / EREF E2EF26AQWHA0TL9XSHA</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">13.19</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-11</Dt></BookgDt><ValDt><Dt>2026-08-11</Dt></ValDt>
+      <AcctSvcrRef>E2EJHRTY302B8M0FEGI</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EJHRTY302B8M0FEGI</EndToEndId><TxId>E2EJHRTY302B8M0FEGI</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2EJHRTY302B8M0FEGI</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">106.10</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-12</Dt></BookgDt><ValDt><Dt>2026-08-12</Dt></ValDt>
+      <AcctSvcrRef>E2EGBHCYE9FVQ900QVG</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EGBHCYE9FVQ900QVG</EndToEndId><TxId>E2EGBHCYE9FVQ900QVG</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE BNPA / EREF E2EGBHCYE9FVQ900QVG</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">146.41</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-13</Dt></BookgDt><ValDt><Dt>2026-08-13</Dt></ValDt>
+      <AcctSvcrRef>E2E3CYDSX0KO5P7V0ZS</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E3CYDSX0KO5P7V0ZS</EndToEndId><TxId>E2E3CYDSX0KO5P7V0ZS</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2E3CYDSX0KO5P7V0ZS</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">170.84</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-14</Dt></BookgDt><ValDt><Dt>2026-08-14</Dt></ValDt>
+      <AcctSvcrRef>E2EZHDJAAKQ2UTT3AA9</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EZHDJAAKQ2UTT3AA9</EndToEndId><TxId>E2EZHDJAAKQ2UTT3AA9</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE RABO / EREF E2EZHDJAAKQ2UTT3AA9</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">387.03</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-17</Dt></BookgDt><ValDt><Dt>2026-08-17</Dt></ValDt>
+      <AcctSvcrRef>E2ESOJMA6WG83ASOEXI</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ESOJMA6WG83ASOEXI</EndToEndId><TxId>E2ESOJMA6WG83ASOEXI</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2ESOJMA6WG83ASOEXI</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">190.94</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-17</Dt></BookgDt><ValDt><Dt>2026-08-17</Dt></ValDt>
+      <AcctSvcrRef>E2EJJHJCTONYFX2SGOX</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EJJHJCTONYFX2SGOX</EndToEndId><TxId>E2EJJHJCTONYFX2SGOX</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE DEUT / EREF E2EJJHJCTONYFX2SGOX</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">9.68</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-18</Dt></BookgDt><ValDt><Dt>2026-08-18</Dt></ValDt>
+      <AcctSvcrRef>E2E5TC50SF7GF08KKJF</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E5TC50SF7GF08KKJF</EndToEndId><TxId>E2E5TC50SF7GF08KKJF</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE BNPA / EREF E2E5TC50SF7GF08KKJF</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">9.67</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-18</Dt></BookgDt><ValDt><Dt>2026-08-18</Dt></ValDt>
+      <AcctSvcrRef>E2E5TC50SF7GF08KKJF-2</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E5TC50SF7GF08KKJF-2</EndToEndId><TxId>E2E5TC50SF7GF08KKJF</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE COBA / EREF E2E5TC50SF7GF08KKJF-2</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">281.62</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-18</Dt></BookgDt><ValDt><Dt>2026-08-18</Dt></ValDt>
+      <AcctSvcrRef>E2EKC6TYRND9HP9Y1UC</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EKC6TYRND9HP9Y1UC</EndToEndId><TxId>E2EKC6TYRND9HP9Y1UC</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE SANT / EREF E2EKC6TYRND9HP9Y1UC</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">37.93</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-19</Dt></BookgDt><ValDt><Dt>2026-08-19</Dt></ValDt>
+      <AcctSvcrRef>E2ED99816CYDD92721D</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ED99816CYDD92721D</EndToEndId><TxId>E2ED99816CYDD92721D</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2ED99816CYDD92721D</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">130.21</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-19</Dt></BookgDt><ValDt><Dt>2026-08-19</Dt></ValDt>
+      <AcctSvcrRef>E2EITX4NRT7NI2M3N04</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EITX4NRT7NI2M3N04</EndToEndId><TxId>E2EITX4NRT7NI2M3N04</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE BNPA / EREF E2EITX4NRT7NI2M3N04</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">186.35</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-20</Dt></BookgDt><ValDt><Dt>2026-08-20</Dt></ValDt>
+      <AcctSvcrRef>E2EP1B7Q9M7P1LSJDJL</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EP1B7Q9M7P1LSJDJL</EndToEndId><TxId>E2EP1B7Q9M7P1LSJDJL</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2EP1B7Q9M7P1LSJDJL</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">48.48</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-20</Dt></BookgDt><ValDt><Dt>2026-08-20</Dt></ValDt>
+      <AcctSvcrRef>E2EJJRM05SILSDH1FLU</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EJJRM05SILSDH1FLU</EndToEndId><TxId>E2EJJRM05SILSDH1FLU</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE DEUT / EREF E2EJJRM05SILSDH1FLU</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">181.51</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-21</Dt></BookgDt><ValDt><Dt>2026-08-21</Dt></ValDt>
+      <AcctSvcrRef>E2ELQFD99EVF6E57XE9</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ELQFD99EVF6E57XE9</EndToEndId><TxId>E2ELQFD99EVF6E57XE9</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2ELQFD99EVF6E57XE9</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">43.96</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-21</Dt></BookgDt><ValDt><Dt>2026-08-21</Dt></ValDt>
+      <AcctSvcrRef>E2EDPVTQQ7GM3OJUUNC</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EDPVTQQ7GM3OJUUNC</EndToEndId><TxId>E2EDPVTQQ7GM3OJUUNC</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE RABO / EREF E2EDPVTQQ7GM3OJUUNC</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">70.20</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-24</Dt></BookgDt><ValDt><Dt>2026-08-24</Dt></ValDt>
+      <AcctSvcrRef>E2E442IJC2R8A64VXDK</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E442IJC2R8A64VXDK</EndToEndId><TxId>E2E442IJC2R8A64VXDK</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE DEUT / EREF E2E442IJC2R8A64VXDK</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">41.61</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-24</Dt></BookgDt><ValDt><Dt>2026-08-24</Dt></ValDt>
+      <AcctSvcrRef>E2EFKZ2J237ZLYJT6HE</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EFKZ2J237ZLYJT6HE</EndToEndId><TxId>E2EFKZ2J237ZLYJT6HE</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2EFKZ2J237ZLYJT6HE</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">386.82</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-24</Dt></BookgDt><ValDt><Dt>2026-08-24</Dt></ValDt>
+      <AcctSvcrRef>E2ERZXORTTHLWLC9HDQ</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ERZXORTTHLWLC9HDQ</EndToEndId><TxId>E2ERZXORTTHLWLC9HDQ</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / NORD &amp; PARTNER GMBH / E2E E2ERZXORTTHLWLC9HDQ</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">43.67</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-25</Dt></BookgDt><ValDt><Dt>2026-08-25</Dt></ValDt>
+      <AcctSvcrRef>E2EYX0WFQABVRSJHOO7</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EYX0WFQABVRSJHOO7</EndToEndId><TxId>E2EYX0WFQABVRSJHOO7</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE SANT / EREF E2EYX0WFQABVRSJHOO7</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">96.46</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-25</Dt></BookgDt><ValDt><Dt>2026-08-25</Dt></ValDt>
+      <AcctSvcrRef>E2E423FECZFYKP57ICY</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E423FECZFYKP57ICY</EndToEndId><TxId>E2E423FECZFYKP57ICY</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE BNPA / EREF E2E423FECZFYKP57ICY</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">130.71</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-26</Dt></BookgDt><ValDt><Dt>2026-08-26</Dt></ValDt>
+      <AcctSvcrRef>E2E1FNZ3YF2O3NE73F1</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E1FNZ3YF2O3NE73F1</EndToEndId><TxId>E2E1FNZ3YF2O3NE73F1</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / NORD &amp; PARTNER GMBH / MANDATE RABO / EREF E2E1FNZ3YF2O3NE73F1</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    </Stmt>
+  </BkToCstmrStmt>
+</Document>

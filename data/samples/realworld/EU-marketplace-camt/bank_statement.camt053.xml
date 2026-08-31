@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.02">
+  <BkToCstmrStmt>
+    <GrpHdr><MsgId>RECON-202608311541</MsgId><CreDtTm>2026-08-31T15:41:17.685514</CreDtTm></GrpHdr>
+    <Stmt><Id>STMT-2026-08</Id>
+      <Acct><Id><IBAN>DE00000000000012345678</IBAN></Id><Ccy>EUR</Ccy></Acct>
+      <Bal><Tp><CdOrPrtry><Cd>OPBD</Cd></CdOrPrtry></Tp><Amt Ccy="EUR">0.00</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-08-01</Dt></Dt></Bal>
+      <Bal><Tp><CdOrPrtry><Cd>CLBD</Cd></CdOrPrtry></Tp><Amt Ccy="EUR">3463.83</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-08-31</Dt></Dt></Bal>
+    <Ntry>
+      <Amt Ccy="EUR">105.26</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-03</Dt></BookgDt><ValDt><Dt>2026-08-03</Dt></ValDt>
+      <AcctSvcrRef>E2EH8ZMGQC64BA0R1QY</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EH8ZMGQC64BA0R1QY</EndToEndId><TxId>E2EH8ZMGQC64BA0R1QY</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / BRUCK GROUP B.V. / E2E E2EH8ZMGQC64BA0R1QY</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">253.85</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-03</Dt></BookgDt><ValDt><Dt>2026-08-03</Dt></ValDt>
+      <AcctSvcrRef>E2E9FM6DMA3JTZZCHTB</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E9FM6DMA3JTZZCHTB</EndToEndId><TxId>E2E9FM6DMA3JTZZCHTB</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE RABO / EREF E2E9FM6DMA3JTZZCHTB</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">40.25</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-04</Dt></BookgDt><ValDt><Dt>2026-08-04</Dt></ValDt>
+      <AcctSvcrRef>E2ECYZQG1D1JBFQHB3P</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ECYZQG1D1JBFQHB3P</EndToEndId><TxId>E2ECYZQG1D1JBFQHB3P</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE UNCR / EREF E2ECYZQG1D1JBFQHB3P</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">113.06</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-04</Dt></BookgDt><ValDt><Dt>2026-08-04</Dt></ValDt>
+      <AcctSvcrRef>E2EPJ69BP80K6Z1QFHV</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EPJ69BP80K6Z1QFHV</EndToEndId><TxId>E2EPJ69BP80K6Z1QFHV</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / BRUCK GROUP B.V. / E2E E2EPJ69BP80K6Z1QFHV</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">32.88</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-05</Dt></BookgDt><ValDt><Dt>2026-08-05</Dt></ValDt>
+      <AcctSvcrRef>E2EA3QG5MQUP4EF8ONT</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EA3QG5MQUP4EF8ONT</EndToEndId><TxId>E2EA3QG5MQUP4EF8ONT</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE SOGE / EREF E2EA3QG5MQUP4EF8ONT</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">111.26</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-05</Dt></BookgDt><ValDt><Dt>2026-08-05</Dt></ValDt>
+      <AcctSvcrRef>E2E2ATURFJ7FCXIQXS0</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E2ATURFJ7FCXIQXS0</EndToEndId><TxId>E2E2ATURFJ7FCXIQXS0</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / BRUCK GROUP B.V. / E2E E2E2ATURFJ7FCXIQXS0</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">76.98</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-06</Dt></BookgDt><ValDt><Dt>2026-08-06</Dt></ValDt>
+      <AcctSvcrRef>E2ERDRMVOBMWOP9S3IM</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ERDRMVOBMWOP9S3IM</EndToEndId><TxId>E2ERDRMVOBMWOP9S3IM</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / BRUCK GROUP B.V. / E2E E2ERDRMVOBMWOP9S3IM</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">13.12</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-06</Dt></BookgDt><ValDt><Dt>2026-08-06</Dt></ValDt>
+      <AcctSvcrRef>E2EIJMJRDLP3N7TCPJ0</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EIJMJRDLP3N7TCPJ0</EndToEndId><TxId>E2EIJMJRDLP3N7TCPJ0</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE UNCR / EREF E2EIJMJRDLP3N7TCPJ0</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">13.13</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-06</Dt></BookgDt><ValDt><Dt>2026-08-06</Dt></ValDt>
+      <AcctSvcrRef>E2EIJMJRDLP3N7TCPJ0-2</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EIJMJRDLP3N7TCPJ0-2</EndToEndId><TxId>E2EIJMJRDLP3N7TCPJ0</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE SOGE / EREF E2EIJMJRDLP3N7TCPJ0-2</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">28.94</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-07</Dt></BookgDt><ValDt><Dt>2026-08-07</Dt></ValDt>
+      <AcctSvcrRef>E2ECXEH9D8JR4G2UHMV</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ECXEH9D8JR4G2UHMV</EndToEndId><TxId>E2ECXEH9D8JR4G2UHMV</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE DEUT / EREF E2ECXEH9D8JR4G2UHMV</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">96.95</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-07</Dt></BookgDt><ValDt><Dt>2026-08-07</Dt></ValDt>
+      <AcctSvcrRef>E2ENYUNPO98YPZZXR1M</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ENYUNPO98YPZZXR1M</EndToEndId><TxId>E2ENYUNPO98YPZZXR1M</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE SOGE / EREF E2ENYUNPO98YPZZXR1M</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">325.94</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-10</Dt></BookgDt><ValDt><Dt>2026-08-10</Dt></ValDt>
+      <AcctSvcrRef>E2E64EHCTHBGQOEOSXZ</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E64EHCTHBGQOEOSXZ</EndToEndId><TxId>E2E64EHCTHBGQOEOSXZ</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE SOGE / EREF E2E64EHCTHBGQOEOSXZ</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">89.11</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-10</Dt></BookgDt><ValDt><Dt>2026-08-10</Dt></ValDt>
+      <AcctSvcrRef>E2E7D7UMDVJ9OUUHDZO</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E7D7UMDVJ9OUUHDZO</EndToEndId><TxId>E2E7D7UMDVJ9OUUHDZO</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / BRUCK GROUP B.V. / E2E E2E7D7UMDVJ9OUUHDZO</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">119.34</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-11</Dt></BookgDt><ValDt><Dt>2026-08-11</Dt></ValDt>
+      <AcctSvcrRef>E2EWT1L08L8U6I8UHKN</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EWT1L08L8U6I8UHKN</EndToEndId><TxId>E2EWT1L08L8U6I8UHKN</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / BRUCK GROUP B.V. / E2E E2EWT1L08L8U6I8UHKN</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">19.97</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-11</Dt></BookgDt><ValDt><Dt>2026-08-11</Dt></ValDt>
+      <AcctSvcrRef>E2EKHMF41OCGH8DGJZW</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EKHMF41OCGH8DGJZW</EndToEndId><TxId>E2EKHMF41OCGH8DGJZW</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE DEUT / EREF E2EKHMF41OCGH8DGJZW</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">45.00</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-12</Dt></BookgDt><ValDt><Dt>2026-08-12</Dt></ValDt>
+      <AcctSvcrRef>E2EXTG2D9YWW7A8L9EH</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EXTG2D9YWW7A8L9EH</EndToEndId><TxId>E2EXTG2D9YWW7A8L9EH</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE COBA / EREF E2EXTG2D9YWW7A8L9EH</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">84.76</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-12</Dt></BookgDt><ValDt><Dt>2026-08-12</Dt></ValDt>
+      <AcctSvcrRef>E2E3ASYH6I8F4CL5FDJ</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E3ASYH6I8F4CL5FDJ</EndToEndId><TxId>E2E3ASYH6I8F4CL5FDJ</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE RABO / EREF E2E3ASYH6I8F4CL5FDJ</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">73.94</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-13</Dt></BookgDt><ValDt><Dt>2026-08-13</Dt></ValDt>
+      <AcctSvcrRef>E2ERUGDVSRZHZWUXJWG</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ERUGDVSRZHZWUXJWG</EndToEndId><TxId>E2ERUGDVSRZHZWUXJWG</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE RABO / EREF E2ERUGDVSRZHZWUXJWG</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">68.29</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-14</Dt></BookgDt><ValDt><Dt>2026-08-14</Dt></ValDt>
+      <AcctSvcrRef>E2EIUML8QNPSMWUOJTK</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EIUML8QNPSMWUOJTK</EndToEndId><TxId>E2EIUML8QNPSMWUOJTK</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE INGB / EREF E2EIUML8QNPSMWUOJTK</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">46.50</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-17</Dt></BookgDt><ValDt><Dt>2026-08-17</Dt></ValDt>
+      <AcctSvcrRef>E2E6FNSDUID57MOOO31</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E6FNSDUID57MOOO31</EndToEndId><TxId>E2E6FNSDUID57MOOO31</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE INGB / EREF E2E6FNSDUID57MOOO31</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">467.22</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-17</Dt></BookgDt><ValDt><Dt>2026-08-17</Dt></ValDt>
+      <AcctSvcrRef>E2E8EUN0MU00WDSKSAY</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E8EUN0MU00WDSKSAY</EndToEndId><TxId>E2E8EUN0MU00WDSKSAY</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE SANT / EREF E2E8EUN0MU00WDSKSAY</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">14.65</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-18</Dt></BookgDt><ValDt><Dt>2026-08-18</Dt></ValDt>
+      <AcctSvcrRef>E2EV9X88SCTGJ73X06U</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EV9X88SCTGJ73X06U</EndToEndId><TxId>E2EV9X88SCTGJ73X06U</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE SANT / EREF E2EV9X88SCTGJ73X06U</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">167.46</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-18</Dt></BookgDt><ValDt><Dt>2026-08-18</Dt></ValDt>
+      <AcctSvcrRef>E2E6N2Q7X86ORWHFPXA</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E6N2Q7X86ORWHFPXA</EndToEndId><TxId>E2E6N2Q7X86ORWHFPXA</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / BRUCK GROUP B.V. / E2E E2E6N2Q7X86ORWHFPXA</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">41.37</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-19</Dt></BookgDt><ValDt><Dt>2026-08-19</Dt></ValDt>
+      <AcctSvcrRef>E2EVV5K06DERY9ZBIY9</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EVV5K06DERY9ZBIY9</EndToEndId><TxId>E2EVV5K06DERY9ZBIY9</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE UNCR / EREF E2EVV5K06DERY9ZBIY9</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">41.37</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-19</Dt></BookgDt><ValDt><Dt>2026-08-19</Dt></ValDt>
+      <AcctSvcrRef>E2EVV5K06DERY9ZBIY9-2</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EVV5K06DERY9ZBIY9-2</EndToEndId><TxId>E2EVV5K06DERY9ZBIY9</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE COBA / EREF E2EVV5K06DERY9ZBIY9-2</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">1.45</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-19</Dt></BookgDt><ValDt><Dt>2026-08-19</Dt></ValDt>
+      <AcctSvcrRef>E2E0ZBXFGVZRO7GEHSZ</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E0ZBXFGVZRO7GEHSZ</EndToEndId><TxId>E2E0ZBXFGVZRO7GEHSZ</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE RABO / EREF E2E0ZBXFGVZRO7GEHSZ</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">1.45</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-19</Dt></BookgDt><ValDt><Dt>2026-08-19</Dt></ValDt>
+      <AcctSvcrRef>E2E0ZBXFGVZRO7GEHSZ-2</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E0ZBXFGVZRO7GEHSZ-2</EndToEndId><TxId>E2E0ZBXFGVZRO7GEHSZ</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE INGB / EREF E2E0ZBXFGVZRO7GEHSZ-2</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">1.45</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-19</Dt></BookgDt><ValDt><Dt>2026-08-19</Dt></ValDt>
+      <AcctSvcrRef>E2E0ZBXFGVZRO7GEHSZ-3</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E0ZBXFGVZRO7GEHSZ-3</EndToEndId><TxId>E2E0ZBXFGVZRO7GEHSZ</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE COBA / EREF E2E0ZBXFGVZRO7GEHSZ-3</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">111.20</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-20</Dt></BookgDt><ValDt><Dt>2026-08-20</Dt></ValDt>
+      <AcctSvcrRef>E2EUY3HJ2K9PC44XSXJ</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EUY3HJ2K9PC44XSXJ</EndToEndId><TxId>E2EUY3HJ2K9PC44XSXJ</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE UNCR / EREF E2EUY3HJ2K9PC44XSXJ</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">42.84</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-20</Dt></BookgDt><ValDt><Dt>2026-08-20</Dt></ValDt>
+      <AcctSvcrRef>E2EGKOF8UQN9UP69LVZ</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EGKOF8UQN9UP69LVZ</EndToEndId><TxId>E2EGKOF8UQN9UP69LVZ</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / BRUCK GROUP B.V. / E2E E2EGKOF8UQN9UP69LVZ</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">6.33</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-21</Dt></BookgDt><ValDt><Dt>2026-08-21</Dt></ValDt>
+      <AcctSvcrRef>E2ES35B3ITG8TDYVZ21</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ES35B3ITG8TDYVZ21</EndToEndId><TxId>E2ES35B3ITG8TDYVZ21</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE RABO / EREF E2ES35B3ITG8TDYVZ21</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">12.26</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-21</Dt></BookgDt><ValDt><Dt>2026-08-21</Dt></ValDt>
+      <AcctSvcrRef>E2ENAJG254YSJIVCIP9</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2ENAJG254YSJIVCIP9</EndToEndId><TxId>E2ENAJG254YSJIVCIP9</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / BRUCK GROUP B.V. / E2E E2ENAJG254YSJIVCIP9</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">127.06</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-21</Dt></BookgDt><ValDt><Dt>2026-08-21</Dt></ValDt>
+      <AcctSvcrRef>E2EMQAV8PBCQ7LDYO0L</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EMQAV8PBCQ7LDYO0L</EndToEndId><TxId>E2EMQAV8PBCQ7LDYO0L</TxId></Refs>
+        <RmtInf><Ustrd>SEPA INST CT / BRUCK GROUP B.V. / E2E E2EMQAV8PBCQ7LDYO0L</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">39.89</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-24</Dt></BookgDt><ValDt><Dt>2026-08-24</Dt></ValDt>
+      <AcctSvcrRef>E2EQ3UC0LLGIK0BWSE9</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EQ3UC0LLGIK0BWSE9</EndToEndId><TxId>E2EQ3UC0LLGIK0BWSE9</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE UNCR / EREF E2EQ3UC0LLGIK0BWSE9</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">380.16</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-24</Dt></BookgDt><ValDt><Dt>2026-08-24</Dt></ValDt>
+      <AcctSvcrRef>E2EB74UMGNHTWP1OHUS</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EB74UMGNHTWP1OHUS</EndToEndId><TxId>E2EB74UMGNHTWP1OHUS</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE SOGE / EREF E2EB74UMGNHTWP1OHUS</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">143.13</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-25</Dt></BookgDt><ValDt><Dt>2026-08-25</Dt></ValDt>
+      <AcctSvcrRef>E2EZL0CWEWPUH9D9E0P</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EZL0CWEWPUH9D9E0P</EndToEndId><TxId>E2EZL0CWEWPUH9D9E0P</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE SOGE / EREF E2EZL0CWEWPUH9D9E0P</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">22.25</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-25</Dt></BookgDt><ValDt><Dt>2026-08-25</Dt></ValDt>
+      <AcctSvcrRef>E2E30BT2S4QCJDIPPCG</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2E30BT2S4QCJDIPPCG</EndToEndId><TxId>E2E30BT2S4QCJDIPPCG</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE UNCR / EREF E2E30BT2S4QCJDIPPCG</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    <Ntry>
+      <Amt Ccy="EUR">83.76</Amt>
+      <CdtDbtInd>CRDT</CdtDbtInd><Sts>BOOK</Sts>
+      <BookgDt><Dt>2026-08-26</Dt></BookgDt><ValDt><Dt>2026-08-26</Dt></ValDt>
+      <AcctSvcrRef>E2EKPJX3WRUN9YS2KTK</AcctSvcrRef>
+      <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+      <NtryDtls><TxDtls>
+        <Refs><EndToEndId>E2EKPJX3WRUN9YS2KTK</EndToEndId><TxId>E2EKPJX3WRUN9YS2KTK</TxId></Refs>
+        <RmtInf><Ustrd>SEPA CREDIT TRANSFER / BRUCK GROUP B.V. / MANDATE UNCR / EREF E2EKPJX3WRUN9YS2KTK</Ustrd></RmtInf>
+      </TxDtls></NtryDtls>
+    </Ntry>
+    </Stmt>
+  </BkToCstmrStmt>
+</Document>
