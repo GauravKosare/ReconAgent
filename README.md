@@ -61,7 +61,7 @@ the tricky 10% — with receipts.
 | Backend | **FastAPI** (Python 3.12+) | One language with the matching core and the agent. |
 | Deterministic matching | **Polars** + **RapidFuzz** + sentence-embeddings | Exact match, probabilistic linkage, semantic narration match. |
 | Database | **MongoDB Atlas (M0 free)** | Heterogeneous raw records as documents; aggregation pipeline for reporting; Atlas Vector Search for narration matching. |
-| Frontend | **Next.js** + Tailwind + shadcn/ui | Upload, dashboards, approval queue, audit-log viewer. |
+| Frontend | **Next.js 15** + Tailwind | Overview, batch dashboard, exception approval queue, audit timeline. Renders from bundled sample data when the API is offline (demo mode). |
 | Queue (optional) | **Upstash Redis** (free) | Batch runs as tracked jobs for throughput metrics. |
 | Hosting | **Vercel** (frontend) · **Hugging Face Spaces / Render** (backend) · **Atlas M0** (DB) | Entire deployment runs on free tiers. |
 | CI | **GitHub Actions** | Lint + unit tests. |
@@ -158,9 +158,19 @@ recovered vs injected, runtime — mean ± std across seeds). Works with no LLM 
 ### 6. API + dashboard
 
 ```bash
-uvicorn app.main:app --reload            # from backend/
-cd ../frontend && npm install && npm run dev
+uvicorn app.main:app --reload            # from backend/  → http://localhost:8000
 ```
+
+```bash
+cd frontend && npm install && npm run dev   # → http://localhost:3000
+```
+
+The dashboard has an **overview**, a **batch dashboard** (KPI cards, resolution
+funnel, exceptions donut, ₹-at-risk bars, quality-gate bullets), an **approval
+queue** (each exception expands to the agent's rationale + evidence + Approve /
+Edit / Reject), and an **audit timeline**. With the API offline it renders a
+bundled sample batch and shows a "Demo mode" badge — so it works for a pitch
+video with no backend.
 
 ---
 

@@ -44,6 +44,21 @@ async def create_batch(
     return run_batch(paths["pg"], paths["bank"], paths["ledger"])
 
 
+@router.get("/batches")
+def list_batches(limit: int = 20) -> list[dict[str, Any]]:
+    from ..db import get_db
+
+    return list(
+        get_db().batches.find({}, {"_id": 1, "started_at": 1, "finished_at": 1,
+                                   "rows_ingested": 1, "auto_match_rate": 1,
+                                   "exceptions": 1, "auto_resolved": 1,
+                                   "pending_approval": 1, "flagged_amount_inr": 1,
+                                   "llm_used": 1, "runtime_seconds": 1})
+        .sort("started_at", -1)
+        .limit(limit)
+    )
+
+
 @router.get("/batches/{batch_id}")
 def get_batch(batch_id: str) -> dict[str, Any]:
     from ..db import get_db

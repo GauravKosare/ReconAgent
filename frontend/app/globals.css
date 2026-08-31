@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f4f7fb;
+  --surface: #eef2f8;
+  --card: #ffffff;
+  --ink: #0f1e33;
+  --muted: #475569;
+  --faint: #94a3b8;
+  --line: #e3e9f2;
+  --brand: #2563eb;
+  --brand-soft: #e6edff;
+  --accent: #ea580c;
+  --ok: #15803d;
+  --warn: #b45309;
+  --bad: #dc2626;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --surface: #0f1a2e;
+    --card: #121e33;
+    --ink: #e8eef8;
+    --muted: #9fb0c8;
+    --faint: #64748b;
+    --line: #1e2c46;
+    --brand: #5b8cff;
+    --brand-soft: #17264a;
+    --accent: #fb923c;
+    --ok: #4ade80;
+    --warn: #fbbf24;
+    --bad: #f87171;
+  }
+}
+
+* { border-color: var(--line); }
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+body { font-family: var(--font-inter), system-ui, sans-serif; }
+
+::selection { background: color-mix(in srgb, var(--brand) 25%, transparent); }
+
+/* frosted panel */
+.glass {
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid color-mix(in srgb, var(--line) 90%, transparent);
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px) scale(.985); }
+  to { opacity: 1; transform: none; }
+}
+.rise { animation: rise .38s cubic-bezier(.2,.7,.2,1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise { animation: none; }
+  * { transition: none !important; }
+}
+
+.num { font-variant-numeric: tabular-nums; }
