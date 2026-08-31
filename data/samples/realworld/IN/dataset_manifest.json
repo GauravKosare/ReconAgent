@@ -1,0 +1,21 @@
+{
+  "profile": "d2c-brand",
+  "region": "IN",
+  "currency": "INR",
+  "merchant": "Sahyadri Bazaar India",
+  "payments": 400,
+  "refunds": 34,
+  "settlement_batches": 34,
+  "aggregated_payouts": 33,
+  "cross_border_payments": 12,
+  "injected_defects": 37,
+  "tax_treatment": "charged",
+  "seed": 7,
+  "files": {
+    "pg": "pg_settlement_recon.csv",
+    "ledger": "ledger_export.csv",
+    "bank": "bank_statement_hdfc.csv",
+    "pg_format": "razorpay",
+    "bank_format": "hdfc"
+  }
+}

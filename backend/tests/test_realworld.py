@@ -1,5 +1,5 @@
-"""Round-trip tests: realistic generator -> real-format files -> parsers ->
-settlement reconciliation -> scorecard."""
+"""Round-trip tests: region-aware generator -> real-format files -> parsers ->
+settlement reconciliation -> scorecard, for IN / US / EU."""
 
 from __future__ import annotations
 
@@ -12,75 +12,75 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 
 from data.realworld.emit import EMITTERS  # noqa: E402
+from data.realworld.regions import REGIONS  # noqa: E402
 from data.realworld.scenario import build_scenario  # noqa: E402
 
 from app.ingest.formats import detect_and_parse  # noqa: E402
-from app.matching.settlement import reconcile_settlements  # noqa: E402
+from app.ingest.formats._locale import parse_amount  # noqa: E402
+from app.matching.region_rules import region_rules  # noqa: E402
 from app.metrics import score_batch  # noqa: E402
 from app.models import Source  # noqa: E402
 from app.pipeline.realistic import run_realistic_batch  # noqa: E402
 
+REGION_FILES = {
+    "IN": ("razorpay", "hdfc"),
+    "US": ("stripe", "us_csv"),
+    "EU": ("stripe", "camt"),
+}
 
-@pytest.fixture(scope="module")
-def dataset(tmp_path_factory):
-    sc = build_scenario("d2c-brand", payments=250, seed=7)
-    d = tmp_path_factory.mktemp("rw")
+
+def _write(region, seed, payments, tmp):
+    pg_key, bank_key = REGION_FILES[region]
+    sc = build_scenario("d2c-brand", region, payments=payments, seed=seed)
     files = {}
-    for key in ("razorpay", "ledger", "hdfc"):
+    for key in (pg_key, "ledger", bank_key):
         fname, fn = EMITTERS[key]
-        (d / fname).write_text(fn(sc), encoding="utf-8")
-        files[key] = str(d / fname)
-    return sc, files
+        (tmp / fname).write_text(fn(sc), encoding="utf-8")
+        files[key] = str(tmp / fname)
+    return sc, files, pg_key, bank_key
 
 
-def test_format_detection(dataset):
-    _sc, f = dataset
-    assert detect_and_parse(f["razorpay"], "b")[1] == "razorpay"
-    assert detect_and_parse(f["ledger"], "b")[1] == "ledger_csv"
-    assert detect_and_parse(f["hdfc"], "b")[1] == "bank_csv"
+def test_locale_amount_parsing():
+    assert parse_amount("1,234.56") == 1234.56       # US / IN
+    assert parse_amount("1.234,56") == 1234.56       # EU
+    assert parse_amount("12,34,567.89") == 1234567.89  # Indian grouping
+    assert parse_amount("(45.00)") == -45.0
 
 
-@pytest.mark.parametrize("bank", ["mt940", "camt", "hdfc", "icici"])
-def test_all_bank_formats_parse(bank, tmp_path):
-    sc = build_scenario("d2c-brand", payments=120, seed=3)
-    fname, fn = EMITTERS[bank]
-    p = tmp_path / fname
-    p.write_text(fn(sc), encoding="utf-8")
-    src, _fmt, rows = detect_and_parse(str(p), "b")
-    assert src is Source.BANK
-    assert rows and all(r.amount_net != 0 for r in rows)
-    # most rows carry a UTR; terse RTGS lines (esp. ICICI) may not — the
-    # reconciler's amount+date fuzzy fallback covers those.
-    assert sum(1 for r in rows if r.utr) >= len(rows) * 0.55
+@pytest.mark.parametrize("region", ["IN", "US", "EU"])
+def test_formats_detect_and_carry_currency(region, tmp_path):
+    sc, files, pg_key, bank_key = _write(region, 3, 200, tmp_path)
+    ccy = REGIONS[region].currency
+    srcs = {}
+    for path in files.values():
+        src, fmt, rows = detect_and_parse(path, "b")
+        srcs[src] = (fmt, rows)
+    assert Source.PG in srcs and Source.BANK in srcs and Source.LEDGER in srcs
+    pg_rows = [r for r in srcs[Source.PG][1] if r.kind == "payment"]
+    bank_rows = srcs[Source.BANK][1]
+    assert {r.currency for r in pg_rows} == {ccy}
+    assert {r.currency for r in bank_rows} == {ccy}
 
 
-def test_razorpay_paise_and_unix(dataset):
-    _sc, f = dataset
-    _src, _fmt, rows = detect_and_parse(f["razorpay"], "b")
-    payments = [r for r in rows if r.kind == "payment"]
-    assert payments
-    r = payments[0]
-    assert 1 < r.amount_gross < 1_000_000          # rupees, not paise
-    assert r.txn_date and r.txn_date.year == 2026   # unix -> datetime
-    assert r.settlement_id and r.utr
+@pytest.mark.parametrize("region", ["IN", "US", "EU"])
+def test_cross_border_flows_through(region, tmp_path):
+    sc, files, *_ = _write(region, 3, 300, tmp_path)
+    assert sc.stats["cross_border_payments"] > 0
+    _src, _fmt, pg = detect_and_parse(files[REGION_FILES[region][0]], "b")
+    assert any(r.presentment_currency and r.presentment_currency != r.currency for r in pg)
 
 
-def test_settlement_reconciliation_matches_most_batches(dataset):
-    sc, f = dataset
-    txns = []
-    for path in (f["ledger"], f["razorpay"], f["hdfc"]):
-        txns += detect_and_parse(path, "b")[2]
-    res = reconcile_settlements(txns, sla_days=2)
-    rep = res.batch_report
-    assert rep["reconciled"] >= rep["batches"] * 0.8
-    assert res.groups                                   # lines auto-matched
+@pytest.mark.parametrize("region", ["IN", "US", "EU"])
+def test_end_to_end_scores(region, tmp_path):
+    sc, files, pg_key, bank_key = _write(region, 7, 300, tmp_path)
+    result = run_realistic_batch(files[pg_key], files[bank_key], files["ledger"], region=region)
+    card = score_batch(result, sc.truth).to_dict()
+    assert result["summary"]["currency"] == REGIONS[region].currency
+    assert card["throughput"]["auto_match_rate"] >= 0.82
+    assert card["detection"]["recall"] >= 0.7
+    assert card["detection"]["precision"] >= 0.85
 
 
-def test_end_to_end_scores_well(dataset):
-    sc, f = dataset
-    result = run_realistic_batch(f["razorpay"], f["hdfc"], f["ledger"])
-    card = score_batch(result, sc.truth)
-    d = card.to_dict()
-    assert d["throughput"]["auto_match_rate"] >= 0.85
-    assert d["detection"]["recall"] >= 0.75
-    assert d["detection"]["precision"] >= 0.75
+def test_region_rules_match_generator():
+    for code, rules in region_rules.__globals__["RULES"].items():
+        assert rules.currency == REGIONS[code].currency

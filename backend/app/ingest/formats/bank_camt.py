@@ -8,7 +8,8 @@ from xml.etree import ElementTree as ET
 
 from ...models import NormalizedTxn, Source
 
-_UTR = re.compile(r"([0-9]{9,14}[A-Za-z0-9]{0,4})")
+_UTR = re.compile(r"(E2E[A-Z0-9]{6,}|[0-9]{9,15}[A-Za-z0-9]{0,4})")
+_CCY = re.compile(r'Ccy="([A-Z]{3})"')
 
 
 def looks_like(text: str) -> bool:
@@ -41,6 +42,8 @@ def _text(el, name) -> str:
 
 def parse_text(text: str, batch_id: str) -> list[NormalizedTxn]:
     root = ET.fromstring(text)
+    ccy_m = _CCY.search(text)
+    currency = ccy_m.group(1) if ccy_m else "EUR"
     out: list[NormalizedTxn] = []
     idx = 0
     for ntry in (e for e in root.iter() if _local(e.tag) == "Ntry"):
@@ -67,6 +70,7 @@ def parse_text(text: str, batch_id: str) -> list[NormalizedTxn]:
                 source=Source.BANK,
                 raw_record_id=f"bank:{idx}",
                 utr=(m.group(1).split("-")[0] if m else ref) or None,
+                currency=currency,
                 kind="payment" if is_credit else "adjustment",
                 amount_gross=amount,
                 amount_net=amount if is_credit else -amount,

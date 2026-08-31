@@ -1,0 +1,421 @@
+balance_transaction_id,type,source_id,customer_facing_amount,customer_facing_currency,gross,fee,net,currency,created_utc,available_on_utc,description,reporting_category,automatic_payout_id,payment_method_type,card_brand,order_id,order_receipt,fx_rate
+txn_mK931fmDUX8kuc,charge,pay_mK931fmDUX8kuc,7.09,usd,7.09,0.47,6.62,usd,2026-08-01 06:00:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,wallet,,order_erKJ9zHX9pKoza,RCPT-US-100058,1.000000
+txn_QrTKYXOyFrdlyG,charge,pay_QrTKYXOyFrdlyG,23.04,usd,23.04,0.86,22.18,usd,2026-08-01 06:54:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,wallet,,order_HNhQ2CTopkf7fj,RCPT-US-100279,1.000000
+txn_7nkpN6wuwyF6B1,charge,pay_7nkpN6wuwyF6B1,11.51,usd,11.51,0.59,10.92,usd,2026-08-01 07:04:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,card,Discover,order_DtuBqrI26bz4DL,RCPT-US-100142,1.000000
+txn_GKcK8pp7ewn1ww,refund,rfnd_GKcK8pp7ewn1ww,11.51,usd,-11.51,0.00,-11.51,usd,2026-08-01 07:04:00,2026-08-03,Refund,refund,po_duOOQzVEF6I3XB,card,Discover,order_DtuBqrI26bz4DL,RCPT-US-100142,1.000000
+txn_dZ58z699UkKvhq,charge,pay_dZ58z699UkKvhq,11.13,usd,11.13,0.06,11.07,usd,2026-08-01 07:51:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,ach,,order_9ZnfhgiN8Qf2K2,RCPT-US-100302,1.000000
+txn_Z7770h2dcPyGOJ,charge,pay_Z7770h2dcPyGOJ,18.63,usd,18.63,0.77,17.86,usd,2026-08-01 08:02:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,card,Visa,order_JhrG80usp2w5dF,RCPT-US-100022,1.000000
+txn_JRYREgQWkkhl9I,charge,pay_JRYREgQWkkhl9I,5.70,usd,5.70,0.03,5.67,usd,2026-08-01 09:29:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,ach,,order_sC6j5xG3Mxboko,RCPT-US-100098,1.000000
+txn_9qFht2uCmIBh7f,charge,pay_9qFht2uCmIBh7f,7.07,usd,7.07,0.48,6.59,usd,2026-08-01 09:31:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,card,Visa,order_c8mq0QR6Ba7kRh,RCPT-US-100236,1.000000
+txn_m996g5RFdli7Jc,charge,pay_m996g5RFdli7Jc,8.18,usd,8.18,0.50,7.68,usd,2026-08-01 12:15:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,wallet,,order_HgI4S6akSRPvFv,RCPT-US-100072,1.000000
+txn_ZjEKDuN0nlDzgl,charge,pay_ZjEKDuN0nlDzgl,14.06,usd,14.06,0.65,13.41,usd,2026-08-01 14:17:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,card,Discover,order_0mASSBalnVvxrf,RCPT-US-100382,1.000000
+txn_wvksotKedd2SZC,charge,pay_wvksotKedd2SZC,6.54,usd,6.54,0.46,6.08,usd,2026-08-01 14:26:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,card,American Express,order_Gd8nULo3g4B2u0,RCPT-US-100253,1.000000
+txn_KGTQj09BBG7svM,charge,pay_KGTQj09BBG7svM,7.48,eur,7.99,0.66,7.33,usd,2026-08-01 14:51:00,2026-08-03,Payment (fx EUR->USD),charge,po_duOOQzVEF6I3XB,card,MasterCard,order_QB1mokdhPscGW3,RCPT-US-100069,1.068200
+txn_N7HRl4vg9Ur9YZ,charge,pay_N7HRl4vg9Ur9YZ,13.74,usd,13.74,0.63,13.11,usd,2026-08-01 15:12:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,wallet,,order_sBEm1sbH1v5RgJ,RCPT-US-100183,1.000000
+txn_wJ0HgV7FIHsG3z,charge,pay_wJ0HgV7FIHsG3z,6.45,usd,6.45,0.03,6.42,usd,2026-08-01 15:16:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,ach,,order_44mCmzf1PpnTH0,RCPT-US-100307,1.000000
+txn_NmDJAkSN45wxQd,charge,pay_NmDJAkSN45wxQd,7.72,usd,7.72,0.49,7.23,usd,2026-08-01 11:19:00,2026-08-03,Payment,charge,po_0TSIzblPPOs7aP,card,Discover,order_ZLaltLSpWcgtPw,RCPT-US-100354,1.000000
+txn_ejCXHLt3JER6OG,refund,rfnd_ejCXHLt3JER6OG,7.72,usd,-7.72,0.00,-7.72,usd,2026-08-01 11:19:00,2026-08-03,Refund,refund,po_0TSIzblPPOs7aP,card,Discover,order_ZLaltLSpWcgtPw,RCPT-US-100354,1.000000
+txn_4M9afZcxn5lVsh,charge,pay_4M9afZcxn5lVsh,9.48,cad,6.78,0.61,6.17,usd,2026-08-01 16:04:00,2026-08-03,Payment (fx CAD->USD),charge,po_duOOQzVEF6I3XB,card,MasterCard,order_v0FKXUXE0TgLHp,RCPT-US-100077,0.715400
+txn_wjKzbfUekfrv5v,charge,pay_wjKzbfUekfrv5v,27.90,usd,27.90,1.00,26.90,usd,2026-08-01 16:50:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,card,Discover,order_eVlxNYrr0YA5s8,RCPT-US-100333,1.000000
+txn_YsidYyzd1M89OR,charge,pay_YsidYyzd1M89OR,34.61,usd,34.61,1.17,33.44,usd,2026-08-01 18:03:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,card,MasterCard,order_Rv91gPIsTZCOGN,RCPT-US-100200,1.000000
+txn_X85AbasDgGf9l1,charge,pay_X85AbasDgGf9l1,21.22,usd,21.22,0.83,20.39,usd,2026-08-01 20:40:00,2026-08-03,Payment,charge,po_duOOQzVEF6I3XB,card,Discover,order_2u3CZsIfxfLJxg,RCPT-US-100237,1.000000
+txn_IDzgk7WtkcsQVI,charge,pay_IDzgk7WtkcsQVI,5.57,usd,5.57,0.44,5.13,usd,2026-08-02 06:10:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,card,Visa,order_hpswmZVFVROtax,RCPT-US-100384,1.000000
+txn_rLRWzBQCABugjM,charge,pay_rLRWzBQCABugjM,7.38,usd,7.38,0.48,6.90,usd,2026-08-02 08:12:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,wallet,,order_geP7cGq0pbqfi1,RCPT-US-100012,1.000000
+txn_I34E0mfLA7ujvz,charge,pay_I34E0mfLA7ujvz,3.52,usd,3.52,0.02,3.50,usd,2026-08-02 08:27:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,ach,,order_KfOrurvSzNi1KJ,RCPT-US-100117,1.000000
+txn_8ZtjCasgjCY4tl,charge,pay_8ZtjCasgjCY4tl,21.69,eur,23.17,1.68,21.49,usd,2026-08-02 09:13:00,2026-08-04,Payment (fx EUR->USD),charge,po_tnPNbLrXXNQhhu,card,American Express,order_4WCS8Lx7q1wY7m,RCPT-US-100292,1.068200
+txn_CK7l2LUA530dTa,charge,pay_CK7l2LUA530dTa,13.35,usd,13.35,0.64,12.71,usd,2026-08-02 09:56:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,card,MasterCard,order_mQ94f8EPrYrtlO,RCPT-US-100080,1.000000
+txn_kmzqhV9pAt5ttf,charge,pay_kmzqhV9pAt5ttf,10.72,usd,10.72,0.56,10.16,usd,2026-08-02 11:27:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,wallet,,order_j2jJAVet10ZXkB,RCPT-US-100251,1.000000
+txn_QiJKKJJHlyzHKT,charge,pay_QiJKKJJHlyzHKT,7.40,usd,7.40,0.49,6.91,usd,2026-08-02 12:39:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,card,American Express,order_gkkGjfadiwAuDP,RCPT-US-100184,1.000000
+txn_So7V9VhkONjy0N,charge,pay_So7V9VhkONjy0N,32.72,usd,32.72,1.12,31.60,usd,2026-08-02 13:37:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,card,MasterCard,order_S1zkitBOxLBzgR,RCPT-US-100134,1.000000
+txn_rnH4jxQIvYX5OX,charge,pay_rnH4jxQIvYX5OX,10.74,usd,10.74,0.57,10.17,usd,2026-08-04 09:48:00,2026-08-04,Payment,charge,po_QSeLuxAHpCI3Nl,card,American Express,order_CqcHwQq7YD2aTb,RCPT-US-100381,1.000000
+txn_rX54bAAQofoK1M,charge,pay_rX54bAAQofoK1M,11.26,usd,11.26,0.58,10.68,usd,2026-08-02 14:13:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,card,Visa,order_e0I3Tbtou7NJpZ,RCPT-US-100206,1.000000
+txn_tSZcfDbF51ZwUM,charge,pay_tSZcfDbF51ZwUM,1111.55,inr,13.05,1.02,12.03,usd,2026-08-02 15:30:00,2026-08-04,Payment (fx INR->USD),charge,po_tnPNbLrXXNQhhu,card,Discover,order_yUJEQUWhwhgM2U,RCPT-US-100349,0.011740
+txn_HGbEksNl1u3Rrf,charge,pay_HGbEksNl1u3Rrf,8.28,usd,8.28,0.50,7.78,usd,2026-08-02 15:47:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,wallet,,order_SLkbBSdlUTjRop,RCPT-US-100210,1.000000
+txn_swHGETh8lMYQOy,charge,pay_swHGETh8lMYQOy,3.48,cad,2.49,0.41,2.08,usd,2026-08-02 16:45:00,2026-08-04,Payment (fx CAD->USD),charge,po_tnPNbLrXXNQhhu,card,Discover,order_mAAiTdR9Up14Pe,RCPT-US-100023,0.715400
+txn_f4rpaFQOqb7XOf,refund,rfnd_f4rpaFQOqb7XOf,3.48,cad,-2.49,0.00,-2.49,usd,2026-08-02 16:45:00,2026-08-04,Refund (fx CAD->USD),refund,po_tnPNbLrXXNQhhu,card,Discover,order_mAAiTdR9Up14Pe,RCPT-US-100023,0.715400
+txn_uHF7KVMLp7hvdC,charge,pay_uHF7KVMLp7hvdC,11.48,usd,11.48,0.59,10.89,usd,2026-08-02 17:03:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,card,American Express,order_TquY1XVcKGAFRF,RCPT-US-100025,1.000000
+txn_NfMTx0MOdOQw4S,charge,pay_NfMTx0MOdOQw4S,10.41,usd,10.41,0.56,9.85,usd,2026-08-02 17:21:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,card,Visa,order_G8nfnL5Ofa6qD8,RCPT-US-100024,1.000000
+txn_FHfcqEocybODPk,charge,pay_FHfcqEocybODPk,11.39,usd,11.39,0.58,10.81,usd,2026-08-02 19:04:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,wallet,,order_x9hZBuTO89RISS,RCPT-US-100396,1.000000
+txn_KYA0Z11vEcgiHr,charge,pay_KYA0Z11vEcgiHr,4.94,usd,4.94,0.42,4.52,usd,2026-08-02 20:14:00,2026-08-04,Payment,charge,po_tnPNbLrXXNQhhu,card,American Express,order_7m4Fk5wCvHtqXM,RCPT-US-100347,1.000000
+txn_1OzqDVB7n5sVRm,charge,pay_1OzqDVB7n5sVRm,17.89,usd,17.89,0.75,17.14,usd,2026-08-03 06:22:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,American Express,order_gMGGWSEigH9dwP,RCPT-US-100285,1.000000
+txn_7sICK1cSwO3lzU,charge,pay_7sICK1cSwO3lzU,9.22,usd,9.22,0.53,8.69,usd,2026-08-03 06:26:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,Visa,order_tjuJT6QUj1NJ8z,RCPT-US-100118,1.000000
+txn_rEVzLQqtcfcc2B,charge,pay_rEVzLQqtcfcc2B,9.41,usd,9.41,0.54,8.87,usd,2026-08-03 10:31:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,Discover,order_8OBvZdT4z3igjA,RCPT-US-100356,1.000000
+txn_pJd31kjAC2yueW,charge,pay_pJd31kjAC2yueW,36.47,usd,36.47,1.22,35.25,usd,2026-08-03 12:06:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,Discover,order_got6rZ8bnTKjpq,RCPT-US-100171,1.000000
+txn_7nwQQ61e2uWhle,charge,pay_7nwQQ61e2uWhle,12.24,usd,12.24,0.61,11.63,usd,2026-08-03 12:33:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,MasterCard,order_kOJE7whXhNhK0X,RCPT-US-100110,1.000000
+txn_ry6bHJ0HUR6ay9,charge,pay_ry6bHJ0HUR6ay9,11.23,usd,11.23,1.62,9.61,usd,2026-08-03 12:41:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,MasterCard,order_swuZDhOyoDUiuk,RCPT-US-100327,1.000000
+txn_ytyzEHzUPDOl8u,charge,pay_ytyzEHzUPDOl8u,8.52,usd,8.52,0.51,8.01,usd,2026-08-03 13:27:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,Visa,order_RWKs1Xat0RKccL,RCPT-US-100188,1.000000
+txn_8u8EU3mBHQa7nL,charge,pay_8u8EU3mBHQa7nL,16.38,usd,16.38,0.09,16.29,usd,2026-08-03 13:39:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,ach,,order_ogV1CcHUjNK3Ti,RCPT-US-100242,1.000000
+txn_iAEXEJjHufpgs4,charge,pay_iAEXEJjHufpgs4,41.97,usd,41.97,1.36,40.61,usd,2026-08-03 15:04:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,Visa,order_R6xcL5GQTZassL,RCPT-US-100145,1.000000
+txn_icx7u7UnDGxdFo,charge,pay_icx7u7UnDGxdFo,18.65,aud,12.06,1.91,10.15,usd,2026-08-03 15:24:00,2026-08-05,Payment (fx AUD->USD),charge,po_XX54spE95FRy4I,card,American Express,order_7RIC286jIEdrnC,RCPT-US-100160,0.646800
+txn_F0k5Uy8Ih1WolA,charge,pay_F0k5Uy8Ih1WolA,8.07,usd,8.07,0.50,7.57,usd,2026-08-03 16:57:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,Visa,order_qAN8EpSQmGlJ2O,RCPT-US-100051,1.000000
+txn_R5ydeVTmXz41L2,charge,pay_R5ydeVTmXz41L2,24.19,usd,24.19,0.89,23.30,usd,2026-08-03 17:35:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,wallet,,order_iqLKFJ5khNeV3G,RCPT-US-100213,1.000000
+txn_2Xe87XHoEFZxE3,charge,pay_2Xe87XHoEFZxE3,5.55,usd,5.55,0.44,5.11,usd,2026-08-03 18:04:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,Visa,order_5XTXgQBN3IEr4g,RCPT-US-100290,1.000000
+txn_IiuoiSU6Y57QWH,charge,pay_IiuoiSU6Y57QWH,9.56,usd,9.56,0.05,9.51,usd,2026-08-03 18:21:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,ach,,order_UzFGzrjLZtTDgF,RCPT-US-100394,1.000000
+txn_1h5Eu1CyFlPs2V,charge,pay_1h5Eu1CyFlPs2V,9.28,usd,9.28,0.53,8.75,usd,2026-08-03 19:51:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,American Express,order_OI3UzvckLIFP6e,RCPT-US-100304,1.000000
+txn_zJLO3aJtW7jL9Y,charge,pay_zJLO3aJtW7jL9Y,5.67,usd,5.67,0.44,5.23,usd,2026-08-03 20:32:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,MasterCard,order_bvqyAFaDBHI7zL,RCPT-US-100316,1.000000
+txn_nZn2M1eLkNCZ8h,charge,pay_nZn2M1eLkNCZ8h,12.68,usd,12.68,0.62,12.06,usd,2026-08-03 20:45:00,2026-08-05,Payment,charge,po_XX54spE95FRy4I,card,MasterCard,order_KYWHJPu05MC4j1,RCPT-US-100033,1.000000
+txn_OFwKJ1QBbZnhHS,charge,pay_OFwKJ1QBbZnhHS,13.42,usd,13.42,0.63,12.79,usd,2026-08-04 06:06:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,wallet,,order_k4HFqlNOPmxygt,RCPT-US-100122,1.000000
+txn_Fzwdl6LAU87aya,charge,pay_Fzwdl6LAU87aya,5.17,usd,5.17,0.43,4.74,usd,2026-08-04 06:13:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,card,American Express,order_CFyPJugrKJzWxI,RCPT-US-100123,1.000000
+txn_qBM1k325TE4xHK,charge,pay_qBM1k325TE4xHK,14.87,usd,14.87,0.67,14.20,usd,2026-08-04 06:20:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,card,Visa,order_cWHMk3071YR7MQ,RCPT-US-100266,1.000000
+txn_UxBUNdH9SdoXkx,charge,pay_UxBUNdH9SdoXkx,13.38,usd,13.38,0.64,12.74,usd,2026-08-04 08:31:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,card,MasterCard,order_88rsXe87oMi93q,RCPT-US-100181,1.000000
+txn_9Ml7mfz7VWGR6V,charge,pay_9Ml7mfz7VWGR6V,3.88,usd,3.88,0.02,3.86,usd,2026-08-04 08:39:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,ach,,order_Ei7t7Dqt8gmPvD,RCPT-US-100324,1.000000
+txn_2XHWl0ttyd6J9D,charge,pay_2XHWl0ttyd6J9D,17.36,usd,17.36,0.09,17.27,usd,2026-08-04 09:11:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,ach,,order_buNEuzcqley577,RCPT-US-100241,1.000000
+txn_Pg7tuHlOcVNk5U,refund,rfnd_Pg7tuHlOcVNk5U,17.36,usd,-17.36,0.00,-17.36,usd,2026-08-04 09:11:00,2026-08-06,Refund,refund,po_9LSfiwj5fiT5eI,ach,,order_buNEuzcqley577,RCPT-US-100241,1.000000
+txn_oK6PpIng6l9dIe,charge,pay_oK6PpIng6l9dIe,13.76,usd,13.76,0.07,13.69,usd,2026-08-04 10:38:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,ach,,order_AJNtyiWTS178D7,RCPT-US-100273,1.000000
+txn_V6tV0TJLy9Bl20,charge,pay_V6tV0TJLy9Bl20,5.14,usd,5.14,0.43,4.71,usd,2026-08-04 11:00:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,card,American Express,order_3EdiuUO7gGAXNa,RCPT-US-100254,1.000000
+txn_2J6fID1Ks3Mkf3,charge,pay_2J6fID1Ks3Mkf3,3.17,usd,3.17,1.08,2.09,usd,2026-08-04 11:31:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,ach,,order_mJOeRdAGZQu6uu,RCPT-US-100272,1.000000
+txn_N88hXJsi6BwhTp,charge,pay_N88hXJsi6BwhTp,4.42,usd,4.42,0.02,4.40,usd,2026-08-04 17:21:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,ach,,order_3Fs2QhX6KWxOii,RCPT-US-100004,1.000000
+txn_tI5V2a39cSaJUJ,charge,pay_tI5V2a39cSaJUJ,15.13,usd,15.13,0.68,14.45,usd,2026-08-04 17:50:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,card,Visa,order_pLtKWRD7r2PVC2,RCPT-US-100192,1.000000
+txn_RkLh6WOFCvaxTb,charge,pay_RkLh6WOFCvaxTb,10.20,usd,10.20,0.56,9.64,usd,2026-08-04 18:04:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,card,Discover,order_hxI0esUzO94CM8,RCPT-US-100388,1.000000
+txn_XF0DAJ2Z8KdzKH,charge,pay_XF0DAJ2Z8KdzKH,9.77,usd,9.77,0.55,9.22,usd,2026-08-06 14:20:00,2026-08-06,Payment,charge,po_24HVvdd0oQ1Xi2,card,American Express,order_vg4UnE799FIp1w,RCPT-US-100343,1.000000
+txn_kbji1sKxri6tzo,charge,pay_kbji1sKxri6tzo,6.43,usd,6.43,0.46,5.97,usd,2026-08-04 18:23:00,2026-08-06,Payment,charge,po_9LSfiwj5fiT5eI,card,Discover,order_79CTwNNKkZc6Ob,RCPT-US-100268,1.000000
+txn_NaQzoQLDye3Vay,charge,pay_NaQzoQLDye3Vay,15.71,usd,15.71,0.70,15.01,usd,2026-08-06 19:48:00,2026-08-06,Payment,charge,po_24HVvdd0oQ1Xi2,card,Visa,order_IfktSsGFtqjZRd,RCPT-US-100373,1.000000
+txn_wwr7aymBjX8ugH,charge,pay_wwr7aymBjX8ugH,5.50,usd,5.50,0.43,5.07,usd,2026-08-05 07:02:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,wallet,,order_iadLaLstHxsc7o,RCPT-US-100295,1.000000
+txn_kbIAM7lNG1odPw,charge,pay_kbIAM7lNG1odPw,12.30,usd,12.30,0.61,11.69,usd,2026-08-05 09:50:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,card,Discover,order_QgbhiVuDBOuBOg,RCPT-US-100158,1.000000
+txn_l7FlLTlWdWxsbu,charge,pay_l7FlLTlWdWxsbu,2.88,usd,2.88,0.37,2.51,usd,2026-08-05 10:46:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,card,MasterCard,order_37E1fU5LR5QiBw,RCPT-US-100100,1.000000
+txn_M5mS3gpGMPuD9I,refund,rfnd_M5mS3gpGMPuD9I,2.88,usd,-2.88,0.00,-2.88,usd,2026-08-05 10:46:00,2026-08-07,Refund,refund,po_pAEwyafPZYOIB1,card,MasterCard,order_37E1fU5LR5QiBw,RCPT-US-100100,1.000000
+txn_TfU94gymM219KZ,charge,pay_TfU94gymM219KZ,11.33,usd,11.33,0.59,10.74,usd,2026-08-05 11:10:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,card,Discover,order_hAA2LG8PdkzqQv,RCPT-US-100127,1.000000
+txn_WqOsFbhGvXSSw8,charge,pay_WqOsFbhGvXSSw8,2.15,gbp,2.68,0.42,2.26,usd,2026-08-05 12:03:00,2026-08-07,Payment (fx GBP->USD),charge,po_pAEwyafPZYOIB1,card,MasterCard,order_Ja6gRmDo5SEryI,RCPT-US-100344,1.244600
+txn_9UNb569ABDQk5f,charge,pay_9UNb569ABDQk5f,13.90,usd,13.90,0.65,13.25,usd,2026-08-05 12:36:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,card,MasterCard,order_T6ixTinbh0hurb,RCPT-US-100076,1.000000
+txn_6xqIhGsEUK0im1,charge,pay_6xqIhGsEUK0im1,18.45,usd,18.45,0.76,17.69,usd,2026-08-05 12:44:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,card,American Express,order_aKPLYwzbtVXH5P,RCPT-US-100161,1.000000
+txn_LjgmTHAVEXavVy,charge,pay_LjgmTHAVEXavVy,5.03,usd,5.03,0.03,5.00,usd,2026-08-05 12:57:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,ach,,order_VsGL6dy6QLJWn6,RCPT-US-100350,1.000000
+txn_fmy0AJI9N5XOZV,charge,pay_fmy0AJI9N5XOZV,13.78,cad,9.86,0.75,9.11,usd,2026-08-05 13:01:00,2026-08-07,Payment (fx CAD->USD),charge,po_pAEwyafPZYOIB1,card,Discover,order_YI9kclkh9Cplm1,RCPT-US-100270,0.715400
+txn_BGEK8hf0dnbzzD,charge,pay_BGEK8hf0dnbzzD,11.76,gbp,14.64,0.96,13.68,usd,2026-08-05 15:12:00,2026-08-07,Payment (fx GBP->USD),charge,po_pAEwyafPZYOIB1,card,Visa,order_pArxlUJtPWRKCR,RCPT-US-100079,1.244600
+txn_W3jtZVDtVqU4ye,charge,pay_W3jtZVDtVqU4ye,6.45,usd,6.45,0.46,5.99,usd,2026-08-05 16:04:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,card,MasterCard,order_gX5PzPWJINA43q,RCPT-US-100099,1.000000
+txn_XGhLEUbMgqBOIa,charge,pay_XGhLEUbMgqBOIa,9.84,usd,9.84,0.55,9.29,usd,2026-08-05 16:59:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,card,Visa,order_Zx7doCz44CC3pn,RCPT-US-100071,1.000000
+txn_dtwqworgHdW6YC,charge,pay_dtwqworgHdW6YC,15.82,usd,15.82,1.04,14.78,usd,2026-08-05 17:17:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,card,Visa,order_Iy8wt5TibhJpfL,RCPT-US-100364,1.000000
+txn_kpl76DfkhC0Hxz,charge,pay_kpl76DfkhC0Hxz,8.99,usd,8.99,0.53,8.46,usd,2026-08-05 18:19:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,card,Discover,order_aks6ZcEArYml8q,RCPT-US-100056,1.000000
+txn_ycjy4kAcc4BmoV,charge,pay_ycjy4kAcc4BmoV,4.90,usd,4.90,0.42,4.48,usd,2026-08-05 18:22:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,card,Visa,order_qZg8J3D6yjhJfL,RCPT-US-100175,1.000000
+txn_8QZJi6gkfsUFRD,charge,pay_8QZJi6gkfsUFRD,10.23,usd,10.23,0.05,10.18,usd,2026-08-05 19:27:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,ach,,order_zsLb5ER8BoFzQF,RCPT-US-100011,1.000000
+txn_a76RnIChtP8HKQ,refund,rfnd_a76RnIChtP8HKQ,10.23,usd,-5.12,0.00,-5.12,usd,2026-08-05 19:27:00,2026-08-07,Refund,refund,po_pAEwyafPZYOIB1,ach,,order_zsLb5ER8BoFzQF,RCPT-US-100011,1.000000
+txn_d1rZiK99MkexFI,charge,pay_d1rZiK99MkexFI,11.14,usd,11.14,0.58,10.56,usd,2026-08-05 19:32:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,card,Visa,order_XxnDZPDXCAsm9N,RCPT-US-100094,1.000000
+txn_5sCw3EvnSBGvTy,charge,pay_5sCw3EvnSBGvTy,31.29,usd,31.29,1.06,30.23,usd,2026-08-05 20:01:00,2026-08-07,Payment,charge,po_pAEwyafPZYOIB1,wallet,,order_UUASuFsnSXlVOz,RCPT-US-100331,1.000000
+txn_92FN3HIeBRukPc,charge,pay_92FN3HIeBRukPc,19.94,usd,19.94,0.80,19.14,usd,2026-08-07 20:09:00,2026-08-08,Payment,charge,po_4KsbQwAVnJXKcR,card,Visa,order_uvL7DXxvts2Juw,RCPT-US-100057,1.000000
+txn_RAUsCpdiSjVsa3,charge,pay_RAUsCpdiSjVsa3,11.70,usd,11.70,0.59,11.11,usd,2026-08-06 06:16:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,American Express,order_vtRZbUiaYJYwY4,RCPT-US-100108,1.000000
+txn_nMi7QMx5A8P9Uv,charge,pay_nMi7QMx5A8P9Uv,4.18,cad,2.99,0.43,2.56,usd,2026-08-07 06:33:00,2026-08-10,Payment (fx CAD->USD),charge,po_V3NbdLgGohKWdg,wallet,,order_42gDCqTAntz8GB,RCPT-US-100260,0.715400
+txn_nlJ9zx08GPch4Y,charge,pay_nlJ9zx08GPch4Y,11.49,usd,11.49,0.59,10.90,usd,2026-08-08 06:58:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,American Express,order_8WJzcL2j9xS7XB,RCPT-US-100220,1.000000
+txn_C6yFSJEKqIFYnz,charge,pay_C6yFSJEKqIFYnz,10.28,usd,10.28,0.06,10.22,usd,2026-08-08 07:02:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,ach,,order_TG2yAiSz4VvCCG,RCPT-US-100312,1.000000
+txn_EzcoUGNRqyXEHt,charge,pay_EzcoUGNRqyXEHt,12.50,usd,12.50,0.61,11.89,usd,2026-08-07 07:05:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,MasterCard,order_eeQLgAopzg5Bpe,RCPT-US-100149,1.000000
+txn_5FKyqqlTqQLCJe,charge,pay_5FKyqqlTqQLCJe,7.15,usd,7.15,0.48,6.67,usd,2026-08-08 07:54:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Visa,order_G1DYQpFklODESA,RCPT-US-100146,1.000000
+txn_UEZQPghOpzGpdC,charge,pay_UEZQPghOpzGpdC,11.99,usd,11.99,0.60,11.39,usd,2026-08-08 08:15:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,MasterCard,order_GAe40O1c6XC4SO,RCPT-US-100029,1.000000
+txn_0nLgTEToD4uyet,charge,pay_0nLgTEToD4uyet,7.36,usd,7.36,0.49,6.87,usd,2026-08-07 08:26:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Discover,order_iAY2bv6dFvpcLO,RCPT-US-100039,1.000000
+txn_yJwqSrfOZe9NY3,charge,pay_yJwqSrfOZe9NY3,8.72,usd,8.72,0.05,8.67,usd,2026-08-08 08:58:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,ach,,order_ops0nLDV4nxgNl,RCPT-US-100308,1.000000
+txn_pNNSw64AtQbtH8,charge,pay_pNNSw64AtQbtH8,11.48,usd,11.48,0.59,10.89,usd,2026-08-06 09:33:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Visa,order_LncnrKs8vSwZPV,RCPT-US-100144,1.000000
+txn_fwaVAsWahfVM4V,charge,pay_fwaVAsWahfVM4V,9.70,usd,9.70,0.54,9.16,usd,2026-08-07 09:40:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Visa,order_s2LzOyUfXf15Ha,RCPT-US-100321,1.000000
+txn_cSEXEoUWyqiJSC,charge,pay_cSEXEoUWyqiJSC,8.67,eur,9.26,0.72,8.54,usd,2026-08-07 10:12:00,2026-08-10,Payment (fx EUR->USD),charge,po_V3NbdLgGohKWdg,card,MasterCard,order_blfuGI2DUqVER7,RCPT-US-100338,1.068200
+txn_u7RgaWePU0s8X7,charge,pay_u7RgaWePU0s8X7,4.96,usd,4.96,0.03,4.93,usd,2026-08-07 10:26:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,ach,,order_SKcBqchv8jz9hP,RCPT-US-100365,1.000000
+txn_tLMmF1F4mufwRL,charge,pay_tLMmF1F4mufwRL,9.79,usd,9.79,0.55,9.24,usd,2026-08-07 10:36:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,MasterCard,order_NInqtozMlTMAEs,RCPT-US-100067,1.000000
+txn_TyiszKHFupE7TB,charge,pay_TyiszKHFupE7TB,23.66,usd,23.66,0.90,22.76,usd,2026-08-08 11:04:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,American Express,order_xu6XtLnZogva5H,RCPT-US-100207,1.000000
+txn_TJQGG4PHJfRiiH,charge,pay_TJQGG4PHJfRiiH,12.13,eur,12.96,0.89,12.07,usd,2026-08-06 11:10:00,2026-08-10,Payment (fx EUR->USD),charge,po_V3NbdLgGohKWdg,card,Discover,order_UdPKkiCgQX8MSZ,RCPT-US-100121,1.068200
+txn_fiwgAq3Jm9Y1j5,charge,pay_fiwgAq3Jm9Y1j5,19.05,usd,19.05,0.76,18.29,usd,2026-08-07 11:19:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,wallet,,order_yKLB6pj4wH3kXD,RCPT-US-100167,1.000000
+txn_cj6fGEvPqyX2IF,charge,pay_cj6fGEvPqyX2IF,12.29,usd,12.29,0.07,12.22,usd,2026-08-06 11:24:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,ach,,order_nrwaeeYrIn3bfL,RCPT-US-100258,1.000000
+txn_otVSOdljWtnpba,charge,pay_otVSOdljWtnpba,28.38,usd,28.38,1.01,27.37,usd,2026-08-07 11:34:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Discover,order_FSHeJWLnL4qwVO,RCPT-US-100289,1.000000
+txn_1HlCpcQ37MJcYw,charge,pay_1HlCpcQ37MJcYw,14.81,usd,14.81,0.67,14.14,usd,2026-08-08 12:12:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,American Express,order_nRXJmhKbJ8R51P,RCPT-US-100208,1.000000
+txn_s4emJH6fmYEsPz,charge,pay_s4emJH6fmYEsPz,11.45,usd,11.45,0.59,10.86,usd,2026-08-06 12:41:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Discover,order_4OAZkyv0OovvpC,RCPT-US-100139,1.000000
+txn_GSIEu79wzeB9Jc,charge,pay_GSIEu79wzeB9Jc,20.92,usd,20.92,0.11,20.81,usd,2026-08-08 12:47:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,ach,,order_NsQMTodm8h2xMh,RCPT-US-100323,1.000000
+txn_eA0QrP2UIaQXUU,charge,pay_eA0QrP2UIaQXUU,19.09,usd,19.09,0.78,18.31,usd,2026-08-06 13:10:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,MasterCard,order_JBg1TvmfqApOF5,RCPT-US-100265,1.000000
+txn_TejqZHKpKENg5z,charge,pay_TejqZHKpKENg5z,9.82,usd,9.82,0.55,9.27,usd,2026-08-06 13:26:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,MasterCard,order_fjOc6VwcbIjMPF,RCPT-US-100020,1.000000
+txn_EWNaA13puvoiQj,charge,pay_EWNaA13puvoiQj,10.77,usd,10.77,0.57,10.20,usd,2026-08-07 14:48:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Visa,order_WoKkoUWTGCvLsW,RCPT-US-100136,1.000000
+txn_NhgtltlDd5g9sd,charge,pay_NhgtltlDd5g9sd,7.95,aud,5.14,0.53,4.61,usd,2026-08-07 14:51:00,2026-08-10,Payment (fx AUD->USD),charge,po_V3NbdLgGohKWdg,card,MasterCard,order_4AhAyCrbHvQaUS,RCPT-US-100309,0.646800
+txn_hXr6S0wrTStGVL,charge,pay_hXr6S0wrTStGVL,6.87,usd,6.87,0.47,6.40,usd,2026-08-10 11:00:00,2026-08-10,Payment,charge,po_kgNFAgY1YlsImo,card,Discover,order_GQtM9kZU7N642X,RCPT-US-100378,1.000000
+txn_UnAieNf1dK0C7e,refund,rfnd_UnAieNf1dK0C7e,6.87,usd,-6.87,0.00,-6.87,usd,2026-08-10 11:00:00,2026-08-10,Refund,refund,po_kgNFAgY1YlsImo,card,Discover,order_GQtM9kZU7N642X,RCPT-US-100378,1.000000
+txn_v1VzwvrA0QHPXg,charge,pay_v1VzwvrA0QHPXg,8.18,usd,8.18,0.50,7.68,usd,2026-08-07 15:07:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,wallet,,order_vh8WufC0mWGWjU,RCPT-US-100095,1.000000
+txn_uHvdtmtNR11b7g,charge,pay_uHvdtmtNR11b7g,8.02,usd,8.02,0.50,7.52,usd,2026-08-08 15:11:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,wallet,,order_Df8Ac3F3E5yjra,RCPT-US-100169,1.000000
+txn_iSRHxotcxXhePt,charge,pay_iSRHxotcxXhePt,4.73,gbp,5.89,0.69,5.20,usd,2026-08-08 15:17:00,2026-08-10,Payment (fx GBP->USD),charge,po_V3NbdLgGohKWdg,card,Visa,order_73giYiSSZ1tC0Q,RCPT-US-100190,1.244600
+txn_69fG30gVzPBQge,charge,pay_69fG30gVzPBQge,8.95,usd,8.95,0.53,8.42,usd,2026-08-06 15:51:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,MasterCard,order_0sJ2nUULuv2VrM,RCPT-US-100162,1.000000
+txn_mLFEljj9BxZHPi,charge,pay_mLFEljj9BxZHPi,439.51,inr,5.16,0.53,4.63,usd,2026-08-07 16:12:00,2026-08-10,Payment (fx INR->USD),charge,po_V3NbdLgGohKWdg,card,Visa,order_gW7QtBmdQtbThj,RCPT-US-100317,0.011740
+txn_e0TBPVOMgiYlZA,charge,pay_e0TBPVOMgiYlZA,24.84,usd,24.84,2.07,22.77,usd,2026-08-08 16:24:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Discover,order_7WK38PUjUfRS4N,RCPT-US-100073,1.000000
+txn_RWHfJgh4L9yoGh,charge,pay_RWHfJgh4L9yoGh,9.19,usd,9.19,0.53,8.66,usd,2026-08-07 16:40:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Visa,order_nJ3YITNlwVeF7e,RCPT-US-100234,1.000000
+txn_AXfNCD5RTMHsTc,charge,pay_AXfNCD5RTMHsTc,15.25,usd,15.25,0.68,14.57,usd,2026-08-06 16:42:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,American Express,order_9HKUcdkXSKjECA,RCPT-US-100088,1.000000
+txn_gZVaMWUFuXBVjd,charge,pay_gZVaMWUFuXBVjd,34.11,usd,34.11,1.16,32.95,usd,2026-08-08 17:06:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Discover,order_ctBYVhnSg9EH6y,RCPT-US-100010,1.000000
+txn_sh4487Q7j58M1c,charge,pay_sh4487Q7j58M1c,7.75,usd,7.75,0.49,7.26,usd,2026-08-07 17:17:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,MasterCard,order_IaHZcUEqPbENqT,RCPT-US-100009,1.000000
+txn_a0D3oJUVMhALiR,charge,pay_a0D3oJUVMhALiR,1140.51,inr,13.39,0.91,12.48,usd,2026-08-07 17:21:00,2026-08-10,Payment (fx INR->USD),charge,po_V3NbdLgGohKWdg,card,MasterCard,order_hQFUYQq2TjZg4a,RCPT-US-100115,0.011740
+txn_JSEqDgta4VEcAq,charge,pay_JSEqDgta4VEcAq,15.18,usd,15.18,0.68,14.50,usd,2026-08-07 17:23:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Discover,order_90L5uKYSAczkrW,RCPT-US-100091,1.000000
+txn_LJj7S3rqY1Jl4Q,charge,pay_LJj7S3rqY1Jl4Q,4.10,usd,4.10,1.48,2.62,usd,2026-08-07 17:28:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,American Express,order_iswzR8cABVJfge,RCPT-US-100096,1.000000
+txn_k1OkfthQ7bqrkW,charge,pay_k1OkfthQ7bqrkW,13.26,usd,13.26,0.63,12.63,usd,2026-08-07 18:19:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,MasterCard,order_7AH1wxpS5C42lm,RCPT-US-100085,1.000000
+txn_xBONWCUwYap7iZ,charge,pay_xBONWCUwYap7iZ,21.35,usd,21.35,0.84,20.51,usd,2026-08-08 19:00:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Discover,order_OTaEn8zgvcrblx,RCPT-US-100205,1.000000
+txn_Xba9rELoXopBBn,charge,pay_Xba9rELoXopBBn,10.60,usd,10.60,0.57,10.03,usd,2026-08-06 19:20:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,Discover,order_Crv7VzGgefw5JC,RCPT-US-100053,1.000000
+txn_SeiDDDdUuEl8LW,charge,pay_SeiDDDdUuEl8LW,19.36,usd,19.36,0.79,18.57,usd,2026-08-06 19:21:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,MasterCard,order_YX2EiNo4cjd09j,RCPT-US-100287,1.000000
+txn_9wUCaLVaqtBkXx,charge,pay_9wUCaLVaqtBkXx,7.90,usd,7.90,0.50,7.40,usd,2026-08-07 19:30:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,MasterCard,order_KP01AJmzQmdejj,RCPT-US-100151,1.000000
+txn_avhNYRVwDfRk9X,charge,pay_avhNYRVwDfRk9X,2.14,usd,2.14,0.01,2.13,usd,2026-08-07 20:01:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,ach,,order_Irghoy32NFR5PY,RCPT-US-100021,1.000000
+txn_GM146dpzNoe3Pw,charge,pay_GM146dpzNoe3Pw,11.41,usd,11.41,0.59,10.82,usd,2026-08-07 20:07:00,2026-08-10,Payment,charge,po_V3NbdLgGohKWdg,card,MasterCard,order_zam3ZpYlNdNSsL,RCPT-US-100391,1.000000
+txn_tkJTAYtFsLx2OU,charge,pay_tkJTAYtFsLx2OU,4.34,usd,4.34,0.02,4.32,usd,2026-08-09 17:49:00,2026-08-10,Payment,charge,po_kgNFAgY1YlsImo,ach,,order_Mq5GEj6XzgwTME,RCPT-US-100083,1.000000
+txn_Bew9Gw4tGLJzhK,charge,pay_Bew9Gw4tGLJzhK,6.37,usd,6.37,0.46,5.91,usd,2026-08-08 18:43:00,2026-08-10,Payment,charge,po_kgNFAgY1YlsImo,card,Discover,order_ngUGgy94Y64AE2,RCPT-US-100140,1.000000
+txn_ZUhuTDxmUFSDUg,charge,pay_ZUhuTDxmUFSDUg,7.22,usd,7.22,0.48,6.74,usd,2026-08-09 08:10:00,2026-08-11,Payment,charge,po_6AThaLWRoH85MJ,card,American Express,order_PJL7o4PdBMUHyg,RCPT-US-100159,1.000000
+txn_X7zVMd6tjqDuUA,charge,pay_X7zVMd6tjqDuUA,4.93,usd,4.93,0.42,4.51,usd,2026-08-09 10:12:00,2026-08-11,Payment,charge,po_6AThaLWRoH85MJ,card,MasterCard,order_iEa8k0UCROycSM,RCPT-US-100116,1.000000
+txn_ZYLYyAvXHwUVIr,charge,pay_ZYLYyAvXHwUVIr,13.95,usd,13.95,0.65,13.30,usd,2026-08-09 13:32:00,2026-08-11,Payment,charge,po_6AThaLWRoH85MJ,card,Visa,order_CntMNBlrknOSGM,RCPT-US-100193,1.000000
+txn_cKcq1owFAbG8OA,charge,pay_cKcq1owFAbG8OA,4.32,usd,4.32,0.02,4.30,usd,2026-08-09 14:24:00,2026-08-11,Payment,charge,po_6AThaLWRoH85MJ,ach,,order_SAXvf55WGGkFn0,RCPT-US-100357,1.000000
+txn_JC3WF3TlU26vyj,charge,pay_JC3WF3TlU26vyj,5.22,usd,5.22,0.43,4.79,usd,2026-08-09 17:07:00,2026-08-11,Payment,charge,po_6AThaLWRoH85MJ,card,Visa,order_37lc9py81kiMTh,RCPT-US-100189,1.000000
+txn_F1nyC6tDZsjUrp,charge,pay_F1nyC6tDZsjUrp,13.13,usd,13.13,0.63,12.50,usd,2026-08-09 17:39:00,2026-08-11,Payment,charge,po_6AThaLWRoH85MJ,card,Visa,order_cjqUdkAevp2egV,RCPT-US-100109,1.000000
+txn_FeRgpMPgxAFQ0F,charge,pay_FeRgpMPgxAFQ0F,8.95,usd,8.95,0.53,8.42,usd,2026-08-11 14:20:00,2026-08-11,Payment,charge,po_PlEVG0WrvEFtqJ,card,Discover,order_JZlCZBTToOFl9h,RCPT-US-100014,1.000000
+txn_N43cKGUdUhYyLL,charge,pay_N43cKGUdUhYyLL,15.48,usd,15.48,0.08,15.40,usd,2026-08-09 18:47:00,2026-08-11,Payment,charge,po_6AThaLWRoH85MJ,ach,,order_JR9ZAxneGEwFb7,RCPT-US-100274,1.000000
+txn_P7PGYSa5KD1uSJ,charge,pay_P7PGYSa5KD1uSJ,20.60,usd,20.60,0.11,20.49,usd,2026-08-10 07:16:00,2026-08-12,Payment,charge,po_vehppuzUFDDc86,ach,,order_oBczgVgIcAy18h,RCPT-US-100066,1.000000
+txn_KIA7zPtJcGEoJ3,charge,pay_KIA7zPtJcGEoJ3,5.50,usd,5.50,0.44,5.06,usd,2026-08-10 07:33:00,2026-08-12,Payment,charge,po_vehppuzUFDDc86,card,Discover,order_qyRZzQ9ADp0j5W,RCPT-US-100038,1.000000
+txn_BZLPKD6xGAnjq8,refund,rfnd_BZLPKD6xGAnjq8,5.50,usd,-2.75,0.00,-2.75,usd,2026-08-10 07:33:00,2026-08-12,Refund,refund,po_vehppuzUFDDc86,card,Discover,order_qyRZzQ9ADp0j5W,RCPT-US-100038,1.000000
+txn_hJCqR6gULqTM5c,charge,pay_hJCqR6gULqTM5c,7.74,eur,8.27,0.76,7.51,usd,2026-08-10 08:13:00,2026-08-12,Payment (fx EUR->USD),charge,po_vehppuzUFDDc86,card,Visa,order_jO1mHHqhApmFzj,RCPT-US-100297,1.068200
+txn_ucSmEHgaKwVJ7f,charge,pay_ucSmEHgaKwVJ7f,17.10,usd,17.10,0.73,16.37,usd,2026-08-10 09:50:00,2026-08-12,Payment,charge,po_vehppuzUFDDc86,card,American Express,order_aC9qEwjky40UVs,RCPT-US-100000,1.000000
+txn_8TY2gMUYW89b5g,charge,pay_8TY2gMUYW89b5g,14.93,usd,14.93,0.68,14.25,usd,2026-08-10 10:30:00,2026-08-12,Payment,charge,po_vehppuzUFDDc86,card,Visa,order_6jfgqg6ybH6Rz1,RCPT-US-100386,1.000000
+txn_V4Wnrvw0jbQctb,charge,pay_V4Wnrvw0jbQctb,17.75,usd,17.75,0.75,17.00,usd,2026-08-10 13:30:00,2026-08-12,Payment,charge,po_vehppuzUFDDc86,card,American Express,order_OWVxD4YTxtqNMA,RCPT-US-100325,1.000000
+txn_YJ6h0vTXEJjUpb,charge,pay_YJ6h0vTXEJjUpb,13.63,usd,13.63,0.64,12.99,usd,2026-08-10 13:57:00,2026-08-12,Payment,charge,po_vehppuzUFDDc86,card,Visa,order_OHCFfUC3vZouRX,RCPT-US-100228,1.000000
+txn_inyx8k1Oqcv1Uk,charge,pay_inyx8k1Oqcv1Uk,8.65,usd,8.65,0.52,8.13,usd,2026-08-10 14:34:00,2026-08-12,Payment,charge,po_vehppuzUFDDc86,card,MasterCard,order_Iw2XfcjK0Dp7GF,RCPT-US-100198,1.000000
+txn_GYR4Hm3bc4uzQF,charge,pay_GYR4Hm3bc4uzQF,5.98,usd,5.98,0.45,5.53,usd,2026-08-10 15:32:00,2026-08-12,Payment,charge,po_vehppuzUFDDc86,card,MasterCard,order_ucpXGCf1uTNEpQ,RCPT-US-100177,1.000000
+txn_OVOUxMzbQ5VBu1,charge,pay_OVOUxMzbQ5VBu1,6.75,usd,6.75,0.47,6.28,usd,2026-08-10 18:47:00,2026-08-12,Payment,charge,po_vehppuzUFDDc86,card,Visa,order_pTSAg59RINXHoX,RCPT-US-100232,1.000000
+txn_uh6XWP9l5HRIxn,charge,pay_uh6XWP9l5HRIxn,8.16,usd,8.16,0.51,7.65,usd,2026-08-10 19:29:00,2026-08-12,Payment,charge,po_vehppuzUFDDc86,card,Discover,order_68NZdxykV6bVcR,RCPT-US-100377,1.000000
+txn_pY4SIpt4tYn5Rt,charge,pay_pY4SIpt4tYn5Rt,30.70,usd,30.70,0.16,30.54,usd,2026-08-10 20:02:00,2026-08-12,Payment,charge,po_vehppuzUFDDc86,ach,,order_Exmm0gRmN5OTGX,RCPT-US-100133,1.000000
+txn_EH19UNAdowIcRg,refund,rfnd_EH19UNAdowIcRg,30.70,usd,-15.35,0.00,-15.35,usd,2026-08-10 20:02:00,2026-08-12,Refund,refund,po_vehppuzUFDDc86,ach,,order_Exmm0gRmN5OTGX,RCPT-US-100133,1.000000
+txn_ZTgt0BzYXIzeFB,charge,pay_ZTgt0BzYXIzeFB,6.53,usd,6.53,0.46,6.07,usd,2026-08-10 20:37:00,2026-08-12,Payment,charge,po_vehppuzUFDDc86,card,Visa,order_BJgOoF0FjMmhEI,RCPT-US-100209,1.000000
+txn_GtsC0hIigGelvc,charge,pay_GtsC0hIigGelvc,14.78,usd,14.78,0.67,14.11,usd,2026-08-11 07:41:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,American Express,order_1UF1UsFHZGVDPQ,RCPT-US-100275,1.000000
+txn_JGLuk1MKeliMcp,charge,pay_JGLuk1MKeliMcp,29.83,usd,29.83,0.16,29.67,usd,2026-08-11 09:41:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,ach,,order_gf1GB73McC4xpk,RCPT-US-100203,1.000000
+txn_WD1IAEov4QbKDF,charge,pay_WD1IAEov4QbKDF,10.16,usd,10.16,0.55,9.61,usd,2026-08-11 09:53:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,wallet,,order_q1Y3gqSmPsSCdL,RCPT-US-100013,1.000000
+txn_SRTEXiaxfhjkZA,charge,pay_SRTEXiaxfhjkZA,8.74,usd,8.74,0.52,8.22,usd,2026-08-13 07:45:00,2026-08-13,Payment,charge,po_g3xtV7KAqhHifg,card,American Express,order_je0qhpgmWGLsNI,RCPT-US-100380,1.000000
+txn_fcJSPBusBbnNat,charge,pay_fcJSPBusBbnNat,8.84,usd,8.84,0.52,8.32,usd,2026-08-11 12:06:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,wallet,,order_ZQZeeNJBG3UXwS,RCPT-US-100370,1.000000
+txn_MHR3bkl4xS0kpR,charge,pay_MHR3bkl4xS0kpR,6.35,usd,6.35,0.46,5.89,usd,2026-08-11 12:08:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,American Express,order_C1EN1pJjxUDFJf,RCPT-US-100291,1.000000
+txn_PDCGkzo60tZ5D8,charge,pay_PDCGkzo60tZ5D8,11.45,usd,11.45,0.59,10.86,usd,2026-08-11 12:11:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,American Express,order_NfbfuKTmloFJsO,RCPT-US-100090,1.000000
+txn_TTKoNcFJMlUHgS,charge,pay_TTKoNcFJMlUHgS,13.03,usd,13.03,0.63,12.40,usd,2026-08-11 12:49:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,Discover,order_Lae1cxlfe8RehM,RCPT-US-100170,1.000000
+txn_zsSXkkWZxh2JPC,charge,pay_zsSXkkWZxh2JPC,16.22,usd,16.22,0.71,15.51,usd,2026-08-11 13:32:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,MasterCard,order_7fX3GXodyFJUmB,RCPT-US-100061,1.000000
+txn_LZaxdI1gdr0ibV,charge,pay_LZaxdI1gdr0ibV,6.47,usd,6.47,0.46,6.01,usd,2026-08-11 13:49:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,Visa,order_JB2tLK4mChSuoH,RCPT-US-100362,1.000000
+txn_wwijyok3HkQnGJ,charge,pay_wwijyok3HkQnGJ,17.37,usd,17.37,0.74,16.63,usd,2026-08-11 14:15:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,Visa,order_4VU3aBiGGLt7ya,RCPT-US-100248,1.000000
+txn_2QgaGwdbtaUZzh,charge,pay_2QgaGwdbtaUZzh,24.71,usd,24.71,0.92,23.79,usd,2026-08-13 12:02:00,2026-08-13,Payment,charge,po_g3xtV7KAqhHifg,card,MasterCard,order_2RD8gMtIxj7WMu,RCPT-US-100288,1.000000
+txn_qhJhhSGDwojt6s,charge,pay_qhJhhSGDwojt6s,8.02,usd,8.02,0.50,7.52,usd,2026-08-11 16:48:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,Discover,order_FZ42cBJI8BPjRh,RCPT-US-100326,1.000000
+txn_tBEjIktiCu3cgb,charge,pay_tBEjIktiCu3cgb,8.09,usd,8.09,0.50,7.59,usd,2026-08-11 17:00:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,MasterCard,order_9U2MaaVhbXxNdo,RCPT-US-100367,1.000000
+txn_aqteiwT7YWp2BO,charge,pay_aqteiwT7YWp2BO,4.07,usd,4.07,0.40,3.67,usd,2026-08-11 17:20:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,Visa,order_fpnAf0KcldufXH,RCPT-US-100329,1.000000
+txn_oPbFSvGbSON1Br,charge,pay_oPbFSvGbSON1Br,29.66,usd,29.66,1.05,28.61,usd,2026-08-11 17:30:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,American Express,order_zRRve0KywBqlD2,RCPT-US-100361,1.000000
+txn_OgyCDxFG6kGRWK,charge,pay_OgyCDxFG6kGRWK,3.52,usd,3.52,0.39,3.13,usd,2026-08-11 18:45:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,Discover,order_r8Hn5usmtkR3dE,RCPT-US-100399,1.000000
+txn_B2Enus0HMI4fS9,charge,pay_B2Enus0HMI4fS9,30.86,aud,19.96,1.20,18.76,usd,2026-08-11 18:46:00,2026-08-13,Payment (fx AUD->USD),charge,po_xJo08M9HvfzuJM,card,MasterCard,order_z6yKryu7OE1Wnw,RCPT-US-100035,0.646800
+txn_vDLtcj4Jc3JRaa,charge,pay_vDLtcj4Jc3JRaa,14.98,usd,14.98,0.68,14.30,usd,2026-08-11 19:14:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,MasterCard,order_PJBRk1SVzKQfGU,RCPT-US-100065,1.000000
+txn_dAc3oYyAG98OZQ,charge,pay_dAc3oYyAG98OZQ,10.22,usd,10.22,0.56,9.66,usd,2026-08-11 19:18:00,2026-08-13,Payment,charge,po_xJo08M9HvfzuJM,card,Discover,order_PBlGdtalqgFPcS,RCPT-US-100214,1.000000
+txn_EfvDM3doZTze9Y,charge,pay_EfvDM3doZTze9Y,39.61,cad,28.34,1.56,26.78,usd,2026-08-11 20:01:00,2026-08-13,Payment (fx CAD->USD),charge,po_xJo08M9HvfzuJM,wallet,,order_Too45keU5Wu1Tv,RCPT-US-100165,0.715400
+txn_Pa65gRmm5Pb8dQ,charge,pay_Pa65gRmm5Pb8dQ,7.18,usd,7.18,0.48,6.70,usd,2026-08-12 07:20:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,American Express,order_802nzNIjpIzzjA,RCPT-US-100211,1.000000
+txn_s8Zlu9lQIOT0w1,charge,pay_s8Zlu9lQIOT0w1,4.71,usd,4.71,0.03,4.68,usd,2026-08-12 07:23:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,ach,,order_BJo0iRtFVAegej,RCPT-US-100300,1.000000
+txn_Uc7iM3VVAYy4sG,charge,pay_Uc7iM3VVAYy4sG,12.82,usd,12.82,0.62,12.20,usd,2026-08-12 07:34:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,MasterCard,order_xhNm71RUimY8J8,RCPT-US-100379,1.000000
+txn_Xq5pLsOBmd5uFc,charge,pay_Xq5pLsOBmd5uFc,27.83,usd,27.83,0.15,27.68,usd,2026-08-12 08:24:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,ach,,order_N2CScI1MTvUlM8,RCPT-US-100150,1.000000
+txn_OEeXg28vfrNn5N,refund,rfnd_OEeXg28vfrNn5N,27.83,usd,-27.83,0.00,-27.83,usd,2026-08-12 08:24:00,2026-08-14,Refund,refund,po_oInKDn5BtB6Tn8,ach,,order_N2CScI1MTvUlM8,RCPT-US-100150,1.000000
+txn_JVOgGuJa8BRYok,charge,pay_JVOgGuJa8BRYok,12.51,usd,12.51,0.61,11.90,usd,2026-08-12 08:33:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,Discover,order_0FSNl4dUBEPsV8,RCPT-US-100328,1.000000
+txn_fNkyKe373xR9wI,charge,pay_fNkyKe373xR9wI,11.06,usd,11.06,0.66,10.40,usd,2026-08-12 09:20:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,ach,,order_0TSFVAf35PKUrn,RCPT-US-100105,1.000000
+txn_SwFn9tX1HXqipU,charge,pay_SwFn9tX1HXqipU,4.54,usd,4.54,0.41,4.13,usd,2026-08-12 10:55:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,American Express,order_IVr2HVKaB95XOZ,RCPT-US-100196,1.000000
+txn_VTUtgGvU4DWtsh,charge,pay_VTUtgGvU4DWtsh,14.58,usd,14.58,0.67,13.91,usd,2026-08-12 11:21:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,Visa,order_Zr3WwjjlXcRI4E,RCPT-US-100249,1.000000
+txn_Sj6iLa6jiFI6PG,refund,rfnd_Sj6iLa6jiFI6PG,14.58,usd,-7.29,0.00,-7.29,usd,2026-08-12 11:21:00,2026-08-14,Refund,refund,po_oInKDn5BtB6Tn8,card,Visa,order_Zr3WwjjlXcRI4E,RCPT-US-100249,1.000000
+txn_gBbunMr2LkUIUh,charge,pay_gBbunMr2LkUIUh,10.50,usd,10.50,0.56,9.94,usd,2026-08-12 11:44:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,MasterCard,order_ixO49aDaJPmwrY,RCPT-US-100375,1.000000
+txn_S0hQTo93l7q5Uu,charge,pay_S0hQTo93l7q5Uu,12.77,usd,12.77,0.62,12.15,usd,2026-08-12 11:48:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,Visa,order_AvCOJSnobagX5D,RCPT-US-100037,1.000000
+txn_HVi3YVZpE9Hb06,charge,pay_HVi3YVZpE9Hb06,11.62,usd,11.62,0.59,11.03,usd,2026-08-12 12:11:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,American Express,order_WjPYMdSWPbCRqB,RCPT-US-100081,1.000000
+txn_U5YMR5Nyqyn0Al,charge,pay_U5YMR5Nyqyn0Al,10.12,usd,10.12,0.55,9.57,usd,2026-08-12 12:45:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,MasterCard,order_sUUpwjQznVKk2i,RCPT-US-100176,1.000000
+txn_9rv7JaVqWIrMnn,charge,pay_9rv7JaVqWIrMnn,4.43,usd,4.43,0.41,4.02,usd,2026-08-12 13:42:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,MasterCard,order_2R01hGv2v7weRy,RCPT-US-100074,1.000000
+txn_qrbmgTCX4N1Wmo,charge,pay_qrbmgTCX4N1Wmo,3.36,eur,3.59,0.46,3.13,usd,2026-08-12 14:49:00,2026-08-14,Payment (fx EUR->USD),charge,po_oInKDn5BtB6Tn8,wallet,,order_dbzIBeZQbmnWSm,RCPT-US-100360,1.068200
+txn_docSB7GtAe5wDf,refund,rfnd_docSB7GtAe5wDf,3.36,eur,-3.59,0.00,-3.59,usd,2026-08-12 14:49:00,2026-08-14,Refund (fx EUR->USD),refund,po_oInKDn5BtB6Tn8,wallet,,order_dbzIBeZQbmnWSm,RCPT-US-100360,1.068200
+txn_Cl1Ejslarxjr6b,charge,pay_Cl1Ejslarxjr6b,8.04,usd,8.04,0.04,8.00,usd,2026-08-12 17:12:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,ach,,order_Ah9ankaW6P5amL,RCPT-US-100337,1.000000
+txn_hFW88bc7Vsgvs1,charge,pay_hFW88bc7Vsgvs1,5.04,usd,5.04,0.43,4.61,usd,2026-08-12 17:58:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,American Express,order_1oocgDrsNbrg27,RCPT-US-100086,1.000000
+txn_dNUy5BGquAEzp6,charge,pay_dNUy5BGquAEzp6,4.69,usd,4.69,0.42,4.27,usd,2026-08-12 18:45:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,Discover,order_Zr3WDOkYa66Y8q,RCPT-US-100104,1.000000
+txn_MTXrRiPozGjVYO,charge,pay_MTXrRiPozGjVYO,11.66,usd,11.66,0.59,11.07,usd,2026-08-12 18:51:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,Visa,order_n1UAAcs3byouXT,RCPT-US-100229,1.000000
+txn_lUggp7fZ71yT5Z,charge,pay_lUggp7fZ71yT5Z,18.05,usd,18.05,0.75,17.30,usd,2026-08-12 20:56:00,2026-08-14,Payment,charge,po_oInKDn5BtB6Tn8,card,Discover,order_kri9WWVb3Z5NFW,RCPT-US-100339,1.000000
+txn_gjeW7PwKFZBXsY,charge,pay_gjeW7PwKFZBXsY,5.66,usd,5.66,1.50,4.16,usd,2026-08-15 06:59:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,wallet,,order_mGpngCCYch1BmJ,RCPT-US-100280,1.000000
+txn_BoaPzoxZCYCdEz,charge,pay_BoaPzoxZCYCdEz,5.86,usd,5.86,0.45,5.41,usd,2026-08-14 07:03:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Discover,order_6DQMvE5mVXRV99,RCPT-US-100026,1.000000
+txn_MAe4Y1195VYpHj,charge,pay_MAe4Y1195VYpHj,9.15,usd,9.15,0.53,8.62,usd,2026-08-13 07:14:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Discover,order_ouvF7ZqJTagISU,RCPT-US-100225,1.000000
+txn_KHVmDGAkJiG8Xn,charge,pay_KHVmDGAkJiG8Xn,13.95,eur,14.90,0.97,13.93,usd,2026-08-13 07:30:00,2026-08-17,Payment (fx EUR->USD),charge,po_HC6BFtj27YCN9c,card,Discover,order_BE3NnYJoQ9WmXe,RCPT-US-100003,1.068200
+txn_qqVOCZas2bEJFE,charge,pay_qqVOCZas2bEJFE,11.28,usd,11.28,0.58,10.70,usd,2026-08-14 07:34:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,American Express,order_DiMQ6oGYgrfQMG,RCPT-US-100187,1.000000
+txn_mDyLITS023s9Gg,charge,pay_mDyLITS023s9Gg,19.81,cad,14.17,0.94,13.23,usd,2026-08-15 08:02:00,2026-08-17,Payment (fx CAD->USD),charge,po_HC6BFtj27YCN9c,card,Visa,order_rKy5apJiqSULIc,RCPT-US-100247,0.715400
+txn_bKFl0cyaQ4kqO3,charge,pay_bKFl0cyaQ4kqO3,3.69,usd,3.69,0.39,3.30,usd,2026-08-14 08:58:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,MasterCard,order_J9vR98taGDb60G,RCPT-US-100152,1.000000
+txn_e0h9M7QKhrHjUZ,charge,pay_e0h9M7QKhrHjUZ,10.14,usd,10.14,0.56,9.58,usd,2026-08-15 09:06:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Discover,order_4K6I5eef7RkXGj,RCPT-US-100180,1.000000
+txn_oDQRYZDAEa6aos,charge,pay_oDQRYZDAEa6aos,11.14,usd,11.14,1.69,9.45,usd,2026-08-15 09:43:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,American Express,order_rWlQGOTvZ89hOz,RCPT-US-100049,1.000000
+txn_fEM5uXgeAMkoND,charge,pay_fEM5uXgeAMkoND,6.69,usd,6.69,0.47,6.22,usd,2026-08-14 10:38:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Visa,order_UjgvhKIw39X07y,RCPT-US-100286,1.000000
+txn_pJB31JWOPK2jdx,charge,pay_pJB31JWOPK2jdx,10.61,usd,10.61,0.57,10.04,usd,2026-08-15 11:01:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Discover,order_IBL7tsj1bavbVG,RCPT-US-100372,1.000000
+txn_N0OybpvrQoXsBR,charge,pay_N0OybpvrQoXsBR,10.83,usd,10.83,0.06,10.77,usd,2026-08-15 11:05:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,ach,,order_jDVXaCb9mh4q39,RCPT-US-100191,1.000000
+txn_OAf1lLQSAJaiXn,charge,pay_OAf1lLQSAJaiXn,13.68,usd,13.68,0.63,13.05,usd,2026-08-14 11:43:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,wallet,,order_kU8Is2g8nprvDd,RCPT-US-100002,1.000000
+txn_TiP70kZ64kzqBb,charge,pay_TiP70kZ64kzqBb,7.06,usd,7.06,0.48,6.58,usd,2026-08-15 12:06:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,American Express,order_d4joul9JnueTo5,RCPT-US-100219,1.000000
+txn_WTbvzLyzimHxTn,charge,pay_WTbvzLyzimHxTn,10.49,usd,10.49,0.06,10.43,usd,2026-08-13 12:17:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,ach,,order_Sdshdclk3SITvz,RCPT-US-100389,1.000000
+txn_C5M99ZZrbMXqsj,charge,pay_C5M99ZZrbMXqsj,14.53,eur,15.52,1.00,14.52,usd,2026-08-13 13:11:00,2026-08-17,Payment (fx EUR->USD),charge,po_HC6BFtj27YCN9c,card,Discover,order_vpSZqkZgZMY8J9,RCPT-US-100212,1.068200
+txn_Va6nyQjLefV6IP,charge,pay_Va6nyQjLefV6IP,22.86,usd,22.86,0.88,21.98,usd,2026-08-15 13:19:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Visa,order_4QmsGP7P4PCMsh,RCPT-US-100233,1.000000
+txn_0ueqx1Qanjk20M,charge,pay_0ueqx1Qanjk20M,8.69,usd,8.69,0.52,8.17,usd,2026-08-15 13:50:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,American Express,order_F2Bii2kDJz70cV,RCPT-US-100256,1.000000
+txn_bMReXLIyRxyUVm,charge,pay_bMReXLIyRxyUVm,6.59,usd,6.59,0.47,6.12,usd,2026-08-13 14:31:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Visa,order_7VBPFTr2UGMrk4,RCPT-US-100322,1.000000
+txn_zX9iVqQEpekIbd,charge,pay_zX9iVqQEpekIbd,14.51,usd,14.51,0.67,13.84,usd,2026-08-13 14:37:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Visa,order_r4tndMVnMHZKSw,RCPT-US-100135,1.000000
+txn_Kf2PSczHpKmvpR,charge,pay_Kf2PSczHpKmvpR,75.19,usd,75.19,2.19,73.00,usd,2026-08-13 14:41:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,American Express,order_S10i1w21OQAaXX,RCPT-US-100284,1.000000
+txn_cDHMERXceP7VjD,charge,pay_cDHMERXceP7VjD,2.84,usd,2.84,0.37,2.47,usd,2026-08-15 14:45:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Discover,order_EgOevNkn3972YH,RCPT-US-100148,1.000000
+txn_Ci0skTWm8XQP4E,charge,pay_Ci0skTWm8XQP4E,4.78,usd,4.78,0.42,4.36,usd,2026-08-13 14:51:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Visa,order_4jGwmr1a1ztH7T,RCPT-US-100131,1.000000
+txn_2Jtifl6oS4Umyx,charge,pay_2Jtifl6oS4Umyx,9.26,usd,9.26,0.53,8.73,usd,2026-08-15 15:02:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Discover,order_aHH3l7mlZ0QjTb,RCPT-US-100374,1.000000
+txn_tnWNCXVJCNQCmu,charge,pay_tnWNCXVJCNQCmu,10.63,usd,10.63,0.06,10.57,usd,2026-08-15 15:16:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,ach,,order_p6N0A0UarXLnTE,RCPT-US-100030,1.000000
+txn_Qf6DH8JVh0Arf1,charge,pay_Qf6DH8JVh0Arf1,37.11,cad,26.55,1.50,25.05,usd,2026-08-14 15:18:00,2026-08-17,Payment (fx CAD->USD),charge,po_HC6BFtj27YCN9c,card,MasterCard,order_nzld7ZSybp1in3,RCPT-US-100294,0.715400
+txn_deOogGeHLjmgWQ,charge,pay_deOogGeHLjmgWQ,5.71,usd,5.71,0.44,5.27,usd,2026-08-13 15:25:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,MasterCard,order_qFynZVYnFcN7nV,RCPT-US-100392,1.000000
+txn_ZQbuz1XwXt10J6,charge,pay_ZQbuz1XwXt10J6,21.54,usd,21.54,0.84,20.70,usd,2026-08-14 15:28:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Visa,order_99ui9YLAVhTWxA,RCPT-US-100332,1.000000
+txn_Fkn7XvgKJWSKhK,charge,pay_Fkn7XvgKJWSKhK,12.58,usd,12.58,0.62,11.96,usd,2026-08-13 15:56:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Discover,order_7EGYfwzy9zMTI1,RCPT-US-100032,1.000000
+txn_Y2lI7nM2tlXEqN,charge,pay_Y2lI7nM2tlXEqN,11.88,usd,11.88,0.06,11.82,usd,2026-08-14 16:38:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,ach,,order_V3EFwcYZhaf75p,RCPT-US-100113,1.000000
+txn_NHtpvNqbHnFihW,charge,pay_NHtpvNqbHnFihW,8.21,usd,8.21,0.51,7.70,usd,2026-08-15 12:42:00,2026-08-17,Payment,charge,po_FMpNcvcQ24HaWM,card,Discover,order_rGFuP242GFXRTT,RCPT-US-100141,1.000000
+txn_YESaSSvHNbUcSM,charge,pay_YESaSSvHNbUcSM,4.42,usd,4.42,0.02,4.40,usd,2026-08-14 17:22:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,ach,,order_34oyeTYn6F8HcE,RCPT-US-100224,1.000000
+txn_bwBdauMszruFFo,charge,pay_bwBdauMszruFFo,14.06,usd,14.06,0.65,13.41,usd,2026-08-14 17:51:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,MasterCard,order_OTYMaXkq4r8dob,RCPT-US-100226,1.000000
+txn_gw0AqOvMZiC7rS,charge,pay_gw0AqOvMZiC7rS,12.14,usd,12.14,0.61,11.53,usd,2026-08-15 17:53:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,MasterCard,order_jVxYxdHFO2Ek0A,RCPT-US-100114,1.000000
+txn_4GEQnFNGaftcLO,charge,pay_4GEQnFNGaftcLO,4.88,eur,5.21,0.53,4.68,usd,2026-08-13 18:10:00,2026-08-17,Payment (fx EUR->USD),charge,po_HC6BFtj27YCN9c,card,Discover,order_Iadn5rPvi2xqwH,RCPT-US-100028,1.068200
+txn_amTdJViNFWZ2dn,charge,pay_amTdJViNFWZ2dn,14.69,usd,14.69,0.67,14.02,usd,2026-08-14 18:19:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Discover,order_CSVFRLs4caqizP,RCPT-US-100126,1.000000
+txn_mbROJzgahcw4IT,charge,pay_mbROJzgahcw4IT,3.19,usd,3.19,0.38,2.81,usd,2026-08-14 18:22:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,Visa,order_9cGThiCpvVIoWa,RCPT-US-100366,1.000000
+txn_zHPvrr5tININfq,charge,pay_zHPvrr5tININfq,11.36,usd,11.36,0.59,10.77,usd,2026-08-14 18:33:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,MasterCard,order_VM8VuceyCo1L0D,RCPT-US-100216,1.000000
+txn_hx2swNfi8KNPLJ,charge,pay_hx2swNfi8KNPLJ,32.78,cad,23.45,1.36,22.09,usd,2026-08-14 18:33:00,2026-08-17,Payment (fx CAD->USD),charge,po_HC6BFtj27YCN9c,card,MasterCard,order_ZEeWs4UpqFOEl7,RCPT-US-100267,0.715400
+txn_JjjIBAzupGhv7I,charge,pay_JjjIBAzupGhv7I,12.31,usd,12.31,0.61,11.70,usd,2026-08-15 18:41:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,American Express,order_b3M03NBQNSgPwl,RCPT-US-100007,1.000000
+txn_cPzJ6r5Adt6MzC,charge,pay_cPzJ6r5Adt6MzC,10.85,usd,10.85,0.57,10.28,usd,2026-08-15 18:41:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,MasterCard,order_K71OE7n3X4vIxc,RCPT-US-100064,1.000000
+txn_oR5C6xVbBZJDhf,charge,pay_oR5C6xVbBZJDhf,11.05,usd,11.05,0.06,10.99,usd,2026-08-13 18:45:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,ach,,order_75BRGvUw3qYmKP,RCPT-US-100390,1.000000
+txn_MDOIZpvihXOtBO,charge,pay_MDOIZpvihXOtBO,15.21,usd,15.21,0.68,14.53,usd,2026-08-14 18:56:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,MasterCard,order_imcaDIoxKLqzKw,RCPT-US-100371,1.000000
+txn_KFBJNJhx1FW0Xb,charge,pay_KFBJNJhx1FW0Xb,8.19,usd,8.19,0.51,7.68,usd,2026-08-15 19:00:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,American Express,order_Wirl3jJqmkVOvn,RCPT-US-100102,1.000000
+txn_O39nhEXVhNT5Il,charge,pay_O39nhEXVhNT5Il,16.27,usd,16.27,0.70,15.57,usd,2026-08-13 19:30:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,wallet,,order_nCNK0XudVkdY7W,RCPT-US-100097,1.000000
+txn_PnOBkM9LTW7vHB,charge,pay_PnOBkM9LTW7vHB,10.22,usd,10.22,0.56,9.66,usd,2026-08-13 19:32:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,MasterCard,order_44FG8W88n1E8mc,RCPT-US-100318,1.000000
+txn_hZmhraLkWNQL0V,refund,rfnd_hZmhraLkWNQL0V,10.22,usd,-10.22,0.00,-10.22,usd,2026-08-13 19:32:00,2026-08-17,Refund,refund,po_HC6BFtj27YCN9c,card,MasterCard,order_44FG8W88n1E8mc,RCPT-US-100318,1.000000
+txn_zJlkmIM7FQtxux,charge,pay_zJlkmIM7FQtxux,10.08,usd,10.08,0.55,9.53,usd,2026-08-13 19:56:00,2026-08-17,Payment,charge,po_HC6BFtj27YCN9c,card,MasterCard,order_qmQ7fxToZ69FTx,RCPT-US-100315,1.000000
+txn_VBC6KhYQLCOkp7,charge,pay_VBC6KhYQLCOkp7,23.43,cad,16.76,1.06,15.70,usd,2026-08-13 20:34:00,2026-08-17,Payment (fx CAD->USD),charge,po_HC6BFtj27YCN9c,card,Discover,order_2tw2i3gqqDLTPl,RCPT-US-100385,0.715400
+txn_BFVOUOHDaLCF6e,charge,pay_BFVOUOHDaLCF6e,11.72,aud,7.58,0.64,6.94,usd,2026-08-15 20:41:00,2026-08-17,Payment (fx AUD->USD),charge,po_HC6BFtj27YCN9c,card,MasterCard,order_e34qs4uNwaTwuo,RCPT-US-100238,0.646800
+txn_GFGfJ3xUDt8nbe,charge,pay_GFGfJ3xUDt8nbe,7.56,usd,7.56,0.04,7.52,usd,2026-08-16 06:17:00,2026-08-18,Payment,charge,po_4lBjaHYcC5Oku2,ach,,order_zqNhlLEseIqTS2,RCPT-US-100283,1.000000
+txn_2XyaFptWlKz9fr,charge,pay_2XyaFptWlKz9fr,23.07,usd,23.07,0.88,22.19,usd,2026-08-16 06:31:00,2026-08-18,Payment,charge,po_4lBjaHYcC5Oku2,card,Visa,order_xvfIQ1s7T5Dvd1,RCPT-US-100124,1.000000
+txn_pKZsRaSqTa9DTv,charge,pay_pKZsRaSqTa9DTv,10.38,usd,10.38,0.56,9.82,usd,2026-08-16 07:26:00,2026-08-18,Payment,charge,po_4lBjaHYcC5Oku2,card,Visa,order_k4WaaB3xzXpMZu,RCPT-US-100031,1.000000
+txn_x9vOmwGV9JGMyj,charge,pay_x9vOmwGV9JGMyj,11.30,usd,11.30,0.58,10.72,usd,2026-08-16 09:12:00,2026-08-18,Payment,charge,po_4lBjaHYcC5Oku2,card,Discover,order_upUXrFaGwiCT7o,RCPT-US-100235,1.000000
+txn_o7RrU5YKyyQHxh,charge,pay_o7RrU5YKyyQHxh,10.27,usd,10.27,0.56,9.71,usd,2026-08-16 09:37:00,2026-08-18,Payment,charge,po_4lBjaHYcC5Oku2,card,MasterCard,order_Do2X93cjhls45G,RCPT-US-100036,1.000000
+txn_d9UyObF9NiaZ9I,charge,pay_d9UyObF9NiaZ9I,6.58,usd,6.58,0.47,6.11,usd,2026-08-16 09:43:00,2026-08-18,Payment,charge,po_4lBjaHYcC5Oku2,card,MasterCard,order_5vOXvtXYqfxXIO,RCPT-US-100154,1.000000
+txn_Qy1Ijjmko5IsxK,charge,pay_Qy1Ijjmko5IsxK,7.11,usd,7.11,0.48,6.63,usd,2026-08-16 10:24:00,2026-08-18,Payment,charge,po_4lBjaHYcC5Oku2,card,American Express,order_Sr3Gyrb0db1rt8,RCPT-US-100202,1.000000
+txn_0I2GhkQgYNWQqB,charge,pay_0I2GhkQgYNWQqB,2.55,usd,2.55,0.36,2.19,usd,2026-08-16 13:05:00,2026-08-18,Payment,charge,po_4lBjaHYcC5Oku2,wallet,,order_86MtR80hbxuuYK,RCPT-US-100137,1.000000
+txn_Ak4wBlisYoxpUf,charge,pay_Ak4wBlisYoxpUf,19.70,usd,19.70,0.11,19.59,usd,2026-08-16 15:22:00,2026-08-18,Payment,charge,po_4lBjaHYcC5Oku2,ach,,order_NbypjmwNfCex4N,RCPT-US-100230,1.000000
+txn_cgP7Cm7LMEQFxV,charge,pay_cgP7Cm7LMEQFxV,16.62,usd,16.62,1.89,14.73,usd,2026-08-16 15:24:00,2026-08-18,Payment,charge,po_4lBjaHYcC5Oku2,card,Visa,order_wFVpFbwTEgx7cP,RCPT-US-100185,1.000000
+txn_9Ip0wHpL1gQVKK,charge,pay_9Ip0wHpL1gQVKK,7.30,usd,7.30,0.48,6.82,usd,2026-08-16 20:45:00,2026-08-18,Payment,charge,po_4lBjaHYcC5Oku2,card,MasterCard,order_67Oe2yOQQ6DOK6,RCPT-US-100179,1.000000
+txn_iP3LMU5oVmBIVX,charge,pay_iP3LMU5oVmBIVX,8.86,usd,8.86,0.52,8.34,usd,2026-08-17 06:01:00,2026-08-19,Payment,charge,po_2huJkvg2tAm4mL,card,Discover,order_E6EBnuHDKsSqRT,RCPT-US-100199,1.000000
+txn_SxiBajapFz8roY,charge,pay_SxiBajapFz8roY,26.70,usd,26.70,0.97,25.73,usd,2026-08-17 06:25:00,2026-08-19,Payment,charge,po_2huJkvg2tAm4mL,card,MasterCard,order_f9tXs5RUK1kf0D,RCPT-US-100129,1.000000
+txn_p6kCdlkbBtIbFL,charge,pay_p6kCdlkbBtIbFL,10.25,gbp,12.76,0.88,11.88,usd,2026-08-17 07:30:00,2026-08-19,Payment (fx GBP->USD),charge,po_2huJkvg2tAm4mL,card,Visa,order_hS0gyvWGOyvmzD,RCPT-US-100166,1.244600
+txn_koouCsaAyATtsj,charge,pay_koouCsaAyATtsj,22.59,usd,22.59,0.85,21.74,usd,2026-08-17 09:32:00,2026-08-19,Payment,charge,po_2huJkvg2tAm4mL,wallet,,order_A6TZ1GlAqBMLfx,RCPT-US-100078,1.000000
+txn_A8frcZTuJaWYUH,charge,pay_A8frcZTuJaWYUH,3.23,usd,3.23,0.38,2.85,usd,2026-08-17 10:56:00,2026-08-19,Payment,charge,po_2huJkvg2tAm4mL,card,MasterCard,order_1VAUwV1ZH87MtA,RCPT-US-100018,1.000000
+txn_yyfVww6anVsCjN,charge,pay_yyfVww6anVsCjN,5.13,usd,5.13,0.42,4.71,usd,2026-08-17 11:26:00,2026-08-19,Payment,charge,po_2huJkvg2tAm4mL,wallet,,order_IldqDFL77YtI2b,RCPT-US-100320,1.000000
+txn_ghmNILpVrxiQAr,charge,pay_ghmNILpVrxiQAr,12.71,usd,12.71,0.62,12.09,usd,2026-08-17 11:43:00,2026-08-19,Payment,charge,po_2huJkvg2tAm4mL,card,Discover,order_tvbLE9QFNG0Sjf,RCPT-US-100244,1.000000
+txn_fQSmvD78uPf3X6,charge,pay_fQSmvD78uPf3X6,25.70,usd,25.70,0.93,24.77,usd,2026-08-17 12:51:00,2026-08-19,Payment,charge,po_2huJkvg2tAm4mL,wallet,,order_E8j4xEHmG9r9ew,RCPT-US-100341,1.000000
+txn_cPfqhlrzX5h9jM,charge,pay_cPfqhlrzX5h9jM,5.96,usd,5.96,0.45,5.51,usd,2026-08-17 12:54:00,2026-08-19,Payment,charge,po_2huJkvg2tAm4mL,card,Visa,order_bEl5QkYL3s9QpP,RCPT-US-100153,1.000000
+txn_0jbWgS4ga8DhvY,charge,pay_0jbWgS4ga8DhvY,13.59,usd,13.59,0.64,12.95,usd,2026-08-17 13:00:00,2026-08-19,Payment,charge,po_2huJkvg2tAm4mL,card,Discover,order_UImcQtuFfTPcpA,RCPT-US-100398,1.000000
+txn_NV9zbmlbmKF5gv,refund,rfnd_NV9zbmlbmKF5gv,13.59,usd,-6.79,0.00,-6.79,usd,2026-08-17 13:00:00,2026-08-19,Refund,refund,po_2huJkvg2tAm4mL,card,Discover,order_UImcQtuFfTPcpA,RCPT-US-100398,1.000000
+txn_vZK80B8oYsam1m,charge,pay_vZK80B8oYsam1m,5.83,gbp,7.26,0.63,6.63,usd,2026-08-17 18:17:00,2026-08-19,Payment (fx GBP->USD),charge,po_2huJkvg2tAm4mL,card,Discover,order_hCZ8DxXVZP1Vtb,RCPT-US-100070,1.244600
+txn_awltda3Jww6srk,charge,pay_awltda3Jww6srk,5.78,usd,5.78,0.44,5.34,usd,2026-08-17 20:53:00,2026-08-19,Payment,charge,po_2huJkvg2tAm4mL,wallet,,order_Kvm8DPusJz4Rv5,RCPT-US-100351,1.000000
+txn_Cg2qLSDKFPF3Sk,charge,pay_Cg2qLSDKFPF3Sk,15.03,cad,10.75,0.99,9.76,usd,2026-08-18 06:42:00,2026-08-20,Payment (fx CAD->USD),charge,po_M2wSeZgkV7PK2Y,card,MasterCard,order_lRqSS0gUVNlbG5,RCPT-US-100397,0.715400
+txn_uwNOvpdf2YEe6r,charge,pay_uwNOvpdf2YEe6r,3.75,usd,3.75,0.39,3.36,usd,2026-08-18 07:42:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,MasterCard,order_SxCnopMEmJVQpv,RCPT-US-100016,1.000000
+txn_Pcs02Zg8fbipy3,charge,pay_Pcs02Zg8fbipy3,14.19,usd,14.19,0.66,13.53,usd,2026-08-18 08:21:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,MasterCard,order_JNOW1VEETHeLvd,RCPT-US-100259,1.000000
+txn_MfsNhFv1cq4HjH,charge,pay_MfsNhFv1cq4HjH,22.03,aud,14.25,1.23,13.02,usd,2026-08-18 08:39:00,2026-08-20,Payment (fx AUD->USD),charge,po_M2wSeZgkV7PK2Y,card,American Express,order_QaO0IefjDed5Js,RCPT-US-100052,0.646800
+txn_KWWaFMoTIIrtfq,charge,pay_KWWaFMoTIIrtfq,20.39,usd,20.39,0.81,19.58,usd,2026-08-18 08:49:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,Visa,order_ePtPAgscI7pWsT,RCPT-US-100087,1.000000
+txn_ucp6B2sZwLMzGZ,charge,pay_ucp6B2sZwLMzGZ,9.73,usd,9.73,0.54,9.19,usd,2026-08-18 10:06:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,wallet,,order_ETi1GU2YaNxu3b,RCPT-US-100345,1.000000
+txn_4kQ60wBWaB8SQB,charge,pay_4kQ60wBWaB8SQB,21.09,usd,21.09,0.83,20.26,usd,2026-08-18 10:44:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,Discover,order_XDlDPjthpdGm6V,RCPT-US-100255,1.000000
+txn_8JjeiGVuCNb7uG,charge,pay_8JjeiGVuCNb7uG,8.44,usd,8.44,0.51,7.93,usd,2026-08-18 12:44:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,Discover,order_JohpMMwohjZnwL,RCPT-US-100348,1.000000
+txn_2qymP4TWfp00Oj,charge,pay_2qymP4TWfp00Oj,16.12,usd,16.12,0.71,15.41,usd,2026-08-18 14:04:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,Discover,order_8TSLpa7bLbIQye,RCPT-US-100383,1.000000
+txn_zDUME4mqwWYdUk,charge,pay_zDUME4mqwWYdUk,14.00,usd,14.00,0.65,13.35,usd,2026-08-18 14:12:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,American Express,order_sukP6TKZVqsu6p,RCPT-US-100355,1.000000
+txn_mxqDyg6inYnJor,charge,pay_mxqDyg6inYnJor,19.18,eur,20.49,1.23,19.26,usd,2026-08-18 15:03:00,2026-08-20,Payment (fx EUR->USD),charge,po_M2wSeZgkV7PK2Y,card,Discover,order_ssm4rFNCqodowL,RCPT-US-100055,1.068200
+txn_2yR3nmHY2csdSu,charge,pay_2yR3nmHY2csdSu,15.78,usd,15.78,0.70,15.08,usd,2026-08-18 15:07:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,Discover,order_WSWZhjmYpUAyv2,RCPT-US-100075,1.000000
+txn_wu7OTmDrZdtN7Q,charge,pay_wu7OTmDrZdtN7Q,21.19,usd,21.19,2.24,18.95,usd,2026-08-18 16:49:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,wallet,,order_lwAyYdiFizWxEO,RCPT-US-100060,1.000000
+txn_EJYI7TisCl4H2z,charge,pay_EJYI7TisCl4H2z,19.77,usd,19.77,0.11,19.66,usd,2026-08-18 16:59:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,ach,,order_dgwJf010HN48Jz,RCPT-US-100221,1.000000
+txn_rZHC1WHq7Np8hh,charge,pay_rZHC1WHq7Np8hh,5.89,usd,5.89,0.45,5.44,usd,2026-08-18 17:05:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,American Express,order_ESfWBwyf476FMf,RCPT-US-100119,1.000000
+txn_IQAjeGpzxXJoOZ,charge,pay_IQAjeGpzxXJoOZ,7.16,usd,7.16,0.48,6.68,usd,2026-08-18 17:29:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,American Express,order_wF7BnIHDigNjxL,RCPT-US-100103,1.000000
+txn_Rd9zaVrJL3ltWA,charge,pay_Rd9zaVrJL3ltWA,43.38,usd,43.38,1.39,41.99,usd,2026-08-18 18:10:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,Visa,order_HE7j29xnc48Gmk,RCPT-US-100281,1.000000
+txn_HuNcGHuvvVphx8,charge,pay_HuNcGHuvvVphx8,10.12,usd,10.12,0.05,10.07,usd,2026-08-18 19:13:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,ach,,order_hljJ6rpDpRlAfk,RCPT-US-100239,1.000000
+txn_gDiql2BOzMc0KF,charge,pay_gDiql2BOzMc0KF,14.14,usd,14.14,0.66,13.48,usd,2026-08-18 19:37:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,Discover,order_2HjmvHvNnt6lDE,RCPT-US-100342,1.000000
+txn_shasx9zklKhxo7,charge,pay_shasx9zklKhxo7,13.29,usd,13.29,0.63,12.66,usd,2026-08-18 19:40:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,Visa,order_o9AFLwOOLUVZ3D,RCPT-US-100262,1.000000
+txn_NuZYo9lNT8egNO,charge,pay_NuZYo9lNT8egNO,19.26,usd,19.26,0.78,18.48,usd,2026-08-18 19:50:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,American Express,order_2crI8tQm5clXiP,RCPT-US-100082,1.000000
+txn_zDurVmqTkka8Xe,charge,pay_zDurVmqTkka8Xe,49.97,usd,49.97,2.77,47.20,usd,2026-08-18 20:40:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,ach,,order_qpIT3Vh4oB2MOr,RCPT-US-100092,1.000000
+txn_NHCC826zwoF0wo,charge,pay_NHCC826zwoF0wo,37.95,usd,37.95,1.25,36.70,usd,2026-08-18 20:42:00,2026-08-20,Payment,charge,po_M2wSeZgkV7PK2Y,card,MasterCard,order_oSeGIGywpNSUVb,RCPT-US-100042,1.000000
+txn_Get9d9xYyQ6b0f,charge,pay_Get9d9xYyQ6b0f,9.30,usd,9.30,0.53,8.77,usd,2026-08-20 20:51:00,2026-08-21,Payment,charge,po_VQ8WCXTDPt15Le,card,MasterCard,order_I7fLAz7vT0sxJm,RCPT-US-100027,1.000000
+txn_RGD1qSo7JPRbgU,charge,pay_RGD1qSo7JPRbgU,11.18,usd,11.18,0.57,10.61,usd,2026-08-19 07:23:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,wallet,,order_MxXy9b4BzwoZ64,RCPT-US-100019,1.000000
+txn_acnwIp3SfD67jI,refund,rfnd_acnwIp3SfD67jI,11.18,usd,-5.59,0.00,-5.59,usd,2026-08-19 07:23:00,2026-08-21,Refund,refund,po_Lqo4U4GsD16o1j,wallet,,order_MxXy9b4BzwoZ64,RCPT-US-100019,1.000000
+txn_pfSY6gXMRh5OOf,charge,pay_pfSY6gXMRh5OOf,19.03,usd,19.03,0.10,18.93,usd,2026-08-19 07:57:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,ach,,order_RLfvjH8Ney3Eag,RCPT-US-100271,1.000000
+txn_NWdDESQd0JCTzm,charge,pay_NWdDESQd0JCTzm,32.38,usd,32.38,1.11,31.27,usd,2026-08-19 08:42:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,Discover,order_za3IQg7bXhcq8i,RCPT-US-100303,1.000000
+txn_m9IQ1CVMLYFBDC,charge,pay_m9IQ1CVMLYFBDC,18.78,usd,18.78,0.76,18.02,usd,2026-08-19 09:16:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,wallet,,order_jX3tdf8265E3mo,RCPT-US-100062,1.000000
+txn_wxOQqt3SRmhxwC,charge,pay_wxOQqt3SRmhxwC,16.70,usd,16.70,0.72,15.98,usd,2026-08-19 09:26:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,MasterCard,order_B1PhmPTT0jLvgL,RCPT-US-100368,1.000000
+txn_AW6FpSon7upsQp,charge,pay_AW6FpSon7upsQp,6.55,usd,6.55,0.46,6.09,usd,2026-08-19 10:06:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,American Express,order_PFIvBBxZ1JSXL9,RCPT-US-100089,1.000000
+txn_3muA1Jm1Tlb4PY,charge,pay_3muA1Jm1Tlb4PY,7.35,usd,7.35,0.48,6.87,usd,2026-08-19 11:18:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,American Express,order_YrYmx5OzcSsAUQ,RCPT-US-100059,1.000000
+txn_fKH8oxFfysjyGo,charge,pay_fKH8oxFfysjyGo,19.99,usd,19.99,0.80,19.19,usd,2026-08-19 11:53:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,MasterCard,order_UWGZ7Z54vFb4pB,RCPT-US-100044,1.000000
+txn_lThmiWf29uN0bE,charge,pay_lThmiWf29uN0bE,7.44,usd,7.44,0.49,6.95,usd,2026-08-19 12:20:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,Discover,order_aHgWtIib6q1N9P,RCPT-US-100252,1.000000
+txn_GfGZqGfubzgmBH,charge,pay_GfGZqGfubzgmBH,7.18,usd,7.18,1.01,6.17,usd,2026-08-19 12:37:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,Discover,order_ume3x2wTCm4aqm,RCPT-US-100218,1.000000
+txn_QeTBMcs6sAXoHF,charge,pay_QeTBMcs6sAXoHF,6.80,usd,6.80,0.47,6.33,usd,2026-08-19 12:56:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,Discover,order_mhVujDpvAHCV0R,RCPT-US-100376,1.000000
+txn_jqbhLAa9yf32CN,charge,pay_jqbhLAa9yf32CN,10.04,usd,10.04,0.55,9.49,usd,2026-08-19 14:01:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,Visa,order_18eFNHZyElldOC,RCPT-US-100293,1.000000
+txn_2OPMldjP4fk67r,charge,pay_2OPMldjP4fk67r,21.67,cad,15.50,0.99,14.51,usd,2026-08-19 14:41:00,2026-08-21,Payment (fx CAD->USD),charge,po_Lqo4U4GsD16o1j,wallet,,order_4tDZqyZyorx8V0,RCPT-US-100125,0.715400
+txn_HI55zBnUzecfRX,charge,pay_HI55zBnUzecfRX,16.77,usd,16.77,0.72,16.05,usd,2026-08-19 15:43:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,American Express,order_h5BWjiy7Uo8eHV,RCPT-US-100172,1.000000
+txn_v4Av9RRjwA7uo1,charge,pay_v4Av9RRjwA7uo1,10.56,usd,10.56,0.57,9.99,usd,2026-08-19 17:16:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,American Express,order_Hth9feqwSg6jnc,RCPT-US-100301,1.000000
+txn_9HCv1JzrSDm3iv,charge,pay_9HCv1JzrSDm3iv,7.94,usd,7.94,0.50,7.44,usd,2026-08-19 17:51:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,Discover,order_v8IWo2Y2PQ0gCc,RCPT-US-100178,1.000000
+txn_5idRWZKMFtkyxq,charge,pay_5idRWZKMFtkyxq,11.65,usd,11.65,0.59,11.06,usd,2026-08-19 18:56:00,2026-08-21,Payment,charge,po_Lqo4U4GsD16o1j,card,MasterCard,order_oVmb7MzSkrUD7g,RCPT-US-100215,1.000000
+txn_B11Nwt4wS5QPsZ,charge,pay_B11Nwt4wS5QPsZ,32.79,usd,32.79,1.12,31.67,usd,2026-08-21 16:26:00,2026-08-21,Payment,charge,po_VQ8WCXTDPt15Le,card,American Express,order_JA94pBjODFS3bo,RCPT-US-100311,1.000000
+txn_AMRip4AoU7BNUU,charge,pay_AMRip4AoU7BNUU,7.03,usd,7.03,0.48,6.55,usd,2026-08-20 06:05:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,MasterCard,order_3vBpfZnrzVLD3a,RCPT-US-100101,1.000000
+txn_wI3zY5fyOwQH2h,charge,pay_wI3zY5fyOwQH2h,4.94,usd,4.94,0.42,4.52,usd,2026-08-22 06:11:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,wallet,,order_pgcuoqLAwWtkRL,RCPT-US-100336,1.000000
+txn_StY4qWB8dWKnHf,charge,pay_StY4qWB8dWKnHf,14.12,usd,14.12,0.66,13.46,usd,2026-08-22 07:03:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,Discover,order_DNxSIvPZZ63fFK,RCPT-US-100001,1.000000
+txn_eJ2eLNVnguPcaT,charge,pay_eJ2eLNVnguPcaT,14.19,usd,14.19,0.66,13.53,usd,2026-08-20 07:33:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,MasterCard,order_13fZAaZO4ebteX,RCPT-US-100296,1.000000
+txn_dddxH5jMTF7eBS,charge,pay_dddxH5jMTF7eBS,13.15,usd,13.15,0.63,12.52,usd,2026-08-22 07:44:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,American Express,order_dE0g9cRYN687NE,RCPT-US-100017,1.000000
+txn_X9PuOLC8Q8WD5j,charge,pay_X9PuOLC8Q8WD5j,15.99,usd,15.99,0.70,15.29,usd,2026-08-21 07:58:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,MasterCard,order_5B16DQygtvpweD,RCPT-US-100063,1.000000
+txn_AuPwx7JYi4xJK2,charge,pay_AuPwx7JYi4xJK2,11.16,usd,11.16,0.58,10.58,usd,2026-08-22 08:43:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,MasterCard,order_h25wvkZ9ezRA91,RCPT-US-100250,1.000000
+txn_WlUhJ31cqjvUKd,charge,pay_WlUhJ31cqjvUKd,27.79,usd,27.79,1.00,26.79,usd,2026-08-21 09:29:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,Visa,order_csxQlOIVdp4sPg,RCPT-US-100045,1.000000
+txn_dSwjpIx1eWy2OR,charge,pay_dSwjpIx1eWy2OR,12.57,usd,12.57,0.62,11.95,usd,2026-08-21 09:30:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,Discover,order_tYrQbrLeAzuzRW,RCPT-US-100050,1.000000
+txn_sTJQjzuzGD1k35,charge,pay_sTJQjzuzGD1k35,26.07,usd,26.07,0.96,25.11,usd,2026-08-20 09:36:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,MasterCard,order_DMPNFQQ1FQfLQA,RCPT-US-100204,1.000000
+txn_DlLTtiR6UQPQ1c,charge,pay_DlLTtiR6UQPQ1c,10.12,usd,10.12,0.55,9.57,usd,2026-08-22 09:39:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,American Express,order_Fhof2FMIb9ySnx,RCPT-US-100112,1.000000
+txn_Ut6Ly1iu5JfiUQ,charge,pay_Ut6Ly1iu5JfiUQ,4.38,aud,2.83,0.43,2.40,usd,2026-08-21 09:57:00,2026-08-24,Payment (fx AUD->USD),charge,po_VwVIvl4ROwbEOr,card,Visa,order_qTtOdkR6aTtiOK,RCPT-US-100282,0.646800
+txn_QscN6mKlMcI4Nu,charge,pay_QscN6mKlMcI4Nu,26.28,usd,26.28,0.14,26.14,usd,2026-08-22 10:28:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,ach,,order_VLZ0wTZ2eZJxX5,RCPT-US-100243,1.000000
+txn_XOYKgc1Slrh4Er,charge,pay_XOYKgc1Slrh4Er,3.98,usd,3.98,0.40,3.58,usd,2026-08-20 10:30:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,MasterCard,order_BBHbTeIJbOXdut,RCPT-US-100330,1.000000
+txn_o70RIh8sqzGUK3,charge,pay_o70RIh8sqzGUK3,7.89,usd,7.89,0.50,7.39,usd,2026-08-20 11:02:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,MasterCard,order_pFT57nRafmgd8D,RCPT-US-100346,1.000000
+txn_W52L2U4xI289v3,charge,pay_W52L2U4xI289v3,11.69,usd,11.69,0.59,11.10,usd,2026-08-21 11:24:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,Visa,order_rip6Dy31jd8Vey,RCPT-US-100164,1.000000
+txn_6pffXsBD414rHj,charge,pay_6pffXsBD414rHj,7.98,usd,7.98,0.50,7.48,usd,2026-08-20 11:28:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,Visa,order_YcTwg5JumvdC8U,RCPT-US-100128,1.000000
+txn_TmFcBUuHZfcLlH,charge,pay_TmFcBUuHZfcLlH,7.48,usd,7.48,0.49,6.99,usd,2026-08-21 12:04:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,American Express,order_XCPkAJ3D8tS3dr,RCPT-US-100240,1.000000
+txn_WtwbULzesBrrxK,charge,pay_WtwbULzesBrrxK,13.24,usd,13.24,0.63,12.61,usd,2026-08-20 12:41:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,American Express,order_ZXH9oxS1jpNoPt,RCPT-US-100155,1.000000
+txn_ujRBEzA1LFsPAL,charge,pay_ujRBEzA1LFsPAL,37.53,usd,37.53,1.24,36.29,usd,2026-08-20 13:54:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,Discover,order_OLQ5tyPBBHF7FM,RCPT-US-100156,1.000000
+txn_ZWfwYRxV9hi2TG,charge,pay_ZWfwYRxV9hi2TG,9.66,aud,6.25,0.57,5.68,usd,2026-08-22 13:55:00,2026-08-24,Payment (fx AUD->USD),charge,po_VwVIvl4ROwbEOr,wallet,,order_Q5mqGlAarYnZ9t,RCPT-US-100353,0.646800
+txn_8sYBEMNDvzIJTO,charge,pay_8sYBEMNDvzIJTO,20.71,usd,20.71,0.82,19.89,usd,2026-08-21 14:00:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,MasterCard,order_ODbQHuu66G8Jjj,RCPT-US-100173,1.000000
+txn_od7LcQ9gdD2TNi,charge,pay_od7LcQ9gdD2TNi,11.42,usd,11.42,0.59,10.83,usd,2026-08-20 14:14:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,American Express,order_OeT65kqollyyjX,RCPT-US-100264,1.000000
+txn_ZkcHAeZSkKFhqs,charge,pay_ZkcHAeZSkKFhqs,31.22,usd,31.22,1.09,30.13,usd,2026-08-22 14:21:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,Discover,order_ghfeqnax9NOAuk,RCPT-US-100393,1.000000
+txn_K9qGMYJJyTuTbR,charge,pay_K9qGMYJJyTuTbR,20.19,usd,20.19,0.81,19.38,usd,2026-08-20 14:22:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,Visa,order_MGo6GRN4YdCAZ2,RCPT-US-100046,1.000000
+txn_kcZQHOL94MjvHO,charge,pay_kcZQHOL94MjvHO,8.60,usd,8.60,0.52,8.08,usd,2026-08-22 15:23:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,MasterCard,order_31QpGMhqQtfOjd,RCPT-US-100093,1.000000
+txn_hgB3cxLmAxzJLJ,charge,pay_hgB3cxLmAxzJLJ,20.36,usd,20.36,0.80,19.56,usd,2026-08-22 15:52:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,wallet,,order_enuHjDUrhhjeyx,RCPT-US-100008,1.000000
+txn_gcjBw56EcUngmg,refund,rfnd_gcjBw56EcUngmg,20.36,usd,-20.36,0.00,-20.36,usd,2026-08-22 15:52:00,2026-08-24,Refund,refund,po_VwVIvl4ROwbEOr,wallet,,order_enuHjDUrhhjeyx,RCPT-US-100008,1.000000
+txn_FnYWkLpbV7RPoK,charge,pay_FnYWkLpbV7RPoK,10.61,usd,10.61,0.57,10.04,usd,2026-08-20 16:45:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,Visa,order_3o9qhgSLk35HjL,RCPT-US-100246,1.000000
+txn_sGuBD5UE4HH9fI,charge,pay_sGuBD5UE4HH9fI,8.25,usd,8.25,0.51,7.74,usd,2026-08-21 17:00:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,Discover,order_hbALOriJovigHh,RCPT-US-100107,1.000000
+txn_VzZBO2TzvN4rdO,charge,pay_VzZBO2TzvN4rdO,16.04,usd,16.04,0.70,15.34,usd,2026-08-21 17:33:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,MasterCard,order_2gIFhNvGx5YcK6,RCPT-US-100314,1.000000
+txn_LBAnfdPcwnx0d1,charge,pay_LBAnfdPcwnx0d1,11.03,usd,11.03,0.58,10.45,usd,2026-08-21 18:19:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,Discover,order_LzeZGEIWbXFzcg,RCPT-US-100034,1.000000
+txn_Nbh2JKLSADzk1n,charge,pay_Nbh2JKLSADzk1n,4.36,usd,4.36,0.41,3.95,usd,2026-08-21 18:42:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,MasterCard,order_fZpzqirr3FeV8B,RCPT-US-100352,1.000000
+txn_Lk1XCKsXkm2AWh,charge,pay_Lk1XCKsXkm2AWh,11.29,usd,11.29,0.58,10.71,usd,2026-08-21 19:31:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,MasterCard,order_7c9hEHWtP0136U,RCPT-US-100068,1.000000
+txn_A5OHVZPp2bPVlP,charge,pay_A5OHVZPp2bPVlP,11.58,usd,11.58,0.59,10.99,usd,2026-08-21 19:38:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,American Express,order_YoChyjzTRexted,RCPT-US-100194,1.000000
+txn_HaJsQYGXWqzhhT,charge,pay_HaJsQYGXWqzhhT,8.95,usd,8.95,0.53,8.42,usd,2026-08-21 19:58:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,card,Discover,order_cqFRZScsHcoeuz,RCPT-US-100111,1.000000
+txn_vor1cfhgIXP9WI,charge,pay_vor1cfhgIXP9WI,11.23,usd,11.23,0.57,10.66,usd,2026-08-21 20:18:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,wallet,,order_W4qTPKPb3lyE7L,RCPT-US-100387,1.000000
+txn_F1qH6YytwMe4Lb,charge,pay_F1qH6YytwMe4Lb,4.63,usd,4.63,0.02,4.61,usd,2026-08-20 20:39:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,ach,,order_yoVFz8uZdZv8Fu,RCPT-US-100006,1.000000
+txn_e1hsA2Bb9uOk4T,charge,pay_e1hsA2Bb9uOk4T,14.50,usd,14.50,0.65,13.85,usd,2026-08-21 20:44:00,2026-08-24,Payment,charge,po_VwVIvl4ROwbEOr,wallet,,order_yNZnlEk6KJCBHG,RCPT-US-100041,1.000000
+txn_spoCsEvCE2lwXM,refund,rfnd_spoCsEvCE2lwXM,14.50,usd,-14.50,0.00,-14.50,usd,2026-08-21 20:44:00,2026-08-24,Refund,refund,po_VwVIvl4ROwbEOr,wallet,,order_yNZnlEk6KJCBHG,RCPT-US-100041,1.000000
+txn_TWR7MT3SYojCz7,charge,pay_TWR7MT3SYojCz7,23.54,usd,23.54,0.89,22.65,usd,2026-08-23 07:24:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,card,American Express,order_rnK98h7n1cVn1J,RCPT-US-100395,1.000000
+txn_dGt0Ju5XVt4OJQ,charge,pay_dGt0Ju5XVt4OJQ,4.02,usd,4.02,0.40,3.62,usd,2026-08-23 07:44:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,card,Visa,order_HylcPMcHMsusvw,RCPT-US-100363,1.000000
+txn_3d6oFSHQIgBi3O,charge,pay_3d6oFSHQIgBi3O,10.45,usd,10.45,0.06,10.39,usd,2026-08-23 08:01:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,ach,,order_Yw0fPWVQI1T5r8,RCPT-US-100278,1.000000
+txn_qHw1PqHrS7GMrl,charge,pay_qHw1PqHrS7GMrl,10.91,eur,11.65,0.81,10.84,usd,2026-08-23 09:45:00,2026-08-25,Payment (fx EUR->USD),charge,po_qxBP8koR63vqDg,wallet,,order_tqARDbFRU5ksAg,RCPT-US-100182,1.068200
+txn_JIuxClduQKwit7,charge,pay_JIuxClduQKwit7,7.31,usd,7.31,0.04,7.27,usd,2026-08-23 09:51:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,ach,,order_rBMQCeoXscAK1z,RCPT-US-100313,1.000000
+txn_7RLBXrzqsW5aBq,charge,pay_7RLBXrzqsW5aBq,4.83,usd,4.83,0.42,4.41,usd,2026-08-23 12:18:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,card,MasterCard,order_tsdP2ZW5oGLSHR,RCPT-US-100084,1.000000
+txn_uDBYO49UrZrCfi,charge,pay_uDBYO49UrZrCfi,23.43,usd,23.43,0.13,23.30,usd,2026-08-23 13:10:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,ach,,order_ezMiLEpLsLQzpg,RCPT-US-100197,1.000000
+txn_tAwBm2XUBDbQPP,charge,pay_tAwBm2XUBDbQPP,3.79,usd,3.79,0.40,3.39,usd,2026-08-23 14:08:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,card,MasterCard,order_lGcN7EosOGOOGc,RCPT-US-100257,1.000000
+txn_vK0oyDSgCVDGhv,charge,pay_vK0oyDSgCVDGhv,1.79,usd,1.79,0.34,1.45,usd,2026-08-23 14:27:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,wallet,,order_vtMgZKOqNbQqdF,RCPT-US-100186,1.000000
+txn_z2UsJezmacWXdw,charge,pay_z2UsJezmacWXdw,8.16,usd,8.16,0.51,7.65,usd,2026-08-23 14:59:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,card,Visa,order_ua5Z6gxXL5XIAD,RCPT-US-100310,1.000000
+txn_iBVOi4W60VAxxx,charge,pay_iBVOi4W60VAxxx,7.27,usd,7.27,0.04,7.23,usd,2026-08-25 11:17:00,2026-08-25,Payment,charge,po_MB46qAWLE5paD3,ach,,order_P4VyFiKGC02Ubo,RCPT-US-100143,1.000000
+txn_5pUxAY1f6GCQiN,charge,pay_5pUxAY1f6GCQiN,9.77,usd,9.77,0.55,9.22,usd,2026-08-23 17:40:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,card,MasterCard,order_Kty88MhWG2kdiN,RCPT-US-100048,1.000000
+txn_whREnzYQeEhtqJ,charge,pay_whREnzYQeEhtqJ,55.50,usd,55.50,1.70,53.80,usd,2026-08-23 17:51:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,card,Visa,order_Ke1zKAUu2uoX68,RCPT-US-100298,1.000000
+txn_kCBKkQ3hF0ol3b,charge,pay_kCBKkQ3hF0ol3b,8.32,usd,8.32,0.51,7.81,usd,2026-08-23 18:03:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,card,Visa,order_MPfiwzVdC2TQ2x,RCPT-US-100245,1.000000
+txn_SifmLu6MTZVBGS,charge,pay_SifmLu6MTZVBGS,10.44,usd,10.44,0.56,9.88,usd,2026-08-23 18:08:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,card,MasterCard,order_W6uMkJLauSHXwl,RCPT-US-100231,1.000000
+txn_oczBbImsQmROaN,charge,pay_oczBbImsQmROaN,22.17,usd,22.17,0.84,21.33,usd,2026-08-23 20:45:00,2026-08-25,Payment,charge,po_qxBP8koR63vqDg,wallet,,order_godDFxAzV5tKvy,RCPT-US-100168,1.000000
+txn_UwikDniYgmQS9T,charge,pay_UwikDniYgmQS9T,7.73,usd,7.73,0.04,7.69,usd,2026-08-24 08:22:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,ach,,order_qa2Up54wsHLr7u,RCPT-US-100305,1.000000
+txn_6yKSwY7wBOpM4O,charge,pay_6yKSwY7wBOpM4O,22.64,usd,22.64,0.87,21.77,usd,2026-08-24 10:23:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,card,MasterCard,order_wY2XPp5eQ3ADGq,RCPT-US-100147,1.000000
+txn_q3fs8CcfWgBpeK,charge,pay_q3fs8CcfWgBpeK,9.94,usd,9.94,0.05,9.89,usd,2026-08-24 10:27:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,ach,,order_i1TTGfeEE4KccW,RCPT-US-100269,1.000000
+txn_7TrBzHJ6AI6TJg,charge,pay_7TrBzHJ6AI6TJg,14.11,usd,14.11,0.08,14.03,usd,2026-08-24 11:02:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,ach,,order_vWGwKdrZFaVp6q,RCPT-US-100106,1.000000
+txn_6xXg8KkYVMjF70,charge,pay_6xXg8KkYVMjF70,17.78,usd,17.78,0.75,17.03,usd,2026-08-24 11:43:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,card,American Express,order_sO0OkZnIIF1pop,RCPT-US-100359,1.000000
+txn_bsklvpa2Oqup44,charge,pay_bsklvpa2Oqup44,49.98,usd,49.98,0.27,49.71,usd,2026-08-24 12:00:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,ach,,order_xpsl2OrLpHdbUQ,RCPT-US-100047,1.000000
+txn_FDKHCBUtsoKHdK,charge,pay_FDKHCBUtsoKHdK,11.20,usd,11.20,0.58,10.62,usd,2026-08-24 12:27:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,card,Visa,order_GLMmWr8MXH2bUZ,RCPT-US-100174,1.000000
+txn_xDlaPVTofaZDp4,charge,pay_xDlaPVTofaZDp4,6.52,usd,6.52,0.46,6.06,usd,2026-08-24 12:32:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,wallet,,order_gAUCmybMOVABG1,RCPT-US-100217,1.000000
+txn_aoKP8olgibVQYU,charge,pay_aoKP8olgibVQYU,6.50,usd,6.50,0.46,6.04,usd,2026-08-24 13:48:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,wallet,,order_fucCfkgNqD0KDW,RCPT-US-100227,1.000000
+txn_nDsQIy3uVVgfJM,charge,pay_nDsQIy3uVVgfJM,14.79,eur,15.80,1.31,14.49,usd,2026-08-24 13:55:00,2026-08-26,Payment (fx EUR->USD),charge,po_IvjRKQRWzqvKpf,card,Visa,order_m7jzDwJ1sbYStB,RCPT-US-100157,1.068200
+txn_9sLRT58eMnU7cZ,charge,pay_9sLRT58eMnU7cZ,2.81,usd,2.81,0.37,2.44,usd,2026-08-24 14:10:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,card,American Express,order_GrQXZUYy9eRHN7,RCPT-US-100130,1.000000
+txn_wieqj2qawERZXt,refund,rfnd_wieqj2qawERZXt,2.81,usd,-2.81,0.00,-2.81,usd,2026-08-24 14:10:00,2026-08-26,Refund,refund,po_IvjRKQRWzqvKpf,card,American Express,order_GrQXZUYy9eRHN7,RCPT-US-100130,1.000000
+txn_2UVnj4dfxo5NAP,charge,pay_2UVnj4dfxo5NAP,8.66,eur,9.25,0.71,8.54,usd,2026-08-24 15:34:00,2026-08-26,Payment (fx EUR->USD),charge,po_IvjRKQRWzqvKpf,card,Visa,order_N5WY4GGl4I8Mcd,RCPT-US-100138,1.068200
+txn_uszgI6hwgk10zB,charge,pay_uszgI6hwgk10zB,18.59,usd,18.59,0.77,17.82,usd,2026-08-24 15:41:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,card,Discover,order_0rlz5tr9spOFBC,RCPT-US-100015,1.000000
+txn_oirPfQAdzEv7g5,refund,rfnd_oirPfQAdzEv7g5,18.59,usd,-18.59,0.00,-18.59,usd,2026-08-24 15:41:00,2026-08-26,Refund,refund,po_IvjRKQRWzqvKpf,card,Discover,order_0rlz5tr9spOFBC,RCPT-US-100015,1.000000
+txn_UkRx63idBSV5WB,charge,pay_UkRx63idBSV5WB,24.15,usd,24.15,0.91,23.24,usd,2026-08-24 15:44:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,card,Discover,order_ExE5c0yAha2Hyu,RCPT-US-100261,1.000000
+txn_C0pIrtHNaq2UQC,charge,pay_C0pIrtHNaq2UQC,16.89,cad,12.08,0.84,11.24,usd,2026-08-24 18:06:00,2026-08-26,Payment (fx CAD->USD),charge,po_IvjRKQRWzqvKpf,card,Visa,order_hWWrjaZXWP7ns3,RCPT-US-100358,0.715400
+txn_dIizlr4cSSR5Lo,charge,pay_dIizlr4cSSR5Lo,1658.38,inr,19.47,1.18,18.29,usd,2026-08-24 18:22:00,2026-08-26,Payment (fx INR->USD),charge,po_IvjRKQRWzqvKpf,card,American Express,order_Hi2B6PItXB523i,RCPT-US-100306,0.011740
+txn_ivhaq75SINVrE7,charge,pay_ivhaq75SINVrE7,5.90,usd,5.90,0.45,5.45,usd,2026-08-24 19:21:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,card,MasterCard,order_aEgA2kqPkbZNku,RCPT-US-100132,1.000000
+txn_ry6hQSp795NF4g,charge,pay_ry6hQSp795NF4g,24.65,usd,24.65,0.90,23.75,usd,2026-08-24 20:44:00,2026-08-26,Payment,charge,po_IvjRKQRWzqvKpf,wallet,,order_AKQ5P1vM8Kv6UM,RCPT-US-100040,1.000000
+txn_6LUtrZrJ2rkcRz,charge,pay_6LUtrZrJ2rkcRz,19.77,usd,19.77,0.80,18.97,usd,2026-08-25 08:49:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,card,MasterCard,order_QmiLIn3X4JPssB,RCPT-US-100222,1.000000
+txn_OjT7V95238yRZ7,charge,pay_OjT7V95238yRZ7,11.64,usd,11.64,0.59,11.05,usd,2026-08-25 09:07:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,card,Discover,order_duMudo8fFxZhMw,RCPT-US-100340,1.000000
+txn_74OTC2VvYkOa7k,charge,pay_74OTC2VvYkOa7k,8.67,usd,8.67,0.51,8.16,usd,2026-08-25 09:21:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,wallet,,order_YEFGGTiHfD3tFu,RCPT-US-100263,1.000000
+txn_WcvHfx9g1EKf6E,charge,pay_WcvHfx9g1EKf6E,16.29,usd,16.29,1.01,15.28,usd,2026-08-25 10:00:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,card,MasterCard,order_5PkqhKKNUHOuMV,RCPT-US-100299,1.000000
+txn_04R8XTXnWZYSH8,charge,pay_04R8XTXnWZYSH8,5.93,cad,4.24,0.49,3.75,usd,2026-08-25 10:38:00,2026-08-27,Payment (fx CAD->USD),charge,po_7khmLQFOQvCUjR,card,American Express,order_OA6rawox4kw6P0,RCPT-US-100163,0.715400
+txn_LJbmOpTPxqPIAj,charge,pay_LJbmOpTPxqPIAj,5.09,usd,5.09,0.03,5.06,usd,2026-08-25 10:46:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,ach,,order_jK7gqeNOuNn3YG,RCPT-US-100369,1.000000
+txn_CwcanHM2i4Ju3N,charge,pay_CwcanHM2i4Ju3N,19.31,aud,12.49,0.85,11.64,usd,2026-08-25 14:18:00,2026-08-27,Payment (fx AUD->USD),charge,po_7khmLQFOQvCUjR,wallet,,order_mfdgXyfzdbfoPu,RCPT-US-100334,0.646800
+txn_vGSQuyYiZWe9Cl,charge,pay_vGSQuyYiZWe9Cl,9.10,gbp,11.33,0.82,10.51,usd,2026-08-25 14:33:00,2026-08-27,Payment (fx GBP->USD),charge,po_7khmLQFOQvCUjR,card,Visa,order_6PEkc2DXrbdkYm,RCPT-US-100277,1.244600
+txn_jD0SSW0fZVgR3g,charge,pay_jD0SSW0fZVgR3g,12.87,usd,12.87,0.07,12.80,usd,2026-08-25 14:35:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,ach,,order_WNpfyHVMUtTIlo,RCPT-US-100054,1.000000
+txn_BbhxGWetDikNt3,charge,pay_BbhxGWetDikNt3,5.26,usd,5.26,0.43,4.83,usd,2026-08-25 15:32:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,card,Discover,order_0Fk0SKbAhMSwwD,RCPT-US-100043,1.000000
+txn_1y2flpvGROAT5B,charge,pay_1y2flpvGROAT5B,19.14,usd,19.14,0.78,18.36,usd,2026-08-25 15:41:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,card,American Express,order_hEpO1x4qYfYYcu,RCPT-US-100335,1.000000
+txn_Qwwvc84FTd3NsA,charge,pay_Qwwvc84FTd3NsA,20.96,usd,20.96,0.83,20.13,usd,2026-08-25 15:53:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,card,Visa,order_EF5FLXAbagdS6s,RCPT-US-100195,1.000000
+txn_cGFWZ4LKNE7wAF,charge,pay_cGFWZ4LKNE7wAF,2.30,usd,2.30,0.01,2.29,usd,2026-08-25 16:29:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,ach,,order_6qZFIPdqD38aoc,RCPT-US-100223,1.000000
+txn_OEkRyL75eXj4ek,charge,pay_OEkRyL75eXj4ek,11.63,usd,11.63,0.59,11.04,usd,2026-08-25 16:57:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,card,Visa,order_t5156t3cfPAk5T,RCPT-US-100319,1.000000
+txn_NKWfu6q7ZKhwJb,charge,pay_NKWfu6q7ZKhwJb,23.12,usd,23.12,0.12,23.00,usd,2026-08-25 17:51:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,ach,,order_6LegNy8MpuPWkz,RCPT-US-100201,1.000000
+txn_vzOMhfWuBByReQ,charge,pay_vzOMhfWuBByReQ,12.44,usd,12.44,0.07,12.37,usd,2026-08-25 19:12:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,ach,,order_Msm9Wcz7uW9XFO,RCPT-US-100005,1.000000
+txn_AnInx2sA9AELQk,charge,pay_AnInx2sA9AELQk,7.26,usd,7.26,0.48,6.78,usd,2026-08-25 19:30:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,wallet,,order_QN36HGyV5Pjm1A,RCPT-US-100276,1.000000
+txn_M8JqTDLVWcePVv,charge,pay_M8JqTDLVWcePVv,24.34,usd,24.34,0.91,23.43,usd,2026-08-25 19:57:00,2026-08-27,Payment,charge,po_7khmLQFOQvCUjR,card,American Express,order_XLHy1TzEujdGvj,RCPT-US-100120,1.000000
+txn_GapsIak1WEXuqu,refund,rfnd_GapsIak1WEXuqu,24.34,usd,-12.17,0.00,-12.17,usd,2026-08-25 19:57:00,2026-08-27,Refund,refund,po_7khmLQFOQvCUjR,card,American Express,order_XLHy1TzEujdGvj,RCPT-US-100120,1.000000

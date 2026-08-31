@@ -77,6 +77,47 @@ def _key(t: NormalizedTxn) -> str | None:
     return (t.utr or "").upper() or None
 
 
+def _fit_line(pts: list[tuple[float, float]]) -> tuple[float, float]:
+    """Least-squares fee = a*gross + b."""
+    n = len(pts)
+    sx = sum(x for x, _ in pts)
+    sy = sum(y for _, y in pts)
+    sxx = sum(x * x for x, _ in pts)
+    sxy = sum(x * y for x, y in pts)
+    denom = n * sxx - sx * sx
+    if abs(denom) < 1e-9:
+        return (sy / sx if sx else 0.02), 0.0
+    a = (n * sxy - sx * sy) / denom
+    b = (sy - a * sx) / n
+    return a, b
+
+
+def _infer_contract_terms(pg_rows: list[NormalizedTxn]) -> dict[str, tuple[float, float]]:
+    """Fit fee = pct*gross + flat per method from domestic payments, then refit on
+    the inliers so overcharges (the FEE_MISMATCH tail) don't bias the contract."""
+    buckets: dict[str, list[tuple[float, float]]] = defaultdict(list)
+    for r in pg_rows:
+        if r.kind != "payment" or r.amount_gross <= 0:
+            continue
+        if r.presentment_currency and r.presentment_currency != r.currency:
+            continue
+        buckets[r.method or ""].append((r.amount_gross, r.amount_gross - r.amount_net))
+
+    out: dict[str, tuple[float, float]] = {}
+    for method, pts in buckets.items():
+        if len(pts) < 4:
+            out[method] = (pts[0][1] / pts[0][0] if pts else 0.02, 0.0)
+            continue
+        a, b = _fit_line(pts)
+        resid = sorted(abs(y - (a * x + b)) for x, y in pts)
+        cut = max(resid[len(resid) // 2] * 2, 0.5)
+        inliers = [(x, y) for x, y in pts if abs(y - (a * x + b)) <= cut]
+        if len(inliers) >= 4:
+            a, b = _fit_line(inliers)
+        out[method] = (max(0.0, a), max(0.0, b))
+    return out
+
+
 def _ledger_index(ledger: list[NormalizedTxn]) -> dict[str, NormalizedTxn]:
     idx: dict[str, NormalizedTxn] = {}
     for le in ledger:
@@ -86,14 +127,16 @@ def _ledger_index(ledger: list[NormalizedTxn]) -> dict[str, NormalizedTxn]:
 
 
 def _find_ledger(pg: NormalizedTxn, idx: dict[str, NormalizedTxn]) -> NormalizedTxn | None:
-    for k in filter(None, (pg.external_id,)):
-        hit = idx.get(str(k).upper())
-        if hit and abs(hit.amount_gross - pg.amount_gross) <= AMOUNT_TOL_INR:
+    # cross-border rows book at the mid rate while the PG settles minus a spread,
+    # so allow a relative gap (~5%) as well as the tight absolute one
+    tol = max(AMOUNT_TOL_INR, pg.amount_gross * 0.05)
+    if pg.external_id:
+        hit = idx.get(pg.external_id.upper())
+        if hit and abs(hit.amount_gross - pg.amount_gross) <= tol:
             return hit
-    # receipt token appears inside another id
-    for k, le in idx.items():
-        if pg.external_id and pg.external_id.upper() in k and abs(le.amount_gross - pg.amount_gross) <= AMOUNT_TOL_INR:
-            return le
+        for k, le in idx.items():
+            if pg.external_id.upper() in k and abs(le.amount_gross - pg.amount_gross) <= tol:
+                return le
     return None
 
 
@@ -105,7 +148,15 @@ def reconcile_settlements(
     gst_percent: float = 18.0,
     tds_percent: float = 0.0,        # 194-O TDS withheld from marketplace payouts
     reserve_percent: float = 0.0,    # rolling reserve held from each payout
+    region=None,                     # RegionRules — currency, MDR bands, tax, FX
 ) -> SettlementResult:
+    from .region_rules import region_rules
+
+    reg = region if region is not None else region_rules("IN")
+    if tds_percent or reserve_percent:
+        from dataclasses import replace
+        reg = replace(reg, tds_percent=tds_percent or reg.tds_percent,
+                      reserve_percent=reserve_percent or reg.reserve_percent)
     by_src: dict[Source, list[NormalizedTxn]] = defaultdict(list)
     for t in txns:
         by_src[t.source].append(t)
@@ -130,14 +181,18 @@ def reconcile_settlements(
     outcomes: list[BatchOutcome] = []
     line_issues: list[LineIssue] = []
 
+    # Infer each method's contract (pct*gross + flat) from the population of
+    # domestic payments — no per-merchant config, adapts to any region.
+    contract_terms = _infer_contract_terms(by_src[Source.PG])
+
     for sid, lines in pg_batches.items():
         batch_utr = next((_key(x) for x in lines if _key(x)), None)
         payments = [x for x in lines if x.kind != "refund"]
         gross_net = round(sum(x.amount_net for x in lines), 2)
         # marketplace payouts arrive net of TDS + rolling reserve — a known,
         # contracted deduction, not a discrepancy.
-        tds = round(sum(x.amount_gross for x in payments) * tds_percent / 100.0, 2)
-        reserve = round(gross_net * reserve_percent / 100.0, 2)
+        tds = round(sum(x.amount_gross for x in payments) * reg.tds_percent / 100.0, 2)
+        reserve = round(gross_net * reg.reserve_percent / 100.0, 2)
         expected = round(gross_net - tds - reserve, 2)
 
         bank_rows = bank_by_utr.get(batch_utr, []) if batch_utr else []
@@ -166,22 +221,23 @@ def reconcile_settlements(
         )
 
         anchor_bank = bank_rows[0].raw_record_id if bank_rows else None
-        gross_seen: dict[str, int] = defaultdict(int)
+        cur = reg.currency
+        ftol = FEE_TOL_INR if cur == "INR" else 0.25
         for pg in payments:
             led = _find_ledger(pg, ledger_idx)
-            pct, flat = MDR_BY_METHOD.get(pg.method or "", (mdr_percent, 0.0))
-            is_intl = pg.currency not in ("INR", "", None) or "international" in (pg.narration or "").lower()
-            # on international cards Razorpay folds a ~3.5% forex + cross-border
-            # fee into `fee`; allow for it before calling a fee mismatch
-            intl_slack = round(pg.amount_gross * 0.045, 2) if is_intl else 0.0
-            expected_fee = round(pg.amount_gross * pct / 100.0 + flat, 2)
-            expected_tax = round(expected_fee * GST_ON_FEE, 2)
-            expected_net = round(pg.amount_gross - expected_fee - expected_tax, 2)
-            fee_delta = round(pg.fee - expected_fee, 2)
-            net_short = round(expected_net - pg.amount_net, 2)
+            gross = pg.amount_gross
+            apparent_fee = round(gross - pg.amount_net, 2)          # everything the PG kept
+            a, flat = contract_terms.get(pg.method or "", (0.02, 0.0))
+            rate = a
+            expected_fee = round(gross * a + flat, 2)
+            expected_tax = round(expected_fee * reg.fee_tax_rate, 2) if reg.fee_tax_charged else 0.0
+            cross_border = bool(pg.presentment_currency and pg.presentment_currency != pg.currency)
+            fx_slack = round(gross * (reg.fx_contract_spread + 0.005), 2) if cross_border else 0.0
+            allowed = round(expected_fee + expected_tax + fx_slack, 2)
+            over = round(apparent_fee - allowed, 2)
+            tol = max(ftol, gross * 0.004)
 
             if not reconciled:
-                # batch-level problem — handled by BatchOutcome, don't double-count
                 if led is not None and led.raw_record_id not in used_ledger:
                     used_ledger.add(led.raw_record_id)
                 continue
@@ -189,24 +245,25 @@ def reconcile_settlements(
             if led is None:
                 line_issues.append(LineIssue(pg, None, "MISSING_IN_LEDGER", pg.amount_net,
                                              "money received, no matching ledger row"))
-            elif fee_delta > FEE_TOL_INR + intl_slack:
+            elif over <= tol:
                 used_ledger.add(led.raw_record_id)
-                line_issues.append(LineIssue(pg, led, "FEE_MISMATCH", net_short,
-                                             f"PG fee {pg.fee} vs contracted {expected_fee}"))
-            elif net_short > AMOUNT_TOL_INR + intl_slack:
+                groups.append(MatchGroup(
+                    batch_id=pg.batch_id, status="auto_matched", method=MatchMethod.EXACT,
+                    ledger_txn_id=led.raw_record_id, pg_txn_id=pg.raw_record_id,
+                    bank_txn_id=anchor_bank, note=f"settlement:{sid}"))
+            elif cross_border:
                 used_ledger.add(led.raw_record_id)
-                line_issues.append(LineIssue(pg, led, "SHORT_SETTLEMENT", round(net_short - intl_slack, 2),
-                                             f"net {pg.amount_net} vs expected {expected_net}, fee is correct"))
+                line_issues.append(LineIssue(pg, led, "FX_DIFF", over,
+                    f"conversion + fee kept {apparent_fee} {cur} vs expected {allowed} "
+                    f"on {pg.presentment_currency}->{cur}"))
+            elif over <= max(gross * 0.02, 4 * ftol):
+                used_ledger.add(led.raw_record_id)
+                line_issues.append(LineIssue(pg, led, "FEE_MISMATCH", over,
+                    f"PG kept {apparent_fee} {cur} vs contracted {rate * 100:.2f}% ({allowed} {cur})"))
             else:
                 used_ledger.add(led.raw_record_id)
-                gross_seen[f"{led.external_id}:{round(led.amount_gross, 2)}"] += 1
-                groups.append(
-                    MatchGroup(
-                        batch_id=pg.batch_id, status="auto_matched", method=MatchMethod.EXACT,
-                        ledger_txn_id=led.raw_record_id, pg_txn_id=pg.raw_record_id,
-                        bank_txn_id=anchor_bank, note=f"settlement:{sid}",
-                    )
-                )
+                line_issues.append(LineIssue(pg, led, "SHORT_SETTLEMENT", over,
+                    f"net {pg.amount_net} {cur}; {over} {cur} deducted beyond fee + tax"))
 
     # duplicate ledger rows (webhook double-fire): same external_id + gross twice
     led_seen: dict[str, list[NormalizedTxn]] = defaultdict(list)
@@ -237,7 +294,9 @@ def _fuzzy_bank(pg_lines, pool, expected, sla_days: int) -> list[NormalizedTxn]:
     settled = [x.settlement_date or x.txn_date for x in pg_lines if (x.settlement_date or x.txn_date)]
     if not settled:
         return []
-    win_lo, win_hi = min(settled) - timedelta(days=1), max(settled) + timedelta(days=sla_days + 3)
+    # generous upper bound so a genuinely-late payout is still matched to its
+    # batch (and then flagged TIMING_GAP), not reported as MISSING
+    win_lo, win_hi = min(settled) - timedelta(days=1), max(settled) + timedelta(days=20)
     cands = [
         b for b in pool
         if b.amount_net > 0

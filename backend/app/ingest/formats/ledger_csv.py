@@ -7,11 +7,10 @@ secondary lookup carried in ``narration``.
 
 from __future__ import annotations
 
-from datetime import datetime
-
 import polars as pl
 
 from ...models import NormalizedTxn, Source
+from ._locale import parse_amount, parse_date
 
 _ALIASES = {
     "external_id": ["order id", "order_id", "reference number", "reference_number",
@@ -22,6 +21,9 @@ _ALIASES = {
     "customer": ["customer name", "customer_name", "customer", "contact name"],
     "method": ["payment mode", "payment_mode", "payment method", "mode"],
     "status": ["invoice status", "status", "payment status"],
+    "presentment_ccy": ["presentment currency", "customer currency"],
+    "presentment_amt": ["presentment amount", "customer amount"],
+    "currency": ["currency", "settlement currency", "base currency"],
 }
 
 
@@ -31,25 +33,21 @@ def looks_like(header: list[str]) -> bool:
 
 
 def _f(v) -> float:
-    try:
-        return round(float(str(v).replace(",", "").replace("₹", "").strip()), 2)
-    except (TypeError, ValueError):
-        return 0.0
+    return round(parse_amount(v), 2)
 
 
-def _d(v) -> datetime | None:
-    if not v:
-        return None
-    for fmt in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y", "%m/%d/%Y", "%d %b %Y"):
-        try:
-            return datetime.strptime(str(v).strip()[:11].strip(), fmt)
-        except ValueError:
-            continue
-    return None
+def _d(v, pref="dmy"):
+    return parse_date(v, pref)
+
+
+def _sep(path: str) -> str:
+    with open(path, encoding='utf-8', errors='ignore') as fh:
+        head = fh.readline()
+    return ';' if head.count(';') > head.count(',') else ','
 
 
 def parse(path: str, batch_id: str) -> list[NormalizedTxn]:
-    df = pl.read_csv(path, infer_schema_length=2000)
+    df = pl.read_csv(path, separator=_sep(path), infer_schema_length=0)
     lower = {c.strip().lower(): c for c in df.columns}
 
     def pick(row, key):
@@ -58,11 +56,23 @@ def parse(path: str, batch_id: str) -> list[NormalizedTxn]:
                 return row[lower[a]]
         return None
 
+    # US ledgers use mm/dd/yyyy; infer from the settlement currency column
+    ccy_col = next((lower[a] for a in _ALIASES["currency"] if a in lower), None)
+    sample_ccy = ""
+    if ccy_col:
+        for r in df.iter_rows(named=True):
+            if r.get(ccy_col):
+                sample_ccy = str(r[ccy_col]).upper()
+                break
+    date_pref = "mdy" if sample_ccy == "USD" else "dmy"
+
     out: list[NormalizedTxn] = []
     for i, row in enumerate(df.iter_rows(named=True)):
         gross = _f(pick(row, "amount"))
         oid = pick(row, "external_id")
         receipt = pick(row, "receipt")
+        pres_ccy = str(pick(row, "presentment_ccy") or "").strip().upper()
+        settle_ccy = str(pick(row, "currency") or "").strip().upper()
         out.append(
             NormalizedTxn(
                 batch_id=batch_id,
@@ -71,11 +81,14 @@ def parse(path: str, batch_id: str) -> list[NormalizedTxn]:
                 external_id=str(oid) if oid else (str(receipt) if receipt else None),
                 utr=None,
                 method=str(pick(row, "method") or "").strip().lower() or None,
+                currency=settle_ccy or "INR",
                 amount_gross=gross,
                 amount_net=gross,
-                txn_date=_d(pick(row, "date")),
+                txn_date=_d(pick(row, "date"), date_pref),
                 narration=" ".join(
-                    str(x) for x in (pick(row, "customer"), receipt) if x
+                    str(x) for x in (pick(row, "customer"), receipt,
+                                     f"[{pres_ccy}]" if pres_ccy and pres_ccy != settle_ccy else "")
+                    if x
                 ).strip(),
                 status=str(pick(row, "status") or "").strip().lower(),
             )

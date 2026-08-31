@@ -56,6 +56,9 @@ class NormalizedTxn(BaseModel):
     settlement_id: str | None = None         # PG settlement batch id (for aggregated payouts)
     method: str | None = None                # upi / card / netbanking / wallet
     kind: str = "payment"                    # payment | refund | adjustment
+    presentment_currency: str | None = None  # currency the customer paid in (cross-border)
+    presentment_amount: float | None = None
+    fx_rate: float | None = None             # effective presentment -> settlement rate
     amount_gross: float
     fee: float = 0.0
     tax: float = 0.0

@@ -146,8 +146,11 @@ def _enrich(records: list[ExceptionRecord], client: ModelClient) -> bool:
 
 def run_realistic_batch(
     pg_path: str, bank_path: str, ledger_path: str, *, persist: bool = False,
+    region: str = "IN",
     tds_percent: float | None = None, reserve_percent: float | None = None,
 ) -> dict[str, Any]:
+    from ..matching.region_rules import region_rules
+
     s = get_settings()
     batch_id = f"rbatch_{uuid.uuid4().hex[:10]}"
     started = datetime.now(UTC).replace(tzinfo=None)
@@ -158,12 +161,12 @@ def run_realistic_batch(
         formats[src.value] = fmt
         txns.extend(parsed)
 
-    recon = reconcile_settlements(
-        txns, sla_days=s.settlement_sla_days,
-        mdr_percent=s.default_mdr_percent, gst_percent=s.default_gst_percent,
+    rules = region_rules(
+        region,
         tds_percent=s.default_tds_percent if tds_percent is None else tds_percent,
         reserve_percent=s.default_reserve_percent if reserve_percent is None else reserve_percent,
     )
+    recon = reconcile_settlements(txns, sla_days=s.settlement_sla_days, region=rules)
 
     exceptions = _batch_records(batch_id, recon.batches) + _line_records(batch_id, recon.line_issues)
 
@@ -184,6 +187,8 @@ def run_realistic_batch(
         "finished_at": datetime.now(UTC).replace(tzinfo=None).isoformat(),
         "runtime_seconds": round((datetime.now(UTC).replace(tzinfo=None) - started).total_seconds(), 1),
         "rows_ingested": len(txns),
+        "region": region,
+        "currency": rules.currency,
         "formats": formats,
         "settlement_batches": len(recon.batches),
         "batches_reconciled": recon.batch_report["reconciled"],

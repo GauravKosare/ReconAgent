@@ -13,6 +13,37 @@ reconciliation** (1 bank credit ↔ many PG lines), not 1:1 toy matching.
 
 ---
 
+## 0. Geography — IN, US, EU
+
+`--region` (default `IN`) picks the jurisdiction. Every layer changes with it:
+
+| | **IN** | **US** | **EU (DE)** |
+| --- | --- | --- | --- |
+| Currency | INR | USD | EUR |
+| Tax on the processing fee | **18% GST, charged** | **none** (services not sales-taxed) | **VAT-exempt** — payment processing is a financial service (Dir. 2006/112/EC Art. 135) |
+| MDR norms | capped; UPI ~0, cards ~2% | uncapped; ~1.8–2.9% + $0.30 | **IFR-capped** (Reg. 2015/751): consumer cards ~0.2–1.2% |
+| Methods | UPI / card / netbanking / wallet | card / ACH / wallet | card / SEPA / iDEAL / wallet |
+| Settlement | T+2, rails UPI/NEFT/IMPS/RTGS | T+2 ACH, rails ACH/WIRE/RTP | T+1 SEPA, rails SEPA/SEPA_INSTANT/TARGET2 |
+| Payment reference | UTR (12-digit) | ACH trace (15-digit) | End-to-End ID |
+| Number / date | `1,23,456.78` · dd/mm/yy | `1,234.56` · mm/dd/yyyy | `1.234,56` · `;`-delimited · dd.mm.yyyy |
+| Default PG report | Razorpay recon | Stripe balance report | Stripe balance report |
+| Default bank format | HDFC CSV | Chase-style CSV | CAMT.053 XML |
+
+The backend keeps its own copy of the reconciler-relevant facts in
+`app/matching/region_rules.py` (so it has no dependency on the generator).
+
+### Multi-currency (full)
+
+A configurable share of card payments (5% IN → 18% EU) are **presented in a
+foreign currency** and converted at settlement: `settled = presentment ×
+mid_rate × (1 − spread)`, spread ~2%. The PG report carries both amounts + the
+effective rate; the bank shows only the settlement currency. The reconciler:
+
+- infers each method's contract fee (`fee = pct·gross + flat`, robust linear fit
+  over domestic payments — no per-merchant config)
+- for a cross-border line, widens the fee tolerance by the contracted FX spread
+- flags **`FX_DIFF`** when the conversion + fee kept exceeds the contracted spread
+
 ## 1. Real file formats
 
 ### Payment gateway — Razorpay Settlement Recon Report (`pg_settlement_recon.csv`)
@@ -104,20 +135,21 @@ injected_impact_inr}`. `expected_code` is `null` for a clean transaction.
 ## 4. Running it
 
 ```bash
-# generate
-python -m data.realworld.generate --profile d2c-brand --payments 500 \
-    --bank hdfc --out data/samples/realworld --seed 7
+# generate (region picks currency, formats, tax, MDR — --pg/--bank override)
+python -m data.realworld.generate --region EU --profile saas --payments 500 \
+    --out data/samples/realworld/EU --seed 7
 
-# reconcile one batch
-python scripts/run_batch.py --realistic \
-    --pg data/samples/realworld/pg_settlement_recon.csv \
-    --bank data/samples/realworld/bank_statement_hdfc.csv \
-    --ledger data/samples/realworld/ledger_zoho.csv --no-persist
+# reconcile one batch (formats auto-detected)
+python scripts/run_batch.py --realistic --region EU \
+    --pg     data/samples/realworld/EU/pg_stripe_balance.csv \
+    --bank   data/samples/realworld/EU/bank_statement.camt053.xml \
+    --ledger data/samples/realworld/EU/ledger_export.csv --no-persist
 
 # score across seeds
-python scripts/evaluate_realworld.py --profile d2c-brand --payments 500 \
-    --bank hdfc --seeds 1,2,3
+python scripts/evaluate_realworld.py --region US --profile d2c-brand --seeds 1,2,3
 ```
+
+Committed sample datasets: `data/samples/realworld/{IN,US,EU}/`.
 
 ### Pipeline (`app/pipeline/realistic.py`)
 
@@ -139,18 +171,26 @@ the order id.
 
 ---
 
-## 5. Current results (deterministic, no LLM)
+## 5. Current results (deterministic, no LLM · d2c-brand · 3 seeds)
 
-| Profile / bank | Auto-match | Detection recall | Detection precision |
+| Region | Auto-match | Detection recall | Detection precision |
 | --- | --- | --- | --- |
-| d2c-brand / HDFC | ~93% | 100% | 100% |
-| d2c-brand / MT940 | ~93% | 100% | 100% |
-| saas / CAMT.053 | ~94% | ~97% | ~97% |
-| travel / MT940 | ~85% | ~98% | 100% |
-| **marketplace / ICICI** | ~69% | 100% | **~50%** |
+| **IN** (Razorpay + HDFC, INR) | ~93% | ~95% | ~98% |
+| **US** (Stripe + Chase CSV, USD) | ~95% | ~77% | ~98% |
+| **EU** (Stripe + CAMT.053, EUR) | ~93% | ~85% | ~100% |
 
-**Known gap:** `marketplace` + `icici` is the hard case — terse ICICI RTGS lines
-(no UTR) plus TDS/reserve estimation drift on large batches plus Route splits.
-The TDS/reserve percentages must be told to the reconciler
-(`run_realistic_batch(tds_percent=…, reserve_percent=…)`); the estimate is
-approximate. Tightening this is the next tuning item for the realistic path.
+Per-code F1 is strong for `DUPLICATE`, `MISSING_IN_LEDGER`, `TIMING_GAP`,
+`MISSING_PAYOUT` and mostly for `FEE_MISMATCH` / `SHORT_SETTLEMENT`.
+
+**Known gaps (next tuning items):**
+- `FX_DIFF` on small US transactions — a 1–2% FX overcharge on a $4–40 payment is
+  cents, near the noise floor; needs a signed rate check against a reference feed.
+- `SPLIT_PAYOUT` recall on US/EU — the batch-level split heuristic misses some
+  organic-vs-defect splits.
+- `marketplace` profile — TDS/reserve percentages must be passed to
+  `run_realistic_batch(tds_percent=…, reserve_percent=…)`; the estimate drifts on
+  large batches.
+
+The **detection layer** (is this order an exception at all?) is solid across all
+three regions; per-code **classification** of the rarer batch/FX codes is the
+work that remains.

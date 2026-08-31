@@ -1,117 +1,136 @@
-"""Calibrated money mechanics for the realistic generator.
+"""Money mechanics — now region-aware.
 
-Numbers are order-of-magnitude realistic for Indian online payments (public
-sources: NPCI UPI statistics, RBI payment-system data, published aggregator MDR
-schedules). They are parameters, not claims of precision — the point is that the
-*shape* of the data (method mix, fee structure, settlement timing) matches
-reality so reconciliation logic is exercised the way it would be in production.
+The merchant archetype (`Profile`) is geography-neutral: it says *what kind of
+business* this is (order value in USD, refund/chargeback rates, marketplace vs
+not). The `Region` (see regions.py) supplies the local facts — currency, tax
+treatment, MDR bands, settlement cycle. `compute_fees` combines the two, and
+handles the cross-border case where the customer pays in a foreign currency.
 """
 
 from __future__ import annotations
 
+import random
 from dataclasses import dataclass
 
-GST_RATE = 0.18  # GST on the MDR fee
+from .fx import DEFAULT_SPREAD, mid_rate
+from .regions import Region
 
-
-@dataclass(frozen=True)
-class MethodEconomics:
-    weight: float          # share of transaction count
-    mdr_pct: float         # merchant discount rate on gross (0 for UPI P2M)
-    flat_fee: float = 0.0  # flat per-txn fee in rupees (netbanking)
-    intl_share: float = 0.0  # fraction of this method that is an international card
-
-
-# Per payment method. Card MDR blends debit/credit/network.
-METHODS: dict[str, MethodEconomics] = {
-    "upi": MethodEconomics(weight=0.62, mdr_pct=0.0),
-    "card": MethodEconomics(weight=0.24, mdr_pct=0.019, intl_share=0.06),
-    "netbanking": MethodEconomics(weight=0.09, mdr_pct=0.0, flat_fee=12.0),
-    "wallet": MethodEconomics(weight=0.05, mdr_pct=0.017),
-}
-
-CARD_NETWORKS = ["Visa", "MasterCard", "RuPay", "American Express"]
+CARD_NETWORKS = ["Visa", "MasterCard", "American Express", "Discover"]
 CARD_TYPES = ["credit", "debit"]
-
-FOREX_MARKUP_PCT = 0.03        # markup on international card settlements
-CROSS_BORDER_FEE_PCT = 0.005   # additional cross-border fee
-TDS_PCT = 0.01                 # section 194-O, marketplace payouts only
-ROLLING_RESERVE_PCT = 0.05     # held for reserve_days, released later
+TDS_PCT = 0.01
+ROLLING_RESERVE_PCT = 0.05
 RESERVE_DAYS = 90
+
+# a few plausible presentment currencies per settlement region for cross-border
+FOREIGN_PRESENTMENT = {
+    "INR": ["USD", "EUR", "GBP", "AED", "SGD"],
+    "USD": ["EUR", "GBP", "CAD", "INR", "AUD"],
+    "EUR": ["USD", "GBP", "INR", "CHF", "SEK"],
+}
 
 
 @dataclass(frozen=True)
 class Profile:
-    """A merchant archetype — drives volume mix, refunds, disputes, settlement."""
-
     name: str
-    aov_median: float             # rupee median of a lognormal order value
-    aov_sigma: float              # lognormal shape
-    method_mix: dict[str, float]  # overrides METHODS weights
-    refund_rate: float            # fraction of payments later refunded
-    chargeback_rate: float        # fraction of payments disputed
-    settlement_cycle_days: int    # T+N standard cycle
-    instant_settlement_share: float
-    marketplace: bool = False     # => TDS + split (Route) payouts
+    aov_usd: float                # median order value in USD (lognormal)
+    aov_sigma: float
+    refund_rate: float
+    chargeback_rate: float
+    marketplace: bool = False
     rolling_reserve: bool = False
-    intl_multiplier: float = 1.0  # scales each method's intl_share
+    method_bias: dict[str, float] | None = None  # nudges the region method mix
 
 
 PROFILES: dict[str, Profile] = {
-    "d2c-brand": Profile(
-        name="d2c-brand",
-        aov_median=899, aov_sigma=0.6,
-        method_mix={"upi": 0.66, "card": 0.22, "netbanking": 0.05, "wallet": 0.07},
-        refund_rate=0.06, chargeback_rate=0.004,
-        settlement_cycle_days=2, instant_settlement_share=0.10,
-    ),
-    "saas": Profile(
-        name="saas",
-        aov_median=2499, aov_sigma=0.5,
-        method_mix={"upi": 0.34, "card": 0.55, "netbanking": 0.08, "wallet": 0.03},
-        refund_rate=0.03, chargeback_rate=0.006,
-        settlement_cycle_days=2, instant_settlement_share=0.05,
-        intl_multiplier=3.0,
-    ),
-    "marketplace": Profile(
-        name="marketplace",
-        aov_median=649, aov_sigma=0.8,
-        method_mix={"upi": 0.70, "card": 0.18, "netbanking": 0.06, "wallet": 0.06},
-        refund_rate=0.09, chargeback_rate=0.005,
-        settlement_cycle_days=1, instant_settlement_share=0.0,
-        marketplace=True, rolling_reserve=True,
-    ),
-    "travel": Profile(
-        name="travel",
-        aov_median=7999, aov_sigma=0.7,
-        method_mix={"upi": 0.28, "card": 0.60, "netbanking": 0.10, "wallet": 0.02},
-        refund_rate=0.14, chargeback_rate=0.011,
-        settlement_cycle_days=3, instant_settlement_share=0.0,
-        rolling_reserve=True, intl_multiplier=2.0,
-    ),
+    "d2c-brand": Profile("d2c-brand", aov_usd=11.0, aov_sigma=0.6,
+                         refund_rate=0.06, chargeback_rate=0.004),
+    "saas": Profile("saas", aov_usd=30.0, aov_sigma=0.5,
+                    refund_rate=0.03, chargeback_rate=0.006,
+                    method_bias={"card": 1.6}),
+    "marketplace": Profile("marketplace", aov_usd=8.0, aov_sigma=0.8,
+                           refund_rate=0.09, chargeback_rate=0.005,
+                           marketplace=True, rolling_reserve=True),
+    "travel": Profile("travel", aov_usd=95.0, aov_sigma=0.7,
+                      refund_rate=0.14, chargeback_rate=0.011,
+                      rolling_reserve=True, method_bias={"card": 1.4}),
 }
 
 
 @dataclass
 class Fees:
-    mdr: float
-    gst: float
-    forex: float
-    cross_border: float
+    mdr: float                    # processing fee in settlement currency
+    tax: float                    # tax on the fee (0 unless region charges it)
+    fx_markup: float              # gateway FX spread cost (cross-border only)
+    currency: str
 
     @property
     def total(self) -> float:
-        return round(self.mdr + self.gst + self.forex + self.cross_border, 2)
+        return round(self.mdr + self.tax + self.fx_markup, 2)
 
 
-def compute_fees(gross: float, method: str, is_intl: bool) -> Fees:
-    m = METHODS[method]
-    mdr = round(gross * m.mdr_pct + m.flat_fee, 2)
-    gst = round(mdr * GST_RATE, 2)
-    forex = round(gross * FOREX_MARKUP_PCT, 2) if is_intl else 0.0
-    cb = round(gross * CROSS_BORDER_FEE_PCT, 2) if is_intl else 0.0
-    return Fees(mdr=mdr, gst=gst, forex=forex, cross_border=cb)
+def _rate_to_usd(ccy: str) -> float:
+    from .fx import _TO_USD
+    return _TO_USD.get(ccy, 1.0)
 
 
-def net_of(gross: float, fees: Fees) -> float:
-    return round(gross - fees.total, 2)
+def method_mix(region: Region, profile: Profile) -> dict[str, float]:
+    mix = dict(region.method_mix)
+    if profile.method_bias:
+        for m, factor in profile.method_bias.items():
+            if m in mix:
+                mix[m] *= factor
+    s = sum(mix.values())
+    return {m: w / s for m, w in mix.items()}
+
+
+def order_value(rng: random.Random, profile: Profile, region: Region) -> float:
+    """Lognormal order value converted into the region's settlement currency."""
+    import math
+    usd = profile.aov_usd * math.exp(rng.gauss(0, profile.aov_sigma))
+    usd = max(0.5, min(usd, profile.aov_usd * 25))
+    local = usd / _rate_to_usd(region.currency)
+    # round the way a real price would look
+    return round(local, 0 if region.currency in ("INR", "JPY") else 2)
+
+
+def expected_mdr(region: Region, method: str, gross: float) -> float:
+    lo, hi, flat = region.mdr.get(method, (1.5, 2.5, 0.0))
+    mid = (lo + hi) / 2 / 100.0
+    return round(gross * mid + flat, 2)
+
+
+def contracted_rates(rng: random.Random, region: Region) -> dict[str, tuple[float, float]]:
+    """One fixed (pct, flat) per method for this merchant — a real contract has a
+    rate, not a per-transaction band."""
+    out: dict[str, tuple[float, float]] = {}
+    for method, (lo, hi, flat) in region.mdr.items():
+        out[method] = (round(rng.uniform(lo, hi) / 100.0, 5), flat)
+    return out
+
+
+def compute_fees(
+    region: Region,
+    method: str,
+    gross_settlement: float,
+    rates: dict[str, tuple[float, float]],
+    *,
+    cross_border: bool = False,
+) -> Fees:
+    pct, flat = rates.get(method, (0.02, 0.0))
+    mdr = round(gross_settlement * pct + flat, 2)
+    tax = region.taxed_fee(mdr)
+    fx_markup = round(gross_settlement * DEFAULT_SPREAD, 2) if cross_border else 0.0
+    return Fees(mdr=mdr, tax=tax, fx_markup=fx_markup, currency=region.currency)
+
+
+def pick_presentment(rng: random.Random, region: Region, *, force: bool = False
+                     ) -> tuple[str, float, float]:
+    """Return (presentment_currency, mid_rate presentment->settlement, spread).
+
+    Same currency => ('<settlement>', 1.0, 0.0). `force` guarantees cross-border.
+    """
+    if not force and rng.random() >= region.cross_border_share:
+        return region.currency, 1.0, 0.0
+    choices = FOREIGN_PRESENTMENT.get(region.currency, ["USD"])
+    pres = rng.choice([c for c in choices if c != region.currency] or ["USD"])
+    return pres, mid_rate(pres, region.currency), DEFAULT_SPREAD

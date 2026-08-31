@@ -62,10 +62,12 @@ def main() -> None:
     ap.add_argument("--no-persist", action="store_true")
     ap.add_argument("--realistic", action="store_true",
                     help="real multi-format statements with aggregated bank payouts")
+    ap.add_argument("--region", default="IN", choices=["IN", "US", "EU"])
     args = ap.parse_args()
 
     if args.realistic:
-        result = run_realistic_batch(args.pg, args.bank, args.ledger, persist=not args.no_persist)
+        result = run_realistic_batch(args.pg, args.bank, args.ledger,
+                                     region=args.region, persist=not args.no_persist)
     else:
         result = run_batch(args.pg, args.bank, args.ledger, persist=not args.no_persist)
     print(json.dumps(result["summary"], indent=2))

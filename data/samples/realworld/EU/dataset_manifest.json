@@ -1,0 +1,21 @@
+{
+  "profile": "d2c-brand",
+  "region": "EU",
+  "currency": "EUR",
+  "merchant": "Verde Manufaktur B.V.",
+  "payments": 400,
+  "refunds": 33,
+  "settlement_batches": 34,
+  "aggregated_payouts": 33,
+  "cross_border_payments": 52,
+  "injected_defects": 41,
+  "tax_treatment": "exempt",
+  "seed": 7,
+  "files": {
+    "pg": "pg_stripe_balance.csv",
+    "ledger": "ledger_export.csv",
+    "bank": "bank_statement.camt053.xml",
+    "pg_format": "stripe",
+    "bank_format": "camt"
+  }
+}

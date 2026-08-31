@@ -1,0 +1,21 @@
+{
+  "profile": "d2c-brand",
+  "region": "US",
+  "currency": "USD",
+  "merchant": "Cascade Collective Co.",
+  "payments": 400,
+  "refunds": 20,
+  "settlement_batches": 29,
+  "aggregated_payouts": 28,
+  "cross_border_payments": 44,
+  "injected_defects": 34,
+  "tax_treatment": "none",
+  "seed": 7,
+  "files": {
+    "pg": "pg_stripe_balance.csv",
+    "ledger": "ledger_export.csv",
+    "bank": "bank_statement_us.csv",
+    "pg_format": "stripe",
+    "bank_format": "us_csv"
+  }
+}

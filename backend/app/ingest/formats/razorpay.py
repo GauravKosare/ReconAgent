@@ -34,7 +34,7 @@ def looks_like(header: list[str]) -> bool:
 
 
 def parse(path: str, batch_id: str) -> list[NormalizedTxn]:
-    df = pl.read_csv(path, infer_schema_length=2000)
+    df = pl.read_csv(path, infer_schema_length=0)
     lower = {c.lower(): c for c in df.columns}
 
     def col(*names: str) -> str | None:
@@ -53,10 +53,15 @@ def parse(path: str, batch_id: str) -> list[NormalizedTxn]:
     c_order = col("order_id")
     c_receipt = col("order_receipt")
     c_method = col("method")
+    c_desc = col("description")
+
+    import re as _re
+    _pres = _re.compile(r"\(([A-Z]{3})\)")
 
     out: list[NormalizedTxn] = []
     for i, row in enumerate(df.iter_rows(named=True)):
         kind = str(row.get(c_type, "payment") or "payment").lower()
+        pres_m = _pres.search(str(row.get(c_desc) or "")) if c_desc else None
         gross = _rupees(row.get(c_amount))
         fee = _rupees(row.get(c_fee))
         tax = _rupees(row.get(c_tax))
@@ -77,6 +82,7 @@ def parse(path: str, batch_id: str) -> list[NormalizedTxn]:
                 method=str(row.get(c_method) or "").strip().lower() or None,
                 kind=kind,
                 currency=str(row.get(col("currency") or "currency") or "INR").strip() or "INR",
+                presentment_currency=pres_m.group(1) if pres_m else None,
                 amount_gross=gross,
                 fee=fee,
                 tax=tax,

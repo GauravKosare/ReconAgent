@@ -35,8 +35,13 @@ def _vdate(s: str) -> datetime | None:
         return None
 
 
+_CCY60 = re.compile(r":6[02]F:[CD]\d{6}([A-Z]{3})")
+
+
 def parse_text(text: str, batch_id: str) -> list[NormalizedTxn]:
     lines = text.replace("\r\n", "\n").split("\n")
+    ccy_m = _CCY60.search(text)
+    currency = ccy_m.group(1) if ccy_m else "EUR"
     out: list[NormalizedTxn] = []
     i = 0
     idx = 0
@@ -60,6 +65,7 @@ def parse_text(text: str, batch_id: str) -> list[NormalizedTxn]:
                 source=Source.BANK,
                 raw_record_id=f"bank:{idx}",
                 utr=(utr_m.group(1).split("-")[0] if utr_m else ref) or None,
+                currency=currency,
                 kind="payment" if is_credit else "adjustment",
                 amount_gross=amount,
                 amount_net=amount if is_credit else -amount,
