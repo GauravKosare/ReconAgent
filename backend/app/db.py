@@ -38,7 +38,9 @@ COLLECTIONS = [
 @lru_cache
 def get_client() -> MongoClient:
     settings = get_settings()
-    return MongoClient(settings.mongodb_uri, tz_aware=True)
+    # Fail fast when Atlas is unreachable — the pipeline degrades to an
+    # unpersisted result rather than hanging the request for 30s.
+    return MongoClient(settings.mongodb_uri, tz_aware=True, serverSelectionTimeoutMS=5000)
 
 
 def get_db() -> Database:

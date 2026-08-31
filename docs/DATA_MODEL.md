@@ -149,6 +149,21 @@ python scripts/run_batch.py --realistic --region EU \
 python scripts/evaluate_realworld.py --region US --profile d2c-brand --seeds 1,2,3
 ```
 
+### Over the API / dashboard
+
+The realistic pipeline is also wired into the backend and the Next.js dashboard:
+
+| Endpoint | Purpose |
+| --- | --- |
+| `GET  /samples` | list the committed sample datasets (`index.json`) |
+| `POST /batches/realistic` | upload pg + bank + ledger + `region`, auto-detect formats, reconcile |
+| `POST /batches/realistic/sample` (`folder=`) | run one committed sample end to end |
+
+The `/upload` page has a region picker, a "real formats" toggle, and a
+one-click **Run a sample dataset** panel. Persistence to Atlas is best-effort —
+a DB outage still returns the full `{summary, exceptions}` (`summary.persisted`
+flags it) so the pitch demo works offline.
+
 ### Committed sample datasets
 
 `data/samples/realworld/` holds **11 datasets** covering every region, four

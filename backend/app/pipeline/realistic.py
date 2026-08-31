@@ -14,12 +14,14 @@ Flow:
 
 from __future__ import annotations
 
+import os
 import uuid
 from concurrent.futures import ThreadPoolExecutor
 from datetime import UTC, datetime
 from typing import Any
 
 from ..agent.model_client import ModelClient, ModelUnavailable
+from ..audit.log import audit, buffered
 from ..config import get_settings
 from ..ingest.formats import detect_and_parse
 from ..matching.settlement import BatchOutcome, LineIssue, reconcile_settlements
@@ -149,6 +151,29 @@ def run_realistic_batch(
     region: str = "IN",
     tds_percent: float | None = None, reserve_percent: float | None = None,
 ) -> dict[str, Any]:
+    """Reconcile one real-format batch. Persists to Atlas when ``persist`` is set;
+    otherwise runs fully in-memory and never touches the DB (audit -> /dev/null)."""
+    args = (pg_path, bank_path, ledger_path)
+    kw = dict(region=region, tds_percent=tds_percent, reserve_percent=reserve_percent)
+    if persist:
+        with buffered():
+            return _run_realistic_batch(*args, persist=True, **kw)
+    prev = os.environ.get("RECONAGENT_AUDIT_SINK")
+    os.environ["RECONAGENT_AUDIT_SINK"] = "none"
+    try:
+        return _run_realistic_batch(*args, persist=False, **kw)
+    finally:
+        if prev is None:
+            os.environ.pop("RECONAGENT_AUDIT_SINK", None)
+        else:
+            os.environ["RECONAGENT_AUDIT_SINK"] = prev
+
+
+def _run_realistic_batch(
+    pg_path: str, bank_path: str, ledger_path: str, *, persist: bool,
+    region: str = "IN",
+    tds_percent: float | None = None, reserve_percent: float | None = None,
+) -> dict[str, Any]:
     from ..matching.region_rules import region_rules
 
     s = get_settings()
@@ -160,6 +185,8 @@ def run_realistic_batch(
         src, fmt, parsed = detect_and_parse(path, batch_id)
         formats[src.value] = fmt
         txns.extend(parsed)
+    audit(batch_id, "system", "ingest", "batch", batch_id,
+          after={"txn_count": len(txns), "formats": formats})
 
     rules = region_rules(
         region,
@@ -167,6 +194,10 @@ def run_realistic_batch(
         reserve_percent=s.default_reserve_percent if reserve_percent is None else reserve_percent,
     )
     recon = reconcile_settlements(txns, sla_days=s.settlement_sla_days, region=rules)
+    audit(batch_id, "system", "reconcile", "batch", batch_id,
+          after={"settlement_batches": len(recon.batches),
+                 "reconciled": recon.batch_report["reconciled"],
+                 "auto_matched": len(recon.groups)})
 
     exceptions = _batch_records(batch_id, recon.batches) + _line_records(batch_id, recon.line_issues)
 
@@ -174,9 +205,11 @@ def run_realistic_batch(
     llm_used = _enrich(exceptions, client)
 
     for e in exceptions:
-        e.routed_to = _route(
-            e.code if isinstance(e.code, str) else e.code.value, e.amount_impact, e.confidence
-        )
+        code = e.code if isinstance(e.code, str) else e.code.value
+        e.routed_to = _route(code, e.amount_impact, e.confidence)
+        audit(batch_id, "agent" if llm_used else "system", "adjudicate", "cluster",
+              e.cluster_id, after={"code": code, "route": e.routed_to.value,
+                                   "confidence": round(e.confidence, 2)})
 
     txn_count = len([t for t in txns if t.source is Source.PG and t.kind != "refund"])
     pending = sum(1 for e in exceptions if e.routed_to == RouteTarget.PENDING_APPROVAL)
@@ -203,7 +236,30 @@ def run_realistic_batch(
         "llm_used": llm_used,
         "llm_available": client.available,
     }
+
+    summary["persisted"] = _persist(batch_id, txns, exceptions, summary) if persist else False
+
     return {"summary": summary, "exceptions": [e.model_dump(mode="json") for e in exceptions]}
+
+
+def _persist(batch_id, txns, exceptions, summary) -> bool:
+    """Best-effort write to Atlas. A DB outage must not lose the reconciliation
+    result — the caller still gets the full summary + exceptions."""
+    try:
+        from ..db import ensure_indexes, get_db
+
+        db = get_db()
+        ensure_indexes()
+        db.batches.insert_one({"_id": batch_id, **summary})
+        if txns:
+            db.normalized_txns.insert_many([t.model_dump(mode="json") for t in txns])
+        if exceptions:
+            db.exceptions.insert_many([e.model_dump(mode="json") for e in exceptions])
+        return True
+    except Exception as exc:  # noqa: BLE001 — persistence is best-effort
+        audit(batch_id, "system", "persist_failed", "batch", batch_id,
+              after={"error": str(exc)[:300]})
+        return False
 
 
 def _count(rows: list[ExceptionRecord]) -> dict[str, int]:

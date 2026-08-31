@@ -37,7 +37,19 @@ export default async function BatchDashboard({ params }: { params: Promise<{ id:
             <Badge tone={b.llm_used ? "brand" : "neutral"} className="align-middle">
               {b.llm_used ? "AI adjudicated" : "deterministic only"}
             </Badge>
+            {b.region && (
+              <Badge tone="neutral" className="ml-1.5 align-middle">
+                {b.region} · {b.currency}
+              </Badge>
+            )}
           </p>
+          {b.formats && (
+            <p className="mt-1 text-xs text-faint">
+              {Object.entries(b.formats)
+                .map(([src, fmt]) => `${src}: ${fmt}`)
+                .join(" · ")}
+            </p>
+          )}
         </div>
         <Link
           href={`/batches/${id}/queue`}

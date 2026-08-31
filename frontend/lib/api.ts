@@ -1,15 +1,25 @@
-import type { AuditEntry, BatchResult, BatchSummary, ExceptionRecord } from "./types";
+import type {
+  AuditEntry,
+  BatchResult,
+  BatchSummary,
+  ExceptionRecord,
+  SampleDataset,
+} from "./types";
 import { SAMPLE_AUDIT, SAMPLE_BATCH } from "./sample";
 
 const BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const DEMO_ID = SAMPLE_BATCH.summary.batch_id;
 
-async function tryFetch<T>(path: string, init?: RequestInit): Promise<T | null> {
+async function tryFetch<T>(
+  path: string,
+  init?: RequestInit,
+  timeoutMs = 2500,
+): Promise<T | null> {
   try {
     const res = await fetch(`${BASE}${path}`, {
       ...init,
       cache: "no-store",
-      signal: AbortSignal.timeout(2500),
+      signal: AbortSignal.timeout(timeoutMs),
     });
     if (!res.ok) return null;
     return (await res.json()) as T;
@@ -50,8 +60,32 @@ export async function getAudit(id: string): Promise<AuditEntry[]> {
   return (await tryFetch<AuditEntry[]>(`/batches/${id}/audit`)) ?? SAMPLE_AUDIT;
 }
 
+const RUN_TIMEOUT_MS = 120_000; // a real reconcile + LLM enrichment run
+
 export async function runBatch(form: FormData): Promise<BatchResult | null> {
-  return tryFetch<BatchResult>("/batches", { method: "POST", body: form });
+  return tryFetch<BatchResult>("/batches", { method: "POST", body: form }, RUN_TIMEOUT_MS);
+}
+
+export async function runRealisticBatch(form: FormData): Promise<BatchResult | null> {
+  return tryFetch<BatchResult>(
+    "/batches/realistic",
+    { method: "POST", body: form },
+    RUN_TIMEOUT_MS,
+  );
+}
+
+export async function listSamples(): Promise<SampleDataset[]> {
+  return (await tryFetch<SampleDataset[]>("/samples")) ?? [];
+}
+
+export async function runSample(folder: string): Promise<BatchResult | null> {
+  const fd = new FormData();
+  fd.set("folder", folder);
+  return tryFetch<BatchResult>(
+    "/batches/realistic/sample",
+    { method: "POST", body: fd },
+    RUN_TIMEOUT_MS,
+  );
 }
 
 export async function submitApproval(

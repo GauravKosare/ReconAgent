@@ -27,6 +27,23 @@ export interface BatchSummary {
   flagged_amount_inr: number;
   llm_used: boolean;
   llm_available: boolean;
+  region?: string;
+  currency?: string;
+  formats?: Record<string, string>;
+  persisted?: boolean;
+}
+
+export interface SampleDataset {
+  folder: string;
+  region: string;
+  profile: string;
+  pg_format: string;
+  bank_format: string;
+  strong: boolean;
+  payments: number;
+  currency: string;
+  cross_border: number;
+  injected_defects: number;
 }
 
 export interface ExceptionRecord {
