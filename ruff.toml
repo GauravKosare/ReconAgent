@@ -1,0 +1,11 @@
+# Repo-wide lint config for data/ and scripts/ (backend/ has its own in pyproject).
+line-length = 100
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501", "B008", "SIM105"]
+
+[lint.per-file-ignores]
+"scripts/*" = ["E402"]
+"backend/*" = ["ALL"]  # backend uses backend/pyproject.toml

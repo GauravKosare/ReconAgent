@@ -1,0 +1,17 @@
+{
+  "profile": "d2c-brand",
+  "merchant": "Meghna Store Pvt Ltd",
+  "payments": 500,
+  "refunds": 33,
+  "settlement_batches": 35,
+  "aggregated_payouts": 34,
+  "injected_defects": 38,
+  "intl_payments": 5,
+  "seed": 7,
+  "files": {
+    "pg": "pg_settlement_recon.csv",
+    "ledger": "ledger_zoho.csv",
+    "bank": "bank_statement_hdfc.csv",
+    "bank_format": "hdfc"
+  }
+}

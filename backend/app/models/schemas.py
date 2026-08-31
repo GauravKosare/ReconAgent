@@ -53,6 +53,9 @@ class NormalizedTxn(BaseModel):
     raw_record_id: str
     external_id: str | None = None          # payment_id / order_id / txn ref
     utr: str | None = None                   # UTR / RRN — the strongest cross-source key
+    settlement_id: str | None = None         # PG settlement batch id (for aggregated payouts)
+    method: str | None = None                # upi / card / netbanking / wallet
+    kind: str = "payment"                    # payment | refund | adjustment
     amount_gross: float
     fee: float = 0.0
     tax: float = 0.0

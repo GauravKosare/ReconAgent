@@ -1,0 +1,5002 @@
+[
+  {
+    "order_id": "order_J7faC9qEwjky40",
+    "order_receipt": "RCPT-D2C-100000",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 941.51,
+    "expected_net": 941.51,
+    "actual_net": 941.51,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_WB8dWKnHfDNxSI",
+    "order_receipt": "RCPT-D2C-100001",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 704.62,
+    "expected_net": 690.48,
+    "actual_net": 690.48,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_qOAf1lLQSAJaiX",
+    "order_receipt": "RCPT-D2C-100002",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 2051.45,
+    "expected_net": 2051.45,
+    "actual_net": 2051.45,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_VmDGAkJiG8XnBE",
+    "order_receipt": "RCPT-D2C-100003",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 427.91,
+    "expected_net": 418.32,
+    "actual_net": 418.32,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_XJsi6BwhTp3Fs2",
+    "order_receipt": "RCPT-D2C-100004",
+    "settlement_utr": "453360469103",
+    "expected_code": null,
+    "gross": 458.03,
+    "expected_net": 447.76,
+    "actual_net": 447.76,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_uBByReQMsm9Wcz",
+    "order_receipt": "RCPT-D2C-100005",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 1040.67,
+    "expected_net": 1040.67,
+    "actual_net": 1040.67,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_twMe4LbyoVFz8u",
+    "order_receipt": "RCPT-D2C-100006",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 159.06,
+    "expected_net": 159.06,
+    "actual_net": 159.06,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_AzupGhv7Ib3M03",
+    "order_receipt": "RCPT-D2C-100007",
+    "settlement_utr": "128806061157",
+    "expected_code": null,
+    "gross": 1086.6,
+    "expected_net": 1086.6,
+    "actual_net": 1086.6,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_iJhgB3cxLmAxzJ",
+    "order_receipt": "RCPT-D2C-100008",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 680.98,
+    "expected_net": 680.98,
+    "actual_net": 680.98,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_w56EcUngmgMsRc",
+    "order_receipt": "RCPT-D2C-100009",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 1049.67,
+    "expected_net": 1049.67,
+    "actual_net": 1049.67,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_xJ8tpqXJQ4I9dO",
+    "order_receipt": "RCPT-D2C-100010",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 1089.12,
+    "expected_net": 1074.96,
+    "actual_net": 1074.96,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_hnSg9EH6yO4GFQ",
+    "order_receipt": "RCPT-D2C-100011",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1679.27,
+    "expected_net": 1645.58,
+    "actual_net": 1645.58,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_oFzQFm2OEQ3HdA",
+    "order_receipt": "RCPT-D2C-100012",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 484.59,
+    "expected_net": 473.72,
+    "actual_net": 473.72,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_CABugjMgeP7cGq",
+    "order_receipt": "RCPT-D2C-100013",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 1360.9,
+    "expected_net": 1360.9,
+    "actual_net": 1360.9,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Fq1Y3gqSmPsSCd",
+    "order_receipt": "RCPT-D2C-100014",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 481.82,
+    "expected_net": 471.02,
+    "actual_net": 471.02,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_xAFQ0FJZlCZBTT",
+    "order_receipt": "RCPT-D2C-100015",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 2317.26,
+    "expected_net": 2317.26,
+    "actual_net": 2317.26,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_I6hwgk10zB0rlz",
+    "order_receipt": "RCPT-D2C-100016",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 1262.84,
+    "expected_net": 1262.84,
+    "actual_net": 1262.84,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_2QPuwNOvpdf2YE",
+    "order_receipt": "RCPT-D2C-100017",
+    "settlement_utr": "453360469103",
+    "expected_code": null,
+    "gross": 870.07,
+    "expected_net": 870.07,
+    "actual_net": 870.07,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_H5jMTF7eBSdE0g",
+    "order_receipt": "RCPT-D2C-100018",
+    "settlement_utr": "4891066411y3m685",
+    "expected_code": null,
+    "gross": 824.45,
+    "expected_net": 805.97,
+    "actual_net": 805.97,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_8frcZTuJaWYUH1",
+    "order_receipt": "RCPT-D2C-100019",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 864.39,
+    "expected_net": 864.39,
+    "actual_net": 864.39,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_qSo7JPRbgUMxXy",
+    "order_receipt": "RCPT-D2C-100020",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 778.9,
+    "expected_net": 764.74,
+    "actual_net": 764.74,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_STQvvpQZpPTejq",
+    "order_receipt": "RCPT-D2C-100021",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 1575.33,
+    "expected_net": 1543.73,
+    "actual_net": 1543.73,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_M4Bv3aYavhNYRV",
+    "order_receipt": "RCPT-D2C-100022",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 543.35,
+    "expected_net": 543.35,
+    "actual_net": 543.35,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_039BICbtw5ze9l",
+    "order_receipt": "RCPT-D2C-100023",
+    "settlement_utr": "128806061157",
+    "expected_code": null,
+    "gross": 2164.11,
+    "expected_net": 2164.11,
+    "actual_net": 2164.11,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_9IoQhobswHGETh",
+    "order_receipt": "RCPT-D2C-100024",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 2268.59,
+    "expected_net": 2217.73,
+    "actual_net": 2217.73,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_DBMf4rpaFQOqb7",
+    "order_receipt": "RCPT-D2C-100025",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 3330.09,
+    "expected_net": 3263.29,
+    "actual_net": 3263.29,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_SG8nfnL5Ofa6qD",
+    "order_receipt": "RCPT-D2C-100026",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1479.66,
+    "expected_net": 1479.66,
+    "actual_net": 1479.66,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_p7hvdCTquY1XVc",
+    "order_receipt": "RCPT-D2C-100027",
+    "settlement_utr": "629310831199",
+    "expected_code": null,
+    "gross": 918.22,
+    "expected_net": 918.22,
+    "actual_net": 918.22,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_UXv5eBoaPzoxZC",
+    "order_receipt": "RCPT-D2C-100028",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 928.65,
+    "expected_net": 928.65,
+    "actual_net": 928.65,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_TAuwm6zo88EB0O",
+    "order_receipt": "RCPT-D2C-100029",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 500.39,
+    "expected_net": 500.39,
+    "actual_net": 500.39,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_mFgMZwKPaEpCej",
+    "order_receipt": "RCPT-D2C-100030",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": "MISSING_IN_LEDGER",
+    "gross": 830.44,
+    "expected_net": 830.44,
+    "actual_net": 830.44,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_2xqwHx1SSRkRXQ",
+    "order_receipt": "RCPT-D2C-100031",
+    "settlement_utr": "5988023031k7e318",
+    "expected_code": null,
+    "gross": 900.55,
+    "expected_net": 900.55,
+    "actual_net": 900.55,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_0O1c6XC4SOHDMm",
+    "order_receipt": "RCPT-D2C-100032",
+    "settlement_utr": "310925085643",
+    "expected_code": "FEE_MISMATCH",
+    "gross": 561.83,
+    "expected_net": 547.67,
+    "actual_net": 541.77,
+    "injected_impact_inr": 5.9
+  },
+  {
+    "order_id": "order_NQCmup6N0A0Uar",
+    "order_receipt": "RCPT-D2C-100033",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 698.84,
+    "expected_net": 698.84,
+    "actual_net": 698.84,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_MZuZN8Ab5KbH0F",
+    "order_receipt": "RCPT-D2C-100034",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 2185.55,
+    "expected_net": 2185.55,
+    "actual_net": 2185.55,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_K7EGYfwzy9zMTI",
+    "order_receipt": "RCPT-D2C-100035",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 841.78,
+    "expected_net": 841.78,
+    "actual_net": 841.78,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_WHJPu05MC4j1wr",
+    "order_receipt": "RCPT-D2C-100036",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1748.14,
+    "expected_net": 1708.95,
+    "actual_net": 1708.95,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_cwnx0d1LzeZGEI",
+    "order_receipt": "RCPT-D2C-100037",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 522.74,
+    "expected_net": 522.74,
+    "actual_net": 522.74,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Enus0HMI4fS9z6",
+    "order_receipt": "RCPT-D2C-100038",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 2270.23,
+    "expected_net": 2270.23,
+    "actual_net": 2270.23,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_PUXCMLZKo7RrU5",
+    "order_receipt": "RCPT-D2C-100039",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 2419.03,
+    "expected_net": 2419.03,
+    "actual_net": 2419.03,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_VwFcOLnv9DS0hQ",
+    "order_receipt": "RCPT-D2C-100040",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 362.46,
+    "expected_net": 355.19,
+    "actual_net": 355.19,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_eKIA7zPtJcGEoJ",
+    "order_receipt": "RCPT-D2C-100041",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 794.81,
+    "expected_net": 794.81,
+    "actual_net": 794.81,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_xGAnjq8MJaMhmp",
+    "order_receipt": "RCPT-D2C-100042",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 467.89,
+    "expected_net": 457.4,
+    "actual_net": 457.4,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_v7s82QtDRojrbr",
+    "order_receipt": "RCPT-D2C-100043",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 577.74,
+    "expected_net": 544.56,
+    "actual_net": 544.56,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_yNZnlEk6KJCBHG",
+    "order_receipt": "RCPT-D2C-100044",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 1328.82,
+    "expected_net": 1299.03,
+    "actual_net": 1299.03,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_w6t8YGPNNHCC82",
+    "order_receipt": "RCPT-D2C-100045",
+    "settlement_utr": "167481084389",
+    "expected_code": null,
+    "gross": 623.34,
+    "expected_net": 623.34,
+    "actual_net": 623.34,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_e2SnvByaBbhxGW",
+    "order_receipt": "RCPT-D2C-100046",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 773.89,
+    "expected_net": 773.89,
+    "actual_net": 773.89,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_L9flW91gQk8KS0",
+    "order_receipt": "RCPT-D2C-100047",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 1515.81,
+    "expected_net": 1515.81,
+    "actual_net": 1515.81,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_b5igKY4oO8dIim",
+    "order_receipt": "RCPT-D2C-100048",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 1091.51,
+    "expected_net": 1067.04,
+    "actual_net": 1067.04,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_t01nJuJPuUmhWK",
+    "order_receipt": "RCPT-D2C-100049",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": "FEE_MISMATCH",
+    "gross": 395.51,
+    "expected_net": 386.65,
+    "actual_net": 380.75,
+    "injected_impact_inr": 5.9
+  },
+  {
+    "order_id": "order_2ybsOgoSdBJQmv",
+    "order_receipt": "RCPT-D2C-100050",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 1217.72,
+    "expected_net": 1217.72,
+    "actual_net": 1217.72,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_yZttoKQ2bedBn2",
+    "order_receipt": "RCPT-D2C-100051",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 1352.63,
+    "expected_net": 1322.3,
+    "actual_net": 1322.3,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_hVav8dNrLZgw7H",
+    "order_receipt": "RCPT-D2C-100052",
+    "settlement_utr": "431752571167",
+    "expected_code": "SHORT_SETTLEMENT",
+    "gross": 1568.02,
+    "expected_net": 1568.02,
+    "actual_net": 1543.02,
+    "injected_impact_inr": 25.0
+  },
+  {
+    "order_id": "order_hOz9ZdNKI7xEzz",
+    "order_receipt": "RCPT-D2C-100053",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 2182.42,
+    "expected_net": 2182.42,
+    "actual_net": 2182.42,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_LeAzuzRWPpTUef",
+    "order_receipt": "RCPT-D2C-100054",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 162.5,
+    "expected_net": 158.85,
+    "actual_net": 158.85,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_QmGlJ2OLxcWyJN",
+    "order_receipt": "RCPT-D2C-100055",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 2535.01,
+    "expected_net": 2520.85,
+    "actual_net": 2520.85,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ed5JsfPfKim3vA",
+    "order_receipt": "RCPT-D2C-100056",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 693.42,
+    "expected_net": 677.88,
+    "actual_net": 677.88,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_5JCNtaoIVG3qXV",
+    "order_receipt": "RCPT-D2C-100057",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 450.49,
+    "expected_net": 450.49,
+    "actual_net": 450.49,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_loFyCZuj4ZikDZ",
+    "order_receipt": "RCPT-D2C-100058",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 1197.01,
+    "expected_net": 1170.18,
+    "actual_net": 1170.18,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_dowLGqL3CaxG67",
+    "order_receipt": "RCPT-D2C-100059",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 524.51,
+    "expected_net": 510.35,
+    "actual_net": 510.35,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_s6ZcEArYml8qJe",
+    "order_receipt": "RCPT-D2C-100060",
+    "settlement_utr": "588326366695",
+    "expected_code": "FEE_MISMATCH",
+    "gross": 565.69,
+    "expected_net": 565.69,
+    "actual_net": 559.79,
+    "injected_impact_inr": 5.9
+  },
+  {
+    "order_id": "order_RukPcuvL7DXxvt",
+    "order_receipt": "RCPT-D2C-100061",
+    "settlement_utr": "453360469103",
+    "expected_code": null,
+    "gross": 1151.97,
+    "expected_net": 1151.97,
+    "actual_net": 1151.97,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_31fmDUX8kucerK",
+    "order_receipt": "RCPT-D2C-100062",
+    "settlement_utr": "453360469103",
+    "expected_code": null,
+    "gross": 2277.96,
+    "expected_net": 2232.26,
+    "actual_net": 2232.26,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_1Jm1Tlb4PYYrYm",
+    "order_receipt": "RCPT-D2C-100063",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 727.24,
+    "expected_net": 710.93,
+    "actual_net": 710.93,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_fzYMywu7OTmDrZ",
+    "order_receipt": "RCPT-D2C-100064",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 2689.29,
+    "expected_net": 2628.99,
+    "actual_net": 2628.99,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_sSXkkWZxh2JPC7",
+    "order_receipt": "RCPT-D2C-100065",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 1211.41,
+    "expected_net": 1184.25,
+    "actual_net": 1184.25,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_cxl0m9IQ1CVMLY",
+    "order_receipt": "RCPT-D2C-100066",
+    "settlement_utr": "4891066411y3m685",
+    "expected_code": null,
+    "gross": 796.21,
+    "expected_net": 796.21,
+    "actual_net": 796.21,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_96qgZLc2KX9PuO",
+    "order_receipt": "RCPT-D2C-100067",
+    "settlement_utr": "889885284253",
+    "expected_code": null,
+    "gross": 885.69,
+    "expected_net": 867.92,
+    "actual_net": 867.92,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_cwpGeUXQYHXeYK",
+    "order_receipt": "RCPT-D2C-100068",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 1113.26,
+    "expected_net": 1113.26,
+    "actual_net": 1113.26,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Y1BoEcVU0OeHoX",
+    "order_receipt": "RCPT-D2C-100069",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 358.62,
+    "expected_net": 358.62,
+    "actual_net": 358.62,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_eHJgDo5yq7Nje1",
+    "order_receipt": "RCPT-D2C-100070",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 1300.24,
+    "expected_net": 1300.24,
+    "actual_net": 1300.24,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_gIcAy18hSLXbC6",
+    "order_receipt": "RCPT-D2C-100071",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 1487.93,
+    "expected_net": 1487.93,
+    "actual_net": 1487.93,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_AEsuha1u6DhzWV",
+    "order_receipt": "RCPT-D2C-100072",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 1126.36,
+    "expected_net": 1101.11,
+    "actual_net": 1101.11,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_EHWtP0136Uxt3Y",
+    "order_receipt": "RCPT-D2C-100073",
+    "settlement_utr": "573387546335",
+    "expected_code": "DUPLICATE",
+    "gross": 1016.26,
+    "expected_net": 1016.26,
+    "actual_net": 1016.26,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_BG7svMQB1mokdh",
+    "order_receipt": "RCPT-D2C-100074",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 2620.98,
+    "expected_net": 2620.98,
+    "actual_net": 2620.98,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_OJqkdvZK80B8oY",
+    "order_receipt": "RCPT-D2C-100075",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 1069.75,
+    "expected_net": 1069.75,
+    "actual_net": 1069.75,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_bqoAXGhLEUbMgq",
+    "order_receipt": "RCPT-D2C-100076",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 1377.62,
+    "expected_net": 1346.74,
+    "actual_net": 1346.74,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_6g5RFdli7JcHgI",
+    "order_receipt": "RCPT-D2C-100077",
+    "settlement_utr": "629310831199",
+    "expected_code": null,
+    "gross": 471.61,
+    "expected_net": 471.61,
+    "actual_net": 471.61,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_BPVOMgiYlZA7WK",
+    "order_receipt": "RCPT-D2C-100078",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 370.54,
+    "expected_net": 370.54,
+    "actual_net": 370.54,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_rv7JaVqWIrMnn2",
+    "order_receipt": "RCPT-D2C-100079",
+    "settlement_utr": "379230697628",
+    "expected_code": null,
+    "gross": 1169.08,
+    "expected_net": 1142.87,
+    "actual_net": 1142.87,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_SuWSWZhjmYpUAy",
+    "order_receipt": "RCPT-D2C-100080",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 1405.49,
+    "expected_net": 1405.49,
+    "actual_net": 1405.49,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_569ABDQk5fT6ix",
+    "order_receipt": "RCPT-D2C-100081",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 1349.68,
+    "expected_net": 1349.68,
+    "actual_net": 1349.68,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_fZcxn5lVshv0FK",
+    "order_receipt": "RCPT-D2C-100082",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 2110.77,
+    "expected_net": 2110.77,
+    "actual_net": 2110.77,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_MaLDokmGWkoouC",
+    "order_receipt": "RCPT-D2C-100083",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 672.8,
+    "expected_net": 658.64,
+    "actual_net": 658.64,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_MamHJKhwgGBGEK",
+    "order_receipt": "RCPT-D2C-100084",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 1390.55,
+    "expected_net": 1390.55,
+    "actual_net": 1390.55,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_cnYBDO4Zlw9CcD",
+    "order_receipt": "RCPT-D2C-100085",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 461.35,
+    "expected_net": 451.0,
+    "actual_net": 451.0,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_y3PFLKWYLA4SZj",
+    "order_receipt": "RCPT-D2C-100086",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 603.6,
+    "expected_net": 590.07,
+    "actual_net": 590.07,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_PtIFMRi1yIjcd1",
+    "order_receipt": "RCPT-D2C-100087",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 1125.08,
+    "expected_net": 1110.92,
+    "actual_net": 1110.92,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_iPZmgNI3wHrgFi",
+    "order_receipt": "RCPT-D2C-100088",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 578.7,
+    "expected_net": 578.7,
+    "actual_net": 578.7,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_gwTMEtTFOSI0tZ",
+    "order_receipt": "RCPT-D2C-100089",
+    "settlement_utr": "692853922261",
+    "expected_code": null,
+    "gross": 703.76,
+    "expected_net": 703.76,
+    "actual_net": 703.76,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_5oGLSHR6muOtrC",
+    "order_receipt": "RCPT-D2C-100090",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 877.34,
+    "expected_net": 877.34,
+    "actual_net": 877.34,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_rkW7AH1wxpS5C4",
+    "order_receipt": "RCPT-D2C-100091",
+    "settlement_utr": "128806061157",
+    "expected_code": null,
+    "gross": 1039.26,
+    "expected_net": 1039.26,
+    "actual_net": 1039.26,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_gvs11oocgDrsNb",
+    "order_receipt": "RCPT-D2C-100092",
+    "settlement_utr": "538327548029",
+    "expected_code": "SHORT_SETTLEMENT",
+    "gross": 898.32,
+    "expected_net": 884.16,
+    "actual_net": 809.16,
+    "injected_impact_inr": 75.0
+  },
+  {
+    "order_id": "order_oTIIrtfqePtPAg",
+    "order_receipt": "RCPT-D2C-100093",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 696.89,
+    "expected_net": 681.27,
+    "actual_net": 681.27,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_XfNCD5RTMHsTc9",
+    "order_receipt": "RCPT-D2C-100094",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 1431.71,
+    "expected_net": 1431.71,
+    "actual_net": 1431.71,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_fMyiUAW6FpSon7",
+    "order_receipt": "RCPT-D2C-100095",
+    "settlement_utr": "831957253914",
+    "expected_code": null,
+    "gross": 1376.41,
+    "expected_net": 1376.41,
+    "actual_net": 1376.41,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_0WUOXIj6X11QPD",
+    "order_receipt": "RCPT-D2C-100096",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": "FEE_MISMATCH",
+    "gross": 1278.08,
+    "expected_net": 1278.08,
+    "actual_net": 1268.64,
+    "injected_impact_inr": 9.44
+  },
+  {
+    "order_id": "order_NuXAC1n21ygbJS",
+    "order_receipt": "RCPT-D2C-100097",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 1416.11,
+    "expected_net": 1384.36,
+    "actual_net": 1384.36,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Tkka8XeqpIT3Vh",
+    "order_receipt": "RCPT-D2C-100098",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 460.81,
+    "expected_net": 460.81,
+    "actual_net": 460.81,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_94MjvHO31QpGMh",
+    "order_receipt": "RCPT-D2C-100099",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1241.57,
+    "expected_net": 1241.57,
+    "actual_net": 1241.57,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Ho9ugGd1rZiK99",
+    "order_receipt": "RCPT-D2C-100100",
+    "settlement_utr": "623928359786",
+    "expected_code": null,
+    "gross": 405.25,
+    "expected_net": 405.25,
+    "actual_net": 405.25,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_n3MkH6u3WKXv1V",
+    "order_receipt": "RCPT-D2C-100101",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 841.45,
+    "expected_net": 841.45,
+    "actual_net": 841.45,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_cB1lcHyBfHEzQL",
+    "order_receipt": "RCPT-D2C-100102",
+    "settlement_utr": "453360469103",
+    "expected_code": null,
+    "gross": 1973.22,
+    "expected_net": 1933.64,
+    "actual_net": 1933.64,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_prmZ1e9Ks2cZO3",
+    "order_receipt": "RCPT-D2C-100103",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 1120.67,
+    "expected_net": 1095.55,
+    "actual_net": 1095.55,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_d4mCoJuqJRYREg",
+    "order_receipt": "RCPT-D2C-100104",
+    "settlement_utr": "128806061157",
+    "expected_code": null,
+    "gross": 1182.86,
+    "expected_net": 1182.86,
+    "actual_net": 1182.86,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_tVqU4yegX5PzPW",
+    "order_receipt": "RCPT-D2C-100105",
+    "settlement_utr": "310925085643",
+    "expected_code": "FEE_MISMATCH",
+    "gross": 1477.95,
+    "expected_net": 1448.3,
+    "actual_net": 1444.76,
+    "injected_impact_inr": 3.54
+  },
+  {
+    "order_id": "order_6Ml7FlLTlWdWxs",
+    "order_receipt": "RCPT-D2C-100106",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 566.13,
+    "expected_net": 566.13,
+    "actual_net": 566.13,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_gpGMPuD9ImDFEz",
+    "order_receipt": "RCPT-D2C-100107",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 726.45,
+    "expected_net": 726.45,
+    "actual_net": 726.45,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_CFonVxfmZQ8d3A",
+    "order_receipt": "RCPT-D2C-100108",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 1297.26,
+    "expected_net": 1297.26,
+    "actual_net": 1297.26,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_3jJqmkVOvnQ0te",
+    "order_receipt": "RCPT-D2C-100109",
+    "settlement_utr": "889885284253",
+    "expected_code": null,
+    "gross": 741.19,
+    "expected_net": 741.19,
+    "actual_net": 741.19,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_igNjxLQ8mXvJ5L",
+    "order_receipt": "RCPT-D2C-100110",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 1775.93,
+    "expected_net": 1775.93,
+    "actual_net": 1775.93,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Ezp6Zr3WDOkYa6",
+    "order_receipt": "RCPT-D2C-100111",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 934.48,
+    "expected_net": 934.48,
+    "actual_net": 934.48,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_nm9cNlD4yN24vX",
+    "order_receipt": "RCPT-D2C-100112",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 2301.61,
+    "expected_net": 2301.61,
+    "actual_net": 2301.61,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Vp6qtZ4V5ClPMy",
+    "order_receipt": "RCPT-D2C-100113",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 593.86,
+    "expected_net": 580.55,
+    "actual_net": 580.55,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_gHhW1f96EWN294",
+    "order_receipt": "RCPT-D2C-100114",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 1068.11,
+    "expected_net": 1068.11,
+    "actual_net": 1068.11,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Vsa3vtRZbUiaYJ",
+    "order_receipt": "RCPT-D2C-100115",
+    "settlement_utr": "831957253914",
+    "expected_code": null,
+    "gross": 785.14,
+    "expected_net": 769.39,
+    "actual_net": 769.39,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ZsjUrpcjqUdkAe",
+    "order_receipt": "RCPT-D2C-100116",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 1356.74,
+    "expected_net": 1356.74,
+    "actual_net": 1356.74,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ziqO7nwQQ61e2u",
+    "order_receipt": "RCPT-D2C-100117",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 731.98,
+    "expected_net": 731.98,
+    "actual_net": 731.98,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_CUYX130bHaJsQY",
+    "order_receipt": "RCPT-D2C-100118",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 304.38,
+    "expected_net": 304.38,
+    "actual_net": 304.38,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_PnXhVzYQBjMAkQ",
+    "order_receipt": "RCPT-D2C-100119",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 744.3,
+    "expected_net": 729.37,
+    "actual_net": 729.37,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_YXCtwSabpmzQWP",
+    "order_receipt": "RCPT-D2C-100120",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 456.56,
+    "expected_net": 456.56,
+    "actual_net": 456.56,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_7ds1baeL4EcZfI",
+    "order_receipt": "RCPT-D2C-100121",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 1186.91,
+    "expected_net": 1186.91,
+    "actual_net": 1186.91,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_0rMtVe3Djsva1l",
+    "order_receipt": "RCPT-D2C-100122",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 1017.64,
+    "expected_net": 994.82,
+    "actual_net": 994.82,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_TP3Yzb2iQTMIDN",
+    "order_receipt": "RCPT-D2C-100123",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 323.85,
+    "expected_net": 323.85,
+    "actual_net": 323.85,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_cSMtNzlndZ7ucN",
+    "order_receipt": "RCPT-D2C-100124",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 363.67,
+    "expected_net": 356.38,
+    "actual_net": 356.38,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_zNi1KJx6tNhGdG",
+    "order_receipt": "RCPT-D2C-100125",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 1159.12,
+    "expected_net": 1133.14,
+    "actual_net": 1133.14,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Uj1NJ8zqOZCUYJ",
+    "order_receipt": "RCPT-D2C-100126",
+    "settlement_utr": "889885284253",
+    "expected_code": null,
+    "gross": 2140.47,
+    "expected_net": 2092.48,
+    "actual_net": 2092.48,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_wyf476FMfR3Tml",
+    "order_receipt": "RCPT-D2C-100127",
+    "settlement_utr": "6006378942x2b428",
+    "expected_code": "TIMING_GAP",
+    "gross": 1241.27,
+    "expected_net": 1241.27,
+    "actual_net": 1241.27,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_vXLHy1TzEujdGv",
+    "order_receipt": "RCPT-D2C-100128",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 1031.05,
+    "expected_net": 1007.93,
+    "actual_net": 1007.93,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_UdPKkiCgQX8MSZ",
+    "order_receipt": "RCPT-D2C-100129",
+    "settlement_utr": "4010945537j3c855",
+    "expected_code": null,
+    "gross": 838.01,
+    "expected_net": 819.22,
+    "actual_net": 819.22,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_lNOPmxygt0D0PE",
+    "order_receipt": "RCPT-D2C-100130",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 764.52,
+    "expected_net": 747.37,
+    "actual_net": 747.37,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_rKJzWxINM7OrVt",
+    "order_receipt": "RCPT-D2C-100131",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 601.69,
+    "expected_net": 601.69,
+    "actual_net": 601.69,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_rxvfIQ1s7T5Dvd",
+    "order_receipt": "RCPT-D2C-100132",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 757.12,
+    "expected_net": 757.12,
+    "actual_net": 757.12,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_djP4fk67r4tDZq",
+    "order_receipt": "RCPT-D2C-100133",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 788.88,
+    "expected_net": 773.06,
+    "actual_net": 773.06,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_JViNFWZ2dnCSVF",
+    "order_receipt": "RCPT-D2C-100134",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 349.55,
+    "expected_net": 341.71,
+    "actual_net": 341.71,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_94gymM219KZhAA",
+    "order_receipt": "RCPT-D2C-100135",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 473.65,
+    "expected_net": 463.03,
+    "actual_net": 463.03,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Y8hzrD6pffXsBD",
+    "order_receipt": "RCPT-D2C-100136",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 335.69,
+    "expected_net": 328.16,
+    "actual_net": 328.16,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_wPSxiBajapFz8r",
+    "order_receipt": "RCPT-D2C-100137",
+    "settlement_utr": "128806061157",
+    "expected_code": null,
+    "gross": 2358.03,
+    "expected_net": 2222.64,
+    "actual_net": 2222.64,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_9sLRT58eMnU7cZ",
+    "order_receipt": "RCPT-D2C-100138",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 1425.72,
+    "expected_net": 1393.75,
+    "actual_net": 1393.75,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_eqj2qawERZXt6Z",
+    "order_receipt": "RCPT-D2C-100139",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 1568.53,
+    "expected_net": 1568.53,
+    "actual_net": 1568.53,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_7TKpL9uovsHxZZ",
+    "order_receipt": "RCPT-D2C-100140",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 379.44,
+    "expected_net": 370.93,
+    "actual_net": 370.93,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_A2kqPkbZNkuRy2",
+    "order_receipt": "RCPT-D2C-100141",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 2787.64,
+    "expected_net": 2787.64,
+    "actual_net": 2787.64,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_tExmm0gRmN5OTG",
+    "order_receipt": "RCPT-D2C-100142",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 870.82,
+    "expected_net": 870.82,
+    "actual_net": 870.82,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_0dHeOSo7V9VhkO",
+    "order_receipt": "RCPT-D2C-100143",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 1047.93,
+    "expected_net": 1026.91,
+    "actual_net": 1026.91,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_laOq34DzX9iVqQ",
+    "order_receipt": "RCPT-D2C-100144",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 922.01,
+    "expected_net": 922.01,
+    "actual_net": 922.01,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_xMytvMxQMjws1S",
+    "order_receipt": "RCPT-D2C-100145",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 780.21,
+    "expected_net": 780.21,
+    "actual_net": 780.21,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ztdxGVG2JXx4ef",
+    "order_receipt": "RCPT-D2C-100146",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 652.13,
+    "expected_net": 637.51,
+    "actual_net": 637.51,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_YKz51bIIAHNuli",
+    "order_receipt": "RCPT-D2C-100147",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 638.17,
+    "expected_net": 638.17,
+    "actual_net": 638.17,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_GGl4I8Mcdkl6or",
+    "order_receipt": "RCPT-D2C-100148",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1450.61,
+    "expected_net": 1450.61,
+    "actual_net": 1450.61,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_4OAZkyv0OovvpC",
+    "order_receipt": "RCPT-D2C-100149",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1130.07,
+    "expected_net": 1104.74,
+    "actual_net": 1104.74,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_zhKngUGgy94Y64",
+    "order_receipt": "RCPT-D2C-100150",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 429.09,
+    "expected_net": 429.09,
+    "actual_net": 429.09,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_NHtpvNqbHnFihW",
+    "order_receipt": "RCPT-D2C-100151",
+    "settlement_utr": "629310831199",
+    "expected_code": null,
+    "gross": 684.55,
+    "expected_net": 669.2,
+    "actual_net": 669.2,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_7nkpN6wuwyF6B1",
+    "order_receipt": "RCPT-D2C-100152",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 243.75,
+    "expected_net": 243.75,
+    "actual_net": 243.75,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_p7ewn1wwwURzPA",
+    "order_receipt": "RCPT-D2C-100153",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 320.55,
+    "expected_net": 314.12,
+    "actual_net": 314.12,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_iH9dKNhDpqiP86",
+    "order_receipt": "RCPT-D2C-100154",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 1026.45,
+    "expected_net": 1026.45,
+    "actual_net": 1026.45,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_VQ9BFs3NpQn9pp",
+    "order_receipt": "RCPT-D2C-100155",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 321.67,
+    "expected_net": 321.67,
+    "actual_net": 321.67,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_5GQTZassLcu4G3",
+    "order_receipt": "RCPT-D2C-100156",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 987.35,
+    "expected_net": 987.35,
+    "actual_net": 987.35,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_qqlTqQLCJeG1DY",
+    "order_receipt": "RCPT-D2C-100157",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": "DUPLICATE",
+    "gross": 937.48,
+    "expected_net": 937.48,
+    "actual_net": 937.48,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_3P6yKSwY7wBOpM",
+    "order_receipt": "RCPT-D2C-100158",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 3220.13,
+    "expected_net": 3220.13,
+    "actual_net": 3220.13,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_fFZHfe7L6ObcDH",
+    "order_receipt": "RCPT-D2C-100159",
+    "settlement_utr": "453360469103",
+    "expected_code": null,
+    "gross": 496.75,
+    "expected_net": 496.75,
+    "actual_net": 496.75,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_3UNGFeQd78dyuI",
+    "order_receipt": "RCPT-D2C-100160",
+    "settlement_utr": "538327548029",
+    "expected_code": "SHORT_SETTLEMENT",
+    "gross": 1066.58,
+    "expected_net": 1066.58,
+    "actual_net": 946.58,
+    "injected_impact_inr": 120.0
+  },
+  {
+    "order_id": "order_vCipOxfqmIpXJY",
+    "order_receipt": "RCPT-D2C-100161",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 2385.65,
+    "expected_net": 2332.16,
+    "actual_net": 2332.16,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_8eOEeXg28vfrNn",
+    "order_receipt": "RCPT-D2C-100162",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 1685.93,
+    "expected_net": 1685.93,
+    "actual_net": 1685.93,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_JmzQmdejjtYIQP",
+    "order_receipt": "RCPT-D2C-100163",
+    "settlement_utr": "453360469103",
+    "expected_code": null,
+    "gross": 1038.58,
+    "expected_net": 1017.74,
+    "actual_net": 1017.74,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_vR98taGDb60G9B",
+    "order_receipt": "RCPT-D2C-100164",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 905.76,
+    "expected_net": 905.76,
+    "actual_net": 905.76,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_zX5h9jMbEl5QkY",
+    "order_receipt": "RCPT-D2C-100165",
+    "settlement_utr": "128806061157",
+    "expected_code": null,
+    "gross": 625.0,
+    "expected_net": 625.0,
+    "actual_net": 625.0,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Ld9UyObF9NiaZ9",
+    "order_receipt": "RCPT-D2C-100166",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 858.61,
+    "expected_net": 858.61,
+    "actual_net": 858.61,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_VkiWWtwbULzesB",
+    "order_receipt": "RCPT-D2C-100167",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 388.79,
+    "expected_net": 380.99,
+    "actual_net": 380.99,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_xlCM5AmiaujRBE",
+    "order_receipt": "RCPT-D2C-100168",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 482.77,
+    "expected_net": 471.95,
+    "actual_net": 471.95,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_3QVD7FQKQFEnDs",
+    "order_receipt": "RCPT-D2C-100169",
+    "settlement_utr": "831957253914",
+    "expected_code": null,
+    "gross": 445.74,
+    "expected_net": 435.75,
+    "actual_net": 435.75,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_y0OnF0qekbIAM7",
+    "order_receipt": "RCPT-D2C-100170",
+    "settlement_utr": "623928359786",
+    "expected_code": null,
+    "gross": 576.7,
+    "expected_net": 563.77,
+    "actual_net": 563.77,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Tq5QIKDOdxV0tt",
+    "order_receipt": "RCPT-D2C-100171",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 1135.94,
+    "expected_net": 1135.94,
+    "actual_net": 1135.94,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_h3XrtehTxEGqEn",
+    "order_receipt": "RCPT-D2C-100172",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 1056.32,
+    "expected_net": 1056.32,
+    "actual_net": 1056.32,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_GxdFo7RIC286jI",
+    "order_receipt": "RCPT-D2C-100173",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 994.66,
+    "expected_net": 994.66,
+    "actual_net": 994.66,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_UK0im1aKPLYwzb",
+    "order_receipt": "RCPT-D2C-100174",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 644.36,
+    "expected_net": 644.36,
+    "actual_net": 644.36,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_tMuyIvM69fG30g",
+    "order_receipt": "RCPT-D2C-100175",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 862.32,
+    "expected_net": 862.32,
+    "actual_net": 862.32,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_QmC5C8UO2U04R8",
+    "order_receipt": "RCPT-D2C-100176",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 616.92,
+    "expected_net": 616.92,
+    "actual_net": 616.92,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_KwJ0TQgpUYb1TI",
+    "order_receipt": "RCPT-D2C-100177",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 2198.03,
+    "expected_net": 2183.87,
+    "actual_net": 2183.87,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_NuVXPEGHU4B5yB",
+    "order_receipt": "RCPT-D2C-100178",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 2249.53,
+    "expected_net": 2199.1,
+    "actual_net": 2199.1,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_15hEecaA49qONN",
+    "order_receipt": "RCPT-D2C-100179",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 617.96,
+    "expected_net": 604.11,
+    "actual_net": 604.11,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_vbKYotE7aMUTVg",
+    "order_receipt": "RCPT-D2C-100180",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 1656.51,
+    "expected_net": 1656.51,
+    "actual_net": 1656.51,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_5g25t5t9Ngd7Jj",
+    "order_receipt": "RCPT-D2C-100181",
+    "settlement_utr": "623928359786",
+    "expected_code": null,
+    "gross": 1341.91,
+    "expected_net": 1341.91,
+    "actual_net": 1341.91,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_vdtmtNR11b7gDf",
+    "order_receipt": "RCPT-D2C-100182",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 1529.32,
+    "expected_net": 1515.16,
+    "actual_net": 1515.16,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_nbTTKoNcFJMlUH",
+    "order_receipt": "RCPT-D2C-100183",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 2219.87,
+    "expected_net": 2219.87,
+    "actual_net": 2219.87,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ubVWts1ZpJd31k",
+    "order_receipt": "RCPT-D2C-100184",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 795.05,
+    "expected_net": 795.05,
+    "actual_net": 795.05,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ZyUlkrOVz8KjjZ",
+    "order_receipt": "RCPT-D2C-100185",
+    "settlement_utr": "588326366695",
+    "expected_code": "FEE_MISMATCH",
+    "gross": 1837.6,
+    "expected_net": 1837.6,
+    "actual_net": 1831.7,
+    "injected_impact_inr": 5.9
+  },
+  {
+    "order_id": "order_XzYEXz6oiAR5VS",
+    "order_receipt": "RCPT-D2C-100186",
+    "settlement_utr": "5988023031k7e318",
+    "expected_code": null,
+    "gross": 803.34,
+    "expected_net": 785.33,
+    "actual_net": 785.33,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Fx7Jb1MCvf2uYb",
+    "order_receipt": "RCPT-D2C-100187",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 1846.43,
+    "expected_net": 1846.43,
+    "actual_net": 1846.43,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_yWovpDchnr5Cyc",
+    "order_receipt": "RCPT-D2C-100188",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 308.88,
+    "expected_net": 301.95,
+    "actual_net": 301.95,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_gz7ysg8A2zXatq",
+    "order_receipt": "RCPT-D2C-100189",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 3236.07,
+    "expected_net": 3236.07,
+    "actual_net": 3236.07,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_VKk2if8R27Ff71",
+    "order_receipt": "RCPT-D2C-100190",
+    "settlement_utr": "234513110637",
+    "expected_code": "SHORT_SETTLEMENT",
+    "gross": 1224.01,
+    "expected_net": 1224.01,
+    "actual_net": 1199.01,
+    "injected_impact_inr": 25.0
+  },
+  {
+    "order_id": "order_3bc4uzQFucpXGC",
+    "order_receipt": "RCPT-D2C-100191",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 707.7,
+    "expected_net": 693.54,
+    "actual_net": 693.54,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_9HCv1JzrSDm3iv",
+    "order_receipt": "RCPT-D2C-100192",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 431.42,
+    "expected_net": 431.42,
+    "actual_net": 431.42,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_17mL9Ip0wHpL1g",
+    "order_receipt": "RCPT-D2C-100193",
+    "settlement_utr": "5988023031k7e318",
+    "expected_code": null,
+    "gross": 895.61,
+    "expected_net": 895.61,
+    "actual_net": 895.61,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_zUrDvYOpde0h9M",
+    "order_receipt": "RCPT-D2C-100194",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1137.61,
+    "expected_net": 1123.45,
+    "actual_net": 1123.45,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_XY9HIflS9VYkjL",
+    "order_receipt": "RCPT-D2C-100195",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 3248.48,
+    "expected_net": 3234.32,
+    "actual_net": 3234.32,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_MTStPtlEaANjEN",
+    "order_receipt": "RCPT-D2C-100196",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 1151.51,
+    "expected_net": 1151.51,
+    "actual_net": 1151.51,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_5tli0LAkML51OG",
+    "order_receipt": "RCPT-D2C-100197",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 223.06,
+    "expected_net": 218.59,
+    "actual_net": 218.59,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_XuXjIW65XQiJKK",
+    "order_receipt": "RCPT-D2C-100198",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 1929.33,
+    "expected_net": 1886.07,
+    "actual_net": 1886.07,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_PxF1elYbVewCOq",
+    "order_receipt": "RCPT-D2C-100199",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 1697.81,
+    "expected_net": 1697.81,
+    "actual_net": 1697.81,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_U76Gtgb7KlCfH2",
+    "order_receipt": "RCPT-D2C-100200",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 791.77,
+    "expected_net": 791.77,
+    "actual_net": 791.77,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_dAsOqZGMaFirSX",
+    "order_receipt": "RCPT-D2C-100201",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 1126.42,
+    "expected_net": 1126.42,
+    "actual_net": 1126.42,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_IqrBsLluCytyzE",
+    "order_receipt": "RCPT-D2C-100202",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1222.96,
+    "expected_net": 1222.96,
+    "actual_net": 1222.96,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_3Po6Jq3QtHHzYF",
+    "order_receipt": "RCPT-D2C-100203",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 2079.37,
+    "expected_net": 2079.37,
+    "actual_net": 2079.37,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_uVIXWgjlOnRqgI",
+    "order_receipt": "RCPT-D2C-100204",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 2179.83,
+    "expected_net": 2136.1,
+    "actual_net": 2136.1,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_SSZ1tC0QeUurNu",
+    "order_receipt": "RCPT-D2C-100205",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 508.02,
+    "expected_net": 508.02,
+    "actual_net": 508.02,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_9mh4q39TzyOVVe",
+    "order_receipt": "RCPT-D2C-100206",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 1000.29,
+    "expected_net": 1000.29,
+    "actual_net": 1000.29,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_KWRD7r2PVC2L5D",
+    "order_receipt": "RCPT-D2C-100207",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 2557.77,
+    "expected_net": 2557.77,
+    "actual_net": 2557.77,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_IrCntMNBlrknOS",
+    "order_receipt": "RCPT-D2C-100208",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 513.06,
+    "expected_net": 498.9,
+    "actual_net": 498.9,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_XA5OHVZPp2bPVl",
+    "order_receipt": "RCPT-D2C-100209",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 1124.7,
+    "expected_net": 1124.7,
+    "actual_net": 1124.7,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_vc84FTd3NsAEF5",
+    "order_receipt": "RCPT-D2C-100210",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 656.01,
+    "expected_net": 642.85,
+    "actual_net": 642.85,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_2VmnjkRSwFn9tX",
+    "order_receipt": "RCPT-D2C-100211",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1207.14,
+    "expected_net": 1180.07,
+    "actual_net": 1180.07,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_16X0uDBYO49UrZ",
+    "order_receipt": "RCPT-D2C-100212",
+    "settlement_utr": "4891066411y3m685",
+    "expected_code": null,
+    "gross": 1264.79,
+    "expected_net": 1264.79,
+    "actual_net": 1264.79,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_iIteunHIRTTrMi",
+    "order_receipt": "RCPT-D2C-100213",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 697.45,
+    "expected_net": 697.45,
+    "actual_net": 697.45,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_L508hBBn4OcF10",
+    "order_receipt": "RCPT-D2C-100214",
+    "settlement_utr": "758019943651",
+    "expected_code": null,
+    "gross": 638.71,
+    "expected_net": 624.38,
+    "actual_net": 624.38,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_v5F3N9cmyRj7Az",
+    "order_receipt": "RCPT-D2C-100215",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 804.82,
+    "expected_net": 804.82,
+    "actual_net": 804.82,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_1gPIsTZCOGNc9y",
+    "order_receipt": "RCPT-D2C-100216",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 1115.82,
+    "expected_net": 1115.82,
+    "actual_net": 1115.82,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_gNy8MpuPWkz5GQ",
+    "order_receipt": "RCPT-D2C-100217",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 696.89,
+    "expected_net": 681.27,
+    "actual_net": 681.27,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_rt8bM2GJaLg5JU",
+    "order_receipt": "RCPT-D2C-100218",
+    "settlement_utr": "310925085643",
+    "expected_code": "FEE_MISMATCH",
+    "gross": 636.07,
+    "expected_net": 621.8,
+    "actual_net": 619.44,
+    "injected_impact_inr": 2.36
+  },
+  {
+    "order_id": "order_pkGibN2xToumO8",
+    "order_receipt": "RCPT-D2C-100219",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 2461.76,
+    "expected_net": 2406.57,
+    "actual_net": 2406.57,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_QfLQAT6dOXPy4u",
+    "order_receipt": "RCPT-D2C-100220",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 883.82,
+    "expected_net": 883.82,
+    "actual_net": 883.82,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_aEn8zgvcrblxh1",
+    "order_receipt": "RCPT-D2C-100221",
+    "settlement_utr": "599309088526",
+    "expected_code": null,
+    "gross": 2694.47,
+    "expected_net": 2694.47,
+    "actual_net": 2694.47,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_foK1Me0I3Tbtou",
+    "order_receipt": "RCPT-D2C-100222",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1234.33,
+    "expected_net": 1234.33,
+    "actual_net": 1234.33,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_XtLnZogva5HHhd",
+    "order_receipt": "RCPT-D2C-100223",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 3826.46,
+    "expected_net": 3826.46,
+    "actual_net": 3826.46,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_cYwnRXJmhKbJ8R",
+    "order_receipt": "RCPT-D2C-100224",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 451.74,
+    "expected_net": 451.74,
+    "actual_net": 451.74,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_EIS0acQlPU19Dk",
+    "order_receipt": "RCPT-D2C-100225",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 365.20000000000005,
+    "expected_net": 344.22,
+    "actual_net": 344.22,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_FGzhfVOXHUg1gS",
+    "order_receipt": "RCPT-D2C-100226",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 823.54,
+    "expected_net": 823.54,
+    "actual_net": 823.54,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_zjAFQ3tLXQsn7M",
+    "order_receipt": "RCPT-D2C-100227",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 558.47,
+    "expected_net": 547.27,
+    "actual_net": 547.27,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ZqkZgZMY8J9gxV",
+    "order_receipt": "RCPT-D2C-100228",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 485.67,
+    "expected_net": 485.67,
+    "actual_net": 485.67,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_qLKFJ5khNeV3Gh",
+    "order_receipt": "RCPT-D2C-100229",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 803.6,
+    "expected_net": 785.58,
+    "actual_net": 785.58,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_GdtalqgFPcSNDX",
+    "order_receipt": "RCPT-D2C-100230",
+    "settlement_utr": "379230697628",
+    "expected_code": null,
+    "gross": 524.35,
+    "expected_net": 524.35,
+    "actual_net": 524.35,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_MzSkrUD7gXgGCV",
+    "order_receipt": "RCPT-D2C-100231",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1132.75,
+    "expected_net": 1132.75,
+    "actual_net": 1132.75,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_M8VuceyCo1L0DL",
+    "order_receipt": "RCPT-D2C-100232",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": "FEE_MISMATCH",
+    "gross": 262.25,
+    "expected_net": 262.25,
+    "actual_net": 252.81,
+    "injected_impact_inr": 9.44
+  },
+  {
+    "order_id": "order_p4gAUCmybMOVAB",
+    "order_receipt": "RCPT-D2C-100233",
+    "settlement_utr": "5988023031k7e318",
+    "expected_code": null,
+    "gross": 519.66,
+    "expected_net": 508.01,
+    "actual_net": 508.01,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ume3x2wTCm4aqm",
+    "order_receipt": "RCPT-D2C-100234",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1779.02,
+    "expected_net": 1779.02,
+    "actual_net": 1779.02,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_qBbd4joul9Jnue",
+    "order_receipt": "RCPT-D2C-100235",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 750.14,
+    "expected_net": 750.14,
+    "actual_net": 750.14,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Y8WJzcL2j9xS7X",
+    "order_receipt": "RCPT-D2C-100236",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 731.34,
+    "expected_net": 731.34,
+    "actual_net": 731.34,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Cl4H2zdgwJf010",
+    "order_receipt": "RCPT-D2C-100237",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 443.53,
+    "expected_net": 443.53,
+    "actual_net": 443.53,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_RzQmiLIn3X4JPs",
+    "order_receipt": "RCPT-D2C-100238",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": "DUPLICATE",
+    "gross": 1000.08,
+    "expected_net": 977.66,
+    "actual_net": 977.66,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_E7wAF6qZFIPdqD",
+    "order_receipt": "RCPT-D2C-100239",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 321.6,
+    "expected_net": 321.6,
+    "actual_net": 321.6,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_M34oyeTYn6F8Hc",
+    "order_receipt": "RCPT-D2C-100240",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1053.34,
+    "expected_net": 1029.73,
+    "actual_net": 1029.73,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_vF7ZqJTagISUc1",
+    "order_receipt": "RCPT-D2C-100241",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 436.75,
+    "expected_net": 426.96,
+    "actual_net": 426.96,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_FFoOTYMaXkq4r8",
+    "order_receipt": "RCPT-D2C-100242",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 1705.42,
+    "expected_net": 1671.21,
+    "actual_net": 1671.21,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ibVQYUfucCfkgN",
+    "order_receipt": "RCPT-D2C-100243",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 362.96,
+    "expected_net": 362.96,
+    "actual_net": 362.96,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_0vTXEJjUpbOHCF",
+    "order_receipt": "RCPT-D2C-100244",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 1016.2,
+    "expected_net": 1016.2,
+    "actual_net": 1016.2,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_zZwjEMTXrRiPoz",
+    "order_receipt": "RCPT-D2C-100245",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 475.91,
+    "expected_net": 475.91,
+    "actual_net": 475.91,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_kW0s6YF3Ak4wBl",
+    "order_receipt": "RCPT-D2C-100246",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 1829.82,
+    "expected_net": 1829.82,
+    "actual_net": 1829.82,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_zunq2NSifmLu6M",
+    "order_receipt": "RCPT-D2C-100247",
+    "settlement_utr": "167481084389",
+    "expected_code": null,
+    "gross": 416.06,
+    "expected_net": 406.73,
+    "actual_net": 406.73,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_5Swvrs6jVQq89u",
+    "order_receipt": "RCPT-D2C-100248",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 589.68,
+    "expected_net": 589.68,
+    "actual_net": 589.68,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_VHgLbQFl7cfTXh",
+    "order_receipt": "RCPT-D2C-100249",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1158.07,
+    "expected_net": 1158.07,
+    "actual_net": 1158.07,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ir1fW3fXqDMqoO",
+    "order_receipt": "RCPT-D2C-100250",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 770.41,
+    "expected_net": 770.41,
+    "actual_net": 770.41,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_TNlwVeF7eVyZN9",
+    "order_receipt": "RCPT-D2C-100251",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 1192.56,
+    "expected_net": 1192.56,
+    "actual_net": 1192.56,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_wiCT7oYzzdeRzV",
+    "order_receipt": "RCPT-D2C-100252",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 1365.42,
+    "expected_net": 1334.81,
+    "actual_net": 1334.81,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_7fc8mq0QR6Ba7k",
+    "order_receipt": "RCPT-D2C-100253",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 821.56,
+    "expected_net": 821.56,
+    "actual_net": 821.56,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Gf9l12u3CZsIfx",
+    "order_receipt": "RCPT-D2C-100254",
+    "settlement_utr": "310925085643",
+    "expected_code": "MISSING_IN_LEDGER",
+    "gross": 1952.79,
+    "expected_net": 1952.79,
+    "actual_net": 1952.79,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_NIBFVOUOHDaLCF",
+    "order_receipt": "RCPT-D2C-100255",
+    "settlement_utr": "692853922261",
+    "expected_code": null,
+    "gross": 2492.41,
+    "expected_net": 2442.41,
+    "actual_net": 2442.41,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_HuvvVphx8hljJ6",
+    "order_receipt": "RCPT-D2C-100256",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 420.59,
+    "expected_net": 420.59,
+    "actual_net": 420.59,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_XCPkAJ3D8tS3dr",
+    "order_receipt": "RCPT-D2C-100257",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 684.47,
+    "expected_net": 684.47,
+    "actual_net": 684.47,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_uNEuzcqley577w",
+    "order_receipt": "RCPT-D2C-100258",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 1375.46,
+    "expected_net": 1375.46,
+    "actual_net": 1375.46,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_98u8EU3mBHQa7n",
+    "order_receipt": "RCPT-D2C-100259",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 2452.3,
+    "expected_net": 2397.32,
+    "actual_net": 2397.32,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_6mKlMcI4NuVLZ0",
+    "order_receipt": "RCPT-D2C-100260",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 348.02,
+    "expected_net": 348.02,
+    "actual_net": 348.02,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Xs0dghmNILpVrx",
+    "order_receipt": "RCPT-D2C-100261",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 375.44,
+    "expected_net": 375.44,
+    "actual_net": 375.44,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_pqHkCBKkQ3hF0o",
+    "order_receipt": "RCPT-D2C-100262",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 732.61,
+    "expected_net": 732.61,
+    "actual_net": 732.61,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_2mptrUSRRnFOxC",
+    "order_receipt": "RCPT-D2C-100263",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 1766.5,
+    "expected_net": 1726.9,
+    "actual_net": 1726.9,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ldKCX1FBpU1JBm",
+    "order_receipt": "RCPT-D2C-100264",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 545.63,
+    "expected_net": 533.39,
+    "actual_net": 533.39,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_IjUjPZXzyFhVm7",
+    "order_receipt": "RCPT-D2C-100265",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 854.42,
+    "expected_net": 835.27,
+    "actual_net": 835.27,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_WVpJ71ddpzCVTU",
+    "order_receipt": "RCPT-D2C-100266",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 1224.27,
+    "expected_net": 1224.27,
+    "actual_net": 1224.27,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_bCCz7hSj6iLa6j",
+    "order_receipt": "RCPT-D2C-100267",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 1118.2,
+    "expected_net": 1093.13,
+    "actual_net": 1093.13,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_9ezRA91yOrUTju",
+    "order_receipt": "RCPT-D2C-100268",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 977.0,
+    "expected_net": 955.1,
+    "actual_net": 955.1,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_0ZXkBpfC6HeEFk",
+    "order_receipt": "RCPT-D2C-100269",
+    "settlement_utr": "128806061157",
+    "expected_code": null,
+    "gross": 924.55,
+    "expected_net": 903.82,
+    "actual_net": 903.82,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_b6q1N9POPOVBZR",
+    "order_receipt": "RCPT-D2C-100270",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 431.69,
+    "expected_net": 431.69,
+    "actual_net": 431.69,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_3g4B2u07f3LORX",
+    "order_receipt": "RCPT-D2C-100271",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 780.44,
+    "expected_net": 762.94,
+    "actual_net": 762.94,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_7gGAXNaiQ9VQiB",
+    "order_receipt": "RCPT-D2C-100272",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": "SHORT_SETTLEMENT",
+    "gross": 1342.1,
+    "expected_net": 1312.01,
+    "actual_net": 1272.01,
+    "injected_impact_inr": 40.0
+  },
+  {
+    "order_id": "order_6VEisQWGJ9Evyz",
+    "order_receipt": "RCPT-D2C-100273",
+    "settlement_utr": "831957253914",
+    "expected_code": null,
+    "gross": 628.56,
+    "expected_net": 614.47,
+    "actual_net": 614.47,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_aa2lSbMArF0tiI",
+    "order_receipt": "RCPT-D2C-100274",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 506.49,
+    "expected_net": 495.14,
+    "actual_net": 495.14,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_lHUbUe7KyZesKU",
+    "order_receipt": "RCPT-D2C-100275",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 527.03,
+    "expected_net": 527.03,
+    "actual_net": 527.03,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_n3bfL7dSjG5m5j",
+    "order_receipt": "RCPT-D2C-100276",
+    "settlement_utr": "669131461235",
+    "expected_code": "MISSING_IN_LEDGER",
+    "gross": 711.5,
+    "expected_net": 711.5,
+    "actual_net": 711.5,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_W1VEETHeLvdo97",
+    "order_receipt": "RCPT-D2C-100277",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 906.91,
+    "expected_net": 906.91,
+    "actual_net": 906.91,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Mx5A8P9Uv42gDC",
+    "order_receipt": "RCPT-D2C-100278",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 3698.8,
+    "expected_net": 3698.8,
+    "actual_net": 3698.8,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_1rtodUkRx63idB",
+    "order_receipt": "RCPT-D2C-100279",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 781.0,
+    "expected_net": 781.0,
+    "actual_net": 781.0,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_PZ2OHrUmAshasx",
+    "order_receipt": "RCPT-D2C-100280",
+    "settlement_utr": "624182764238",
+    "expected_code": "MISSING_IN_LEDGER",
+    "gross": 1879.9499999999998,
+    "expected_net": 1772.0,
+    "actual_net": 1772.0,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_AxMVaNvcs74OTC",
+    "order_receipt": "RCPT-D2C-100281",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 1675.61,
+    "expected_net": 1675.61,
+    "actual_net": 1675.61,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_OnkaZPRWJp3Vod",
+    "order_receipt": "RCPT-D2C-100282",
+    "settlement_utr": "115709562851",
+    "expected_code": "MISSING_PAYOUT",
+    "gross": 800.78,
+    "expected_net": 800.78,
+    "actual_net": 800.78,
+    "injected_impact_inr": 800.78
+  },
+  {
+    "order_id": "order_uIEHOvqoI2BKfK",
+    "order_receipt": "RCPT-D2C-100283",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1195.77,
+    "expected_net": 1195.77,
+    "actual_net": 1195.77,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_OF5edqN10e5IH8",
+    "order_receipt": "RCPT-D2C-100284",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 917.91,
+    "expected_net": 917.91,
+    "actual_net": 917.91,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_xHKcWHMk3071YR",
+    "order_receipt": "RCPT-D2C-100285",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 1528.55,
+    "expected_net": 1528.55,
+    "actual_net": 1528.55,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_fi8KNPLJZEeWs4",
+    "order_receipt": "RCPT-D2C-100286",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": "DUPLICATE",
+    "gross": 2136.21,
+    "expected_net": 2136.21,
+    "actual_net": 2136.21,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_9VX8uZkbji1sKx",
+    "order_receipt": "RCPT-D2C-100287",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 1689.04,
+    "expected_net": 1689.04,
+    "actual_net": 1689.04,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_tq3fs8CcfWgBpe",
+    "order_receipt": "RCPT-D2C-100288",
+    "settlement_utr": "310925085643",
+    "expected_code": "MISSING_IN_LEDGER",
+    "gross": 1016.74,
+    "expected_net": 1016.74,
+    "actual_net": 1016.74,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_FXSJWxUUvafmy0",
+    "order_receipt": "RCPT-D2C-100289",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 2541.28,
+    "expected_net": 2541.28,
+    "actual_net": 2541.28,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_5vTXapfSY6gXMR",
+    "order_receipt": "RCPT-D2C-100290",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 227.82,
+    "expected_net": 223.25,
+    "actual_net": 223.25,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_0OeF54eXQ2J6fI",
+    "order_receipt": "RCPT-D2C-100291",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 443.86,
+    "expected_net": 443.86,
+    "actual_net": 443.86,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_PpIng6l9dIeAJN",
+    "order_receipt": "RCPT-D2C-100292",
+    "settlement_utr": "310925085643",
+    "expected_code": "FEE_MISMATCH",
+    "gross": 1295.79,
+    "expected_net": 1295.79,
+    "actual_net": 1293.43,
+    "injected_impact_inr": 2.36
+  },
+  {
+    "order_id": "order_3cKGUdUhYyLLJR",
+    "order_receipt": "RCPT-D2C-100293",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 1206.39,
+    "expected_net": 1182.19,
+    "actual_net": 1182.19,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_IigGelvc1UF1Us",
+    "order_receipt": "RCPT-D2C-100294",
+    "settlement_utr": "6006378942x2b428",
+    "expected_code": "TIMING_GAP",
+    "gross": 1225.21,
+    "expected_net": 1225.21,
+    "actual_net": 1225.21,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_QkQN36HGyV5Pjm",
+    "order_receipt": "RCPT-D2C-100295",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 665.92,
+    "expected_net": 665.92,
+    "actual_net": 665.92,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_PEkc2DXrbdkYmo",
+    "order_receipt": "RCPT-D2C-100296",
+    "settlement_utr": "453360469103",
+    "expected_code": null,
+    "gross": 1044.02,
+    "expected_net": 1044.02,
+    "actual_net": 1044.02,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_OYw0fPWVQI1T5r",
+    "order_receipt": "RCPT-D2C-100297",
+    "settlement_utr": "588326366695",
+    "expected_code": "DUPLICATE",
+    "gross": 2124.8,
+    "expected_net": 2077.16,
+    "actual_net": 2077.16,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Topkf7fjs6aeBh",
+    "order_receipt": "RCPT-D2C-100298",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 862.23,
+    "expected_net": 862.23,
+    "actual_net": 862.23,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_YmGpngCCYch1Bm",
+    "order_receipt": "RCPT-D2C-100299",
+    "settlement_utr": "453360469103",
+    "expected_code": "SHORT_SETTLEMENT",
+    "gross": 1486.79,
+    "expected_net": 1486.79,
+    "actual_net": 1461.79,
+    "injected_impact_inr": 25.0
+  },
+  {
+    "order_id": "order_ltWAHE7j29xnc4",
+    "order_receipt": "RCPT-D2C-100300",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 622.69,
+    "expected_net": 622.69,
+    "actual_net": 622.69,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Ut6Ly1iu5JfiUQ",
+    "order_receipt": "RCPT-D2C-100301",
+    "settlement_utr": "128806061157",
+    "expected_code": null,
+    "gross": 241.5,
+    "expected_net": 236.08,
+    "actual_net": 236.08,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_UDt8nbezqNhlLE",
+    "order_receipt": "RCPT-D2C-100302",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 613.06,
+    "expected_net": 613.06,
+    "actual_net": 613.06,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_SczHpKmvpRS10i",
+    "order_receipt": "RCPT-D2C-100303",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 1400.27,
+    "expected_net": 1368.87,
+    "actual_net": 1368.87,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_zqDVB7n5sVRmgM",
+    "order_receipt": "RCPT-D2C-100304",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 841.16,
+    "expected_net": 841.16,
+    "actual_net": 841.16,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_NYbTmXhy3X5iUN",
+    "order_receipt": "RCPT-D2C-100305",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 1701.71,
+    "expected_net": 1701.71,
+    "actual_net": 1701.71,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_yI8WtMjd03z9oy",
+    "order_receipt": "RCPT-D2C-100306",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 1327.4,
+    "expected_net": 1327.4,
+    "actual_net": 1327.4,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_EiNo4cjd09jRph",
+    "order_receipt": "RCPT-D2C-100307",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 841.63,
+    "expected_net": 841.63,
+    "actual_net": 841.63,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_taUZzh2RD8gMtI",
+    "order_receipt": "RCPT-D2C-100308",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 3323.17,
+    "expected_net": 3323.17,
+    "actual_net": 3323.17,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_tVSOdljWtnpbaF",
+    "order_receipt": "RCPT-D2C-100309",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 1495.43,
+    "expected_net": 1495.43,
+    "actual_net": 1495.43,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_mwqicvF2Xe87XH",
+    "order_receipt": "RCPT-D2C-100310",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1615.47,
+    "expected_net": 1579.26,
+    "actual_net": 1579.26,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_B2IMX3SnRnUbIb",
+    "order_receipt": "RCPT-D2C-100311",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 364.66,
+    "expected_net": 364.66,
+    "actual_net": 364.66,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_pNYLgTMzDONoIC",
+    "order_receipt": "RCPT-D2C-100312",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 586.01,
+    "expected_net": 572.88,
+    "actual_net": 572.88,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_q1wY7mDjqMiCIv",
+    "order_receipt": "RCPT-D2C-100313",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 718.51,
+    "expected_net": 718.51,
+    "actual_net": 718.51,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ZyElldOCsdLYse",
+    "order_receipt": "RCPT-D2C-100314",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 495.26,
+    "expected_net": 495.26,
+    "actual_net": 495.26,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_rf1nzld7ZSybp1",
+    "order_receipt": "RCPT-D2C-100315",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 708.27,
+    "expected_net": 708.27,
+    "actual_net": 708.27,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_LstHxsc7owFieW",
+    "order_receipt": "RCPT-D2C-100316",
+    "settlement_utr": "669131461235",
+    "expected_code": "SHORT_SETTLEMENT",
+    "gross": 1233.34,
+    "expected_net": 1205.69,
+    "actual_net": 1180.69,
+    "injected_impact_inr": 25.0
+  },
+  {
+    "order_id": "order_AaZO4ebteX2qvf",
+    "order_receipt": "RCPT-D2C-100317",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 673.31,
+    "expected_net": 673.31,
+    "actual_net": 673.31,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_O1mHHqhApmFzjc",
+    "order_receipt": "RCPT-D2C-100318",
+    "settlement_utr": "831957253914",
+    "expected_code": null,
+    "gross": 385.69,
+    "expected_net": 377.95,
+    "actual_net": 377.95,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_nzYQeEhtqJKe1z",
+    "order_receipt": "RCPT-D2C-100319",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 2636.36,
+    "expected_net": 2636.36,
+    "actual_net": 2636.36,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_KKNUHOuMVnBUEx",
+    "order_receipt": "RCPT-D2C-100320",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 1403.08,
+    "expected_net": 1403.08,
+    "actual_net": 1403.08,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_0iRtFVAegejvxE",
+    "order_receipt": "RCPT-D2C-100321",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 1443.08,
+    "expected_net": 1414.13,
+    "actual_net": 1414.13,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_9feqwSg6jncEK0",
+    "order_receipt": "RCPT-D2C-100322",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 1410.35,
+    "expected_net": 1410.35,
+    "actual_net": 1410.35,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_9ZnfhgiN8Qf2K2",
+    "order_receipt": "RCPT-D2C-100323",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 633.45,
+    "expected_net": 619.24,
+    "actual_net": 619.24,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_cq8iWrAHFAuQaG",
+    "order_receipt": "RCPT-D2C-100324",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1350.34,
+    "expected_net": 1350.34,
+    "actual_net": 1350.34,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_FP6eFAjCHcqIR4",
+    "order_receipt": "RCPT-D2C-100325",
+    "settlement_utr": "5988023031k7e318",
+    "expected_code": null,
+    "gross": 1115.17,
+    "expected_net": 1115.17,
+    "actual_net": 1115.17,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ulg922GSmXyuxW",
+    "order_receipt": "RCPT-D2C-100326",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 1424.0,
+    "expected_net": 1424.0,
+    "actual_net": 1424.0,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_B6PItXB523iUST",
+    "order_receipt": "RCPT-D2C-100327",
+    "settlement_utr": "234513110637",
+    "expected_code": "MISSING_IN_LEDGER",
+    "gross": 838.08,
+    "expected_net": 838.08,
+    "actual_net": 838.08,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_PpnTH0ZFeCH9XO",
+    "order_receipt": "RCPT-D2C-100328",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 980.76,
+    "expected_net": 958.78,
+    "actual_net": 958.78,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_NlmfvwjiQRNhzN",
+    "order_receipt": "RCPT-D2C-100329",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 295.35,
+    "expected_net": 295.35,
+    "actual_net": 295.35,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_WNf9SdPuTXisg7",
+    "order_receipt": "RCPT-D2C-100330",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 449.3,
+    "expected_net": 449.3,
+    "actual_net": 449.3,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_5XIADMUV6LqefI",
+    "order_receipt": "RCPT-D2C-100331",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 1074.05,
+    "expected_net": 1074.05,
+    "actual_net": 1074.05,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_DFS3bovJnlpExO",
+    "order_receipt": "RCPT-D2C-100332",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 1526.88,
+    "expected_net": 1526.88,
+    "actual_net": 1526.88,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_G2yAiSz4VvCCGj",
+    "order_receipt": "RCPT-D2C-100333",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 382.69,
+    "expected_net": 374.11,
+    "actual_net": 374.11,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_scAK1z5kX4hIpa",
+    "order_receipt": "RCPT-D2C-100334",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 876.16,
+    "expected_net": 876.16,
+    "actual_net": 876.16,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_hNvGx5YcK69tmf",
+    "order_receipt": "RCPT-D2C-100335",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 760.95,
+    "expected_net": 760.95,
+    "actual_net": 760.95,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_uxqmQ7fxToZ69F",
+    "order_receipt": "RCPT-D2C-100336",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1427.8,
+    "expected_net": 1427.8,
+    "actual_net": 1427.8,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_JtW7jL9YbvqyAF",
+    "order_receipt": "RCPT-D2C-100337",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 1644.58,
+    "expected_net": 1607.71,
+    "actual_net": 1607.71,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ljj9BxZHPigW7Q",
+    "order_receipt": "RCPT-D2C-100338",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 1195.47,
+    "expected_net": 1195.47,
+    "actual_net": 1195.47,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_YDtuMPnOBkM9LT",
+    "order_receipt": "RCPT-D2C-100339",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 950.05,
+    "expected_net": 950.05,
+    "actual_net": 950.05,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_LkWNQL0V9wr5c8",
+    "order_receipt": "RCPT-D2C-100340",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 992.16,
+    "expected_net": 972.25,
+    "actual_net": 972.25,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_5TN12CZo8VQavi",
+    "order_receipt": "RCPT-D2C-100341",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 792.8,
+    "expected_net": 792.8,
+    "actual_net": 792.8,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_2bXD0mQOlNPoU7",
+    "order_receipt": "RCPT-D2C-100342",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 915.55,
+    "expected_net": 895.02,
+    "actual_net": 895.02,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_EGswWhmKn47CbM",
+    "order_receipt": "RCPT-D2C-100343",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 483.89,
+    "expected_net": 474.18,
+    "actual_net": 474.18,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_weaNLHcPav2klI",
+    "order_receipt": "RCPT-D2C-100344",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 999.17,
+    "expected_net": 999.17,
+    "actual_net": 999.17,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_hDU7q88AD4fGIn",
+    "order_receipt": "RCPT-D2C-100345",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 854.77,
+    "expected_net": 854.77,
+    "actual_net": 854.77,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_PvDmWOJFkvSceH",
+    "order_receipt": "RCPT-D2C-100346",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 3489.95,
+    "expected_net": 3419.94,
+    "actual_net": 3419.94,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_MALrRxJVdEutUp",
+    "order_receipt": "RCPT-D2C-100347",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 889.19,
+    "expected_net": 869.26,
+    "actual_net": 869.26,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_hKO9heAfCf9m4y",
+    "order_receipt": "RCPT-D2C-100348",
+    "settlement_utr": "669131461235",
+    "expected_code": "FEE_MISMATCH",
+    "gross": 848.26,
+    "expected_net": 848.26,
+    "actual_net": 838.82,
+    "injected_impact_inr": 9.44
+  },
+  {
+    "order_id": "order_oDUiukCt3Vkmtv",
+    "order_receipt": "RCPT-D2C-100349",
+    "settlement_utr": "669131461235",
+    "expected_code": "MISSING_IN_LEDGER",
+    "gross": 1101.51,
+    "expected_net": 1076.81,
+    "actual_net": 1076.81,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_FSNl4dUBEPsV8p",
+    "order_receipt": "RCPT-D2C-100350",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 785.68,
+    "expected_net": 768.06,
+    "actual_net": 768.06,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_f0KcldufXHOdsN",
+    "order_receipt": "RCPT-D2C-100351",
+    "settlement_utr": "4891066411y3m685",
+    "expected_code": null,
+    "gross": 1611.62,
+    "expected_net": 1575.49,
+    "actual_net": 1575.49,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_BBHbTeIJbOXdut",
+    "order_receipt": "RCPT-D2C-100352",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 667.63,
+    "expected_net": 667.63,
+    "actual_net": 667.63,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_BGvTyUUASuFsnS",
+    "order_receipt": "RCPT-D2C-100353",
+    "settlement_utr": "692853922261",
+    "expected_code": null,
+    "gross": 745.77,
+    "expected_net": 745.77,
+    "actual_net": 745.77,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_1XwXt10J699ui9",
+    "order_receipt": "RCPT-D2C-100354",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1694.09,
+    "expected_net": 1694.09,
+    "actual_net": 1694.09,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_1kwsewjKzbfUek",
+    "order_receipt": "RCPT-D2C-100355",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 886.4,
+    "expected_net": 868.62,
+    "actual_net": 868.62,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_NXuZuCwcanHM2i",
+    "order_receipt": "RCPT-D2C-100356",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 888.98,
+    "expected_net": 837.94,
+    "actual_net": 837.94,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_TmrMX1y2flpvGR",
+    "order_receipt": "RCPT-D2C-100357",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 675.79,
+    "expected_net": 675.79,
+    "actual_net": 675.79,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_2qDLFyyjgpjT8w",
+    "order_receipt": "RCPT-D2C-100358",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 236.21,
+    "expected_net": 222.05,
+    "actual_net": 222.05,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_mvX8vMvpYMCl1E",
+    "order_receipt": "RCPT-D2C-100359",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 2880.33,
+    "expected_net": 2880.33,
+    "actual_net": 2880.33,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_MQGCyGTRUh38rL",
+    "order_receipt": "RCPT-D2C-100360",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 2607.29,
+    "expected_net": 2607.29,
+    "actual_net": 2607.29,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_JsGKZatD7F3W44",
+    "order_receipt": "RCPT-D2C-100361",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 445.76,
+    "expected_net": 445.76,
+    "actual_net": 445.76,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_OSHlmxPHnfpMPp",
+    "order_receipt": "RCPT-D2C-100362",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 424.31,
+    "expected_net": 414.8,
+    "actual_net": 414.8,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_flDMsogZzufv5Q",
+    "order_receipt": "RCPT-D2C-100363",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 1489.6,
+    "expected_net": 1489.6,
+    "actual_net": 1489.6,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Fc307tG0qQcgDi",
+    "order_receipt": "RCPT-D2C-100364",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": "DUPLICATE",
+    "gross": 1854.69,
+    "expected_net": 1817.48,
+    "actual_net": 1817.48,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_KroYOwBGI2LiUd",
+    "order_receipt": "RCPT-D2C-100365",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1286.21,
+    "expected_net": 1286.21,
+    "actual_net": 1286.21,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Jmuj6H5V22bCgf",
+    "order_receipt": "RCPT-D2C-100366",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 2668.85,
+    "expected_net": 2609.01,
+    "actual_net": 2609.01,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_a6gRmDo5SEryIm",
+    "order_receipt": "RCPT-D2C-100367",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 891.84,
+    "expected_net": 891.84,
+    "actual_net": 891.84,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_GU2YaNxu3bBL6b",
+    "order_receipt": "RCPT-D2C-100368",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 634.43,
+    "expected_net": 621.7,
+    "actual_net": 621.7,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_53uek68T4Mvii3",
+    "order_receipt": "RCPT-D2C-100369",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 364.29,
+    "expected_net": 356.12,
+    "actual_net": 356.12,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_HKI69qqu2zSer0",
+    "order_receipt": "RCPT-D2C-100370",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 163.88,
+    "expected_net": 160.21,
+    "actual_net": 160.21,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_wohjZnwLneZ13n",
+    "order_receipt": "RCPT-D2C-100371",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 607.12,
+    "expected_net": 607.12,
+    "actual_net": 607.12,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ukyClIsrfIZ5wD",
+    "order_receipt": "RCPT-D2C-100372",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1436.28,
+    "expected_net": 1436.28,
+    "actual_net": 1436.28,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_JWn6tBXsldHh61",
+    "order_receipt": "RCPT-D2C-100373",
+    "settlement_utr": "629310831199",
+    "expected_code": null,
+    "gross": 614.13,
+    "expected_net": 614.13,
+    "actual_net": 614.13,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_lFv4pyqXQdVlQz",
+    "order_receipt": "RCPT-D2C-100374",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 1932.88,
+    "expected_net": 1889.55,
+    "actual_net": 1889.55,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_8BxKj2WIGmJYWr",
+    "order_receipt": "RCPT-D2C-100375",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 551.82,
+    "expected_net": 551.82,
+    "actual_net": 551.82,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_04kF8BV8TMJ0EZ",
+    "order_receipt": "RCPT-D2C-100376",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 760.5,
+    "expected_net": 760.5,
+    "actual_net": 760.5,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_cgtPwbQvtgLDLW",
+    "order_receipt": "RCPT-D2C-100377",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 1376.9,
+    "expected_net": 1376.9,
+    "actual_net": 1376.9,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_zDUME4mqwWYdUk",
+    "order_receipt": "RCPT-D2C-100378",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 815.43,
+    "expected_net": 815.43,
+    "actual_net": 815.43,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_RhuZte6barEVzL",
+    "order_receipt": "RCPT-D2C-100379",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 642.83,
+    "expected_net": 628.67,
+    "actual_net": 628.67,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_hYvd2ScKcq1owF",
+    "order_receipt": "RCPT-D2C-100380",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 2003.2,
+    "expected_net": 1958.29,
+    "actual_net": 1958.29,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_WO0SbwZuoGC0pI",
+    "order_receipt": "RCPT-D2C-100381",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 430.51,
+    "expected_net": 430.51,
+    "actual_net": 430.51,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_uXrrqLbicR6xXg",
+    "order_receipt": "RCPT-D2C-100382",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 584.4,
+    "expected_net": 584.4,
+    "actual_net": 584.4,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_tUXgx6rH1xsDYV",
+    "order_receipt": "RCPT-D2C-100383",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 1683.66,
+    "expected_net": 1683.66,
+    "actual_net": 1683.66,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_aAHIAc1edocSB7",
+    "order_receipt": "RCPT-D2C-100384",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 554.01,
+    "expected_net": 554.01,
+    "actual_net": 554.01,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_D2do7mhbG0FiEW",
+    "order_receipt": "RCPT-D2C-100385",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 1804.92,
+    "expected_net": 1804.92,
+    "actual_net": 1804.92,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_mChSuoHgCvV3L3",
+    "order_receipt": "RCPT-D2C-100386",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 385.7,
+    "expected_net": 385.7,
+    "actual_net": 385.7,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_lcPMcHMsusvwrE",
+    "order_receipt": "RCPT-D2C-100387",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1597.46,
+    "expected_net": 1565.41,
+    "actual_net": 1565.41,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_gHdW6YCIy8wt5T",
+    "order_receipt": "RCPT-D2C-100388",
+    "settlement_utr": "128806061157",
+    "expected_code": null,
+    "gross": 2466.49,
+    "expected_net": 2466.49,
+    "actual_net": 2466.49,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_WePU0s8X7SKcBq",
+    "order_receipt": "RCPT-D2C-100389",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 569.34,
+    "expected_net": 557.92,
+    "actual_net": 557.92,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_cw4IT9cGThiCpv",
+    "order_receipt": "RCPT-D2C-100390",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 410.8,
+    "expected_net": 410.8,
+    "actual_net": 410.8,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_tBEjIktiCu3cgb",
+    "order_receipt": "RCPT-D2C-100391",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 2754.01,
+    "expected_net": 2692.26,
+    "actual_net": 2692.26,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_jhGukr74PwxOQq",
+    "order_receipt": "RCPT-D2C-100392",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 788.76,
+    "expected_net": 788.76,
+    "actual_net": 788.76,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_uwXslLJbmOpTPx",
+    "order_receipt": "RCPT-D2C-100393",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 886.44,
+    "expected_net": 886.44,
+    "actual_net": 886.44,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_7OhWfMiPLfcJSP",
+    "order_receipt": "RCPT-D2C-100394",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 820.13,
+    "expected_net": 820.13,
+    "actual_net": 820.13,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_OIEaz4s0R0a67O",
+    "order_receipt": "RCPT-D2C-100395",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 394.61,
+    "expected_net": 394.61,
+    "actual_net": 394.61,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_DNmIUsdXBkCX2R",
+    "order_receipt": "RCPT-D2C-100396",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 1871.86,
+    "expected_net": 1871.86,
+    "actual_net": 1871.86,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_vbVGKQo3NSR5D1",
+    "order_receipt": "RCPT-D2C-100397",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": "SHORT_SETTLEMENT",
+    "gross": 1019.88,
+    "expected_net": 1019.88,
+    "actual_net": 994.88,
+    "injected_impact_inr": 25.0
+  },
+  {
+    "order_id": "order_IfktSsGFtqjZRd",
+    "order_receipt": "RCPT-D2C-100398",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 1874.33,
+    "expected_net": 1874.33,
+    "actual_net": 1874.33,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_oS4UmyxaHH3l7m",
+    "order_receipt": "RCPT-D2C-100399",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 988.99,
+    "expected_net": 969.15,
+    "actual_net": 969.15,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_nMr2LkUIUhixO4",
+    "order_receipt": "RCPT-D2C-100400",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 1588.96,
+    "expected_net": 1553.34,
+    "actual_net": 1553.34,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_slkXS66fQeTBMc",
+    "order_receipt": "RCPT-D2C-100401",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 574.03,
+    "expected_net": 559.87,
+    "actual_net": 559.87,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_dF55AD6mrcuh6X",
+    "order_receipt": "RCPT-D2C-100402",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 883.46,
+    "expected_net": 883.46,
+    "actual_net": 883.46,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_EkbTUAiHm1c9S9",
+    "order_receipt": "RCPT-D2C-100403",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 670.47,
+    "expected_net": 655.44,
+    "actual_net": 655.44,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_j4BLjaBMeUnAie",
+    "order_receipt": "RCPT-D2C-100404",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 1089.22,
+    "expected_net": 1089.22,
+    "actual_net": 1089.22,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_mY8J8kaVzpUuXr",
+    "order_receipt": "RCPT-D2C-100405",
+    "settlement_utr": "623928359786",
+    "expected_code": null,
+    "gross": 1379.21,
+    "expected_net": 1379.21,
+    "actual_net": 1379.21,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_e0qhpgmWGLsNIF",
+    "order_receipt": "RCPT-D2C-100406",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 1048.91,
+    "expected_net": 1048.91,
+    "actual_net": 1048.91,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_IvYX5OXCqcHwQq",
+    "order_receipt": "RCPT-D2C-100407",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 968.61,
+    "expected_net": 968.61,
+    "actual_net": 968.61,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_zlaZjEKDuN0nlD",
+    "order_receipt": "RCPT-D2C-100408",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 332.44,
+    "expected_net": 332.44,
+    "actual_net": 332.44,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Oj8TSLpa7bLbIQ",
+    "order_receipt": "RCPT-D2C-100409",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 998.77,
+    "expected_net": 998.77,
+    "actual_net": 998.77,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_tkcsQVIhpswmZV",
+    "order_receipt": "RCPT-D2C-100410",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 1736.32,
+    "expected_net": 1736.32,
+    "actual_net": 1736.32,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_eVBC6KhYQLCOkp",
+    "order_receipt": "RCPT-D2C-100411",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 1056.3,
+    "expected_net": 1042.14,
+    "actual_net": 1042.14,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_zH8TY2gMUYW89b",
+    "order_receipt": "RCPT-D2C-100412",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 2687.34,
+    "expected_net": 2687.34,
+    "actual_net": 2687.34,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_r1cfhgIXP9WIW4",
+    "order_receipt": "RCPT-D2C-100413",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 1475.68,
+    "expected_net": 1446.07,
+    "actual_net": 1446.07,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_icRkLh6WOFCvax",
+    "order_receipt": "RCPT-D2C-100414",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 1136.93,
+    "expected_net": 1114.12,
+    "actual_net": 1114.12,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_PYbRvzrpWTbvzL",
+    "order_receipt": "RCPT-D2C-100415",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1727.62,
+    "expected_net": 1727.62,
+    "actual_net": 1727.62,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_txpO8AvRYoR5C6",
+    "order_receipt": "RCPT-D2C-100416",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 467.46,
+    "expected_net": 467.46,
+    "actual_net": 467.46,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_xgdWN5HnFVHpaJ",
+    "order_receipt": "RCPT-D2C-100417",
+    "settlement_utr": "453360469103",
+    "expected_code": "FEE_MISMATCH",
+    "gross": 591.82,
+    "expected_net": 577.66,
+    "actual_net": 574.12,
+    "injected_impact_inr": 3.54
+  },
+  {
+    "order_id": "order_mZqbuVd4ZOOrJd",
+    "order_receipt": "RCPT-D2C-100418",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 1592.79,
+    "expected_net": 1557.08,
+    "actual_net": 1557.08,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_XbiqriVqX9udfn",
+    "order_receipt": "RCPT-D2C-100419",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 465.42,
+    "expected_net": 454.99,
+    "actual_net": 454.99,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_XZdVPPEyV3CRZk",
+    "order_receipt": "RCPT-D2C-100420",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 724.01,
+    "expected_net": 724.01,
+    "actual_net": 724.01,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_DgFG3TgNcvyymO",
+    "order_receipt": "RCPT-D2C-100421",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 446.27,
+    "expected_net": 432.11,
+    "actual_net": 432.11,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_n1cVn1JpuBAYos",
+    "order_receipt": "RCPT-D2C-100422",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 397.09,
+    "expected_net": 397.09,
+    "actual_net": 397.09,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_BuTO89RISScm4q",
+    "order_receipt": "RCPT-D2C-100423",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 2758.88,
+    "expected_net": 2697.02,
+    "actual_net": 2697.02,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_NlbG5n7Az73NYj",
+    "order_receipt": "RCPT-D2C-100424",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 695.92,
+    "expected_net": 681.96,
+    "actual_net": 681.96,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_cQtuFfTPcpA2GF",
+    "order_receipt": "RCPT-D2C-100425",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 590.9,
+    "expected_net": 577.65,
+    "actual_net": 577.65,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_yCDxFG6kGRWKr8",
+    "order_receipt": "RCPT-D2C-100426",
+    "settlement_utr": "379230697628",
+    "expected_code": null,
+    "gross": 446.55,
+    "expected_net": 446.55,
+    "actual_net": 446.55,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_uuJduOOQzVEF6I",
+    "order_receipt": "RCPT-D2C-100427",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 590.29,
+    "expected_net": 590.29,
+    "actual_net": 590.29,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_rXXNQhhu8OGmQS",
+    "order_receipt": "RCPT-D2C-100428",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 1152.82,
+    "expected_net": 1152.82,
+    "actual_net": 1152.82,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_fiT5eIMvdm24HV",
+    "order_receipt": "RCPT-D2C-100429",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 424.59,
+    "expected_net": 424.59,
+    "actual_net": 424.59,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_bQwAVnJXKcRsne",
+    "order_receipt": "RCPT-D2C-100430",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 2375.71,
+    "expected_net": 2375.71,
+    "actual_net": 2375.71,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_sImofFFJ6AThaL",
+    "order_receipt": "RCPT-D2C-100431",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 1344.85,
+    "expected_net": 1344.85,
+    "actual_net": 1344.85,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ppuzUFDDc86Rj8",
+    "order_receipt": "RCPT-D2C-100432",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 562.38,
+    "expected_net": 562.38,
+    "actual_net": 562.38,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_gRwZxpoInKDn5B",
+    "order_receipt": "RCPT-D2C-100433",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 687.73,
+    "expected_net": 687.73,
+    "actual_net": 687.73,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_vcQ24HaWMlabIa",
+    "order_receipt": "RCPT-D2C-100434",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 706.88,
+    "expected_net": 706.88,
+    "actual_net": 706.88,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_2tAm4mLu5Nw2cM",
+    "order_receipt": "RCPT-D2C-100435",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 288.24,
+    "expected_net": 288.24,
+    "actual_net": 288.24,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_yMwhVQ8WCXTDPt",
+    "order_receipt": "RCPT-D2C-100436",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 512.38,
+    "expected_net": 512.38,
+    "actual_net": 512.38,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_BP8koR63vqDgvc",
+    "order_receipt": "RCPT-D2C-100437",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 1483.47,
+    "expected_net": 1483.47,
+    "actual_net": 1483.47,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_QvCUjR6hCuytxV",
+    "order_receipt": "RCPT-D2C-100438",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 1211.31,
+    "expected_net": 1211.31,
+    "actual_net": 1211.31,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_tNayfA7MpEIl2I",
+    "order_receipt": "RCPT-D2C-100439",
+    "settlement_utr": "188255191783",
+    "expected_code": "SPLIT_PAYOUT",
+    "gross": 353.74,
+    "expected_net": 353.74,
+    "actual_net": 353.74,
+    "injected_impact_inr": 353.74
+  },
+  {
+    "order_id": "order_3ItL6Nkxmrlt2z",
+    "order_receipt": "RCPT-D2C-100440",
+    "settlement_utr": "623928359786",
+    "expected_code": null,
+    "gross": 1842.85,
+    "expected_net": 1805.88,
+    "actual_net": 1805.88,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_0Hrw3EqxS1lm2i",
+    "order_receipt": "RCPT-D2C-100441",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 2526.33,
+    "expected_net": 2469.69,
+    "actual_net": 2469.69,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_3w3oEDBC2NXwWF",
+    "order_receipt": "RCPT-D2C-100442",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 2201.88,
+    "expected_net": 2152.51,
+    "actual_net": 2152.51,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Ijiiz5kuWC7Syg",
+    "order_receipt": "RCPT-D2C-100443",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 446.25,
+    "expected_net": 437.29,
+    "actual_net": 437.29,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_8hLOq5HahZJv3x",
+    "order_receipt": "RCPT-D2C-100444",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 255.64,
+    "expected_net": 255.64,
+    "actual_net": 255.64,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_KxFtAn1LPgA1Vy",
+    "order_receipt": "RCPT-D2C-100445",
+    "settlement_utr": "6006378942x2b428",
+    "expected_code": "TIMING_GAP",
+    "gross": 800.38,
+    "expected_net": 800.38,
+    "actual_net": 800.38,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_1kIfLDX6SPNx7N",
+    "order_receipt": "RCPT-D2C-100446",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 1561.88,
+    "expected_net": 1561.88,
+    "actual_net": 1561.88,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_8uBo1spojgGMH6",
+    "order_receipt": "RCPT-D2C-100447",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 404.19,
+    "expected_net": 404.19,
+    "actual_net": 404.19,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_5yhZtQI5uoku7h",
+    "order_receipt": "RCPT-D2C-100448",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": null,
+    "gross": 609.83,
+    "expected_net": 596.15,
+    "actual_net": 596.15,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_0d8C0VUgHDcer5",
+    "order_receipt": "RCPT-D2C-100449",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 680.25,
+    "expected_net": 680.25,
+    "actual_net": 680.25,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_xeFJJBhDkYGc3A",
+    "order_receipt": "RCPT-D2C-100450",
+    "settlement_utr": "128806061157",
+    "expected_code": null,
+    "gross": 799.01,
+    "expected_net": 799.01,
+    "actual_net": 799.01,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_iNN9Lsth7N9PiJ",
+    "order_receipt": "RCPT-D2C-100451",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 761.3,
+    "expected_net": 761.3,
+    "actual_net": 761.3,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_hNaVYGnKMFgesw",
+    "order_receipt": "RCPT-D2C-100452",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 778.04,
+    "expected_net": 778.04,
+    "actual_net": 778.04,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_LOK4yPCmy77dRb",
+    "order_receipt": "RCPT-D2C-100453",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 1305.58,
+    "expected_net": 1305.58,
+    "actual_net": 1305.58,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Lnd3uMugN6OkWy",
+    "order_receipt": "RCPT-D2C-100454",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 829.53,
+    "expected_net": 829.53,
+    "actual_net": 829.53,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_dYQNzRtiAQGxJ0",
+    "order_receipt": "RCPT-D2C-100455",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 187.53,
+    "expected_net": 187.53,
+    "actual_net": 187.53,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_c6kJwQSGJMAY8t",
+    "order_receipt": "RCPT-D2C-100456",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 836.46,
+    "expected_net": 836.46,
+    "actual_net": 836.46,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_DsCuyBL7blpyrR",
+    "order_receipt": "RCPT-D2C-100457",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 1556.77,
+    "expected_net": 1521.87,
+    "actual_net": 1521.87,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_wVVP826c52lfmX",
+    "order_receipt": "RCPT-D2C-100458",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1441.88,
+    "expected_net": 1441.88,
+    "actual_net": 1441.88,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_2DTsyMLMF2JyeE",
+    "order_receipt": "RCPT-D2C-100459",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 760.4,
+    "expected_net": 760.4,
+    "actual_net": 760.4,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_qymjMwrVFv1GWt",
+    "order_receipt": "RCPT-D2C-100460",
+    "settlement_utr": "128806061157",
+    "expected_code": null,
+    "gross": 621.31,
+    "expected_net": 621.31,
+    "actual_net": 621.31,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_VjMs4296VMLg62",
+    "order_receipt": "RCPT-D2C-100461",
+    "settlement_utr": "453360469103",
+    "expected_code": null,
+    "gross": 1263.34,
+    "expected_net": 1263.34,
+    "actual_net": 1263.34,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_uSzrrFcAavMtPj",
+    "order_receipt": "RCPT-D2C-100462",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 421.72,
+    "expected_net": 421.72,
+    "actual_net": 421.72,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_kAidod2ANJKfwe",
+    "order_receipt": "RCPT-D2C-100463",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1403.89,
+    "expected_net": 1403.89,
+    "actual_net": 1403.89,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_9On0dwQfz7zDz6",
+    "order_receipt": "RCPT-D2C-100464",
+    "settlement_utr": "5426409400z2b576",
+    "expected_code": null,
+    "gross": 1183.81,
+    "expected_net": 1183.81,
+    "actual_net": 1183.81,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_KNqdC2PU8ldzkP",
+    "order_receipt": "RCPT-D2C-100465",
+    "settlement_utr": "107113738502",
+    "expected_code": null,
+    "gross": 1192.46,
+    "expected_net": 1192.46,
+    "actual_net": 1192.46,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_dWHB2GboIi3Ix7",
+    "order_receipt": "RCPT-D2C-100466",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 1100.55,
+    "expected_net": 1100.55,
+    "actual_net": 1100.55,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_UQNVIVXYZzdP8V",
+    "order_receipt": "RCPT-D2C-100467",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 387.07,
+    "expected_net": 387.07,
+    "actual_net": 387.07,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_g4EAd82Kk2RKNg",
+    "order_receipt": "RCPT-D2C-100468",
+    "settlement_utr": "588326366695",
+    "expected_code": null,
+    "gross": 1117.5,
+    "expected_net": 1117.5,
+    "actual_net": 1117.5,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_6ChsWHHPe9nWkv",
+    "order_receipt": "RCPT-D2C-100469",
+    "settlement_utr": "453360469103",
+    "expected_code": null,
+    "gross": 2850.38,
+    "expected_net": 2850.38,
+    "actual_net": 2850.38,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_N8ksQdhRHtEacU",
+    "order_receipt": "RCPT-D2C-100470",
+    "settlement_utr": "538327548029",
+    "expected_code": null,
+    "gross": 527.46,
+    "expected_net": 527.46,
+    "actual_net": 527.46,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_pJmO6vxpqoi84O",
+    "order_receipt": "RCPT-D2C-100471",
+    "settlement_utr": "431752571167",
+    "expected_code": null,
+    "gross": 1983.73,
+    "expected_net": 1983.73,
+    "actual_net": 1983.73,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_hSUHr3cE05rvQQ",
+    "order_receipt": "RCPT-D2C-100472",
+    "settlement_utr": "2258486643b4r596",
+    "expected_code": "DUPLICATE",
+    "gross": 1463.09,
+    "expected_net": 1463.09,
+    "actual_net": 1463.09,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_yxXfuRdKmEaihP",
+    "order_receipt": "RCPT-D2C-100473",
+    "settlement_utr": "965348286116",
+    "expected_code": null,
+    "gross": 783.9,
+    "expected_net": 783.9,
+    "actual_net": 783.9,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_BCAIZGoW7eycUA",
+    "order_receipt": "RCPT-D2C-100474",
+    "settlement_utr": "889885284253",
+    "expected_code": null,
+    "gross": 701.7,
+    "expected_net": 701.7,
+    "actual_net": 701.7,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_AsNRLhFtDAw2Es",
+    "order_receipt": "RCPT-D2C-100475",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 897.2,
+    "expected_net": 897.2,
+    "actual_net": 897.2,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_jkx9Be4cyBMUPe",
+    "order_receipt": "RCPT-D2C-100476",
+    "settlement_utr": "831957253914",
+    "expected_code": null,
+    "gross": 1866.65,
+    "expected_net": 1852.49,
+    "actual_net": 1852.49,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_E1nbn1Mckz7b5E",
+    "order_receipt": "RCPT-D2C-100477",
+    "settlement_utr": "669131461235",
+    "expected_code": null,
+    "gross": 874.07,
+    "expected_net": 859.91,
+    "actual_net": 859.91,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_pXiXotqhZrAqXo",
+    "order_receipt": "RCPT-D2C-100478",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 560.96,
+    "expected_net": 548.38,
+    "actual_net": 548.38,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_5fhJSfX2OXQvIb",
+    "order_receipt": "RCPT-D2C-100479",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 629.74,
+    "expected_net": 629.74,
+    "actual_net": 629.74,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_4VIzntv7tkJXUQ",
+    "order_receipt": "RCPT-D2C-100480",
+    "settlement_utr": "4612697149q0s580",
+    "expected_code": null,
+    "gross": 1507.75,
+    "expected_net": 1507.75,
+    "actual_net": 1507.75,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_HEeFH3uUdLgL3v",
+    "order_receipt": "RCPT-D2C-100481",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 515.28,
+    "expected_net": 515.28,
+    "actual_net": 515.28,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_1LKAd0DMEJmqGP",
+    "order_receipt": "RCPT-D2C-100482",
+    "settlement_utr": "758019943651",
+    "expected_code": null,
+    "gross": 896.81,
+    "expected_net": 896.81,
+    "actual_net": 896.81,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ip4VieEj8a9cQ2",
+    "order_receipt": "RCPT-D2C-100483",
+    "settlement_utr": "413649601516",
+    "expected_code": null,
+    "gross": 2610.2,
+    "expected_net": 2551.68,
+    "actual_net": 2551.68,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_UcT8hz7kCDJ2xj",
+    "order_receipt": "RCPT-D2C-100484",
+    "settlement_utr": "167481084389",
+    "expected_code": null,
+    "gross": 984.99,
+    "expected_net": 962.91,
+    "actual_net": 962.91,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_DwbflVbEBq8Cqg",
+    "order_receipt": "RCPT-D2C-100485",
+    "settlement_utr": "379230697628",
+    "expected_code": null,
+    "gross": 546.83,
+    "expected_net": 546.83,
+    "actual_net": 546.83,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_YMH3sWAT3aEy1b",
+    "order_receipt": "RCPT-D2C-100486",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 578.95,
+    "expected_net": 578.95,
+    "actual_net": 578.95,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_GvsjSJDeKI2xKb",
+    "order_receipt": "RCPT-D2C-100487",
+    "settlement_utr": "4222180334x1b528",
+    "expected_code": null,
+    "gross": 1666.48,
+    "expected_net": 1666.48,
+    "actual_net": 1666.48,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_EFGWOVwtxWsYXP",
+    "order_receipt": "RCPT-D2C-100488",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 1155.42,
+    "expected_net": 1129.52,
+    "actual_net": 1129.52,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_F0O3vZzng7AbuO",
+    "order_receipt": "RCPT-D2C-100489",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 3004.69,
+    "expected_net": 3004.69,
+    "actual_net": 3004.69,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_RpZB8nOVgQbpBo",
+    "order_receipt": "RCPT-D2C-100490",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1829.52,
+    "expected_net": 1788.5,
+    "actual_net": 1788.5,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_7Dn2FLiSIiQ0tr",
+    "order_receipt": "RCPT-D2C-100491",
+    "settlement_utr": "794210426733",
+    "expected_code": null,
+    "gross": 990.95,
+    "expected_net": 968.73,
+    "actual_net": 968.73,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_2e8p0E0GlcPGS3",
+    "order_receipt": "RCPT-D2C-100492",
+    "settlement_utr": "573387546335",
+    "expected_code": null,
+    "gross": 1153.53,
+    "expected_net": 1127.66,
+    "actual_net": 1127.66,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_Gxxht0Ct8mSdwh",
+    "order_receipt": "RCPT-D2C-100493",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1345.19,
+    "expected_net": 1345.19,
+    "actual_net": 1345.19,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_EPq3HDIhrr9Euv",
+    "order_receipt": "RCPT-D2C-100494",
+    "settlement_utr": "5643639034h2g640",
+    "expected_code": null,
+    "gross": 905.62,
+    "expected_net": 885.31,
+    "actual_net": 885.31,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_MtiRcJqBwjrHyq",
+    "order_receipt": "RCPT-D2C-100495",
+    "settlement_utr": "624182764238",
+    "expected_code": null,
+    "gross": 516.58,
+    "expected_net": 516.58,
+    "actual_net": 516.58,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_ILkE8Sx2luSGrD",
+    "order_receipt": "RCPT-D2C-100496",
+    "settlement_utr": "5988023031k7e318",
+    "expected_code": null,
+    "gross": 830.25,
+    "expected_net": 811.64,
+    "actual_net": 811.64,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_M5NBlsZ3fk6gdX",
+    "order_receipt": "RCPT-D2C-100497",
+    "settlement_utr": "234513110637",
+    "expected_code": null,
+    "gross": 353.03,
+    "expected_net": 353.03,
+    "actual_net": 353.03,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_bx1CcqIlOazpDT",
+    "order_receipt": "RCPT-D2C-100498",
+    "settlement_utr": "310925085643",
+    "expected_code": null,
+    "gross": 1267.67,
+    "expected_net": 1267.67,
+    "actual_net": 1267.67,
+    "injected_impact_inr": 0.0
+  },
+  {
+    "order_id": "order_2LOzqKTuW4z6Xh",
+    "order_receipt": "RCPT-D2C-100499",
+    "settlement_utr": "6753106955k3y994",
+    "expected_code": null,
+    "gross": 756.09,
+    "expected_net": 756.09,
+    "actual_net": 756.09,
+    "injected_impact_inr": 0.0
+  }
+]

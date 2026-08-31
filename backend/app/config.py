@@ -34,6 +34,8 @@ class Settings(BaseSettings):
     settlement_sla_days: int = 2
     default_mdr_percent: float = 2.0
     default_gst_percent: float = 18.0
+    default_tds_percent: float = 0.0       # marketplace 194-O TDS on payouts
+    default_reserve_percent: float = 0.0   # rolling reserve held from payouts
 
     redis_url: str | None = None
     api_host: str = "0.0.0.0"

@@ -8,5 +8,6 @@
 | [WORKFLOW.md](WORKFLOW.md) | Plain-language walkthrough of the six pipeline stages + exception taxonomy |
 | [AI_INTEGRATION.md](AI_INTEGRATION.md) | Where AI is / isn't used, the agent contract, free-tier LLM strategy, embeddings, safety checklist |
 | [METRICS.md](METRICS.md) | How the ground-truth scorer works, what each metric means, how to run the harness |
+| [DATA_MODEL.md](DATA_MODEL.md) | The two dataset generators, the real file formats (Razorpay recon / MT940 / CAMT.053 / bank CSV / Zoho), the money mechanics, and settlement-batch reconciliation |
 
 Start with the [top-level README](../README.md) for setup.

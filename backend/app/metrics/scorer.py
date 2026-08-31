@@ -146,13 +146,15 @@ def _m(x: bool | None) -> str:
     return {True: "PASS", False: "FAIL", None: "-"}[x]
 
 
-def _order_of(exc: dict, truth_by_utr: dict) -> str | None:
-    ext = exc.get("anchor_external_id") or ""
-    if _ORDER_RE.fullmatch(str(ext)):
-        return str(ext)
+def _order_of(exc: dict, ref_to_order: dict, unique_utr: dict) -> str | None:
+    ext = str(exc.get("anchor_external_id") or "")
+    if ext in ref_to_order:
+        return ref_to_order[ext]
+    if _ORDER_RE.fullmatch(ext):
+        return ext
     utr = exc.get("anchor_utr")
-    if utr and utr in truth_by_utr:
-        return truth_by_utr[utr]["order_id"]
+    if utr and utr in unique_utr:
+        return unique_utr[utr]
     return None
 
 
@@ -161,8 +163,25 @@ def score_batch(result: dict, ground_truth: list[dict]) -> ScoreCard:
     exceptions = result.get("exceptions", [])
 
     truth_by_order = {t["order_id"]: t for t in ground_truth}
-    truth_by_utr = {t["utr"]: t for t in ground_truth if t.get("utr")}
     defects = {t["order_id"]: t["expected_code"] for t in ground_truth if t["expected_code"]}
+
+    # every id-ish field -> canonical order_id (covers ORD…, order_…, receipts)
+    ref_to_order: dict[str, str] = {}
+    for t in ground_truth:
+        for f in ("order_id", "order_receipt", "external_id"):
+            if t.get(f):
+                ref_to_order[str(t[f])] = t["order_id"]
+    # a utr only disambiguates one order if it is not shared across a batch
+    utr_counts: dict[str, int] = {}
+    for t in ground_truth:
+        u = t.get("utr") or t.get("settlement_utr")
+        if u:
+            utr_counts[u] = utr_counts.get(u, 0) + 1
+    unique_utr = {
+        (t.get("utr") or t.get("settlement_utr")): t["order_id"]
+        for t in ground_truth
+        if (t.get("utr") or t.get("settlement_utr")) and utr_counts[t.get("utr") or t.get("settlement_utr")] == 1
+    }
 
     # order_id -> predicted codes (list; usually one)
     predicted: dict[str, list[str]] = defaultdict(list)
@@ -173,7 +192,7 @@ def score_batch(result: dict, ground_truth: list[dict]) -> ScoreCard:
     surfaced_money = 0.0
     unmapped = 0
     for exc in exceptions:
-        order = _order_of(exc, truth_by_utr)
+        order = _order_of(exc, ref_to_order, unique_utr)
         if exc.get("code") in deduction_codes:
             surfaced_money += abs(float(exc.get("amount_impact", 0) or 0))
         if order is None:

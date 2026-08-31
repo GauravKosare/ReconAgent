@@ -36,3 +36,6 @@ Thumbs.db
 .idea/
 .vscode/
 *.log
+
+# realworld sample dataset is committed on purpose (demo + judges)
+!data/samples/realworld/
