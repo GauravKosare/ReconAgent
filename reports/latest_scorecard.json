@@ -1,29 +1,29 @@
 {
-  "generated_at": "20260831T053644Z",
-  "txns_per_run": 200,
+  "generated_at": "20260831T060548Z",
+  "txns_per_run": 500,
   "seeds": [
-    3
+    33
   ],
   "aggregate": {
     "auto_match_rate": {
-      "mean": 0.905,
+      "mean": 0.899,
       "std": 0.0,
-      "min": 0.905,
-      "max": 0.905,
+      "min": 0.899,
+      "max": 0.899,
       "n": 1
     },
     "runtime_seconds": {
-      "mean": 119.0,
+      "mean": 13.5,
       "std": 0.0,
-      "min": 119.0,
-      "max": 119.0,
+      "min": 13.5,
+      "max": 13.5,
       "n": 1
     },
     "human_queue_fraction": {
-      "mean": 0.075,
+      "mean": 0.117,
       "std": 0.0,
-      "min": 0.075,
-      "max": 0.075,
+      "min": 0.117,
+      "max": 0.117,
       "n": 1
     },
     "detection_precision": {
@@ -59,14 +59,14 @@
   "runs": [
     {
       "throughput": {
-        "txns": 199,
-        "auto_match_rate": 0.905,
-        "runtime_seconds": 119.0,
-        "human_queue_fraction": 0.075
+        "txns": 497,
+        "auto_match_rate": 0.899,
+        "runtime_seconds": 13.5,
+        "human_queue_fraction": 0.117
       },
       "detection": {
-        "injected_defects": 22,
-        "detected": 22,
+        "injected_defects": 59,
+        "detected": 59,
         "false_positives": 0,
         "precision": 1.0,
         "recall": 1.0
@@ -79,11 +79,27 @@
             "precision": 1.0,
             "recall": 1.0,
             "f1": 1.0,
-            "tp": 2,
+            "tp": 6,
             "fp": 0,
             "fn": 0
           },
           "FEE_MISMATCH": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 20,
+            "fp": 0,
+            "fn": 0
+          },
+          "MISSING_IN_LEDGER": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "tp": 6,
+            "fp": 0,
+            "fn": 0
+          },
+          "MISSING_PAYOUT": {
             "precision": 1.0,
             "recall": 1.0,
             "f1": 1.0,
@@ -91,27 +107,11 @@
             "fp": 0,
             "fn": 0
           },
-          "MISSING_IN_LEDGER": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1": 1.0,
-            "tp": 2,
-            "fp": 0,
-            "fn": 0
-          },
-          "MISSING_PAYOUT": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1": 1.0,
-            "tp": 3,
-            "fp": 0,
-            "fn": 0
-          },
           "SHORT_SETTLEMENT": {
             "precision": 1.0,
             "recall": 1.0,
             "f1": 1.0,
-            "tp": 2,
+            "tp": 7,
             "fp": 0,
             "fn": 0
           },
@@ -119,35 +119,35 @@
             "precision": 1.0,
             "recall": 1.0,
             "f1": 1.0,
-            "tp": 5,
+            "tp": 12,
             "fp": 0,
             "fn": 0
           }
         },
         "confusion": {
-          "FEE_MISMATCH": {
-            "FEE_MISMATCH": 8
-          },
           "TIMING_GAP": {
-            "TIMING_GAP": 5
-          },
-          "DUPLICATE": {
-            "DUPLICATE": 2
-          },
-          "SHORT_SETTLEMENT": {
-            "SHORT_SETTLEMENT": 2
-          },
-          "MISSING_IN_LEDGER": {
-            "MISSING_IN_LEDGER": 2
+            "TIMING_GAP": 12
           },
           "MISSING_PAYOUT": {
-            "MISSING_PAYOUT": 3
+            "MISSING_PAYOUT": 8
+          },
+          "SHORT_SETTLEMENT": {
+            "SHORT_SETTLEMENT": 7
+          },
+          "DUPLICATE": {
+            "DUPLICATE": 6
+          },
+          "FEE_MISMATCH": {
+            "FEE_MISMATCH": 20
+          },
+          "MISSING_IN_LEDGER": {
+            "MISSING_IN_LEDGER": 6
           }
         }
       },
       "money": {
-        "injected_inr": 75.0,
-        "surfaced_inr": 75.0,
+        "injected_inr": 382.0,
+        "surfaced_inr": 382.0,
         "recovery_ratio": 1.0
       },
       "targets_met": {
@@ -159,7 +159,7 @@
         "money_recovery_ratio": true
       },
       "overall_pass": true,
-      "seed": 3
+      "seed": 33
     }
   ]
 }

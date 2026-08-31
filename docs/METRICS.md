@@ -38,18 +38,22 @@ Exit code is `0` only if every seed meets every applicable target.
 
 ## Latest results
 
-**LLM-backed** (`reports/latest_scorecard.md`, 200 txns, Gemini->Groq chain):
+**LLM-backed** (`reports/latest_scorecard.md`, 500 txns, Groq-primary chain,
+8-way concurrent adjudication):
 
 | Metric | Value | Target | |
 | --- | --- | --- | --- |
-| Auto-match rate | 90.5% | &ge; 85% | PASS |
+| Auto-match rate | 89.9% | &ge; 85% | PASS |
 | Detection recall | 100% | &ge; 85% | PASS |
 | Detection precision | 100% | - | PASS |
 | Classification accuracy | 100% | &ge; 90% | PASS |
 | Per-code F1 | 100% on all 6 codes | - | PASS |
-| Human queue | 7.5% | &le; 15% | PASS |
-| Runtime | 119 s | &le; 300 s | PASS |
+| Human queue | 11.7% | &le; 15% | PASS |
+| Runtime | 13.5 s | &le; 300 s | PASS |
 | Money recovery ratio | 1.00 | 0.95-1.05 | PASS |
+
+(Earlier serial runs took 8-16 min for 500 txns; concurrent adjudication +
+Groq-primary brought that to ~13 s.)
 
 **Deterministic-only** (`reports/deterministic_only_scorecard.md`, 500 txns x 3 seeds,
 no API calls): auto-match 90%, detection recall 100%, per-code F1 100% on all

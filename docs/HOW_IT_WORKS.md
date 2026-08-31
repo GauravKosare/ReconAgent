@@ -94,8 +94,10 @@ The LLM gets the anchor, the candidates and the whole `signals` object. It does
    0.55 → a human will look), and
 3. writes the plain-English **`rationale`** and **`recommended_action`**.
 
-Provider chain (all free tier, automatic failover):
-`gemini/gemini-flash-latest → groq/qwen3.8-27b → groq/gpt-oss-120b →
+Clusters are adjudicated **concurrently** (8-way thread pool) — the calls are
+independent and IO-bound, so a 500-txn batch finishes in ~15 s instead of
+minutes. Provider chain (all free tier, automatic failover):
+`groq/qwen3.8-27b → groq/gpt-oss-120b → gemini/gemini-flash-latest →
 openrouter/nemotron-3.5-lightning:free → openrouter/glm-5.2:free`.
 No key configured, or unparseable output ⇒ Stage 3b is skipped and the
 deterministic verdict is used directly, routed conservatively.

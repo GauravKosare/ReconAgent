@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import os
 import uuid
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from typing import Any
 
@@ -77,33 +78,40 @@ def _run_batch(
     routed_counts = {RouteTarget.AUTO_RESOLVED: 0, RouteTarget.PENDING_APPROVAL: 0}
     llm_used = False
 
-    for cluster in clusters:
-        anchor_ids = dict(
-            anchor_source=cluster.anchor.source.value,
-            anchor_external_id=cluster.anchor.external_id,
-            anchor_utr=cluster.anchor.utr,
-        )
+    def process(cluster):
+        """Adjudicate + route one cluster. Runs in a worker thread."""
         same_src = same_source_index[cluster.anchor.source]
+        used = False
         try:
             verdict, meta = adjudicate_cluster(cluster, same_src, client=client)
-            llm_used = True
-            agent_runs.append(meta)
+            used, run_meta = True, meta
         except ModelUnavailable as exc:
-            # No LLM -> fall back to the deterministic classifier (still useful).
-            audit(batch_id, "system", "llm_unavailable", "cluster", cluster.cluster_id,
-                  after={"reason": str(exc)})
             signals, _ = build_context(cluster, same_src)
             verdict = deterministic_verdict(cluster, signals)
-
+            run_meta = None
+            audit(batch_id, "system", "llm_unavailable", "cluster", cluster.cluster_id,
+                  after={"reason": str(exc)})
         target, reason = route_verdict(verdict)
-        routed_counts[target] += 1
+        return cluster, verdict, run_meta, target, reason, used
 
+    # LLM calls are IO-bound and independent -> run them concurrently.
+    workers = 1 if not client.available else min(8, max(1, len(clusters)))
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        results = list(pool.map(process, clusters))
+
+    for cluster, verdict, run_meta, target, reason, used in results:
+        llm_used = llm_used or used
+        if run_meta is not None:
+            agent_runs.append(run_meta)
+        routed_counts[target] += 1
         if verdict.verdict is not VerdictType.MATCHED:
             exceptions.append(
                 ExceptionRecord(
                     batch_id=batch_id,
                     cluster_id=cluster.cluster_id,
-                    **anchor_ids,
+                    anchor_source=cluster.anchor.source.value,
+                    anchor_external_id=cluster.anchor.external_id,
+                    anchor_utr=cluster.anchor.utr,
                     code=verdict.exception_code or "UNEXPLAINED",
                     amount_impact=verdict.amount_impact,
                     direction=verdict.direction,
