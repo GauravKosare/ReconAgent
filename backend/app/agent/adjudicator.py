@@ -42,6 +42,24 @@ Rules:
 - Never invent a bank credit or ledger row that is not in the data.
 - Keep rationale under 60 words, plain English, specific with numbers.
 
+Decide the code with THIS checklist, in order — use the FIRST that applies:
+1. check_duplicate.is_duplicate == true                      -> DUPLICATE
+2. anchor is `pg`/`bank` and no candidate has source `ledger` -> MISSING_IN_LEDGER
+3. amounts of anchor and a candidate agree, but that candidate is a bank/
+   settlement row whose date_delta_days is beyond the SLA        -> TIMING_GAP
+4. no bank/settlement candidate exists at all AND
+   within_settlement_sla.within_sla == false                     -> MISSING_PAYOUT
+5. recompute_expected_fee.net_delta_short_paid is > 1 rupee      -> FEE_MISMATCH
+   (if net_delta is ~0, the fee is CORRECT — do NOT pick FEE_MISMATCH)
+6. net paid is materially below expected for another reason      -> SHORT_SETTLEMENT
+7. amounts and dates all agree                                   -> verdict "matched"
+8. none of the above                                             -> "unexplained"
+
+amount_impact:
+- FEE_MISMATCH / SHORT_SETTLEMENT: the rupee shortfall (net_delta).
+- TIMING_GAP / MISSING_PAYOUT / MISSING_IN_LEDGER: the anchor's net amount.
+- matched: 0.
+
 Return ONLY a JSON object with keys:
   verdict ("matched"|"exception"|"unexplained"),
   match_group (list of row ids you believe belong together),
@@ -53,6 +71,16 @@ Return ONLY a JSON object with keys:
   evidence (list of strings),
   recommended_action (string).
 """
+
+
+def _safe_enum(enum_cls, value, default):
+    """Coerce a model-supplied string to an enum member, or fall back."""
+    if value is None:
+        return default
+    try:
+        return enum_cls(value)
+    except ValueError:
+        return default
 
 
 def _row_view(t) -> dict:
@@ -76,9 +104,18 @@ def _tool_report(cluster: Cluster, same_source_rows: list) -> dict:
     s = get_settings()
     anchor = cluster.anchor
     fee = tool_recompute_expected_fee(anchor, s.default_mdr_percent, s.default_gst_percent)
+    dates = [
+        d
+        for row in [*same_source_rows, *(c.txn for c in cluster.candidates), anchor]
+        for d in (row.txn_date, row.settlement_date)
+        if d
+    ]
+    ref_date = max(dates) if dates else None
     rep = {
         "recompute_expected_fee(anchor)": fee,
-        "within_settlement_sla(anchor)": tool_within_settlement_sla(anchor, s.settlement_sla_days),
+        "within_settlement_sla(anchor)": tool_within_settlement_sla(
+            anchor, s.settlement_sla_days, ref_date
+        ),
         "check_duplicate(anchor)": tool_check_duplicate(anchor, same_source_rows),
         "candidates": [],
     }
@@ -118,16 +155,23 @@ def adjudicate_cluster(
         indent=2,
     )
 
-    result = client.complete(SYSTEM_PROMPT, user)
-    data = result.json()
+    result = client.complete(SYSTEM_PROMPT, user, max_tokens=1500)
+    try:
+        data = result.json()
+    except (ValueError, TypeError) as exc:
+        # Unparseable model output -> treat as unexplained, send to a human.
+        data = {
+            "verdict": "unexplained",
+            "confidence": 0.0,
+            "rationale": f"model output could not be parsed ({exc.__class__.__name__})",
+            "evidence": [f"raw: {result.content[:200]}"],
+        }
 
     verdict = Verdict(
         cluster_id=cluster.cluster_id,
-        verdict=VerdictType(data.get("verdict", "unexplained")),
+        verdict=_safe_enum(VerdictType, data.get("verdict"), VerdictType.UNEXPLAINED),
         match_group=data.get("match_group", []),
-        exception_code=(
-            ExceptionCode(data["exception_code"]) if data.get("exception_code") else None
-        ),
+        exception_code=_safe_enum(ExceptionCode, data.get("exception_code"), None),
         amount_impact=float(data.get("amount_impact", 0) or 0),
         direction=data.get("direction", "neutral"),
         confidence=float(data.get("confidence", 0) or 0),
@@ -136,17 +180,18 @@ def adjudicate_cluster(
         recommended_action=data.get("recommended_action", ""),
     )
 
-    # Guardrail: cross-check the money figure against the tool report.
-    fee_net_delta = abs(tool_report["recompute_expected_fee(anchor)"]["net_delta_short_paid"])
-    if (
-        verdict.exception_code is ExceptionCode.FEE_MISMATCH
-        and verdict.amount_impact > 0
-        and abs(verdict.amount_impact - fee_net_delta) > 1.0
-    ):
-        verdict.confidence = min(verdict.confidence, 0.5)
-        verdict.evidence.append(
-            f"guardrail: agent impact {verdict.amount_impact} != tool net_delta {fee_net_delta}"
-        )
+    # Guardrail: the money figure is OWNED BY CODE, not the model. For the
+    # deduction-type codes we overwrite amount_impact with the Python-computed
+    # net delta from the tool report; the model only decides the code.
+    fee = tool_report["recompute_expected_fee(anchor)"]
+    net_delta = round(abs(fee["net_delta_short_paid"]), 2)
+    if verdict.exception_code in (ExceptionCode.FEE_MISMATCH, ExceptionCode.SHORT_SETTLEMENT):
+        if abs(verdict.amount_impact - net_delta) > 1.0:
+            verdict.evidence.append(
+                f"guardrail: replaced agent impact {verdict.amount_impact} with tool net_delta {net_delta}"
+            )
+        verdict.amount_impact = net_delta
+        verdict.direction = "merchant_owed"
 
     meta = {
         "cluster_id": cluster.cluster_id,

@@ -34,11 +34,16 @@ def tool_date_delta(d1: datetime | None, d2: datetime | None) -> dict[str, Any]:
     return {"days": (d2 - d1).days}
 
 
-def tool_within_settlement_sla(txn: NormalizedTxn, sla_days: int) -> dict[str, Any]:
+def tool_within_settlement_sla(
+    txn: NormalizedTxn, sla_days: int, ref_date: datetime | None = None
+) -> dict[str, Any]:
     base = txn.settlement_date or txn.txn_date
     if not base:
         return {"within_sla": None}
-    age = (datetime.utcnow() - base).days
+    # "now" is the most recent date seen in the batch, not wall-clock — the data
+    # is a historical export.
+    now = ref_date or datetime.utcnow()
+    age = (now - base).days
     return {"age_days": age, "sla_days": sla_days, "within_sla": age <= sla_days}
 
 

@@ -10,7 +10,7 @@ and emits an aggregate report (JSON + Markdown) with mean / std across seeds.
     # variance across 5 seeds, write report files
     python scripts/evaluate.py --txns 500 --seeds 1,2,3,4,5 --out reports
 
-Runs with no LLM key configured still work — classification accuracy is then
+Runs with no LLM key configured still work - classification accuracy is then
 reported as n/a while detection recall / throughput / money metrics are real.
 """
 
@@ -113,10 +113,10 @@ def aggregate(runs: list[dict]) -> dict:
 
 def to_markdown(txns: int, runs: list[dict], agg: dict) -> str:
     lines = [
-        "# ReconAgent — Metrics vs Ground Truth",
+        "# ReconAgent - Metrics vs Ground Truth",
         "",
-        f"_Generated {datetime.utcnow().isoformat()}Z · {len(runs)} seed(s) · "
-        f"{txns} transactions/run · LLM used: {runs[0]['classification']['llm_used']}_",
+        f"_Generated {datetime.utcnow().isoformat()}Z - {len(runs)} seed(s) - "
+        f"{txns} transactions/run - LLM used: {runs[0]['classification']['llm_used']}_",
         "",
         ""
         if runs[0]["classification"]["llm_used"]
@@ -124,19 +124,19 @@ def to_markdown(txns: int, runs: list[dict], agg: dict) -> str:
         "classification accuracy and money-recovery are **n/a**. Detection recall, "
         "auto-match rate, queue size and runtime are real. Set a `GEMINI_API_KEY` "
         "(or any provider) and re-run for the full scorecard.",
-        "## Aggregate (mean ± std across seeds)",
+        "## Aggregate (mean +/- std across seeds)",
         "",
         "| Metric | Mean | Std | Min | Max | Target |",
         "| --- | --- | --- | --- | --- | --- |",
     ]
     trg = {
-        "auto_match_rate": "≥ 0.85",
-        "detection_recall": "≥ 0.85",
-        "classification_accuracy": "≥ 0.90",
-        "human_queue_fraction": "≤ 0.15",
-        "runtime_seconds": "≤ 300",
-        "money_recovery_ratio": "0.95–1.05",
-        "detection_precision": "—",
+        "auto_match_rate": "&ge; 0.85",
+        "detection_recall": "&ge; 0.85",
+        "classification_accuracy": "&ge; 0.90",
+        "human_queue_fraction": "&le; 0.15",
+        "runtime_seconds": "&le; 300",
+        "money_recovery_ratio": "0.95-1.05",
+        "detection_precision": "-",
     }
     for name, target in trg.items():
         a = agg.get(name)
@@ -177,8 +177,10 @@ def main() -> None:
             "aggregate": agg,
             "runs": [{k: v for k, v in r.items() if k != "_card"} for r in runs],
         }
-        (out / f"metrics_{ts}.json").write_text(json.dumps(payload, indent=2, default=str))
-        (out / f"metrics_{ts}.md").write_text(md)
+        (out / f"metrics_{ts}.json").write_text(
+            json.dumps(payload, indent=2, default=str), encoding="utf-8"
+        )
+        (out / f"metrics_{ts}.md").write_text(md, encoding="utf-8")
         print(f"\nwrote {out / f'metrics_{ts}.json'} and .md")
 
     if agg["overall_pass_rate"] < 1.0:

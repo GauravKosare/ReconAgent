@@ -120,13 +120,13 @@ class ScoreCard:
         rows = [
             "| Metric | Value | Target | Pass |",
             "| --- | --- | --- | --- |",
-            f"| Auto-match rate | {self.auto_match_rate:.1%} | ≥ 85% | {_m(self.passes.get('auto_match_rate'))} |",
-            f"| Detection recall | {_pct(self.detection_recall)} | ≥ 85% | {_m(self.passes.get('detection_recall'))} |",
-            f"| Detection precision | {_pct(self.detection_precision)} | — | — |",
-            f"| Classification accuracy | {_pct(self.classification_accuracy)} | ≥ 90% | {_m(self.passes.get('classification_precision'))} |",
-            f"| Human queue | {self.queue_fraction:.1%} | ≤ 15% | {_m(self.passes.get('queue_fraction'))} |",
-            f"| Runtime | {self.runtime_seconds:.1f}s | ≤ 300s | {_m(self.passes.get('runtime_seconds'))} |",
-            f"| Money recovery ratio | {_ratio(self.money_recovery_ratio)} | 0.95–1.05 | {_m(self.passes.get('money_recovery_ratio'))} |",
+            f"| Auto-match rate | {self.auto_match_rate:.1%} | &ge; 85% | {_m(self.passes.get('auto_match_rate'))} |",
+            f"| Detection recall | {_pct(self.detection_recall)} | &ge; 85% | {_m(self.passes.get('detection_recall'))} |",
+            f"| Detection precision | {_pct(self.detection_precision)} | - | - |",
+            f"| Classification accuracy | {_pct(self.classification_accuracy)} | &ge; 90% | {_m(self.passes.get('classification_precision'))} |",
+            f"| Human queue | {self.queue_fraction:.1%} | &le; 15% | {_m(self.passes.get('queue_fraction'))} |",
+            f"| Runtime | {self.runtime_seconds:.1f}s | &le; 300s | {_m(self.passes.get('runtime_seconds'))} |",
+            f"| Money recovery ratio | {_ratio(self.money_recovery_ratio)} | 0.95-1.05 | {_m(self.passes.get('money_recovery_ratio'))} |",
         ]
         conf = ["", "**Per-code F1:**", "", "| Code | P | R | F1 | TP/FP/FN |", "| --- | --- | --- | --- | --- |"]
         for k, v in sorted(self.per_code.items()):
@@ -143,7 +143,7 @@ def _ratio(x: float | None) -> str:
 
 
 def _m(x: bool | None) -> str:
-    return {True: "✅", False: "❌", None: "—"}[x]
+    return {True: "PASS", False: "FAIL", None: "-"}[x]
 
 
 def _order_of(exc: dict, truth_by_utr: dict) -> str | None:
@@ -166,11 +166,16 @@ def score_batch(result: dict, ground_truth: list[dict]) -> ScoreCard:
 
     # order_id -> predicted codes (list; usually one)
     predicted: dict[str, list[str]] = defaultdict(list)
+    # Money recovery is measured only on the DEDUCTION codes, where there is a
+    # precise expected rupee delta. Missing-payout / timing amounts are "money in
+    # transit", not a recoverable shortfall, so they don't belong in the ratio.
+    deduction_codes = {"FEE_MISMATCH", "SHORT_SETTLEMENT"}
     surfaced_money = 0.0
     unmapped = 0
     for exc in exceptions:
         order = _order_of(exc, truth_by_utr)
-        surfaced_money += abs(float(exc.get("amount_impact", 0) or 0))
+        if exc.get("code") in deduction_codes:
+            surfaced_money += abs(float(exc.get("amount_impact", 0) or 0))
         if order is None:
             unmapped += 1
             continue

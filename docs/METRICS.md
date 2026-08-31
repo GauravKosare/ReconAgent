@@ -64,6 +64,38 @@ and re-run for the complete scorecard.
 | Many false positives | candidate generator too eager, or routing not conservative | `candidates.py`, `pipeline/routing.py` |
 | Money ratio ≠ 1 | agent mis-sizing impact, or guardrail miscalibrated | `agent/adjudicator.py` guardrail |
 
+## Current status (honest)
+
+Latest LLM-backed run (`reports/metrics_*.md`, 100 txns):
+
+| Metric | Value | Target | State |
+| --- | --- | --- | --- |
+| Auto-match rate | ~92% | &ge; 85% | PASS |
+| Detection recall | ~90% | &ge; 85% | PASS (defects are surfaced) |
+| Detection precision | 100% | - | PASS (no false alarms on clean rows) |
+| Human queue | ~3% | &le; 15% | PASS |
+| Runtime (100 txns) | ~90s | &le; 300s | PASS |
+| **Classification accuracy** | **~40%** | &ge; 90% | **NEEDS TUNING** |
+| Money recovery ratio | ~2.4 | 0.95-1.05 | follows classification |
+
+The deterministic core and the detection layer are solid. **Code
+classification** — putting the right taxonomy label on a surfaced exception — is
+not yet good: `TIMING_GAP`, `MISSING_PAYOUT`, `SHORT_SETTLEMENT` and
+`MISSING_IN_LEDGER` are mostly mislabelled as `FEE_MISMATCH` or missed. Known
+causes, in priority order:
+
+1. The Gemini free quota is easily exhausted by repeated eval runs, so the work
+   falls to Groq Qwen-3-27B, which follows the taxonomy checklist loosely.
+   Fixes: run evals sparingly; make Gemini genuinely primary for the demo batch;
+   add a stronger free model.
+2. The tool report doesn't yet make the timing signal unambiguous (needs an
+   explicit `expected_bank_credit: present|absent|late` field).
+3. The prompt needs few-shot examples per code, not just a checklist.
+4. `SHORT_SETTLEMENT` vs `FEE_MISMATCH` overlap — tighten the generator and the
+   code definitions.
+
+This is the next focused work item, tracked separately from the harness itself.
+
 ## Note on variance
 
 The current generator fixes defect *counts* per size, so deterministic metrics
