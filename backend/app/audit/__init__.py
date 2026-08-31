@@ -1,3 +1,3 @@
-from .log import audit
+from .log import audit, buffered
 
-__all__ = ["audit"]
+__all__ = ["audit", "buffered"]

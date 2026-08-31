@@ -2,6 +2,7 @@
 
 | Doc | What's in it |
 | --- | --- |
+| [HOW_IT_WORKS.md](HOW_IT_WORKS.md) | **Start here** — the whole system as one narrative, stage by stage |
 | [PRD.md](PRD.md) | Problem, scope, requirements, success metrics, build plan, risks |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Component & funnel diagrams, data model, provider failover, deployment, guardrails |
 | [WORKFLOW.md](WORKFLOW.md) | Plain-language walkthrough of the six pipeline stages + exception taxonomy |

@@ -4,13 +4,14 @@ unresolved remainder, then routing, persistence and metrics.
 
 from __future__ import annotations
 
+import os
 import uuid
 from datetime import datetime
 from typing import Any
 
 from ..agent.adjudicator import adjudicate_cluster, build_context, deterministic_verdict
 from ..agent.model_client import ModelClient, ModelUnavailable
-from ..audit.log import audit
+from ..audit.log import audit, buffered
 from ..ingest import normalize_file
 from ..matching import exact_match
 from ..matching.candidates import generate_candidates
@@ -25,6 +26,29 @@ def run_batch(
     *,
     persist: bool = True,
     sla_days: int = 2,
+) -> dict[str, Any]:
+    """Run one reconciliation batch. Audit entries are buffered and flushed once."""
+    if persist:
+        with buffered():
+            return _run_batch(pg_path, bank_path, ledger_path, persist=True, sla_days=sla_days)
+    prev = os.environ.get("RECONAGENT_AUDIT_SINK")
+    os.environ["RECONAGENT_AUDIT_SINK"] = "none"  # dry run: never touch the DB
+    try:
+        return _run_batch(pg_path, bank_path, ledger_path, persist=False, sla_days=sla_days)
+    finally:
+        if prev is None:
+            os.environ.pop("RECONAGENT_AUDIT_SINK", None)
+        else:
+            os.environ["RECONAGENT_AUDIT_SINK"] = prev
+
+
+def _run_batch(
+    pg_path: str,
+    bank_path: str,
+    ledger_path: str,
+    *,
+    persist: bool,
+    sla_days: int,
 ) -> dict[str, Any]:
     batch_id = f"batch_{uuid.uuid4().hex[:10]}"
     started = datetime.utcnow()
