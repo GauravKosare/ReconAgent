@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { NavLink } from "./ui";
+import { API_BASE } from "@/lib/api";
 import {
   IconClock,
   IconGrid,
@@ -69,7 +70,7 @@ export function Shell({
             <>
               Connected to{" "}
               <span className="font-mono text-muted">
-                {process.env.NEXT_PUBLIC_API_URL || "localhost:8000"}
+                {API_BASE.replace(/^https?:\/\//, "")}
               </span>
             </>
           )}

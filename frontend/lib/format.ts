@@ -1,6 +1,16 @@
-export const inr = (n: number) =>
-  "₹" +
-  Math.abs(n).toLocaleString("en-IN", { maximumFractionDigits: 2, minimumFractionDigits: 2 });
+const CCY_SYMBOL: Record<string, string> = { INR: "₹", USD: "$", EUR: "€" };
+const CCY_LOCALE: Record<string, string> = { INR: "en-IN", USD: "en-US", EUR: "de-DE" };
+
+/** Currency-aware money formatting — batches carry their own currency (multi-region). */
+export const money = (n: number, currency = "INR") =>
+  (CCY_SYMBOL[currency] ?? currency + " ") +
+  Math.abs(n).toLocaleString(CCY_LOCALE[currency] ?? "en-IN", {
+    maximumFractionDigits: 2,
+    minimumFractionDigits: 2,
+  });
+
+/** @deprecated use `money(n, currency)` — kept for INR-only demo data. */
+export const inr = (n: number) => money(n, "INR");
 
 export const pct = (n: number, digits = 1) => `${(n * 100).toFixed(digits)}%`;
 

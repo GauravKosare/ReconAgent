@@ -4,7 +4,7 @@ import { Card, CardHead, Badge, Stat } from "@/components/ui";
 import { IconArrow, IconSpark, IconUpload } from "@/components/icons";
 import { listBatches } from "@/lib/api";
 import { DEMO_ID } from "@/lib/api";
-import { inr, pct } from "@/lib/format";
+import { money, pct } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
@@ -76,7 +76,7 @@ export default async function Overview() {
             />
             <Stat
               label="Money at risk"
-              value={inr(latest.flagged_amount_inr ?? 0)}
+              value={money(latest.flagged_amount_inr ?? 0, latest.currency)}
               sub={`${latest.rows_ingested ?? 0} rows · ${latest.runtime_seconds ?? "—"}s`}
               tone="brand"
               delay={180}
@@ -110,7 +110,7 @@ export default async function Overview() {
                       <td className="num px-5 py-3">{b.auto_match_rate != null ? pct(b.auto_match_rate) : "—"}</td>
                       <td className="num px-5 py-3">{b.exceptions ?? "—"}</td>
                       <td className="num px-5 py-3">{b.pending_approval ?? "—"}</td>
-                      <td className="num px-5 py-3 text-muted">{inr(b.flagged_amount_inr ?? 0)}</td>
+                      <td className="num px-5 py-3 text-muted">{money(b.flagged_amount_inr ?? 0, b.currency)}</td>
                       <td className="px-5 py-3">
                         <Badge tone={b.llm_used ? "brand" : "neutral"}>
                           {b.llm_used ? "AI adjudicated" : "deterministic"}

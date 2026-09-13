@@ -1,4 +1,4 @@
-import { CODE_LABEL, CODE_TONE, inr } from "@/lib/format";
+import { CODE_LABEL, CODE_TONE, money } from "@/lib/format";
 
 const TONE_COLOR: Record<string, string> = {
   bad: "var(--bad)",
@@ -148,8 +148,14 @@ export function Bullet({
   );
 }
 
-/* ---------- Money bars: rupees at risk by code ---------- */
-export function MoneyBars({ rows }: { rows: { code: string; amount: number }[] }) {
+/* ---------- Money bars: money at risk by code ---------- */
+export function MoneyBars({
+  rows,
+  currency = "INR",
+}: {
+  rows: { code: string; amount: number }[];
+  currency?: string;
+}) {
   const max = Math.max(...rows.map((r) => r.amount), 1);
   return (
     <div className="grid gap-2.5 p-5">
@@ -165,7 +171,7 @@ export function MoneyBars({ rows }: { rows: { code: string; amount: number }[] }
               }}
             />
           </div>
-          <span className="num text-xs font-medium text-ink">{inr(r.amount)}</span>
+          <span className="num text-xs font-medium text-ink">{money(r.amount, currency)}</span>
         </div>
       ))}
     </div>

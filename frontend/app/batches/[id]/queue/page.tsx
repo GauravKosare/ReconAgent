@@ -1,7 +1,7 @@
 import { Shell } from "@/components/shell";
 import { QueueBoard } from "@/components/queue-board";
 import { getBatch, getExceptions, isDemo } from "@/lib/api";
-import { inr } from "@/lib/format";
+import { money } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
@@ -19,11 +19,11 @@ export default async function QueuePage({ params }: { params: Promise<{ id: stri
         <h1 className="font-display text-2xl text-ink">Approval queue</h1>
         <p className="text-sm text-faint">
           {b.pending_approval} exceptions awaiting a human decision ·{" "}
-          <span className="font-medium text-ink">{inr(atRisk)}</span> at risk. High-confidence,
-          low-value items were auto-resolved and logged.
+          <span className="font-medium text-ink">{money(atRisk, b.currency)}</span> at risk.
+          High-confidence, low-value items were auto-resolved and logged.
         </p>
       </div>
-      <QueueBoard rows={rows} demo={demo} />
+      <QueueBoard rows={rows} demo={demo} currency={b.currency} />
     </Shell>
   );
 }

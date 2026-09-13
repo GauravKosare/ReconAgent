@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { ExceptionRecord } from "@/lib/types";
-import { CODE_LABEL, CODE_TONE, inr, pct } from "@/lib/format";
+import { CODE_LABEL, CODE_TONE, money, pct } from "@/lib/format";
 import { submitApproval } from "@/lib/api";
 import { Badge, Card, Dot } from "./ui";
 import { IconCheck, IconChevron, IconEdit, IconShield, IconX } from "./icons";
@@ -19,9 +19,11 @@ const FILTERS = [
 export function QueueBoard({
   rows: initial,
   demo,
+  currency = "INR",
 }: {
   rows: ExceptionRecord[];
   demo: boolean;
+  currency?: string;
 }) {
   const [rows, setRows] = useState<Row[]>(initial);
   const [filter, setFilter] = useState<(typeof FILTERS)[number]["key"]>("pending_approval");
@@ -86,6 +88,7 @@ export function QueueBoard({
           <ExceptionCard
             key={r.cluster_id}
             row={r}
+            currency={currency}
             open={open === r.cluster_id}
             onToggle={() => setOpen(open === r.cluster_id ? null : r.cluster_id)}
             onAct={act}
@@ -98,11 +101,13 @@ export function QueueBoard({
 
 function ExceptionCard({
   row,
+  currency,
   open,
   onToggle,
   onAct,
 }: {
   row: Row;
+  currency: string;
   open: boolean;
   onToggle: () => void;
   onAct: (r: Row, d: Decision, note: string) => void;
@@ -127,7 +132,7 @@ function ExceptionCard({
           </Badge>
           <span className="hidden truncate text-sm text-muted sm:block">{row.rationale}</span>
         </div>
-        <span className="num shrink-0 font-display text-lg text-ink">{inr(row.amount_impact)}</span>
+        <span className="num shrink-0 font-display text-lg text-ink">{money(row.amount_impact, currency)}</span>
         <span className="hidden shrink-0 text-xs text-faint md:block">conf {pct(row.confidence, 0)}</span>
         {resolved ? (
           <Badge tone={resolved === "reject" ? "bad" : "ok"}>

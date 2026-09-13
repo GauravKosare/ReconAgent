@@ -18,6 +18,9 @@ const DEFAULT_API =
 const BASE = process.env.NEXT_PUBLIC_API_URL || DEFAULT_API;
 const DEMO_ID = SAMPLE_BATCH.summary.batch_id;
 
+/** The API base this build actually resolved to — for display only. */
+export const API_BASE = BASE;
+
 async function tryFetch<T>(
   path: string,
   init?: RequestInit,

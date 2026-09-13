@@ -4,7 +4,7 @@ import { Card, CardHead, Badge, Stat } from "@/components/ui";
 import { Bullet, Donut, Funnel, MoneyBars } from "@/components/charts";
 import { IconArrow, IconQueue } from "@/components/icons";
 import { getBatch, getExceptions, isDemo } from "@/lib/api";
-import { inr, pct } from "@/lib/format";
+import { money as fmtMoney, pct } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
@@ -64,7 +64,7 @@ export default async function BatchDashboard({ params }: { params: Promise<{ id:
         <Stat label="Auto-match rate" value={pct(b.auto_match_rate)} sub={`${b.auto_matched_groups} exact matches`} tone="ok" target="≥ 85%" delay={0} />
         <Stat label="Exceptions found" value={String(b.exceptions)} sub={`${b.auto_resolved} auto-resolved`} tone="warn" delay={60} />
         <Stat label="Needs a human" value={String(b.pending_approval)} sub={pct(queueFrac) + " of transactions"} tone="bad" target="≤ 15%" delay={120} />
-        <Stat label="Money at risk" value={inr(b.flagged_amount_inr)} sub="flagged across all exceptions" tone="brand" delay={180} />
+        <Stat label="Money at risk" value={fmtMoney(b.flagged_amount_inr, b.currency)} sub="flagged across all exceptions" tone="brand" delay={180} />
       </div>
 
       <div className="grid gap-4 lg:grid-cols-3">
@@ -84,9 +84,9 @@ export default async function BatchDashboard({ params }: { params: Promise<{ id:
         </Card>
 
         <Card className="rise lg:col-span-2">
-          <CardHead title="Rupees at risk by exception type" hint="Sum of |amount impact| per code" />
+          <CardHead title="Money at risk by exception type" hint="Sum of |amount impact| per code" />
           {money.length ? (
-            <MoneyBars rows={money} />
+            <MoneyBars rows={money} currency={b.currency} />
           ) : (
             <p className="p-5 text-sm text-faint">No monetary impact recorded on this batch.</p>
           )}
