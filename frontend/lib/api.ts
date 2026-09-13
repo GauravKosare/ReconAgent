@@ -13,7 +13,7 @@ const DEMO_ID = SAMPLE_BATCH.summary.batch_id;
 async function tryFetch<T>(
   path: string,
   init?: RequestInit,
-  timeoutMs = 2500,
+  timeoutMs = 8000,
 ): Promise<T | null> {
   try {
     const res = await fetch(`${BASE}${path}`, {
