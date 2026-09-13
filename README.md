@@ -14,6 +14,33 @@ decision.
 > The computer does the math. The AI does the judgement. Neither one touches
 > money without a human in the loop.
 
+**🔗 Live demo:** [reconagent.vercel.app](https://reconagent.vercel.app) · **API:** [reconagent-api.onrender.com](https://reconagent-api.onrender.com/health) · **Repo:** [github.com/GauravKosare/ReconAgent](https://github.com/GauravKosare/ReconAgent)
+
+> Both run on free tiers, so the very first request after a few idle minutes
+> can take 30–60s to wake the backend up (Render's free-tier cold start). If
+> the dashboard shows a **"Demo mode"** badge, that's the bundled sample batch
+> rendering while the API wakes — reload after a few seconds, or go to
+> **New batch → Run a sample dataset** to trigger and watch a real run.
+
+---
+
+## Screenshots
+
+| Overview | New batch |
+| --- | --- |
+| ![Overview — latest batch KPIs and recent runs](docs/screenshots/overview.png) | ![New batch — region picker, real-format uploads, sample datasets](docs/screenshots/upload.png) |
+
+| Batch dashboard | Approval queue |
+| --- | --- |
+| ![Batch dashboard — funnel, exceptions donut, ₹ at risk, quality gates](docs/screenshots/batch-dashboard.png) | ![Approval queue — expandable exception cards with the agent's rationale](docs/screenshots/queue.png) |
+
+<details>
+<summary>Audit log</summary>
+
+![Audit log — append-only, actor-coded timeline of every decision](docs/screenshots/audit.png)
+
+</details>
+
 ---
 
 ## Why this exists
@@ -50,23 +77,89 @@ the tricky 10% — with receipts.
 6. **Audit & reporting** — append-only audit log; metrics report (auto-match
    rate, exception precision/recall vs. a ground-truth key, ₹ flagged, runtime).
 
+### Workflow
+
+```mermaid
+flowchart LR
+    subgraph Sources["Three source files"]
+        L["Internal ledger\n(sales / invoices)"]
+        P["PG settlement report\n(Razorpay recon / Stripe balance)"]
+        B["Bank statement\n(CSV / MT940 / CAMT.053)"]
+    end
+
+    L --> N
+    P --> N
+    B --> N
+    N["① Normalise\none common transaction schema"] --> M
+
+    M["② Exact match\nUTR / RRN + amount + date window\n~85–95% resolved, zero AI"] -->|matched| Aud
+    M -->|leftovers| C
+
+    C["③ Candidate generation\nblocking + fuzzy + semantic narration match"] --> S
+
+    S["④ Deterministic signals\nfee check, SLA check, duplicate check\nclassifies into the exception taxonomy"] --> Adj
+
+    Adj["⑤ Agent adjudication\nLLM confirms the code, writes the rationale,\nor flags disagreement — never sets the ₹ figure"] --> R
+
+    R{"⑥ Bounded routing\nconfidence ≥ 0.90\n AND\n|impact| ≤ ₹500\n AND code allowed?"}
+    R -->|yes| Auto["Auto-resolved"]
+    R -->|no| Queue["Human approval queue"]
+
+    Auto --> Aud
+    Queue -->|approve / edit / reject| Aud
+    Aud["⑦ Audit log\nappend-only, every decision"]
+```
+
 ---
 
 ## Tech stack
 
 | Layer | Choice | Notes |
 | --- | --- | --- |
-| Agent brain | **Free-tier hosted LLMs** via [LiteLLM](https://github.com/BerriAI/litellm) | Gemini 2.5 Flash (primary) → Groq Llama 3.3 → OpenRouter `:free` → GitHub Models, automatic failover. No local model, no cost, no lock-in. |
+| Agent brain | **Free-tier hosted LLMs** via [LiteLLM](https://github.com/BerriAI/litellm) | Groq (primary) → Gemini → OpenRouter `:free` models, automatic failover. No local model, no cost, no lock-in. |
 | Agent framework | Custom bounded tool-loop + Pydantic-validated output | Full control over the audit trail; model is pluggable via `ModelClient`. |
 | Backend | **FastAPI** (Python 3.12+) | One language with the matching core and the agent. |
 | Deterministic matching | **Polars** + **RapidFuzz** + sentence-embeddings | Exact match, probabilistic linkage, semantic narration match. |
 | Database | **MongoDB Atlas (M0 free)** | Heterogeneous raw records as documents; aggregation pipeline for reporting; Atlas Vector Search for narration matching. |
 | Frontend | **Next.js 15** + Tailwind | Overview, batch dashboard, exception approval queue, audit timeline. Renders from bundled sample data when the API is offline (demo mode). |
 | Queue (optional) | **Upstash Redis** (free) | Batch runs as tracked jobs for throughput metrics. |
-| Hosting | **Vercel** (frontend) · **Hugging Face Spaces / Render** (backend) · **Atlas M0** (DB) | Entire deployment runs on free tiers. |
+| Hosting | **Vercel** (frontend) · **Render** (backend) · **Atlas M0** (DB) | Live at the links above. Entire deployment runs on free tiers. |
 | CI | **GitHub Actions** | Lint + unit tests. |
 
 Full detail: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+
+### Deployment architecture
+
+```mermaid
+flowchart TB
+    User(["Browser / judge"]) --> FE
+
+    subgraph Vercel["Vercel — free"]
+        FE["Next.js 15 dashboard\nreconagent.vercel.app"]
+    end
+
+    FE -->|REST, NEXT_PUBLIC_API_URL| API
+
+    subgraph Render["Render — free web service"]
+        API["FastAPI backend\nreconagent-api.onrender.com"]
+    end
+
+    API -->|reconcile + persist| DB[("MongoDB Atlas M0\nbatches · txns · exceptions · audit_log")]
+    API -->|LiteLLM failover chain| LLM
+
+    subgraph LLM["Free-tier LLM providers"]
+        direction LR
+        G["Gemini"] -.-> Q["Groq"] -.-> O["OpenRouter :free"]
+    end
+
+    GH(["GitHub — GauravKosare/ReconAgent"]) -->|push to main, auto-deploy| Vercel
+    GH -->|push to main, auto-deploy| Render
+```
+
+Push to `main` and both Vercel and Render redeploy on their own — no manual
+step. If every LLM provider is unavailable, the API keeps working: every
+unresolved exception routes straight to the human queue instead of being
+adjudicated.
 
 ---
 
@@ -96,7 +189,13 @@ reconagent/
 │   ├── ARCHITECTURE.md
 │   ├── PRD.md
 │   ├── WORKFLOW.md
-│   └── AI_INTEGRATION.md
+│   ├── AI_INTEGRATION.md
+│   ├── DATA_MODEL.md    # real formats, geography, sample-dataset matrix
+│   ├── METRICS.md
+│   ├── DEPLOY.md        # ₹0 Vercel + Render + Atlas walkthrough
+│   ├── PITCH.md         # timed demo script + judge cheat sheet
+│   ├── SPEECH.md        # read-aloud video narration script
+│   └── screenshots/     # dashboard screenshots used in this README
 ├── scripts/
 │   ├── run_batch.py      # run one reconciliation batch
 │   └── evaluate.py       # metrics-vs-ground-truth harness (multi-seed)
@@ -189,10 +288,9 @@ A free cluster is already provisioned for this project:
 The connection string is in `.env` (git-ignored). Collections and indexes are
 created automatically on first batch run (`app/db.py::ensure_indexes`).
 
-**Network access:** the dev machine's IP is allowlisted. To connect from a new
-location or a deploy host (Vercel / HF Spaces), add its IP in
-**Atlas → Network Access**, or enable *Allow access from anywhere* (`0.0.0.0/0`)
-for the demo.
+**Network access:** `0.0.0.0/0` is allowlisted (free-tier hosts like Render
+don't have a static egress IP), gated by the SCRAM user + password in the
+connection string.
 
 **Vector Search index** (for semantic narration matching) must be created once
 from the Atlas UI on `normalized_txns.narration_embedding` — see
@@ -200,9 +298,13 @@ from the Atlas UI on `normalized_txns.narration_embedding` — see
 
 ## Deploy
 
-Full ₹0 walkthrough in [`docs/DEPLOY.md`](docs/DEPLOY.md): Vercel for the
-dashboard, a repo-root `Dockerfile` on Render (blueprint: [`render.yaml`](render.yaml))
-or a Hugging Face Docker Space for the API, Atlas M0 for the DB. Both services
+**Live now:** [reconagent.vercel.app](https://reconagent.vercel.app) (Vercel) →
+[reconagent-api.onrender.com](https://reconagent-api.onrender.com) (Render, Python
+runtime) → MongoDB Atlas M0. ₹0 end to end.
+
+Full walkthrough in [`docs/DEPLOY.md`](docs/DEPLOY.md), including the repo-root
+`Dockerfile` / [`render.yaml`](render.yaml) blueprint if you'd rather deploy the
+backend as a container (e.g. on a Hugging Face Docker Space). Both services
 auto-deploy on push to `main`.
 
 ## Configuration
