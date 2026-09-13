@@ -7,7 +7,15 @@ import type {
 } from "./types";
 import { SAMPLE_AUDIT, SAMPLE_BATCH } from "./sample";
 
-const BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+// NEXT_PUBLIC_API_URL always wins when set. Otherwise: the local dev server
+// during `next dev`, and the deployed backend for any production build
+// (Vercel or otherwise) — so a misconfigured/missing dashboard env var still
+// resolves to the real API instead of silently falling back to demo mode.
+const DEFAULT_API =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:8000"
+    : "https://reconagent-api.onrender.com";
+const BASE = process.env.NEXT_PUBLIC_API_URL || DEFAULT_API;
 const DEMO_ID = SAMPLE_BATCH.summary.batch_id;
 
 async function tryFetch<T>(
