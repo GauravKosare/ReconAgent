@@ -11,5 +11,6 @@
 | [DATA_MODEL.md](DATA_MODEL.md) | The two dataset generators, the real file formats (Razorpay recon / MT940 / CAMT.053 / bank CSV / Zoho), the money mechanics, and settlement-batch reconciliation |
 | [DEPLOY.md](DEPLOY.md) | ₹0 deploy — Vercel (frontend) + Render / HF Space (backend) + Atlas, step by step |
 | [PITCH.md](PITCH.md) | 5-minute pitch script with on-screen cues, judge's cheat sheet, demo runbook |
+| [SPEECH.md](SPEECH.md) | Read-aloud narration script — problem, solution, why it matters, stack, in plain English |
 
 Start with the [top-level README](../README.md) for setup.
