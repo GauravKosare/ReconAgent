@@ -30,16 +30,21 @@ decision.
 | --- | --- |
 | ![Overview — latest batch KPIs and recent runs](docs/screenshots/overview.png) | ![New batch — region picker, real-format uploads, sample datasets](docs/screenshots/upload.png) |
 
-| Batch dashboard | Approval queue |
+| Batch dashboard (India, ₹) | Batch dashboard (US, $) |
 | --- | --- |
-| ![Batch dashboard — funnel, exceptions donut, ₹ at risk, quality gates](docs/screenshots/batch-dashboard.png) | ![Approval queue — expandable exception cards with the agent's rationale](docs/screenshots/queue.png) |
+| ![Batch dashboard — India batch, funnel, exceptions donut, ₹ at risk, quality gates](docs/screenshots/batch-dashboard.png) | ![Batch dashboard — US batch, same layout in USD with FX/short-settlement exceptions](docs/screenshots/batch-dashboard-us.png) |
 
-<details>
-<summary>Audit log</summary>
+Same engine, two live runs, two currencies — money figures are formatted in
+the batch's own currency throughout, not hardcoded to ₹.
 
-![Audit log — append-only, actor-coded timeline of every decision](docs/screenshots/audit.png)
+| Approval queue | Audit log |
+| --- | --- |
+| ![Approval queue — expandable exception cards with the agent's rationale, evidence and Approve/Edit/Reject](docs/screenshots/queue.png) | ![Audit log — append-only, actor-coded timeline of every decision](docs/screenshots/audit.png) |
 
-</details>
+The queue screenshot is mid-review: one exception has already been approved
+(queue count dropped from 18 → 17) — that decision is the last entry in the
+audit log on the right, written by a real `POST /approvals` call against the
+live backend, not a mocked interaction.
 
 ---
 
