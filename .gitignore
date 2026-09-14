@@ -40,3 +40,6 @@ Thumbs.db
 
 # realworld sample dataset is committed on purpose (demo + judges)
 !data/samples/realworld/
+
+# Local AI-assistant tooling config (not part of the app)
+.claude/

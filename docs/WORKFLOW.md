@@ -130,7 +130,7 @@ auto-match rate, classification precision/recall, ₹ surfaced, queue size, runt
 | `SPLIT_PAYOUT` | One bank credit = many PG lines | review |
 | `UNEXPLAINED` | Agent can't account for it | ❌ always human |
 
-## What "works without Claude / any one vendor" means here
+## What "works without any one AI vendor" means here
 
 1. Most of the pipeline is plain code — it needs no LLM at all.
 2. The LLM step goes through `ModelClient`, which tries a **chain** of free
