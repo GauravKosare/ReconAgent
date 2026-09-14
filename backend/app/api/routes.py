@@ -185,5 +185,6 @@ def submit_approval(
         {"$set": {"routed_to": "resolved" if decision != "reject" else "rejected"}},
     )
     audit(exc["batch_id"], reviewer, f"approval:{decision}", "exception",
-          exception_cluster_id, before=exc, after={"note": note})
+          exception_cluster_id, before={k: v for k, v in exc.items() if k != "_id"},
+          after={"note": note})
     return {"ok": True}
