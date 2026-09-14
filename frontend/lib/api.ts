@@ -100,12 +100,14 @@ export async function runSample(folder: string): Promise<BatchResult | null> {
 }
 
 export async function submitApproval(
+  batchId: string,
   clusterId: string,
   reviewer: string,
   decision: "approve" | "reject" | "edit",
   note: string,
 ): Promise<boolean> {
   const fd = new FormData();
+  fd.set("batch_id", batchId);
   fd.set("exception_cluster_id", clusterId);
   fd.set("reviewer", reviewer);
   fd.set("decision", decision);

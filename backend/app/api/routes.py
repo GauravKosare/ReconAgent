@@ -153,6 +153,7 @@ def list_audit(batch_id: str) -> list[dict[str, Any]]:
 
 @router.post("/approvals")
 def submit_approval(
+    batch_id: str = Form(...),
     exception_cluster_id: str = Form(...),
     reviewer: str = Form(...),
     decision: str = Form(...),          # approve | reject | edit
@@ -161,12 +162,18 @@ def submit_approval(
     from ..db import get_db
 
     db = get_db()
-    exc = db.exceptions.find_one({"cluster_id": exception_cluster_id})
+    # cluster_id is only unique within one batch (it's derived from row position,
+    # e.g. "line:ledger:43") -- two runs of the same source file produce the same
+    # cluster_id, so batch_id must be part of the filter or this updates whichever
+    # batch's exception Mongo happens to return first.
+    query = {"batch_id": batch_id, "cluster_id": exception_cluster_id}
+    exc = db.exceptions.find_one(query)
     if not exc:
         raise HTTPException(404, "exception not found")
 
     db.approvals.insert_one(
         {
+            "batch_id": batch_id,
             "cluster_id": exception_cluster_id,
             "reviewer": reviewer,
             "decision": decision,
@@ -174,7 +181,7 @@ def submit_approval(
         }
     )
     db.exceptions.update_one(
-        {"cluster_id": exception_cluster_id},
+        query,
         {"$set": {"routed_to": "resolved" if decision != "reject" else "rejected"}},
     )
     audit(exc["batch_id"], reviewer, f"approval:{decision}", "exception",

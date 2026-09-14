@@ -50,7 +50,7 @@ export function QueueBoard({
     setRows((prev) =>
       prev.map((x) => (x.cluster_id === r.cluster_id ? { ...x, _resolved: decision } : x)),
     );
-    if (!demo) await submitApproval(r.cluster_id, reviewer, decision, note);
+    if (!demo) await submitApproval(r.batch_id, r.cluster_id, reviewer, decision, note);
   }
 
   return (
